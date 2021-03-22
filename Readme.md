@@ -1,7 +1,7 @@
 # Личный проект «Погнали» 
 
 * Студент: [Галина Коцарь](https://up.htmlacademy.ru/adaptive/22/user/848001).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Зубов` (https://htmlacademy.ru/profile/serj).
 
 ---
 
