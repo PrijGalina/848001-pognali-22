@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Погнали - Направления</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="wrapper">
+        <a href="index.html" class="logotype page-header__logotype">
+          <img src="img/pognali-logotype-simple.png" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
+        </a>
+        <nav class="main-navigation">
+          <button class="main-navigation__toggle" type="button" aria-label="Открыть меню"></button>
+          <ul class="site-list main-navigation__list">
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html" class="site-list__link">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html" class="site-list__link">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="for-user page-header__for-user">
+          <a class="btn btn--oval for-user__login" href="login.html" title="Войти в личный кабинет">Авторизация</a>
+          <a href="tel:88005558628" class="for-user__phone">8 800 555-86-28</a>
+          <a href="mailto:mail@htmlacademy.ru" class="for-user__email">mail@htmlacademy.ru</a>
+        </div>
+        <ul class="social page-header__social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">
+              <span class="visually-hidden">Наша страница в facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk">
+              <span class="visually-hidden">Мы вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram">
+              <span class="visually-hidden">Наш профиль в instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="page-container">
+      <h1 class="title title--page">Направления</h1>
+      <section class="user">
+        <h2 class="visually-hidden">Информация о пользователе</h2>
+        <p class="user__level"><b>80</b>level</p>
+        <div class="user__pic-block">
+          <img src="img/petr-demin.jpg" class="user__pic" width="190" height="190" alt="Портрет пользователя Петра Дёмина">
+          <button type="button" class="btn btn--rectangle user__edit-pic" aria-label="Изменить фотографию профиля">фото</button>
+        </div>
+        <button type="button" class="btn btn--oval user__edit-pic" aria-label="Изменить фотографию профиля">фото сменить фото</button>
+        <div class="user__container">
+          <p class="caption user__caption">ТЭГИ</p>
+          <p class="user__tags">#бургер #бар #футбол #концерт #крафт</p>
+        </div>
+        <div class="user__container">
+          <p class="caption user__caption">транспорт</p>
+          <ul class="user__transport-list">
+            <li class="user__transport-item user__transport-item--avia user__transport-item--active">
+              <span class="visually-hidden">самолет</span>
+            </li>
+            <li class="user__transport-item user__transport-item--car user__transport-item--active">
+              <span class="visually-hidden">машина</span>
+            </li>
+            <li class="user__transport-item user__transport-item--bicycle">
+              <span class="visually-hidden">велосипед</span>
+            </li>
+            <li class="user__transport-item user__transport-item--afoot user__transport-item--active">
+              <span class="visually-hidden">пешком</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="planned">
+        <h2 class="title title--blue">Мои планы:</h2>
+        <ol class="planned__list">
+          <li class="planned__item">
+            <span class="planned__country">Франция, Италия</span>
+            <span class="planned__company">3 попутчика</span>
+            <time class="planned__date">26 мар — 29 мар</time>
+            <button type="button" class="planned__edit" aria-label="Изменить информацию о поездке">изменить</button>
+          </li>
+          <li class="planned__item">
+            <span class="planned__country">Таиланд, Индонезия</span>
+            <span class="planned__company">1 попутчик</span>
+            <time class="planned__date">1 июл — 15 июл</time>
+            <button type="button" class="planned__edit" aria-label="Изменить информацию о поездке">изменить</button>
+          </li>
+        </ol>
+      </section>
+      <section class="to-plan">
+        <h2 class="title title--blue">Добавить план:</h2>
+        <ul class="to-plan__pagination-list">
+          <li class="to-plan__pagination-item">
+            <button class="to-plan__pagination-btn" type="button" aria-label="Перейти к первому шагу - даты пребывания"></button>
+          </li>
+          <li class="to-plan__pagination-item">
+            <button class="to-plan__pagination-btn" type="button" aria-label="Перейти ко второму шагу - маршрут"></button>
+          </li>
+          <li class="to-plan__pagination-item">
+            <button class="to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения"></button>
+          </li>
+        </ul>
+        <form action="https://echo.htmlacademy.ru/" method="GET" class="to-plan__form">
+          <fieldset class="to-plan__step">
+            <legend class="to-plan__step-name">Шаг 1. Даты пребывания</legend>
+            <p class="to-plan__step-desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую
+            длительность.</p>
+            <p class="to-plan__form-row">
+              <label for="look-company" class="caption to-plan__caption">ищу попутчиков: чел.</label>
+              <button type="button" class="to-plan__count-controls to-plan__count-controls--minus">-</button>
+              <input type="number" class="text-input text-input--number" value="2">
+              <button type="button" class="to-plan__count-controls to-plan__count-controls--plus">+</button>
+            </p>
+            <p class="to-plan__form-row">
+              <label for="duration" class="caption to-plan__caption">длительность: дн.</label>
+              <button type="button" class="to-plan__count-controls to-plan__count-controls--minus">-</button>
+              <input type="number" class="text-input text-input--number" value="3" id="duration">
+              <button type="button" class="to-plan__count-controls to-plan__count-controls--plus">+</button>
+            </p>
+            <p class="to-plan__form-row">
+              <label for="with-children" class="caption to-plan__caption">Можно с детьми</label>
+              <input type="checkbox" class="choice-input choice-input--checkbox" name="with-children" id="with-children">
+            </p>
+            <div class="calendar to-plan__calendar">
+              <header class="calendar__nav">
+                <p class="calendar__nav-value">Март</p>
+                <button type="button" class="calendar__nav-prev" aria-label="Перейти к предыдущему месяцу"></button>
+                <button type="button" class="calendar__nav-next" aria-label="Перейти к следующему месяцу"></button>
+              </header>
+              <div class="calendar__content">
+                <ul class="calendar__title-list">
+                  <li class="calendar__title-item">П</li>
+                  <li class="calendar__title-item">В</li>
+                  <li class="calendar__title-item">С</li>
+                  <li class="calendar__title-item">Ч</li>
+                  <li class="calendar__title-item">П</li>
+                  <li class="calendar__title-item">С</li>
+                  <li class="calendar__title-item">В</li>
+                </ul>
+                <ul class="calendar__days-list">
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 23  февраля">23</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 24 февраля">24</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 25 февраля">25</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 26 февраля">26</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 27 февраля">27</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 28 февраля">28</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 1 марта">1</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 2 марта">2</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 3 марта">3</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 4 марта">4</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 5 марта">5</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 6 марта">6</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 7 марта">7</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 8 марта">8</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 9 марта">9</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 10 марта">10</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 11 марта">11</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 12 марта">12</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 13 марта">13</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 14 марта">14</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 15 марта">15</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 16 марта">16</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 17 марта">17</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 18 марта">18</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 19 марта">19</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 20 марта">20</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 21 марта">21</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 22 марта">22</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 23 марта">23</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 24 марта">24</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--disable">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 25 марта">25</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--selected">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 26 марта">26</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--selected">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 27 марта">27</button>
+                  </li>
+                  <li class="calendar__days-item calendar__days-item--selected">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 28 марта">28</button>
+                  </li>
+                  <li class="calendar__days-item">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 29 марта">29</button>
+                  </li>
+                  <li class="calendar__days-item">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 30 марта">30</button>
+                  </li>
+                  <li class="calendar__days-item">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 31 марта">31</button>
+                  </li>
+                  <li class="calendar__days-item">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 1 апреля">1</button>
+                  </li>
+                  <li class="calendar__days-item">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 2 апреля">2</button>
+                  </li>
+                  <li class="calendar__days-item">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 3 апреля">3</button>
+                  </li>
+                  <li class="calendar__days-item">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 4 апреля">4</button>
+                  </li>
+                  <li class="calendar__days-item">
+                    <button type="button" class="calendar__days-btn" aria-label="Выбрать 5 апреля">5</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="btn btn--oval btn-yellow to-plan__button" aria-label="Перейти к составлению маршрута">Следующий шаг</button>
+          </fieldset>
+          <fieldset class="to-plan__step">
+            <legend class="to-plan__step-name">Шаг 2. Маршрут</legend>
+            <p class="to-plan__step-desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+            <div class="to-plan__select">
+              <div class="to-plan__select-trigger">
+                <span class="to-plan__select-value">Босния и герцеговина</span>
+                <div class="to-plan__select-arrow"></div>
+                <output name="countries-flag" class="to-plan__countries-value">
+                  <img src="../source/img/bosnia-and-herzegovina-flag.png" class="to-plan__countries-flag" width="35" height="24"                alt="">
+                </output>
+                <button type="button" class="to-plan__delete" aria-label="Убрать страну из маршрута">удалить</button>
+              </div>
+            </div>
+            <div class="to-plan__select">
+              <div class="to-plan__select-trigger">
+                <span class="to-plan__select-value">Чехия</span>
+                <div class="to-plan__select-arrow"></div>
+                <output name="countries-flag">
+                  <img src="../source/img/czech-flag.png" class="to-plan__countries-flag" width="35" height="24" alt="">
+                </output>
+                <button type="button" class="to-plan__delete" aria-label="Убрать страну из маршрута">удалить</button>
+              </div>
+            </div>
+            <div class="to-plan__select">
+              <div class="to-plan__select-trigger">
+                <span>Выберите страну</span>
+                <div class="to-plan__select-arrow"></div>
+              </div>
+              <div class="to-plan__select-dropdown">
+                <ul class="to-plan__filter-list">
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">а</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">б</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">в</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">г</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">д</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">е</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">з</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">и</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">к</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">л</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">м</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">н</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">о</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">п</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">р</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">с</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">т</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">у</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">ф</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">х</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">ч</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">ш</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">э</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">ю</button>
+                  </li>
+                  <li class="to-plan__filter-item">
+                    <button type="button" class="to-plan__filter-button">я</button>
+                  </li>
+                </ul>
+                <ul class="to-plan__option-list">
+                  <li class="option-item">Австралия</li>
+                  <li class="option-item">Австрия</li>
+                  <li class="option-item">Азербайджан</li>
+                  <li class="option-item">Албания</li>
+                  <li class="option-item">Алжир</li>
+                  <li class="option-item">Ангола</li>
+                  <li class="option-item">Андорра</li>
+                  <li class="option-item">Антигуа и Барбуда</li>
+                  <li class="option-item">Аргентина</li>
+                  <li class="option-item">Армения</li>
+                  <li class="option-item">Афганистан</li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="to-plan__add-btn" aria-label="Добавить другую страну">Добавить страну</button>
+            <button type="button" class="btn btn--oval btn-yellow to-plan__button" aria-label="Рассказать о своих планах в каждой стране">Следующий шаг</button>
+            <button type="button" class="btn btn--oval btn-yellow to-plan__button" aria-label="Изменить даты путешествия">на шаг назад</button>
+          </fieldset>
+          <fieldset class="to-plan__step">
+            <legend class="to-plan__step-name">Шаг 3. Развлечения</legend>
+            <p class="to-plan__step-desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <ul class="to-plan__point-list">
+              <li class="to-plan__point-item">
+                <label class="to-plan__point-title" for="point-desc">Босния и Герцеговина</label>
+                <textarea name="point-desc" id="point-desc"  class="to-plan__point-desc" placeholder="План действий"></textarea>
+              </li>
+              <li class="to-plan__point-item">
+                <label class="to-plan__point-title" for="point-desc">Чехия</label>
+                <textarea name="point-desc" id="point-desc" class="to-plan__point-desc" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              </li>
+            </ul>
+            <button type="submit" class="btn btn--oval btn-yellow to-plan__button" aria-label="Сохранить план путешествия">Отправить</button>
+            <button type="button" class="btn btn--oval btn-yellow to-plan__button" aria-label="Вернуться к составлению маршрута">на шаг назад</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a href="index.html" class="logotype page-footer__logotype">
+        <img src="img/pognali-logotype-simple.png" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
+      </a>
+      <ul class="social page-footer__social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--colored social__link--facebook">
+            <span class="visually-hidden">Наша страница в facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--colored social__link--vk">
+            <span class="visually-hidden">Мы вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--colored social__link--instagram">
+            <span class="visually-hidden">Наш профиль в instagram</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__developer">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developer-link"
+          title="Перейти на страницу разработчика сайта">Разработано</a>
+        <img src="img/htmlacademy.svg" class="page-footer__developer-logo" width="27" height="33"
+          alt="HTML Academy — интерактивные онлайн-курсы по HTML, CSS и JS.">
+      </div>
+    </footer>
+  </body>
+</html>
