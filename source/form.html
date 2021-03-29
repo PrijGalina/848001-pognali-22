@@ -111,27 +111,27 @@
           </li>
         </ul>
         <form action="https://echo.htmlacademy.ru/" method="GET" class="to-plan__form">
-          <fieldset class="to-plan__step">
-            <legend class="to-plan__step-name">Шаг 1. Даты пребывания</legend>
-            <p class="to-plan__step-desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую
+          <fieldset class="counter to-plan__step">
+            <legend class="counter__title">Шаг 1. Даты пребывания</legend>
+            <p class="counter__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую
             длительность.</p>
-            <p class="to-plan__form-row">
-              <label for="look-company" class="caption to-plan__caption">ищу попутчиков: чел.</label>
-              <button type="button" class="to-plan__count-controls to-plan__count-controls--minus">-</button>
-              <input type="number" class="text-input text-input--number" value="2">
-              <button type="button" class="to-plan__count-controls to-plan__count-controls--plus">+</button>
-            </p>
-            <p class="to-plan__form-row">
-              <label for="duration" class="caption to-plan__caption">длительность: дн.</label>
-              <button type="button" class="to-plan__count-controls to-plan__count-controls--minus">-</button>
-              <input type="number" class="text-input text-input--number" value="3" id="duration">
-              <button type="button" class="to-plan__count-controls to-plan__count-controls--plus">+</button>
-            </p>
-            <p class="to-plan__form-row">
-              <label for="with-children" class="caption to-plan__caption">Можно с детьми</label>
-              <input type="checkbox" class="choice-input choice-input--checkbox" name="with-children" id="with-children">
-            </p>
-            <div class="calendar to-plan__calendar">
+            <label class="input-text input-text--number counter__row">
+              <span class="input-text__caption">ищу попутчиков: чел.</span>
+              <button type="button" class="input-text__controls input-text__controls--minus">-</button>
+              <input type="number" class="input-text__field" value="2">
+              <button type="button" class="input-text__controls input-text__controls--plus">+</button>
+            </label>
+            <label class="input-text input-text--number counter__row">
+              <span class="input-text__caption">длительность: дн.</span>
+              <button type="button" class="input-text__controls input-text__controls--minus">-</button>
+              <input type="number" class="input-text__field" value="3">
+              <button type="button" class="input-text__controls input-text__controls--plus">+</button>
+            </label>
+            <label class="input-choice input-choice--checkbox counter__row">
+              <input type="checkbox" class="input-choice__field" name="with-children">
+              <span class="input-choice__caption">Можно с детьми</span>
+            </label>
+            <div class="calendar counter__calendar">
               <header class="calendar__nav">
                 <p class="calendar__nav-value">Март</p>
                 <button type="button" class="calendar__nav-prev" aria-label="Перейти к предыдущему месяцу"></button>
@@ -193,37 +193,37 @@
                 </ul>
               </div>
             </div>
-            <button type="button" class="btn btn--oval btn-yellow to-plan__button" aria-label="Перейти к составлению маршрута">Следующий шаг</button>
+            <button type="button" class="btn btn--oval btn--yellow counter__button" aria-label="Перейти к составлению маршрута">Следующий шаг</button>
           </fieldset>
-          <fieldset class="to-plan__step">
-            <legend class="to-plan__step-name">Шаг 2. Маршрут</legend>
-            <p class="to-plan__step-desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
-            <div class="to-plan__select">
-              <div class="to-plan__select-trigger">
-                <span class="to-plan__select-value">Босния и герцеговина</span>
-                <div class="to-plan__select-arrow"></div>
-                <output name="countries-flag" class="to-plan__countries-value">
-                  <img src="../source/img/bosnia-and-herzegovina-flag.png" class="to-plan__countries-flag" width="35" height="24"                alt="">
+          <fieldset class="counter to-plan__step">
+            <legend class="counter__title">Шаг 2. Маршрут</legend>
+            <p class="counter__desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+            <div class="counter__select">
+              <div class="counter__select-trigger">
+                <span class="counter__select-value">Босния и герцеговина</span>
+                <div class="counter__select-arrow"></div>
+                <output name="countries-flag" class="counter__countries-value">
+                  <img src="../source/img/bosnia-and-herzegovina-flag.png" class="counter__countries-flag" width="35" height="24"                alt="">
                 </output>
-                <button type="button" class="to-plan__delete" aria-label="Убрать страну из маршрута">удалить</button>
+                <button type="button" class="counter__delete" aria-label="Убрать страну из маршрута">удалить</button>
               </div>
             </div>
-            <div class="to-plan__select">
-              <div class="to-plan__select-trigger">
-                <span class="to-plan__select-value">Чехия</span>
-                <div class="to-plan__select-arrow"></div>
-                <output name="countries-flag">
-                  <img src="../source/img/czech-flag.png" class="to-plan__countries-flag" width="35" height="24" alt="">
+            <div class="counter__select">
+              <div class="counter__select-trigger">
+                <span class="counter__select-value">Чехия</span>
+                <div class="counter__select-arrow"></div>
+                <output name="countries-flag" class="counter__countries-value">
+                  <img src="../source/img/czech-flag.png" class="counter__countries-flag" width="35" height="24" alt="">
                 </output>
-                <button type="button" class="to-plan__delete" aria-label="Убрать страну из маршрута">удалить</button>
+                <button type="button" class="counter__delete" aria-label="Убрать страну из маршрута">удалить</button>
               </div>
             </div>
-            <div class="to-plan__select">
-              <div class="to-plan__select-trigger">
-                <span>Выберите страну</span>
-                <div class="to-plan__select-arrow"></div>
+            <div class="counter__select">
+              <div class="counter__select-trigger">
+                <span class="counter__select-value">Выберите страну</span>
+                <div class="counter__select-arrow"></div>
               </div>
-              <div class="country-choice to-plan__select-dropdown">
+              <div class="country-choice counter__select-dropdown">
                 <ul class="country-choice__letter-list">
                   <li class="country-choice__letter-item country-choice__letter-item--selected">а</li>
                   <li class="country-choice__letter-item">б</li>
@@ -266,25 +266,23 @@
                 </ul>
               </div>
             </div>
-            <button type="button" class="to-plan__add-btn" aria-label="Добавить другую страну">Добавить страну</button>
-            <button type="button" class="btn btn--oval btn-yellow to-plan__button" aria-label="Рассказать о своих планах в каждой стране">Следующий шаг</button>
-            <button type="button" class="btn btn--oval btn-yellow to-plan__button" aria-label="Изменить даты путешествия">на шаг назад</button>
+            <button type="button" class="counter__add-btn" aria-label="Добавить другую страну">Добавить страну</button>
+            <button type="button" class="btn btn--oval btn--yellow counter__button" aria-label="Рассказать о своих планах в каждой стране">Следующий шаг</button>
+            <button type="button" class="btn counter__button" aria-label="Изменить даты путешествия">на шаг назад</button>
           </fieldset>
-          <fieldset class="to-plan__step">
-            <legend class="to-plan__step-name">Шаг 3. Развлечения</legend>
-            <p class="to-plan__step-desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-            <ul class="to-plan__point-list">
-              <li class="to-plan__point-item">
-                <label class="to-plan__point-title" for="point-desc">Босния и Герцеговина</label>
-                <textarea name="point-desc" id="point-desc"  class="to-plan__point-desc" placeholder="План действий"></textarea>
-              </li>
-              <li class="to-plan__point-item">
-                <label class="to-plan__point-title" for="point-desc">Чехия</label>
-                <textarea name="point-desc" id="point-desc" class="to-plan__point-desc" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-              </li>
-            </ul>
-            <button type="submit" class="btn btn--oval btn-yellow to-plan__button" aria-label="Сохранить план путешествия">Отправить</button>
-            <button type="button" class="btn btn--oval btn-yellow to-plan__button" aria-label="Вернуться к составлению маршрута">на шаг назад</button>
+          <fieldset class="counter to-plan__step">
+            <legend class="counter__title">Шаг 3. Развлечения</legend>
+            <p class="counter__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <label class="textarea counter__textarea" for="point-desc">
+              <span class="textarea__caption">Босния и Герцеговина</span>
+              <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий"></textarea>
+            </label>
+            <label class="textarea counter__textarea" for="point-desc">
+              <span class="textarea__caption">Чехия</span>
+              <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+            </label>
+            <button type="submit" class="btn btn--oval btn--yellow counter__button" aria-label="Сохранить план путешествия">Отправить</button>
+            <button type="button" class="btn  counter__button" aria-label="Вернуться к составлению маршрута">на шаг назад</button>
           </fieldset>
         </form>
       </section>
