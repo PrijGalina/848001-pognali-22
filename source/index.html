@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Погнали</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -80,7 +81,7 @@
                 </ul>
               </nav>
               <div class="for-user page-header__for-user">
-                <a class="for-user__login button" href="login.html" title="Войти в личный кабинет">Авторизация</a>
+                <a class="for-user__login btn" href="login.html" title="Войти в личный кабинет">Авторизация</a>
                 <a href="tel:88005558628" class="for-user__phone">8 800 555-86-28</a>
                 <a href="mailto:mail@htmlacademy.ru" class="for-user__email">mail@htmlacademy.ru</a>
               </div>
@@ -98,8 +99,7 @@
       <section class="countries">
         <div class="wrapper">
           <h2 class="title countries__title">Направления</h2>
-          <p class="countries__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там
-          заняться.</p>
+          <p class="countries__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           <ul class="countries__list">
             <li class="countries__item">
               <img src="img/thailand.jpg" class="countries__cover" width="270" height="110" alt="Остров посреди лазурного моря">
@@ -225,9 +225,11 @@
           <h2 class="registration__title">Заинтересовались?</h2>
           <p class="registration__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="login.html" class="registration__link">авторизуйтесь</a>.</p>
           <form action="https://echo.htmlacademy.ru/" method="POST" class="registration__form">
-            <label for="registration-email" class="visually-hidden">Ваш email</label>
-            <input type="email" class="text-input registration__email" id="registration-email" name="registration-email"
-              placeholder="E-mail">
+            <label class="input-text input-text--email">
+              <span class="visually-hidden">Ваш email</span>
+              <input type="email" class="input-text__field" name="registration-email"
+                placeholder="E-mail">
+            </label>
             <a href="#" class="btn registration__submit">
               <span class="visually-hidden">Регистрация</span>
             </a>
