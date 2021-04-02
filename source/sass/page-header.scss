@@ -26,7 +26,7 @@
   display: block;
   width: 26px;
   height: 15px;
-  padding: 0px;
+  padding: 0;
   outline: none;
   border: none;
   background-color: transparent;
@@ -42,7 +42,7 @@
   height: 3px;
   background: $basic_white;
   border-radius: 1.5px;
-  left: 0px;
+  left: 0;
 }
 
 .page-header__toggle::before {
@@ -50,17 +50,17 @@
 }
 
 .page-header__toggle::after {
-  bottom: 0px;
+  bottom: 0;
 }
 
 .page-header__login {
-  height: 50px;
+  height: 5 0;
 }
 
 .page-header--open {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 2;
   background-color: $basic_white;
@@ -70,7 +70,7 @@
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: 73px 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
+    gap: 0px 0;
     grid-template-areas:
       "logo btn"
       "nav nav"
