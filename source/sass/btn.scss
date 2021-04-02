@@ -1,0 +1,29 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 62px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $basic_blue_light;
+  cursor: pointer;
+}
+
+.btn--oval {
+  border-radius: 25px;
+}
+
+.btn--yellow {
+  background-color: $basic_yellow;
+}
+
+.btn--rectangle {
+  border-radius: 10px;
+}
+
+.btn--border {
+border: 3px solid $basic_blue;
+box-sizing: border-box;
+}

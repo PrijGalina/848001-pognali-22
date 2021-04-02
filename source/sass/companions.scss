@@ -1,0 +1,39 @@
+.companions {
+  position: relative;
+  z-index: 7;
+  background-color: $basic_blue;
+  margin-top: -11px;
+  padding-top: 102px;
+}
+
+.companions::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 30px;
+  width: 320px;
+  background-color: $basic_blue;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.companions__description {
+  margin: 0 0 54px;
+  color: $basic_white;
+}
+
+.companions__motivation {
+  display: block;
+  margin-top: 25px;
+}
+
+.companions__list {
+
+}
+
+.companions__item {
+  margin-bottom: 9px;
+}
+

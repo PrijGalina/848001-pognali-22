@@ -1,0 +1,28 @@
+.address {
+  position: relative;
+  padding-top: 47px;
+  background-color: $basic_yellow;
+  z-index: 3;
+}
+
+.address::after {
+  content: "";
+  position: absolute;
+  bottom: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 34px;
+  width: 320px;
+  background-color: $basic_yellow;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.address__value {
+  position: relative;
+  padding-left: 61px;
+  max-width: 160px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1D2E5B;
+}

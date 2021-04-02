@@ -1,0 +1,52 @@
+.prices {
+  position: relative;
+  padding-top: 68px;
+  background-color: $grey_100;
+  z-index: 5;
+}
+
+.prices::after {
+  content: "";
+  position: absolute;
+  bottom: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 34px;
+  width: 320px;
+  background-color: $grey_100;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.prices__title {
+  margin-top: 16px;
+  padding-right: 160px;
+}
+
+.prices__list {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.prices__tariffs {
+  margin-bottom: 32px;
+}
+
+.prices__tariffs-value {
+  margin: 0;
+}
+
+.prices__tariffs-name {
+  margin-bottom: 6px;
+}
+
+.prices__business {
+  display: block;
+  margin-bottom: 5px;
+  color: $blue-100;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+}
