@@ -66,6 +66,7 @@
 }
 
 .first-screen__steps-list {
+  @include clear_list;
   padding: 0;
   order: 5;
 }

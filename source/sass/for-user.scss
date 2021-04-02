@@ -1,10 +1,11 @@
 .for-user__link {
   display: block;
   position: relative;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   color: $basic_blue;
+  @include link_reset;
 }
 
 .for-user__link--email {

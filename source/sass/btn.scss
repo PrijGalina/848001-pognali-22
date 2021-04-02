@@ -9,6 +9,7 @@
   line-height: 18px;
   color: $basic_blue_light;
   cursor: pointer;
+  @include link_reset;
 }
 
 .btn--oval {

@@ -36,9 +36,11 @@
   height: 270px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  @include image;
 }
 
 .user__wants-list {
+  @include clear_list;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,6 +58,7 @@
 
 .user__wants-country {
   display: block;
+  @include image;
 }
 
 .user__row {
@@ -86,6 +89,7 @@
 }
 
 .user__transport-list {
+  @include clear_list;
   display: flex;
 }
 

@@ -54,7 +54,7 @@
 }
 
 .page-header__login {
-  height: 5 0;
+  height: 50px;
 }
 
 .page-header--open {
@@ -70,7 +70,7 @@
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: 73px 1fr 1fr 1fr 1fr;
-    gap: 0px 0;
+    gap: 0 0;
     grid-template-areas:
       "logo btn"
       "nav nav"

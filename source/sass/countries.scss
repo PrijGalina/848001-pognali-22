@@ -24,6 +24,7 @@
 }
 
 .countries__list {
+  @include clear_list;
   margin: 0 0 25px;
 }
 
@@ -35,6 +36,7 @@
 .countries__cover {
   position: relative;
   z-index: 1;
+  @include image;
 }
 
 .countries__flag {
@@ -43,6 +45,7 @@
   top: 50%;
   margin-top: -5px;
   z-index: 5;
+  @include image;
 }
 
 .countries__country {

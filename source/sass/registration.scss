@@ -30,6 +30,7 @@
 
 .registration__link {
   color: $basic_yellow;
+  @include link_reset;
 }
 
 .registration__title {
