@@ -1,0 +1,15 @@
+@mixin link_reset {
+  text-decoration: none;
+}
+
+@mixin image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin clear_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

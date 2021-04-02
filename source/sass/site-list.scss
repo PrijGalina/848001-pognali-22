@@ -1,0 +1,13 @@
+.site-list {
+  @include clear_list;
+}
+
+.site-list__link {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: $basic_blue;
+
+  @include link_reset;
+}
