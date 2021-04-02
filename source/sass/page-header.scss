@@ -26,7 +26,7 @@
   display: block;
   width: 26px;
   height: 15px;
-  padding: 0;
+  padding: 0px;
   outline: none;
   border: none;
   background-color: transparent;
@@ -42,7 +42,7 @@
   height: 3px;
   background: $basic_white;
   border-radius: 1.5px;
-  left: 0;
+  left: 0px;
 }
 
 .page-header__toggle::before {
@@ -50,7 +50,7 @@
 }
 
 .page-header__toggle::after {
-  bottom: 0;
+  bottom: 0px;
 }
 
 .page-header__login {
@@ -59,8 +59,8 @@
 
 .page-header--open {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   width: 100%;
   z-index: 2;
   background-color: $basic_white;

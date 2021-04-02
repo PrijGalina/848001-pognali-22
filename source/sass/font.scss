@@ -10,7 +10,7 @@
   font-family: "bloggersans";
   src: local("bloggersans-light-italic"), url("../fonts/bloggersans-lightitalic.woff2") format("woff2"),
     url("../fonts/bloggersans-lightitalic.woff") format("woff");
-  font-weight: 00;
+  font-weight: 300;
   font-style: italic;
 }
 
@@ -44,14 +44,6 @@
     url("../fonts/bloggersans-mediumitalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
-}
-
-@font-face {
-  font-family: "bloggersans";
-  src: local("bloggersans-"), url("../fonts/bloggersans-.woff2") format("woff2"),
-    url("../fonts/bloggersans-.woff") format("woff");
-  font-weight: 00;
-  font-style: normal;
 }
 
 @font-face {

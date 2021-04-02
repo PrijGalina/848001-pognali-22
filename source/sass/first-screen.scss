@@ -21,10 +21,6 @@
   background-color: $basic_blue;
 }
 
-.first-screen__page-header {
-  position: relative;
-}
-
 .first-screen .wrapper {
   display: flex;
   flex-direction: column;
@@ -62,10 +58,6 @@
   order: 2;
 }
 
-.first-screen__steps-list {
-  order: 5;
-}
-
 .first-screen__login {
   display: flex;
   width: 190px;
@@ -75,6 +67,7 @@
 
 .first-screen__steps-list {
   padding: 0;
+  order: 5;
 }
 
 .first-screen__steps-item {
