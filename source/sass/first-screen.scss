@@ -25,13 +25,9 @@
   position: relative;
 }
 
-.first-screen  .wrapper {
+.first-screen .wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.first-screen__page-header {
-
 }
 
 .first-screen__title {
@@ -134,9 +130,9 @@
 }
 
 .first-screen__row {
-    display: flex;
+  display: flex;
 }
 
 .first-screen__for-user {
-    display: flex;
+  display: flex;
 }

@@ -19,12 +19,8 @@
   border-bottom-right-radius: 30px;
 }
 
-.countries__title {
-
-}
-
 .countries__description {
-    margin: 0 0 60px;
+  margin: 0 0 60px;
 }
 
 .countries__list {
@@ -66,7 +62,7 @@
   font-size: 21px;
   line-height: 21px;
   color: $basic_black;
-  }
+}
 
 .countries__intro {
   margin: 0;
@@ -85,8 +81,4 @@
   line-height: 20px;
   opacity: 0.3;
   color: $basic_blue_dark;
-}
-
-.countries__link {
-
 }

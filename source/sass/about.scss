@@ -4,7 +4,7 @@
   background-color: $basic_blue;
 }
 
-.about::after{
+.about::after {
   content: "";
   position: absolute;
   bottom: -30px;
@@ -15,10 +15,6 @@
   background-color: $basic_blue;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-}
-
-.about__title {
-
 }
 
 .about__description {

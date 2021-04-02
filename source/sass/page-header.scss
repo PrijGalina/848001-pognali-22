@@ -94,7 +94,7 @@
     grid-area: nav;
   }
 
-  .page-header__login{
+  .page-header__login {
     grid-area: login;
     display: flex;
   }
@@ -127,6 +127,5 @@
   .page-header__toggle::after {
     transform: matrix(0.71, 0.73, -0.69, 0.71, 0, 0);
     bottom: inherit;
-
   }
 }
