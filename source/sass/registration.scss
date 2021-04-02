@@ -3,19 +3,19 @@
   z-index: 3;
   background-color: $basic_blue;
   padding-top: 105px;
-}
 
-.registration::after {
-  content: "";
-  position: absolute;
-  bottom: -34px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 34px;
-  width: 320px;
-  background-color: $basic_blue;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 34px;
+    width: 320px;
+    background-color: $basic_blue;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
 }
 
 .registration__form {
@@ -64,10 +64,6 @@
   color: $basic_white;
 }
 
-.registration__for-user .for-user__link {
-  display: flex;
-  align-items: center;
-  color: $basic_yellow;
+.registration__for-user{
   padding-left: 61px;
-  height: 45px;
 }

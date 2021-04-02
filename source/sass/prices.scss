@@ -3,19 +3,19 @@
   padding-top: 68px;
   background-color: $grey_100;
   z-index: 5;
-}
 
-.prices::after {
-  content: "";
-  position: absolute;
-  bottom: -34px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 34px;
-  width: 320px;
-  background-color: $grey_100;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 34px;
+    width: 320px;
+    background-color: $grey_100;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
 }
 
 .prices__title {

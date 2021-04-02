@@ -17,10 +17,10 @@
   background-color: $basic_black_06;
   border-radius: 50%;
   box-sizing: border-box;
-}
 
-.user__level::after {
-  content: "";
+  &::after {
+    content: "";
+  }
 }
 
 .user__level b {
@@ -52,10 +52,11 @@
 
 .user__wants-item {
   margin-right: 20px;
-}
 
-.user__wants-item:last-of-type {
-  margin-right: 0;
+  &:last-of-type {
+    margin-right: 0;
+  }
+
 }
 
 .user__wants-country {
@@ -102,8 +103,8 @@
   margin-right: 9px;
   width: 24px;
   height: 24px;
-}
 
-.user__transport-item :last-of-type {
-  margin-right: 0;
+  &:last-of-type {
+    margin-right: 0;
+  }
 }

@@ -7,8 +7,13 @@
   color: $basic_blue;
 
   @include link_reset;
-}
 
-.for-user__link--email {
-  text-transform: uppercase;
+  &--email {
+    text-transform: uppercase;
+  }
+
+  &--yellow {
+    color: $basic_yellow;
+  }
+
 }

@@ -4,19 +4,19 @@
   background-color: $basic_blue;
   margin-top: -11px;
   padding-top: 102px;
-}
 
-.companions::after {
-  content: "";
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 30px;
-  width: 320px;
-  background-color: $basic_blue;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 320px;
+    background-color: $basic_blue;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
 }
 
 .companions__description {

@@ -11,21 +11,21 @@
   cursor: pointer;
 
   @include link_reset;
-}
 
-.btn--oval {
-  border-radius: 25px;
-}
+  &--oval {
+    border-radius: 25px;
+  }
 
-.btn--yellow {
-  background-color: $basic_yellow;
-}
+  &--yellow {
+    background-color: $basic_yellow;
+  }
 
-.btn--rectangle {
-  border-radius: 10px;
-}
+  &--rectangle {
+    border-radius: 10px;
+  }
 
-.btn--border {
-  border: 3px solid $basic_blue;
-  box-sizing: border-box;
+  &--border {
+    border: 3px solid $basic_blue;
+    box-sizing: border-box;
+  }
 }

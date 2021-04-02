@@ -19,9 +19,11 @@
 
 .page-header__logotype {
   filter: brightness(0) invert(1);
+  grid-area: logo;
 }
 
 .page-header__toggle {
+  grid-area: btn;
   position: relative;
   display: block;
   width: 26px;
@@ -31,30 +33,60 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
 
-.page-header__toggle::before,
-.page-header__toggle::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: $basic_white;
-  border-radius: 1.5px;
-  left: 0;
-}
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: $basic_white;
+    border-radius: 1.5px;
+    left: 0;
+  }
 
-.page-header__toggle::before {
-  top: 4px;
-}
+  &::before {
+    top: 4px;
+  }
 
-.page-header__toggle::after {
-  bottom: 0;
+  &::after {
+    bottom: 0;
+  }
 }
 
 .page-header__login {
   height: 50px;
+}
+
+.page-header__wrapper {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: 73px 1fr 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas:
+    "logo btn"
+    "nav nav"
+    "login login"
+    "user-for user-for"
+    "social social";
+}
+
+.page-header__main-navigation {
+  grid-area: nav;
+}
+
+.page-header__login {
+  grid-area: login;
+}
+
+.page-header__for-user {
+  grid-area: user-for;
+}
+
+.page-header__social {
+  grid-area: social;
 }
 
 .page-header--open {
@@ -65,20 +97,6 @@
   z-index: 2;
   background-color: $basic_white;
 
-  .page-header__wrapper {
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr min-content;
-    grid-template-rows: 73px 1fr 1fr 1fr 1fr;
-    gap: 0 0;
-    grid-template-areas:
-      "logo btn"
-      "nav nav"
-      "login login"
-      "user-for user-for"
-      "social social";
-  }
-
   .page-header__main-navigation,
   .page-header__for-user,
   .page-header__social {
@@ -87,45 +105,31 @@
 
   .page-header__logotype {
     filter: none;
-    grid-area: logo;
-  }
-
-  .page-header__main-navigation {
-    grid-area: nav;
   }
 
   .page-header__login {
-    grid-area: login;
     display: flex;
   }
 
-  .page-header__for-user {
-    grid-area: user-for;
-  }
-
-  .page-header__social {
-    grid-area: social;
-  }
-
   .page-header__toggle {
-    grid-area: btn;
     width: 18px;
     height: 19px;
-  }
 
-  .page-header__toggle::before,
-  .page-header__toggle::after {
-    background-color: $basic-grey_light;
-    left: -3px;
-  }
+    &::before,
+    &::after {
+      background-color: $basic-grey_light;
+      left: -3px;
+    }
 
-  .page-header__toggle::before {
-    transform: matrix(0.71, -0.73, 0.69, 0.71, 0, 0);
-    top: inherit;
-  }
+    &::before {
+      transform: matrix(0.71, -0.73, 0.69, 0.71, 0, 0);
+      top: inherit;
+    }
 
-  .page-header__toggle::after {
-    transform: matrix(0.71, 0.73, -0.69, 0.71, 0, 0);
-    bottom: inherit;
+    &::after {
+      transform: matrix(0.71, 0.73, -0.69, 0.71, 0, 0);
+      bottom: inherit;
+    }
+
   }
 }

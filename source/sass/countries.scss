@@ -4,19 +4,19 @@
   background-color: $grey_100;
   padding-top: 101px;
   margin-top: -30px;
-}
 
-.countries::after {
-  content: "";
-  position: absolute;
-  bottom: -34px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 34px;
-  width: 320px;
-  background-color: $grey_100;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 34px;
+    width: 320px;
+    background-color: $grey_100;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
 }
 
 .countries__description {
