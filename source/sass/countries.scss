@@ -24,8 +24,9 @@
 }
 
 .countries__list {
-  @include clear_list;
   margin: 0 0 25px;
+
+  @include clear_list;
 }
 
 .countries__item {
@@ -36,6 +37,7 @@
 .countries__cover {
   position: relative;
   z-index: 1;
+
   @include image;
 }
 
@@ -45,6 +47,7 @@
   top: 50%;
   margin-top: -5px;
   z-index: 5;
+
   @include image;
 }
 

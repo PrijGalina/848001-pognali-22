@@ -40,6 +40,7 @@
 
 .page-footer__developer-link {
   color: $basic_grey;
+
   @include link_reset;
 }
 

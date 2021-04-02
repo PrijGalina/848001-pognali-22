@@ -66,9 +66,10 @@
 }
 
 .first-screen__steps-list {
-  @include clear_list;
   padding: 0;
   order: 5;
+
+  @include clear_list;
 }
 
 .first-screen__steps-item {
