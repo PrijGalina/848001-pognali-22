@@ -24,10 +24,6 @@
   font-weight: 400;
 }
 
-.counter__button {
-  height: 40px;
-}
-
 .counter__select {
   margin-bottom: 22px;
   max-width: 221px;
@@ -97,6 +93,7 @@ span.counter__select-value {
 }
 
 .counter__button {
+  height: 40px;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
