@@ -4,7 +4,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  color: $basic_blue;
+  color: $blue_400;
 
   @include link_reset;
 
@@ -13,6 +13,6 @@
   }
 
   &--yellow {
-    color: $basic_yellow;
+    color: $yellow_100;
   }
 }

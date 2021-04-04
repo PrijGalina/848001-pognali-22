@@ -1,0 +1,84 @@
+.planned {
+  position: relative;
+  margin-top: 64px;
+  background-color: $grey_300;
+  padding-bottom: 59px;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 320px;
+    background-color: $grey_300;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+}
+
+.planned__list {
+  @include clear_list;
+}
+
+.planned__item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 25px 23px;
+  background-color: $basic_white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.planned__edit {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $black_03;
+  text-align: left;
+  background-color: transparent;
+  width: fit-content;
+  @include button-reset;
+  padding: 10px 15px 10px 0;
+}
+
+.planned__country {
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 18px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: $blue_200;
+
+  &::before {
+    content: attr(data-num);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.planned__company,
+.planned__date {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $blue_200;
+}
+
+.planned__company {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,32 @@
+.to-plan {
+  position: relative;
+  background-color: $grey_350;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 320px;
+    background-color: $grey_350;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+}
+
+.to-plan__wrapper {
+  position: relative;
+}
+
+.to-plan__pagination {
+  position: absolute;
+  left: 205px;
+  top: 10px;
+}
+
+.to-plan__form {
+  padding-bottom: 73px;
+}

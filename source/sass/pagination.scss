@@ -1,0 +1,37 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include clear_list;
+}
+
+.pagination__item {
+  margin-right: 16px;
+
+  &:last-of-type{
+    margin-right: 0;
+  }
+}
+
+.pagination__btn {
+  display: flex;
+  text-align: center;
+  background-color: transparent;
+  width: fit-content;
+  box-sizing: border-box;
+  @include button-reset;
+
+  &--circle {
+    width: 5px;
+    height: 5px;
+    background-color: $blue_200;
+    opacity: 0.3;
+    border-radius: 50%;
+  }
+
+  &--current {
+    opacity: 1;
+  }
+}

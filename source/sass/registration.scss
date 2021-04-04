@@ -1,7 +1,7 @@
 .registration {
   position: relative;
   z-index: 3;
-  background-color: $basic_blue;
+  background-color: $blue_400;
   padding-top: 105px;
 
   &::after {
@@ -12,7 +12,7 @@
     transform: translateX(-50%);
     height: 34px;
     width: 320px;
-    background-color: $basic_blue;
+    background-color: $blue_400;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
@@ -29,7 +29,7 @@
 }
 
 .registration__link {
-  color: $basic_yellow;
+  color: $yellow_100;
 
   @include link_reset;
 }
@@ -50,7 +50,7 @@
 .registration__submit {
   width: 60px;
   height: 62px;
-  background: $basic_yellow;
+  background: $yellow_100;
   border-radius: 20px;
   position: absolute;
   right: 0;

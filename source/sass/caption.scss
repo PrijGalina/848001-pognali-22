@@ -1,0 +1,17 @@
+.caption {
+  margin: 0 auto 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1D2E5B;
+  width: fit-content;
+  padding: 0 18px;
+
+  &--border {
+    position: relative;
+    background-color: #e5e5e5;
+    transform: translateY(-50%);
+  }
+}

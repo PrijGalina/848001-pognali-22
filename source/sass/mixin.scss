@@ -13,3 +13,12 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin button-reset {
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}

@@ -1,9 +1,97 @@
 .input-text__field {
   width: 100%;
   border: none;
-  outline: none;
-  border-radius: 10px;
-  height: 62px;
   box-sizing: border-box;
-  padding: 22px 25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $blue_200;
+  @include button-reset;
+
+  &--email {
+    padding: 22px 25px;
+    border-radius: 10px;
+    height: 62px;
+  }
+
+  &--number {
+    border: 1px solid $grey_500;
+    border-radius: 4px;
+    height: 43px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
+
+.input-text__caption {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $blue_200;
+}
+
+.input-text__caption--unit {
+  opacity: 0.3;
+}
+
+.input-text__row {
+  position: relative;
+  margin: 0 0 20px;
+  display: flex;
+}
+
+.input-text__controls {
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  top: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--plus {
+    right: 0;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 14px;
+      height: 2px;
+      background-color: $grey_400;
+    }
+
+    &::after{
+      transform: translate(-50%,-50%) rotate(90deg);
+    }
+  }
+
+  &--minus {
+    left: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 14px;
+      height: 2px;
+      background-color: $grey_400;
+    }
+  }
+}
+
