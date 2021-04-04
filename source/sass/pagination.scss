@@ -10,7 +10,7 @@
 .pagination__item {
   margin-right: 16px;
 
-  &:last-of-type{
+  &:last-of-type {
     margin-right: 0;
   }
 }
@@ -21,6 +21,7 @@
   background-color: transparent;
   width: fit-content;
   box-sizing: border-box;
+
   @include button-reset;
 
   &--circle {

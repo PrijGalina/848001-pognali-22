@@ -25,7 +25,7 @@
   height: 100px;
   border-radius: 50%;
   box-sizing: border-box;
-  border: 3px solid #FF8D30;
+  border: 3px solid $orange_500;
   color: $blue_500;
   grid-area: level;
 
@@ -33,7 +33,7 @@
     content: "";
   }
 
-  &--sticker{
+  &--sticker {
     position: absolute;
     top: 17px;
     left: 17px;
@@ -92,6 +92,7 @@
   &--tags {
     grid-area: tag;
   }
+
   &--transport {
     grid-area: transport;
   }
@@ -171,7 +172,6 @@
 }
 
 .user__pic-block {
-
   .user__edit-pic {
     display: none;
   }

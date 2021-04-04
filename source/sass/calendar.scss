@@ -20,12 +20,6 @@
   color: $blue_200;
 }
 
-.calendar__nav-prev {
-}
-
-.calendar__nav-next {
-}
-
 .calendar__content {
   margin-top: 17px;
   margin-bottom: 22px;
@@ -33,7 +27,7 @@
 
 .calendar__title-list {
   display: grid;
-  grid-template-columns: repeat(7,1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-auto-rows: 30px;
   gap: 0 0;
   align-items: center;
@@ -60,7 +54,7 @@
 
 .calendar__days-list {
   display: grid;
-  grid-template-columns: repeat(7,1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-auto-rows: 30px;
   gap: 0 0;
   align-items: center;
@@ -95,10 +89,4 @@
     color: $basic_white;
     font-weight: 500;
   }
-}
-
-.calendar__days-item--disable {
-}
-
-.calendar__days-item--selected {
 }

@@ -33,22 +33,22 @@
 
   /* стили при наведении  */
   & > .input-choice__field:not(:disabled):not(:checked) + .input-choice__caption:hover::before {
-
+    border: 1px solid $grey_500;
   }
 
   /* стили при нажатии */
   & > .input-choice__field:not(:disabled):active + .input-choice__caption::before {
-
+    border: 1px solid $grey_500;
   }
 
   /* стили при фокусе */
   & > .input-choice__field:focus + .input-choice__caption::before {
-
+    border: 1px solid $grey_500;
   }
 
   /* стили фокус без checked */
   & > .input-choice__field:focus:not(:checked) + .input-choice__caption::before {
-
+    border: 1px solid $grey_500;
   }
 
   /* стили checked */
@@ -60,7 +60,7 @@
 
   /* стили disabled */
   & > .input-choice__field:disabled + .input-choice__caption::before {
-
+    border: 1px solid $grey_500;
   }
 
   &--checkbox {
