@@ -3,11 +3,11 @@
 }
 
 .site-list__link {
+  @include link_reset;
+
   font-weight: 500;
   font-size: 30px;
   line-height: 35px;
   text-transform: uppercase;
   color: $blue_400;
-
-  @include link_reset;
 }

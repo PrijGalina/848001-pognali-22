@@ -22,10 +22,10 @@
 .page-footer__logotype {
   display: block;
   margin: 0 auto 40px;
-}
 
-.page-footer__logotype img {
-  margin: 0 auto;
+  img {
+    margin: 0 auto;
+  }
 }
 
 .page-footer__social {
@@ -43,9 +43,9 @@
 }
 
 .page-footer__developer-link {
-  color: $basic_grey;
-
   @include link_reset;
+
+  color: $basic_grey;
 }
 
 .page-footer__developer-logo {

@@ -1,73 +1,70 @@
 .input-choice {
   position: relative;
-
-  & > .input-choice__field {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-  }
-
-  & > .input-choice__caption {
-    display: inline-flex;
-    margin-left: 39px;
-    align-items: center;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 15px;
-    color: $blue_200;
-    cursor: pointer;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 26px;
-      height: 26px;
-      box-sizing: border-box;
-      transform: translateY(-50%);
-      border: 1px solid $grey_500;
-      cursor: pointer;
-    }
-  }
-
-  /* стили при наведении  */
-  & > .input-choice__field:not(:disabled):not(:checked) + .input-choice__caption:hover::before {
-    border: 1px solid $grey_500;
-  }
-
-  /* стили при нажатии */
-  & > .input-choice__field:not(:disabled):active + .input-choice__caption::before {
-    border: 1px solid $grey_500;
-  }
-
-  /* стили при фокусе */
-  & > .input-choice__field:focus + .input-choice__caption::before {
-    border: 1px solid $grey_500;
-  }
-
-  /* стили фокус без checked */
-  & > .input-choice__field:focus:not(:checked) + .input-choice__caption::before {
-    border: 1px solid $grey_500;
-  }
-
-  /* стили checked */
-  & > .input-choice__field:checked + .input-choice__caption::before {
-    background-image: url("/img/checkbox-inner.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  /* стили disabled */
-  & > .input-choice__field:disabled + .input-choice__caption::before {
-    border: 1px solid $grey_500;
-  }
-
-  &--checkbox {
-    & > .input-choice__caption {
-      &::before {
-        border-radius: 4px;
-      }
-    }
-  }
 }
+
+.input-choice__field {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.input-choice__caption {
+  display: inline-flex;
+  margin-left: 39px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: $blue_200;
+  cursor: pointer;
+}
+
+.input-choice__caption::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+  border: 1px solid $grey_500;
+  cursor: pointer;
+}
+
+/* стили при наведении  */
+.input-choice__field:not(:disabled):not(:checked) + .input-choice__caption:hover::before {
+  border: 1px solid $grey_500;
+}
+
+/* стили при нажатии */
+.input-choice__field:not(:disabled):active + .input-choice__caption::before {
+  border: 1px solid $grey_500;
+}
+
+/* стили при фокусе */
+.input-choice__field:focus + .input-choice__caption::before {
+  border: 1px solid $grey_500;
+}
+
+/* стили фокус без checked */
+.input-choice__field:focus:not(:checked) + .input-choice__caption::before {
+  border: 1px solid $grey_500;
+}
+
+/* стили checked */
+.input-choice__field:checked + .input-choice__caption::before {
+  background-image: url("../img/checkbox-inner.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* стили disabled */
+.input-choice__field:disabled + .input-choice__caption::before {
+  border: 1px solid $grey_500;
+}
+
+.input-choice__caption--checkbox .input-choice__caption::before {
+  border-radius: 4px;
+}
+

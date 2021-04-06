@@ -52,10 +52,9 @@
 }
 
 .user__pic {
+  @include image;
   display: block;
   grid-area: pic;
-
-  @include image;
 
   &--thumbnail {
     width: 100px;
@@ -99,13 +98,13 @@
 }
 
 .user__wants-list {
+  @include clear_list;
+
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: -12px;
   background-color: $basic_white;
-
-  @include clear_list;
 }
 
 .user__wants-item {
@@ -117,9 +116,8 @@
 }
 
 .user__wants-country {
-  display: block;
-
   @include image;
+  display: block;
 }
 
 .user__row {
@@ -154,10 +152,10 @@
 }
 
 .user__transport-list {
+  @include clear_list;
+
   display: flex;
   justify-content: center;
-
-  @include clear_list;
 }
 
 .user__transport-item {

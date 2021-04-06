@@ -1,4 +1,6 @@
 .input-text__field {
+  @include button-reset;
+
   width: 100%;
   border: none;
   box-sizing: border-box;
@@ -7,8 +9,6 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $blue_200;
-
-  @include button-reset;
 
   &--email {
     padding: 22px 25px;
@@ -39,7 +39,7 @@
   color: $blue_200;
 }
 
-.input-text__caption--unit {
+.input-text__caption-unit {
   opacity: 0.3;
 }
 

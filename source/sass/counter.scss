@@ -37,6 +37,7 @@
 
 .counter__delete {
   @include button-reset;
+
   font-size: 0;
   width: 21px;
   height: 21px;
@@ -59,7 +60,7 @@
   border-radius: 4px;
 }
 
-span.counter__select-value {
+.counter__select-value {
   flex-grow: 1;
   padding: 13px 10px;
   font-weight: 500;
@@ -79,6 +80,7 @@ span.counter__select-value {
 
 .counter__add-btn {
   @include button-reset;
+
   background: $grey_100;
   border-radius: 4px;
   height: 42px;
@@ -107,5 +109,13 @@ span.counter__select-value {
 
   &--submit {
     margin-bottom: 13px;
+  }
+}
+
+.counter__select-dropdown {
+  display: none;
+
+  &--open {
+    display: block;
   }
 }

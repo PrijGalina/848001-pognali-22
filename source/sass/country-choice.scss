@@ -28,6 +28,7 @@
 
 .country-choice__list {
   @include clear_list;
+
   padding-top: 20px;
   padding-left: 19px;
   box-sizing: border-box;
@@ -48,10 +49,3 @@
   }
 }
 
-.counter__select-dropdown {
-  display: none;
-
-  &--open {
-    display: block;
-  }
-}

@@ -36,6 +36,8 @@
 }
 
 .planned__edit {
+  @include button-reset;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
@@ -45,8 +47,6 @@
   text-align: left;
   background-color: transparent;
   width: fit-content;
-
-  @include button-reset;
   padding: 10px 15px 10px 0;
 }
 

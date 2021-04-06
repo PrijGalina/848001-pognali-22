@@ -1,10 +1,10 @@
 .pagination {
+  @include clear_list;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-
-  @include clear_list;
 }
 
 .pagination__item {
@@ -16,13 +16,13 @@
 }
 
 .pagination__btn {
+  @include button-reset;
+
   display: flex;
   text-align: center;
   background-color: transparent;
   width: fit-content;
   box-sizing: border-box;
-
-  @include button-reset;
 
   &--circle {
     width: 5px;

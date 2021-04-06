@@ -29,9 +29,9 @@
 }
 
 .registration__link {
-  color: $yellow_100;
-
   @include link_reset;
+
+  color: $yellow_100;
 }
 
 .registration__title {

@@ -1,4 +1,7 @@
 .btn {
+  @include button-reset;
+  @include link_reset;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,9 +12,6 @@
   font-size: 18px;
   line-height: 18px;
   color: $blue_200;
-
-  @include button-reset;
-  @include link_reset;
 
   &--oval {
     border-radius: 25px;

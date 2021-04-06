@@ -1,12 +1,12 @@
 .for-user__link {
+  @include link_reset;
+
   display: block;
   position: relative;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   color: $blue_400;
-
-  @include link_reset;
 
   &--email {
     text-transform: uppercase;

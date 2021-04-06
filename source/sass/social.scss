@@ -1,9 +1,9 @@
 .social {
+  @include clear_list;
+
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @include clear_list;
 }
 
 .social__item {
