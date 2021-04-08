@@ -35,6 +35,10 @@
   position: relative;
 }
 
+.counter__textarea {
+  margin-bottom: 27px;
+}
+
 .counter__delete {
   @include button-reset;
 

@@ -69,8 +69,7 @@
   }
 }
 
-.planned__company,
-.planned__date {
+.planned__info {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -78,8 +77,8 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $blue_200;
-}
 
-.planned__company {
-  margin-bottom: 5px;
+  &--company {
+    margin-bottom: 5px;
+  }
 }
