@@ -1,23 +1,24 @@
 .btn {
+  @include button-reset;
+  @include link_reset;
+
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 270px;
   height: 62px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  color: $basic_blue_light;
-  cursor: pointer;
-
-  @include link_reset;
+  color: $blue_200;
 
   &--oval {
     border-radius: 25px;
   }
 
   &--yellow {
-    background-color: $basic_yellow;
+    background-color: $yellow_100;
   }
 
   &--rectangle {
@@ -25,7 +26,7 @@
   }
 
   &--border {
-    border: 3px solid $basic_blue;
+    border: 3px solid $blue_400;
     box-sizing: border-box;
   }
 }

@@ -1,3 +1,9 @@
+.page {
+  &--inner {
+    background-color: $grey_200;
+  }
+}
+
 .page__body {
   position: relative;
   width: 100%;

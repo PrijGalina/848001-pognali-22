@@ -1,7 +1,50 @@
 .title {
-  margin: 0 0 19px;
+  position: relative;
+  margin: 0 auto 19px;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
-  color: $special_orange;
+  color: $orange_500;
+  max-width: 320px;
+
+  &--page {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 40px;
+    padding-bottom: 11px;
+    padding-left: 27px;
+    box-sizing: border-box;
+    color: $basic_white;
+    background-color: $blue_300;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      width: 100%;
+      top: 0;
+      bottom: -7px;
+      z-index: -1;
+      background-color: $yellow_100;
+    }
+
+    &::after {
+      width: 214px;
+      height: 5px;
+      background: $orange_500;
+      border-radius: 4px;
+      left: 25px;
+      bottom: -2px;
+    }
+  }
+
+  &--blue {
+    color: $blue_200;
+  }
 }

@@ -1,7 +1,7 @@
 .about {
   position: relative;
   z-index: 10;
-  background-color: $basic_blue;
+  background-color: $blue_400;
 
   &::after {
     content: "";
@@ -11,7 +11,7 @@
     transform: translateX(-50%);
     height: 30px;
     width: 320px;
-    background-color: $basic_blue;
+    background-color: $blue_400;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }

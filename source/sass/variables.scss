@@ -1,14 +1,29 @@
-$basic_black: #000000;
-$basic_black_06: rgba(0, 0, 0, 0.6);
-$basic_grey: #444444;
-$basic-grey_light: #cccccc;
-$grey_100: #edeff6;
-$basic_blue_dark: #161c35;
-$basic_blue: #192144;
-$basic_blue_light: #1d2e5b;
-$blue-100: #132576;
-$basic_yellow: #ffd74b;
-$special_yellow_dark: #ffbd30;
-$special_orange: #ff8d30;
-$special_orange_light: #ffa530;
+/*white*/
 $basic_white: #ffffff;
+/*black*/
+$black: #000000;
+$black_06: rgba(0, 0, 0, 0.6);
+$black_03: rgba(0, 0, 0, 0.3);
+/*grey*/
+$basic_grey: #444444;
+$basic_grey_03: rgba(68, 68, 68, 0.3);
+$grey_100: #edeff6;
+$grey_200: #e5e5e5;
+$grey_300: #dfe3f0;
+$grey_350: #d4d9eb;
+$grey_370: #d6d9e6;
+$grey_400: #cccccc;
+$grey_500: #cbced9;
+/*blue*/
+$blue_100: #132576;
+$blue_200: #1d2e5b;
+$blue_300: #182044;
+$blue_400: #192144;
+$blue_500: #161c35;
+/*yellow*/
+$yellow_100: #ffd74b;
+$yellow_300: #ffbd30;
+/*orange*/
+$orange_300: #ffa530;
+$orange_500: #ff8d30;
+$orange_900: #ff5c23;

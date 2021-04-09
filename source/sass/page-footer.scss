@@ -3,24 +3,29 @@
   z-index: 3;
   grid-area: footer;
   padding-bottom: 18px;
-}
-
-.page-footer::after {
-  content: "";
-  position: absolute;
-  top: -37px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 37px;
-  width: 320px;
   background-color: $basic_white;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 320px;
+    background-color: $basic_white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
 }
 
 .page-footer__logotype {
   display: block;
   margin: 0 auto 40px;
+
+  img {
+    margin: 0 auto;
+  }
 }
 
 .page-footer__social {
@@ -38,9 +43,9 @@
 }
 
 .page-footer__developer-link {
-  color: $basic_grey;
-
   @include link_reset;
+
+  color: $basic_grey;
 }
 
 .page-footer__developer-logo {

@@ -1,14 +1,14 @@
 .social {
+  @include clear_list;
+
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @include clear_list;
 }
 
 .social__item {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: $basic_yellow;
+  background-color: $yellow_100;
 }

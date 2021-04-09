@@ -1,6 +1,10 @@
 .page-header {
   grid-area: header;
-  background-color: $basic_blue_dark;
+  background-color: $blue_500;
+
+  &--inner {
+    background-color: $blue_300;
+  }
 }
 
 .page-header__wrapper {
@@ -86,16 +90,27 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
-  background-color: $basic_white;
+  z-index: 10;
 
   .page-header__wrapper {
     grid-template-rows: 53px 1fr 1fr 1fr 1fr;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+      transform: translateX(-50%);
+      background-color: $basic_white;
+    }
   }
 
   .page-header__main-navigation,
-  .page-header__for-user,
-  .page-header__social {
+  .page-header__for-user {
     display: block;
   }
 
@@ -103,7 +118,8 @@
     filter: none;
   }
 
-  .page-header__login {
+  .page-header__login,
+  .page-header__social {
     display: flex;
   }
 
@@ -113,7 +129,7 @@
 
     &::before,
     &::after {
-      background-color: $basic-grey_light;
+      background-color: $grey_400;
       left: -3px;
     }
 
