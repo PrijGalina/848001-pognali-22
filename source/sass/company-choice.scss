@@ -1,0 +1,38 @@
+.company-choice {
+
+}
+
+.company-choice__wrapper {
+  background-color: $yellow_100;
+  border-radius: 20px;
+}
+
+.company-choice__form {
+  padding: 26px 25px 22px;
+}
+
+.company-choice__form-name {
+  max-width: 150px;
+  margin: 0 0 23px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $blue_200;
+}
+
+.company-choice__group {
+
+}
+
+.company-choice__group-title {
+
+}
+
+.company-choice__group-list {
+  @include clear_list;
+}
+
+.company-choice__group-item {
+
+}

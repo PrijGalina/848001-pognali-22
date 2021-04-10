@@ -47,4 +47,11 @@
   &--blue {
     color: $blue_200;
   }
+
+  &--catalog {
+    margin-bottom: 0;
+    &::before {
+      background-color:$grey_150;
+    }
+  }
 }
