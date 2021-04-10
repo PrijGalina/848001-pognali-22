@@ -1,0 +1,35 @@
+.user-choice {
+
+}
+
+.user-choice__list {
+  @include clear_list;
+}
+
+.user-choice__item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 23px 0;
+  background-color: $white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.user-choice__add {
+}
+
+.user-choice__pagination {
+}
+
+.user-choice__controls {
+}
+
+.user-choice__controls-btn {
+}
+
+.user-choice__controls-btn--prev {
+}
+
+.user-choice__controls-btn--next {
+}

@@ -343,7 +343,7 @@
         <h2 class="visually-hidden">Поиск попутчика:</h2>
         <form action="https://echo.htmlacademy.ru/" method="GET" class="company-choice__form">
           <h3 class="company-choice__form-name">Подберите идеального попутчика</h3>
-          <fieldset class="company-choice__group">
+          <fieldset class="company-choice__group company-choice__group--close">
             <legend class="company-choice__group-title">хобби</legend>
             <ul class="company-choice__group-list">
               <li class="company-choice__group-item">
@@ -367,7 +367,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="company-choice__group">
+          <fieldset class="company-choice__group company-choice__group--open">
             <legend class="company-choice__group-title">музыка</legend>
             <ul class="company-choice__group-list">
               <li class="company-choice__group-item">
@@ -391,7 +391,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="company-choice__group">
+          <fieldset class="company-choice__group company-choice__group--close">
             <legend class="company-choice__group-title">еда</legend>
             <ul class="company-choice__group-list">
               <li class="company-choice__group-item">
@@ -415,55 +415,55 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="company-choice__group">
+          <fieldset class="company-choice__group company-choice__group--open">
             <legend class="company-choice__group-title">транспорт</legend>
-            <ul class="company-choice__group-list">
-              <li class="company-choice__group-item">
+            <ul class="company-choice__group-list input-choice__transport-list">
+              <li class="company-choice__group-item input-choice__transport input-choice__transport--avia">
                 <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
                   <input class="input-choice__field" type="checkbox" name="airplane" aria-hidden="true" tabindex="-1"
                     checked>
                   <span class="input-choice__caption">самолет</span>
                 </label>
               </li>
-              <li class="company-choice__group-item">
+              <li class="company-choice__group-item input-choice__transport input-choice__transport--bus">
                 <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
-                  <input class="input-choice__field" type="checkbox" name="bus" aria-hidden="true" tabindex="-1">
+                  <input class="input-choice__field" type="checkbox" name="bus" aria-hidden="true" tabindex="-1" checked>
                   <span class="input-choice__caption">автобус</span>
                 </label>
               </li>
-              <li class="company-choice__group-item">
+              <li class="company-choice__group-item input-choice__transport input-choice__transport--bike">
                 <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
                   <input class="input-choice__field" type="checkbox" name="bike" aria-hidden="true" tabindex="-1">
                   <span class="input-choice__caption">велосипед</span>
                 </label>
               </li>
-              <li class="company-choice__group-item">
+              <li class="company-choice__group-item input-choice__transport input-choice__transport--foot">
                 <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
-                  <input class="input-choice__field" type="checkbox" name="foot" aria-hidden="true" tabindex="-1">
+                  <input class="input-choice__field" type="checkbox" name="foot" aria-hidden="true" tabindex="-1" checked>
                   <span class="input-choice__caption">пешком</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="company-choice__group">
+          <fieldset class="company-choice__group company-choice__group--open">
             <legend class="company-choice__group-title">Левел</legend>
             <div class="range company-choice__range">
+              <div class="range__output">
+                <div class="range__value range__value--min">30</div>
+                <div class="range__value range__value--max">100</div>
+              </div>
               <div class="range__controls">
                 <div class="range__scale">
-                  <div class="range__bar" style="width: 114px;"></div>
+                  <div class="range__bar"></div>
                   <div class="range__toggle range__toggle--min" tabindex="0"
-                    aria-label="Изменить нижнюю граниу стоимости" style="left: 0px;"></div>
+                    aria-label="Изменить нижнюю граниу стоимости" style="left: 72px;"></div>
                   <div class="range__toggle range__toggle--max" tabindex="0"
-                    aria-label="Изменить верхнюю границу стоимости" style="left: 114px;"></div>
+                    aria-label="Изменить верхнюю границу стоимости" style="right: 0px;"></div>
                 </div>
-              </div>
-              <div class="range__output">
-                <div class="range__value range__value--min" style="left: 0px;">30</div>
-                <div class="range__value range__value--max" style="left: 124px;">100</div>
               </div>
             </div>
           </fieldset>
-          <button type="submit" class="btn btn--oval btn--white">показать</button>
+          <button type="submit" class="btn btn--oval btn--white range__btn">показать</button>
         </form>
       </div>
     </section>
@@ -471,12 +471,17 @@
       <div class="wrapper">
         <h2 class="visually-hidden">Список пользователей</h2>
         <ul class="user-choice__list">
-          <li class="user">
-            <img src="img/tanya_firsova-70.jpg" class="user__pic" width="70" height="70"
-              alt="Фотография пользователя Татьяны Фирсовой">
-            <span class="user__like user__like--active"></span>
-            <p class="user__name">Таня Фирсова</p>
-            <span class="user__like-count">1,5 М</span>
+          <li class="user user-choice__item">
+            <div class="user__top">
+              <img src="img/tanya_firsova-70.jpg" class="user__pic" width="70" height="70"
+                alt="Фотография пользователя Татьяны Фирсовой">
+              <span class="user__like user__like--active"></span>
+              <p class="user__name">Таня Фирсова</p>
+              <div class="user__like">
+                <span class="user__like-count">1,5 М</span>
+              </div>
+              <span class="user__status user__status--offline"></span>
+            </div>
             <p class="user__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
             <div class="user__wants-block">
               <span class="user__wants-title">хочет посетить:</span>
@@ -521,12 +526,17 @@
             </div>
             <button type="button" class="btn btn--oval btn--yellow user__to-call">Позвать!</button>
           </li>
-          <li class="user">
-            <img src="img/petr-demin-70.jpg" class="user__pic" width="70" height="70"
-              alt="Фотография пользователя Петра Демина">
-            <span class="user__like user__like--active"></span>
-            <p class="user__name">Петя Демин</p>
-            <span class="user__like-count">1500</span>
+          <li class="user user-choice__item">
+            <div class="user__top">
+              <img src="img/petr-demin-70.jpg" class="user__pic" width="70" height="70"
+                alt="Фотография пользователя Петра Демина">
+              <span class="user__like user__like--active"></span>
+              <p class="user__name">Петя Демин</p>
+              <div class="user__like">
+                <span class="user__like-count">1500</span>
+              </div>
+              <span class="user__status user__status--offline"></span>
+            </div>
             <p class="user__tags">#бургер #бар #футбол #концерт #крафт</p>
             <div class="user__wants-block">
               <span class="user__wants-title">хочет посетить:</span>
@@ -564,12 +574,17 @@
             </div>
             <button type="button" class="btn btn--oval btn--yellow user__to-call">Позвать!</button>
           </li>
-          <li class="user">
-            <img src="img/mark-smolov-70.jpg" class="user__pic" width="70" height="70"
-              alt="Фотография пользователя Марка Смолова">
-            <span class="user__like user__like--active"></span>
-            <p class="user__name">Марк Смолов</p>
-            <span class="user__like-count">170</span>
+          <li class="user user-choice__item">
+            <div class="user__top">
+              <img src="img/mark-smolov-70.jpg" class="user__pic" width="70" height="70"
+                alt="Фотография пользователя Марка Смолова">
+              <span class="user__like user__like--active"></span>
+              <p class="user__name">Марк Смолов</p>
+              <div class="user__like">
+                <span class="user__like-count">170</span>
+              </div>
+              <span class="user__status user__status--offline"></span>
+            </div>
             <p class="user__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
             <div class="user__wants-block">
               <span class="user__wants-title">хочет посетить:</span>
@@ -613,12 +628,15 @@
             </div>
             <button type="button" class="btn btn--oval btn--yellow user__to-call">Позвать!</button>
           </li>
-          <li class="user">
-            <img src="img/larisa-rogovaya-70.jpg" class="user__pic" width="70" height="70"
-              alt="Фотография пользователя Ларисы Роговой">
-            <span class="user__like user__like--active"></span>
-            <p class="user__name">Лариса Роговая</p>
-            <span class="user__like-count">23</span>
+          <li class="user user-choice__item">
+            <div class="user__top">
+              <img src="img/larisa-rogovaya-70.jpg" class="user__pic" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
+              <p class="user__name">Лариса Роговая</p>
+              <div class="user__like">
+                <span class="user__like-count">23</span>
+              </div>
+              <span class="user__status user__status--offline"></span>
+            </div>
             <p class="user__tags">#образование #карьера #учеба #линкедин</p>
             <div class="user__wants-block">
               <span class="user__wants-title">хочет посетить:</span>

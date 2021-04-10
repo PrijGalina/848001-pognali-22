@@ -29,4 +29,8 @@
     border: 3px solid $blue_400;
     box-sizing: border-box;
   }
+
+  &--white {
+    background-color: $white;
+  }
 }

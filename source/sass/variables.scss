@@ -1,12 +1,15 @@
 /*white*/
-$basic_white: #ffffff;
+$white: #ffffff;
+$white_06: rgba(255, 255, 255, 0.6);
+$white_03: rgba(255, 255, 255, 0.3);
 /*black*/
 $black: #000000;
 $black_06: rgba(0, 0, 0, 0.6);
 $black_03: rgba(0, 0, 0, 0.3);
 /*grey*/
-$basic_grey: #444444;
-$basic_grey_03: rgba(68, 68, 68, 0.3);
+$grey: #444444;
+$grey_03: rgba(68, 68, 68, 0.3);
+$grey_50: #f9eaea;
 $grey_100: #edeff6;
 $grey_150: #e2e5f2;
 $grey_200: #e5e5e5;
@@ -16,16 +19,21 @@ $grey_350: #d4d9eb;
 $grey_370: #d6d9e6;
 $grey_400: #cccccc;
 $grey_500: #cbced9;
+$grey_700: #959bb2;
 /*blue*/
 $blue_100: #132576;
 $blue_200: #1d2e5b;
+$blue_200_02: rgba(29, 46, 91, 0.2);
 $blue_300: #182044;
 $blue_400: #192144;
 $blue_500: #161c35;
 /*yellow*/
 $yellow_100: #ffd74b;
 $yellow_300: #ffbd30;
+$yellow_500: #f3c72b;
 /*orange*/
 $orange_300: #ffa530;
 $orange_500: #ff8d30;
 $orange_900: #ff5c23;
+/*red*/
+$red_100: #f97676;
