@@ -80,7 +80,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%)translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
     width: 10px;
     height: 18px;
     background-image: url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 9L9.75 0.339745L9.75 17.6603L0 9Z' fill='%231D2E5B'/%3E%3C/svg%3E%0A");
@@ -98,7 +98,7 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 
-    &::before{
+    &::before {
       transform: translateY(-50%) rotate(180deg);
     }
   }

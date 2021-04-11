@@ -64,7 +64,7 @@
   @include image;
 
   display: block;
-  grid-area: pic;
+  grid-area: img;
 
   &--thumbnail {
     width: 100px;
@@ -163,6 +163,7 @@
 }
 
 .user__name {
+  grid-area: name;
   margin: 0;
   margin-bottom: 15px;
   font-weight: 700;
@@ -258,7 +259,7 @@
   display: grid;
   grid-template-columns: 70px 1fr;
   grid-template-rows: 48px 22px;
-  gap: 0px 16px;
+  gap: 0 16px;
   grid-template-areas:
     "img name"
     "img count";
@@ -280,14 +281,6 @@
   &--online {
     background-color: $green_100;
   }
-}
-
-.user__pic {
-  grid-area: img;
-}
-
-.user__name {
-  grid-area: name;
 }
 
 .user__like {
@@ -324,7 +317,6 @@
     background-image: url("../img/like-active.svg");
   }
 }
-
 
 .user__like-count {
   font-weight: 700;

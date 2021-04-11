@@ -39,7 +39,7 @@
   }
 
   /* active */
-  &:not(:disabled) + .input-choice__caption:active{
+  &:not(:disabled) + .input-choice__caption:active {
     color: $black_03;
 
     &::before {
@@ -49,7 +49,7 @@
   }
 
   /* active + checked */
-  &:not(:disabled):checked + .input-choice__caption:active{
+  &:not(:disabled):checked + .input-choice__caption:active {
     &::before {
       opacity: 0.3;
       border: none;
@@ -57,7 +57,7 @@
   }
 
   /* disabled */
-  &:disabled + .input-choice__caption{
+  &:disabled + .input-choice__caption {
     color: $black_03;
     pointer-events: none;
 
@@ -67,7 +67,7 @@
   }
 
   /* disabled + checked */
-  &:disabled:checked + .input-choice__caption{
+  &:disabled:checked + .input-choice__caption {
     color: $black_03;
     pointer-events: none;
 
@@ -121,19 +121,19 @@
   height: 31px;
 
   .input-choice {
-      &:focus {
-        outline: none;
-      }
+    &:focus {
+      outline: none;
+    }
 
-      &:focus > .input-choice__caption{
-        border: 1px solid $grey_500;
-        border-radius: 50%;
-        background-color: $white_03;
+    &:focus > .input-choice__caption {
+      border: 1px solid $grey_500;
+      border-radius: 50%;
+      background-color: $white_03;
 
-        &::before {
-          border: none;
-        }
+      &::before {
+        border: none;
       }
+    }
   }
 
   .input-choice__caption {
@@ -150,15 +150,8 @@
       width: 31px;
       height: 31px;
       background-color: transparent;
-    }
-
-    & + .input-choice__caption::before {
       background-position: center center;
       background-repeat: no-repeat;
-      opacity: 0.15;
-    }
-
-    & + .input-choice__caption::before {
       opacity: 0.15;
     }
 
@@ -182,9 +175,7 @@
         opacity: 0.15;
       }
     }
-
   }
-  /**/
 
   &--avia {
     .input-choice__field + .input-choice__caption::before {

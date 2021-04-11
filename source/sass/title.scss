@@ -50,8 +50,9 @@
 
   &--catalog {
     margin-bottom: 0;
+
     &::before {
-      background-color:$grey_150;
+      background-color: $grey_150;
     }
   }
 }
