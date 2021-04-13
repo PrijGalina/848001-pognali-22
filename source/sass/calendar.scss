@@ -80,13 +80,13 @@
   box-sizing: border-box;
 
   &--disable {
-    color: $basic_grey_03;
-    background-color: $basic_white;
+    color: $grey_03;
+    background-color: $white;
   }
 
   &--selected {
     background: $blue_200;
-    color: $basic_white;
+    color: $white;
     font-weight: 500;
   }
 }

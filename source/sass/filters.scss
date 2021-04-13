@@ -1,0 +1,126 @@
+.filters {
+  &--open {
+    .filters__top {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .filters__container {
+      display: block;
+    }
+  }
+}
+
+.filters__container {
+  display: none;
+  width: 320px;
+  margin: 0 auto;
+  background-color: $grey_150;
+  padding-bottom: 95px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.filters__wrapper {
+  width: 220px;
+}
+
+.filters__top {
+  position: relative;
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 15px;
+  background-color: $grey_150;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+.filters__title {
+  margin: 0;
+  padding-left: 52px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $blue_400;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/filter-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+}
+
+.filters__toogle {
+  display: block;
+  order: 2;
+
+  &--open {
+    @include button-reset;
+
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='3' viewBox='0 0 17 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1.5' cy='1.5' r='1.5' fill='%23192144'/%3E%3Ccircle cx='8.5' cy='1.5' r='1.5' fill='%23192144'/%3E%3Ccircle cx='15.5' cy='1.5' r='1.5' fill='%23192144'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+}
+
+.filters__continents-list {
+  @include clear_list;
+
+  margin-bottom: 21px;
+  margin-top: 18px;
+}
+
+.filters__continents-item {
+  margin-bottom: 9px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $blue_400;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--selected {
+    opacity: 1;
+  }
+}
+
+.filters__close {
+  @include button-reset;
+
+  position: absolute;
+  margin-top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 270px;
+  height: 39px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $blue_400;
+  background: $grey_330;
+  border-radius: 20px;
+}

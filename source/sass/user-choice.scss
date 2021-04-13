@@ -1,0 +1,105 @@
+.user-choice {
+  padding-bottom: 33px;
+}
+
+.user-choice__block {
+  padding-left: 18px;
+  padding-right: 22px;
+}
+
+.user-choice__list {
+  @include clear_list;
+
+  margin-bottom: 20px;
+}
+
+.user-choice__item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 23px 0;
+  background-color: $white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.user-choice__add {
+  position: relative;
+  text-transform: uppercase;
+  padding-left: 33px;
+  width: fit-content;
+  margin: 0 auto 18px;
+  height: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='8.30762' width='18' height='1.38461' rx='0.692307' fill='%231D2E5B'/%3E%3Crect x='8.30774' y='18' width='18' height='1.38461' rx='0.692307' transform='rotate(-90 8.30774 18)' fill='%231D2E5B'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.user-choice__pagination {
+  display: none;
+}
+
+.user-choice__controls {
+  position: relative;
+  display: flex;
+  width: 270px;
+  margin-bottom: 46px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    background-color: $grey_100;
+  }
+}
+
+.user-choice__controls-btn {
+  @include button-reset;
+
+  width: 50%;
+  height: 51px;
+  background-color: $white;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 10px;
+    height: 18px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 9L9.75 0.339745L9.75 17.6603L0 9Z' fill='%231D2E5B'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--prev {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+  }
+
+  &--next {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    &::before {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+}

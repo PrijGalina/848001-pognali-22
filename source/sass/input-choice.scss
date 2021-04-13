@@ -4,6 +4,15 @@
   &--checkbox .input-choice__caption::before {
     border-radius: 4px;
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus > .input-choice__caption::before {
+    border: 1px solid $grey_500;
+    background-color: $white_03;
+  }
 }
 
 .input-choice__field {
@@ -11,36 +20,60 @@
   z-index: -1;
   opacity: 0;
 
-  /* стили при наведении  */
-  &:not(:disabled):not(:checked) + .input-choice__caption:hover::before {
-    border: 1px solid $grey_500;
+  /* checked */
+  &:checked + .input-choice__caption {
+    &::before {
+      background-image: url("../img/checkbox-inner.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
-  /* стили при нажатии */
-  &:not(:disabled):active + .input-choice__caption::before {
-    border: 1px solid $grey_500;
+  /* hover // checked + hover */
+  &:not(:disabled) + .input-choice__caption:hover {
+    color: $black_06;
+
+    &::before {
+      background-color: $white_06;
+    }
   }
 
-  /* стили при фокусе */
-  &:focus + .input-choice__caption::before {
-    border: 1px solid $grey_500;
+  /* active */
+  &:not(:disabled) + .input-choice__caption:active {
+    color: $black_03;
+
+    &::before {
+      opacity: 0.3;
+      border: none;
+    }
   }
 
-  /* стили фокус без checked */
-  &:focus:not(:checked) + .input-choice__caption::before {
-    border: 1px solid $grey_500;
+  /* active + checked */
+  &:not(:disabled):checked + .input-choice__caption:active {
+    &::before {
+      opacity: 0.3;
+      border: none;
+    }
   }
 
-  /* стили checked */
-  &:checked + .input-choice__caption::before {
-    background-image: url("../img/checkbox-inner.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  /* disabled */
+  &:disabled + .input-choice__caption {
+    color: $black_03;
+    pointer-events: none;
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 
-  /* стили disabled */
-  &:disabled + .input-choice__caption::before {
-    border: 1px solid $grey_500;
+  /* disabled + checked */
+  &:disabled:checked + .input-choice__caption {
+    color: $black_03;
+    pointer-events: none;
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -51,8 +84,17 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 15px;
-  color: $blue_200;
+  color: $black;
   cursor: pointer;
+  box-sizing: border-box;
+
+  &--blue {
+    color: $blue_200;
+  }
+
+  &--border::before {
+    border: 1px solid $grey_500;
+  }
 
   &::before {
     content: "";
@@ -63,7 +105,66 @@
     height: 26px;
     box-sizing: border-box;
     transform: translateY(-50%);
-    border: 1px solid $grey_500;
     cursor: pointer;
+    background-color: $white;
+  }
+}
+
+.company-choice__transport-item {
+  .input-choice {
+    &:focus {
+      outline: none;
+    }
+
+    &:focus > .input-choice__caption {
+      border: 1px solid $grey_500;
+      border-radius: 50%;
+      background-color: $white_03;
+
+      &::before {
+        border: none;
+      }
+    }
+  }
+
+  .input-choice__caption {
+    font-size: 0;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: $white;
+    margin-left: 0;
+  }
+
+  .input-choice__field {
+    & + .input-choice__caption::before {
+      width: 31px;
+      height: 31px;
+      background-color: transparent;
+      background-position: center center;
+      background-repeat: no-repeat;
+      opacity: 0.15;
+    }
+
+    /*checked*/
+    &:not(:disabled):checked + .input-choice__caption::before {
+      opacity: 1;
+    }
+
+    /* hover */
+    &:not(:disabled) + .input-choice__caption:hover {
+      background-color: $white_06;
+
+      &::before {
+        background-color: transparent;
+      }
+    }
+
+    /*active*/
+    &:not(:disabled) + .input-choice__caption:active {
+      &::before {
+        opacity: 0.15;
+      }
+    }
   }
 }

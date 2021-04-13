@@ -3,7 +3,7 @@
   z-index: 3;
   grid-area: footer;
   padding-bottom: 18px;
-  background-color: $basic_white;
+  background-color: $white;
 
   &::after {
     content: "";
@@ -13,7 +13,7 @@
     transform: translateX(-50%);
     height: 30px;
     width: 320px;
-    background-color: $basic_white;
+    background-color: $white;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
   }
@@ -45,7 +45,7 @@
 .page-footer__developer-link {
   @include link_reset;
 
-  color: $basic_grey;
+  color: $grey;
 }
 
 .page-footer__developer-logo {
