@@ -1,6 +1,6 @@
 .first-screen {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 0;
   background-color: $blue_500;
   /*
   background-image: url("../img/planet-bg-mobile.png");
@@ -27,7 +27,7 @@
 }
 
 .first-screen__title {
-  margin: 0;
+  margin: 0 0 245px;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
@@ -37,15 +37,20 @@
 }
 
 .first-screen__review {
-  margin: 0;
+  margin: 0 auto 18px;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: $white;
   order: 3;
+  width: 84.3%;
 }
 
 .first-screen__review-source {
+  width: 84.3%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -108,12 +113,28 @@
   }
 }
 
-.first-screen__for-user .for-user__link {
+.first-screen__row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+}
+
+.first-screen__for-user {
+  display: flex;
+}
+
+.first-screen__contact {
   display: block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   font-size: 0;
+  padding: 0;
 
   &--phone {
     background-color: $orange_500;
@@ -122,12 +143,10 @@
   &--email {
     background-color: $yellow_300;
   }
-}
 
-.first-screen__row {
-  display: flex;
-}
-
-.first-screen__for-user {
-  display: flex;
+  &::before {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+  }
 }

@@ -12,7 +12,7 @@
     left: 50%;
     transform: translateX(-50%);
     height: 30px;
-    width: 320px;
+    width: 100%;
     background-color: $blue_400;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -35,4 +35,8 @@
 
 .companions__item {
   margin-bottom: 9px;
+}
+
+.companions__link {
+  height: 61px;
 }

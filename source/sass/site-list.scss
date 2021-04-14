@@ -1,5 +1,10 @@
 .site-list {
   @include clear_list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .site-list__link {
@@ -10,4 +15,16 @@
   line-height: 35px;
   text-transform: uppercase;
   color: $blue_400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $white;
+  }
+
 }

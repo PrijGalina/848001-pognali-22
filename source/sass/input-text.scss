@@ -1,3 +1,15 @@
+.input-text {
+  display: block;
+  box-sizing: border-box;
+
+  &--email {
+    padding: 22px 25px;
+    border-radius: 10px;
+    height: 62px;
+    background-color: $white;
+  }
+}
+
 .input-text__field {
   @include button-reset;
 
@@ -10,12 +22,6 @@
   text-transform: uppercase;
   color: $blue_200;
   margin: 0;
-
-  &--email {
-    padding: 22px 25px;
-    border-radius: 10px;
-    height: 62px;
-  }
 
   &--number {
     border: 1px solid $grey_500;

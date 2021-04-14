@@ -1,6 +1,6 @@
 .registration {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   background-color: $blue_400;
   padding-top: 105px;
 
@@ -11,7 +11,7 @@
     left: 50%;
     transform: translateX(-50%);
     height: 34px;
-    width: 320px;
+    width: 100%;
     background-color: $blue_400;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -38,11 +38,7 @@
   text-align: center;
 }
 
-.registration__form .input-text {
-  width: 100%;
-}
-
-.registration__form .input-text__field {
+.registration__text-field {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -62,8 +58,4 @@
   text-align: center;
   letter-spacing: 0.01em;
   color: $white;
-}
-
-.registration__for-user {
-  padding-left: 61px;
 }

@@ -12,7 +12,7 @@
     left: 50%;
     transform: translateX(-50%);
     height: 34px;
-    width: 320px;
+    width: 100%;
     background-color: $grey_100;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -36,17 +36,19 @@
 
 .countries__cover {
   @include image;
-
+  width: 100%;
   position: relative;
   z-index: 1;
 }
 
 .countries__flag {
   @include image;
+  width: 10.927%;
 
   position: absolute;
   left: 25px;
-  top: 50%;
+  bottom: 89px;
+  transform: translateY(50%);
   margin-top: -5px;
   z-index: 5;
 }
@@ -87,4 +89,8 @@
   line-height: 20px;
   opacity: 0.3;
   color: $blue_500;
+}
+
+.countries__link {
+  height: 62px;
 }
