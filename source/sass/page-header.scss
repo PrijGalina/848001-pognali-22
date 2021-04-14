@@ -6,6 +6,10 @@
   &--inner {
     background-color: $blue_300;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 81px;
+  }
 }
 
 .page-header__wrapper {
@@ -111,6 +115,11 @@
   margin-top: 44px;
   margin-bottom: 51px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    margin-bottom: 144px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
@@ -120,6 +129,10 @@
 .page-header__for-user {
   grid-area: user-for;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 122px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;

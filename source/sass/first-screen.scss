@@ -2,12 +2,6 @@
   position: relative;
   margin: 0 auto 0;
   background-color: $blue_500;
-  /*
-  background-image: url("../img/planet-bg-mobile.png");
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  */
   padding-bottom: 39px;
 
   &::after {
@@ -18,6 +12,10 @@
     width: 100%;
     height: 279px;
     background-color: $blue_400;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 81px;
   }
 }
 
@@ -135,14 +133,6 @@
   border-radius: 50%;
   font-size: 0;
   padding: 0;
-
-  &--phone {
-    background-color: $orange_500;
-  }
-
-  &--email {
-    background-color: $yellow_300;
-  }
 
   &::before {
     width: 40px;
