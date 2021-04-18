@@ -59,6 +59,7 @@
     font-size: 28px;
     line-height: 28px;
   }
+
   @media (min-width: $desktop-width) {
     height: 90px;
     padding-left: 121px;
@@ -81,7 +82,6 @@
 
         &::before {
           background-image: url("../img/icon_call.svg");
-
         }
       }
     }
@@ -89,19 +89,20 @@
 
   &--header {
     @media (min-width: $tablet-width) {
-      .for-user__link  {
+      .for-user__link {
         padding-left: 91px;
         width: inherit;
         height: 68px;
       }
     }
+
     @media (min-width: $desktop-width) {
       .for-user__link::before {
         width: 50px;
         height: 50px;
       }
 
-      .for-user__link  {
+      .for-user__link {
         width: 50px;
         height: 50px;
         border-radius: 50%;

@@ -42,7 +42,6 @@
     grid-template-areas: "logo nav user-for login";
     justify-content: space-between;
   }
-
 }
 
 .page-header__main-navigation,
@@ -197,7 +196,7 @@
     }
   }
 
-  .page-header__main-navigation{
+  .page-header__main-navigation {
     display: block;
 
     @media (min-width: $desktop-width) {

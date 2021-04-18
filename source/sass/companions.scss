@@ -55,7 +55,7 @@
     display: grid;
     grid-template-columns: 47.727% 47.727%;
     grid-template-rows: min-content min-content min-content;
-    gap: 0px 0px;
+    gap: 0;
     grid-template-areas:
       "title list"
       "desc list"
@@ -90,7 +90,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-area:desc;
+    grid-area: desc;
     padding-left: 71px;
     margin-bottom: 85px;
     line-height: 33px;
@@ -143,13 +143,12 @@
     width: 45.238%;
     margin-right: 60px;
   }
-
 }
 
 .companions__link {
   height: 61px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     justify-content: flex-start;
     height: 80px;
     padding-left: 32px;
