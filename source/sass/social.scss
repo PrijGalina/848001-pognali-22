@@ -13,8 +13,12 @@
   height: 45px;
   border-radius: 50%;
 
+  &--footer {
+    background-color:transparent;
+  }
+
   &--yellow {
-    background-color: transparent;
+    background-color: $yellow_100;
   }
 
   &::before {
@@ -22,6 +26,11 @@
     position: absolute;
     width: 45px;
     height: 45px;
+
+    @media (min-width: $tablet-width) {
+      width: 62px;
+      height: 62px;
+    }
   }
 
   &--facebook {
@@ -40,5 +49,10 @@
     background-image: url("../img/icon_instagram.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    height: 62px;
   }
 }

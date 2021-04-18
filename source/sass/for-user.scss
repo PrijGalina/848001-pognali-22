@@ -89,10 +89,36 @@
   &--header {
     @media (min-width: $tablet-width) {
       .for-user__link  {
-        font-size: 0;
-        padding: 0;
-        width: 68px;
+        padding-left: 91px;
+        width: inherit;
         height: 68px;
+      }
+    }
+    @media (min-width: $desktop-width) {
+      .for-user__link  {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 0;
+        padding-left: 0;
+
+        &--email {
+          background-color: $orange_300;
+
+          &::before {
+            background-image: url("../img/icon_mail_close.svg");
+            background-color: transparent;
+          }
+        }
+
+        &--phone {
+          background-color: $orange_500;
+
+          &::before {
+            background-image: url("../img/icon_call.svg");
+            background-color: transparent;
+          }
+        }
       }
     }
   }

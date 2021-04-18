@@ -40,17 +40,17 @@
       </div>
       <ul class="social page-header__social">
         <li class="social__item">
-          <a href="#" class="social__link social__link--yellow social__link--facebook">
+          <a href="#" class="social__link social__link--facebook">
             <span class="visually-hidden">Наша страница в facebook</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--yellow social__link--vk">
+          <a href="#" class="social__link social__link--vk">
             <span class="visually-hidden">Мы вконтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--yellow social__link--instagram">
+          <a href="#" class="social__link social__link--instagram">
             <span class="visually-hidden">Наш профиль в instagram</span>
           </a>
         </li>
@@ -60,15 +60,15 @@
   <main class="page-container">
     <h1 class="visually-hidden">Главная страница сервиса для поиска попутчиков "Погнали"</h1>
     <section class="first-screen">
-      <div class="wrapper">
+      <div class="wrapper first-screen__wrapper">
         <p class="first-screen__title">В путешествие<br> с крутыми<br> попутчиками!</p>
         <blockquote class="first-screen__review">Лучшее приложение,<br> что я видел в жизни!</blockquote>
         <cite class="first-screen__review-source">Мурат Эльтазин<br>главный редактор газеты <br>«гаджетлайф»</cite>
         <ol class="first-screen__steps-list">
-          <li class="first-screen__steps-item first-screen__steps-item--choose">Выберите<br> направление</li>
-          <li class="first-screen__steps-item first-screen__steps-item--study">Изучите идеи<br> путешественников</li>
-          <li class="first-screen__steps-item first-screen__steps-item--find">Находите тех,<br> кто похож на вас</li>
-          <li class="first-screen__steps-item first-screen__steps-item--travel">Путешествуйте<br> вместе!</li>
+          <li class="first-screen__steps-item first-screen__steps-item--choose" data-step="1">Выберите<br> направление</li>
+          <li class="first-screen__steps-item first-screen__steps-item--study" data-step="2">Изучите идеи<br> путешественников</li>
+          <li class="first-screen__steps-item first-screen__steps-item--find" data-step="3">Находите тех,<br> кто похож на вас</li>
+          <li class="first-screen__steps-item first-screen__steps-item--travel" data-step="4">Путешествуйте<br> вместе!</li>
         </ol>
         <div class="first-screen__row">
           <a class="btn btn--oval btn--yellow first-screen__login" href="login.html"
@@ -81,20 +81,18 @@
       </div>
     </section>
     <section class="about">
-      <div class="wrapper">
+      <div class="wrapper about__wrapper">
         <h2 class="title about__title">О сервисе</h2>
-        <p class="about__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
-          своими идеями путешествий и черпайте вдохновение в чужих.<b class="about__to-invite">А если найдете кого-то
-            близкого по духу — скорее зовите в совместный трип!</b>
+        <p class="about__description">Любое путешествие<br> веселее с попутчиками,<br> которые на одной волне<br> с тобой! Делитесь своими<br> идеями путешествий <br>и черпайте вдохновение<br> в чужих.<b class="about__to-invite">А если найдете кого-то<br> близкого по духу — скорее<br> зовите в совместный трип!</b>
         </p>
-        <a href="#" class="btn btn--rectangle about__link" title="Перейти на страницу о сервисе">Подробнее</a>
+        <a href="#" class="btn btn--rectangle btn--yellow about__link" title="Перейти на страницу о сервисе">Подробнее</a>
       </div>
     </section>
     <section class="countries">
-      <div class="wrapper">
+      <div class="wrapper countries__wrapper">
         <h2 class="title countries__title">Направления</h2>
-        <p class="countries__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда
-          хотели бы отправиться и чем можно там заняться.</p>
+        <p class="countries__description">Мы не продаем туры<br> и ничего не рекламируем.<br> Люди сами пишут о странах,<br> куда
+          хотели бы отправиться<br> и чем можно там заняться.</p>
         <ul class="countries__list">
           <li class="countries__item">
             <img src="img/thailand.jpg" class="countries__cover" width="270" height="110" alt="Остров посреди лазурного моря">
@@ -129,11 +127,9 @@
       </div>
     </section>
     <section class="companions">
-      <div class="wrapper">
+      <div class="wrapper companions__wrapper">
         <h2 class="title companions__title">Попутчики</h2>
-        <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен
-          пляж и коктейль, а другому маршрут для
-          хайкинга.<b class="companions__motivation">Теперь можно легко найти единомышленников!</b></p>
+        <p class="companions__description">Все мы индивидуальны и у каждого<br> свой взгляд на идеальный отдых.<br> Одному нужен пляж и коктейль,<br> а другому маршрут для хайкинга.<b class="companions__motivation">Теперь можно легко<br> найти единомышленников!</b></p>
         <ul class="companions__list">
           <li class="user companions__item">
             <p class="user__level user__level--sticker">
@@ -215,18 +211,18 @@
       </div>
     </section>
     <section class="prices">
-      <div class="wrapper">
+      <div class="wrapper prices__wrapper">
         <h2 class="title prices__title">Добавьте свой профиль</h2>
         <dl class="prices__list">
-          <div class="prices__tariffs">
+          <div class="prices__tariffs" data-number="1">
             <dt class="prices__tariffs-name">Базовое размещение</dt>
             <dd class="prices__tariffs-value">Бесплатно</dd>
           </div>
-          <div class="prices__tariffs">
+          <div class="prices__tariffs" data-number="2">
             <dt class="prices__tariffs-name">Вывод на первых позициях</dt>
             <dd class="prices__tariffs-value">99 руб./мес</dd>
           </div>
-          <div class="prices__tariffs">
+          <div class="prices__tariffs" data-number="3">
             <dt class="prices__tariffs-name">Кастомный цвет карточки</dt>
             <dd class="prices__tariffs-value">59 руб./мес</dd>
           </div>
@@ -235,7 +231,7 @@
       </div>
     </section>
     <section class="registration">
-      <div class="wrapper">
+      <div class="wrapper registration__wrapper">
         <h2 class="title registration__title">Заинтересовались?</h2>
         <p class="registration__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда
           скорее <a href="login.html" class="registration__link">авторизуйтесь</a>.</p>
@@ -256,7 +252,7 @@
       </div>
     </section>
     <section class="address">
-      <div class="wrapper">
+      <div class="wrapper address__wrapper">
         <h2 class="visually-hidden">Адрес нашего офиса:</h2>
         <p class="address__value">ул. Большая Конюшенная, 19/8</p>
         <a href="#" class="btn btn--border btn--rectangle btn--border address__to-go">Проложить маршрут</a>
@@ -267,23 +263,23 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="wrapper">
+    <div class="wrapper page-footer__wrapper">
       <a class="logotype page-footer__logotype">
         <img src="img/pognali-logotype-simple.png" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
       </a>
       <ul class="social page-footer__social">
         <li class="social__item">
-          <a href="#" class="social__link social__link--yellow social__link--facebook">
+          <a href="#" class="social__link social__link--yellow social__link--footer social__link--facebook">
             <span class="visually-hidden">Наша страница в facebook</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--yellow social__link--vk">
+          <a href="#" class="social__link social__link--yellow social__link--footer social__link--vk">
             <span class="visually-hidden">Мы вконтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--yellow social__link--instagram">
+          <a href="#" class="social__link social__link--yellow social__link--footer social__link--instagram">
             <span class="visually-hidden">Наш профиль в instagram</span>
           </a>
         </li>

@@ -8,4 +8,9 @@
     min-width: 688px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 91.66%;
+    min-width: 1320px;
+  }
+
 }
