@@ -30,7 +30,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 110px;
+    padding-bottom: 66px;
+    padding-top: 175px;
   }
 }
 
@@ -52,9 +53,15 @@
     text-align: center;
     margin-bottom: 71px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 131px;
+  }
 }
 
 .prices__list {
+  position: relative;
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
@@ -62,6 +69,25 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 184px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $grey_150;
+      height: 100%;
+      width: 446px;
+      border-radius: 20px;
+      z-index: 0;
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
   }
 }
 
@@ -136,6 +162,12 @@
 
 .prices__tariffs-value {
   margin: 0;
+  z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    width: 446px;
+    text-align: center;
+  }
 }
 
 .prices__tariffs-name {

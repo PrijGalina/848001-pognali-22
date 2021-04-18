@@ -155,16 +155,16 @@
               <p class="user__name">Таня Фирсова</p>
               <p class="user__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
               <ul class="user__transport-list">
-                <li class="user__transport-item user__transport-item--avia user__transport-item--active">
+                <li class="user__transport-item user__transport-item--avia user__transport-item--active user__transport-item--index">
                   <span class="visually-hidden">самолет</span>
                 </li>
-                <li class="user__transport-item user__transport-item--bus">
+                <li class="user__transport-item user__transport-item--bus user__transport-item--index">
                   <span class="visually-hidden">машина</span>
                 </li>
-                <li class="user__transport-item user__transport-item--bike">
+                <li class="user__transport-item user__transport-item--bike user__transport-item--index">
                   <span class="visually-hidden">велосипед</span>
                 </li>
-                <li class="user__transport-item user__transport-item--foot">
+                <li class="user__transport-item user__transport-item--foot user__transport-item--index">
                   <span class="visually-hidden">пешком</span>
                 </li>
               </ul>
@@ -190,16 +190,16 @@
               <p class="user__name">Петя Демин</p>
               <p class="user__tags">#бургер #бар #футбол #концерт #крафт</p>
               <ul class="user__transport-list">
-                <li class="user__transport-item user__transport-item--avia user__transport-item--active">
+                <li class="user__transport-item user__transport-item--avia user__transport-item--active user__transport-item--index">
                   <span class="visually-hidden">самолет</span>
                 </li>
-                <li class="user__transport-item user__transport-item--bus user__transport-item--active">
+                <li class="user__transport-item user__transport-item--bus user__transport-item--active user__transport-item--index">
                   <span class="visually-hidden">машина</span>
                 </li>
-                <li class="user__transport-item user__transport-item--bike">
+                <li class="user__transport-item user__transport-item--bike user__transport-item--index">
                   <span class="visually-hidden">велосипед</span>
                 </li>
-                <li class="user__transport-item user__transport-item--foot user__transport-item--active">
+                <li class="user__transport-item user__transport-item--foot user__transport-item--active user__transport-item--index">
                   <span class="visually-hidden">пешком</span>
                 </li>
               </ul>
@@ -233,7 +233,7 @@
     <section class="registration">
       <div class="wrapper registration__wrapper">
         <h2 class="title registration__title">Заинтересовались?</h2>
-        <p class="registration__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда
+        <p class="registration__description">Зарегистрируйтесь,<br class="registration__break--mobile"> это быстро и бесплатно!<br class="registration__break--mobile registration__break--tablet"> Уже зарегистрированы? Тогда<br class="registration__break--mobile">
           скорее <a href="login.html" class="registration__link">авторизуйтесь</a>.</p>
         <form action="https://echo.htmlacademy.ru/" method="POST" class="registration__form">
           <label class="input-text input-text--email registration__text-field">
@@ -241,7 +241,7 @@
             <input type="email" class="input-text__field" name="registration-email" placeholder="E-mail">
           </label>
           <a href="#" class="btn registration__submit">
-            <span class="visually-hidden">Регистрация</span>
+            <span class="registration__submit-value">Регистрация</span>
           </a>
         </form>
         <p class="registration__ask">Остались вопросы?<br> Мы с радостью на них ответим!</p>

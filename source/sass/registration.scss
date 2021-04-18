@@ -30,6 +30,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 47px;
+    padding-top: 208px;
   }
 }
 
@@ -37,6 +38,10 @@
   @media (min-width: $tablet-width) {
     width: 80.468%;
     min-width: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 81.527%;
   }
 }
 
@@ -46,6 +51,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
   }
 }
 
@@ -58,6 +67,22 @@
     font-size: 28px;
     line-height: 32px;
     margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.registration__break--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.registration__break--tablet {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
@@ -72,6 +97,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
   }
 }
 
@@ -88,6 +117,28 @@
   position: absolute;
   right: 0;
   top: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+    width: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 330px;
+    height: 81px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    justify-content: flex-start;
+  }
+}
+
+.registration__submit-value {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-left: 36px;
+  }
 }
 
 .registration__ask {
@@ -104,5 +155,20 @@
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 43px;
+  }
+}
+
+.registration__for-user {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 868px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

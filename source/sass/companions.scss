@@ -39,6 +39,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 78px;
+    padding-top: 231px;
   }
 }
 
@@ -46,6 +47,28 @@
   @media (min-width: $tablet-width) {
     width: 80.468%;
     min-width: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 91.66%;
+    min-width: 1320px;
+    display: grid;
+    grid-template-columns: 47.727% 47.727%;
+    grid-template-rows: min-content min-content min-content;
+    gap: 0px 0px;
+    grid-template-areas:
+      "title list"
+      "desc list"
+      "btn list";
+    justify-content: space-between;
+  }
+}
+
+.companions__title {
+  @media (min-width: $desktop-width) {
+    grid-area: title;
+    margin: 0 0 55px;
+    padding-left: 71px;
   }
 }
 
@@ -66,6 +89,12 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    grid-area:desc;
+    padding-left: 71px;
+    margin-bottom: 85px;
+    line-height: 33px;
+  }
 }
 
 .companions__motivation {
@@ -77,6 +106,10 @@
     font-size: 21px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 42px;
+  }
 }
 
 .companions__list {
@@ -86,6 +119,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: list;
+    margin-bottom: 0;
   }
 }
 
@@ -100,6 +138,12 @@
   &:last-of-type {
     margin-right: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 45.238%;
+    margin-right: 60px;
+  }
+
 }
 
 .companions__link {
@@ -110,5 +154,11 @@
     height: 80px;
     padding-left: 32px;
     box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: btn;
+    margin-left: 71px;
+    width: 280px;
   }
 }

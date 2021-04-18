@@ -44,6 +44,13 @@
     width: 80.468%;
     min-width: 618px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 81.527%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .address__value {
@@ -86,6 +93,18 @@
       height: 68px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 273px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    &::before {
+      left: -118px;
+      width: 90px;
+      height: 90px;
+    }
+  }
 }
 
 .address__to-go {
@@ -96,5 +115,10 @@
     justify-content: flex-start;
     padding-left: 37px;
     margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 324px;
+    margin-bottom: 0;
   }
 }

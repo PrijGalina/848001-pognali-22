@@ -24,6 +24,10 @@
       border-top-right-radius: 56px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 43px;
+  }
 }
 
 .page-footer__wrapper {
