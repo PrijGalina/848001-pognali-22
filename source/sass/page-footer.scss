@@ -40,6 +40,7 @@
 
 .page-footer__logotype {
   display: block;
+  width: 35.555%;
   margin: 0 auto 40px;
 
   img {
@@ -48,6 +49,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 23.837%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 15.151%;
   }
 }
 

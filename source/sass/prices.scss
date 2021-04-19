@@ -113,19 +113,19 @@
     color: $white;
   }
 
-  &:nth-of-type(1) {
+  &--base-rate {
     &::before {
       background-color: $orange_500;
     }
   }
 
-  &:nth-of-type(2) {
+  &--first-positions {
     &::before {
       background-color: $yellow_300;
     }
   }
 
-  &:nth-of-type(3) {
+  &--custom-design {
     &::before {
       background-color: $yellow_100;
     }

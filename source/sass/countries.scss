@@ -132,8 +132,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    width: 185px;
-    height: 140px;
+    width: 29.935%;
+    height: 100%;
     right: 0;
     z-index: 5;
   }
@@ -141,8 +141,8 @@
 
 .countries__flag {
   @include image;
-  width: 10.927%;
-
+  //width: 10.927%;
+  width: 35px;
   position: absolute;
   left: 25px;
   bottom: 89px;
@@ -155,9 +155,9 @@
     height: 47px;
     left: inherit;
     bottom: inherit;
-    right: 140px;
+    right: 30.032%;
     top: 17px;
-    transform: inherit;
+    transform: translateX(35px);
   }
 
   @media (min-width: $desktop-width) {
