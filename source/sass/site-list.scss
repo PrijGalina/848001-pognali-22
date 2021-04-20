@@ -1,13 +1,40 @@
 .site-list {
   @include clear_list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $desktop-width) {
+    margin-right: 34px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
 }
 
 .site-list__link {
   @include link_reset;
 
+  display: block;
   font-weight: 500;
   font-size: 30px;
   line-height: 35px;
   text-transform: uppercase;
   color: $blue_400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $white;
+  }
 }

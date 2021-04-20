@@ -2,6 +2,8 @@
   position: relative;
   z-index: 10;
   background-color: $blue_400;
+  padding-top: 33px;
+  padding-bottom: 52px;
 
   &::after {
     content: "";
@@ -10,23 +12,113 @@
     left: 50%;
     transform: translateX(-50%);
     height: 30px;
-    width: 320px;
+    width: 100%;
     background-color: $blue_400;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+
+    @media (min-width: $tablet-width) {
+      height: 60px;
+      bottom: -60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 56px;
+      bottom: -56px;
+      border-bottom-left-radius: 56px;
+      border-bottom-right-radius: 56px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+    padding-bottom: 107px;
+  }
+}
+
+.about__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 80.468%;
+    min-width: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 91.66%;
+    min-width: 1320px;
+  }
+}
+
+.about__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
   }
 }
 
 .about__description {
   margin: 0;
   color: $white;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 619px;
+    line-height: 34px;
+    margin-bottom: 85px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .about__to-invite {
   display: block;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 31px;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 425px;
+    margin-top: 38px;
+  }
 }
 
 .about__link {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 276px;
+    height: 80px;
+    padding: 29px 0 27px 33px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
 }

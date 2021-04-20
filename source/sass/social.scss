@@ -6,9 +6,53 @@
   justify-content: center;
 }
 
-.social__item {
+.social__link {
+  position: relative;
+  display: block;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: $yellow_100;
+
+  &--footer {
+    background-color: transparent;
+  }
+
+  &--yellow {
+    background-color: $yellow_100;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+
+    @media (min-width: $tablet-width) {
+      width: 62px;
+      height: 62px;
+    }
+  }
+
+  &--facebook {
+    background-image: url("../img/icon_facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--vk {
+    background-image: url("../img/icon_vkontakte.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--instagram {
+    background-image: url("../img/icon_instagram.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    height: 62px;
+  }
 }

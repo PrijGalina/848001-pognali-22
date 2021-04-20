@@ -1,20 +1,55 @@
 .address {
   position: relative;
   padding-top: 47px;
+  padding-bottom: 5px;
   background-color: $yellow_100;
   z-index: 3;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -34px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
-    height: 34px;
-    width: 320px;
+    height: 30px;
+    width: 100%;
     background-color: $yellow_100;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+
+    @media (min-width: $tablet-width) {
+      bottom: -60px;
+      height: 60px;
+      border-bottom-left-radius: 56px;
+      border-bottom-right-radius: 56px;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 108px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.address__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 80.468%;
+    min-width: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 81.527%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -25,4 +60,65 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $blue_200;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background-color: $blue_600;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    max-width: inherit;
+    font-size: 28px;
+    line-height: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 0 44px 94px;
+    position: relative;
+    padding-left: 0;
+
+    &::before {
+      left: -94px;
+      width: 68px;
+      height: 68px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 273px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    &::before {
+      left: -118px;
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+.address__to-go {
+  height: 62px;
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+    justify-content: flex-start;
+    padding-left: 37px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 324px;
+    margin-bottom: 0;
+  }
 }

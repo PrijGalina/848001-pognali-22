@@ -1,16 +1,21 @@
 .page-header {
   grid-area: header;
+  padding-bottom: 41px;
   background-color: $blue_500;
 
   &--inner {
     background-color: $blue_300;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 32px;
   }
 }
 
 .page-header__wrapper {
   height: auto;
   display: grid;
-  grid-template-columns: 1fr min-content;
+  grid-template-columns: 35.555% 1fr;
   grid-template-rows: 53px 1fr 1fr 1fr 1fr;
   gap: 0 0;
   grid-template-areas:
@@ -19,6 +24,24 @@
     "login login"
     "user-for user-for"
     "social social";
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 23.8% min-content 27.3%;
+    grid-template-rows: 132px 1fr 1fr 1fr;
+    grid-template-areas:
+      "logo btn login"
+      "nav nav nav"
+      "user-for user-for user-for"
+      "social social social";
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 15.151% 1fr 7.575% 14.242%;
+    grid-template-rows: 145px;
+    grid-template-areas: "logo nav user-for login";
+    justify-content: space-between;
+  }
 }
 
 .page-header__main-navigation,
@@ -46,6 +69,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  justify-self: end;
 
   &::before,
   &::after {
@@ -66,23 +90,74 @@
   &::after {
     bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .page-header__login {
+  width: 100%;
   height: 50px;
   grid-area: login;
+  margin-bottom: 51px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-self: center;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: 188px;
+    justify-self: end;
+  }
 }
 
 .page-header__main-navigation {
   grid-area: nav;
+  margin-top: 44px;
+  margin-bottom: 51px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    margin-bottom: 144px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 17.427%;
+  }
 }
 
 .page-header__for-user {
   grid-area: user-for;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 122px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-self: center;
+    margin-bottom: 0;
+  }
 }
 
 .page-header__social {
   grid-area: social;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .page-header--open {
@@ -93,7 +168,7 @@
   z-index: 10;
 
   .page-header__wrapper {
-    grid-template-rows: 53px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 74px min-content min-content min-content min-content;
 
     &::after {
       content: "";
@@ -106,21 +181,54 @@
       z-index: -1;
       transform: translateX(-50%);
       background-color: $white;
+
+      @media (min-width: $desktop-width) {
+        content: none;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      grid-template-rows: 130px min-content min-content min-content min-content;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 200px 1fr 100px 188px;
+      grid-template-rows: 145px;
+      grid-template-areas: "logo nav user-for login";
+      justify-content: space-between;
     }
   }
 
-  .page-header__main-navigation,
+  .page-header__main-navigation {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+
   .page-header__for-user {
     display: block;
   }
 
   .page-header__logotype {
     filter: none;
+
+    @media (min-width: $desktop-width) {
+      filter: brightness(0) invert(1);
+    }
   }
 
-  .page-header__login,
+  .page-header__login {
+    display: flex;
+  }
+
   .page-header__social {
     display: flex;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 
   .page-header__toggle {
@@ -141,6 +249,19 @@
     &::after {
       transform: matrix(0.71, 0.73, -0.69, 0.71, 0, 0);
       bottom: inherit;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    width: 100%;
+    z-index: 1;
+    background-color: $blue_500;
+
+    .page-header__for-user {
+      display: flex;
     }
   }
 }

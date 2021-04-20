@@ -1,21 +1,37 @@
+.input-text {
+  display: block;
+  box-sizing: border-box;
+
+  &--email {
+    padding: 22px 25px;
+    border-radius: 10px;
+    height: 62px;
+    background-color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+    padding: 28px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 81px;
+  }
+}
+
 .input-text__field {
   @include button-reset;
 
   width: 100%;
   border: none;
   box-sizing: border-box;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
+  font-family: "Bloggersans", "Trebuchet MS", "Calibri", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
   text-transform: uppercase;
   color: $blue_200;
   margin: 0;
-
-  &--email {
-    padding: 22px 25px;
-    border-radius: 10px;
-    height: 62px;
-  }
 
   &--number {
     border: 1px solid $grey_500;
@@ -24,6 +40,24 @@
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  &::placeholder {
+    font-family: "Bloggersans", "Trebuchet MS", "Calibri", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: $grey_03;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 

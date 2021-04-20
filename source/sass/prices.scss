@@ -3,52 +3,212 @@
   padding-top: 68px;
   background-color: $grey_100;
   z-index: 5;
+  padding-bottom: 8px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -34px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
-    height: 34px;
-    width: 320px;
+    height: 30px;
+    width: 100%;
     background-color: $grey_100;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+
+    @media (min-width: $tablet-width) {
+      bottom: -60px;
+      height: 60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
+    padding-top: 175px;
+  }
+}
+
+.prices__wrapper {
+  padding-left: 25px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
   }
 }
 
 .prices__title {
   margin-top: 16px;
   padding-right: 160px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 131px;
+  }
 }
 
 .prices__list {
+  position: relative;
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 184px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $grey_150;
+      height: 100%;
+      width: 446px;
+      border-radius: 20px;
+      z-index: 0;
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+  }
 }
 
 .prices__tariffs {
   margin-bottom: 32px;
+  position: relative;
+
+  &::before {
+    content: attr(data-number);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $white;
+  }
+
+  &--base-rate {
+    &::before {
+      background-color: $orange_500;
+    }
+  }
+
+  &--first-positions {
+    &::before {
+      background-color: $yellow_300;
+    }
+  }
+
+  &--custom-design {
+    &::before {
+      background-color: $yellow_100;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    border-top: 1px solid $grey_120;
+
+    &::before {
+      left: -90px;
+      top: 50%;
+      width: 68px;
+      height: 68px;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 28px;
+      right: inherit;
+    }
+
+    &:last-of-type {
+      border-bottom: 1px solid $grey_120;
+    }
+  }
 }
 
 .prices__tariffs-value {
   margin: 0;
+  z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    width: 446px;
+    text-align: center;
+  }
 }
 
 .prices__tariffs-name {
   margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .prices__business {
   @include link_reset;
 
   display: block;
-  margin-bottom: 5px;
   color: $blue_100;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 0;
+    margin-left: 90px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -90px;
+      top: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      background-color: $grey_150;
+    }
+  }
 }

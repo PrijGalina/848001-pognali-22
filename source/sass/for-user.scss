@@ -1,18 +1,132 @@
 .for-user__link {
   @include link_reset;
 
-  display: block;
   position: relative;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding-left: 61px;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   color: $blue_400;
+  text-transform: uppercase;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: $blue_600;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 90px;
+      height: 90px;
+    }
+  }
 
   &--email {
-    text-transform: uppercase;
+    &::before {
+      background-image: url("../img/icon_mail.svg");
+    }
+  }
+
+  &--phone {
+    &::before {
+      background-image: url("../img/icon_telephone.svg");
+    }
   }
 
   &--yellow {
     color: $yellow_100;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 68px;
+    padding-left: 91px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 90px;
+    padding-left: 121px;
+  }
+}
+
+.for-user {
+  &--light {
+    .for-user__link {
+      &--email {
+        background-color: $orange_300;
+
+        &::before {
+          background-image: url("../img/icon_mail_close.svg");
+        }
+      }
+
+      &--phone {
+        background-color: $orange_500;
+
+        &::before {
+          background-image: url("../img/icon_call.svg");
+        }
+      }
+    }
+  }
+
+  &--header {
+    @media (min-width: $tablet-width) {
+      .for-user__link {
+        padding-left: 91px;
+        width: inherit;
+        height: 68px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      .for-user__link::before {
+        width: 50px;
+        height: 50px;
+      }
+
+      .for-user__link {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 0;
+        padding-left: 0;
+
+        &--email {
+          background-color: $orange_300;
+
+          &::before {
+            background-image: url("../img/icon_mail_close.svg");
+            background-color: transparent;
+          }
+        }
+
+        &--phone {
+          background-color: $orange_500;
+
+          &::before {
+            background-image: url("../img/icon_call.svg");
+            background-color: transparent;
+          }
+        }
+      }
+    }
   }
 }
