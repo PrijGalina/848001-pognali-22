@@ -9,23 +9,104 @@
     left: 50%;
     transform: translateX(-50%);
     height: 30px;
-    width: 320px;
+    width: 100%;
     background-color: $grey_350;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+
+    @media (min-width: $desktop-width) {
+      top: -56px;
+      height: 56px;
+      border-top-left-radius: 56px;
+      border-top-right-radius: 56px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
   }
 }
 
 .to-plan__wrapper {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 80.468%;
+    min-width: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .to-plan__pagination {
   position: absolute;
   left: 205px;
   top: 10px;
+
+  @media (min-width: $tablet-width) {
+    left: inherit;
+    right: 0;
+    top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 193px;
+    right: 207px;
+    flex-direction: column;
+  }
 }
 
 .to-plan__form {
   padding-bottom: 73px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 109px;
+  }
+}
+
+.to-plan__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+    padding-left: 64px;
+    box-sizing: border-box;
+  }
+}
+
+.to-plan__pagination-name {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 42px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+  }
+}
+
+.to-plan__pagination-btn {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.to-plan__pagination-item {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    min-width: 181px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+  }
 }

@@ -11,10 +11,37 @@
     left: 50%;
     transform: translateX(-50%);
     height: 30px;
-    width: 320px;
+    width: 100%;
     background-color: $grey_300;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+
+    @media (min-width: $desktop-width) {
+      top: -54px;
+      height: 54px;
+      border-top-left-radius: 56px;
+      border-top-right-radius: 56px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 117px;
+    padding-bottom: 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 121px;
+  }
+}
+
+.planned__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 80.468%;
+    min-width: 618px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 64px;
   }
 }
 
@@ -33,6 +60,26 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "name name name"
+      "count date btn";
+    padding: 40px 0 14px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "name count date btn";
+    padding: 36px 42px 36px 43px;
+    margin-bottom: 15px;
+  }
 }
 
 .planned__edit {
@@ -48,6 +95,16 @@
   background-color: transparent;
   width: fit-content;
   padding: 10px 15px 10px 0;
+
+  @media (min-width: $tablet-width) {
+    grid-area: btn;
+    justify-self: end;
+    padding: 0 40px 0 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+    width: fit-content;
+  }
 }
 
 .planned__country {
@@ -66,6 +123,34 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      left: inherit;
+      right: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+      right: inherit;
+      font-weight: 500;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: name;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-bottom: 34px;
+    margin-bottom: 0;
+    border-bottom: 1px solid $grey_500_03;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+    padding: 0 0 0 53px;
   }
 }
 
@@ -78,7 +163,42 @@
   text-transform: uppercase;
   color: $blue_200;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: fit-content;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
   &--company {
     margin-bottom: 5px;
+
+    @media (min-width: $tablet-width) {
+      grid-area: count;
+      padding-left: 40px;
+    }
+  }
+
+  &--date {
+    @media (min-width: $tablet-width) {
+      grid-area: date;
+    }
+  }
+}
+
+.planned__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    margin-bottom: 49px;
   }
 }

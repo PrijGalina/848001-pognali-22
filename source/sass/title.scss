@@ -6,6 +6,22 @@
   line-height: 24px;
   color: $orange_500;
 
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 55px;
+    width: 89.58%;
+    min-width: 688px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1320px;
+    margin: 0 auto;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   &--page {
     font-size: 36px;
     line-height: 36px;
@@ -14,32 +30,30 @@
     padding-left: 27px;
     box-sizing: border-box;
     color: $white;
-    background-color: $blue_300;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 
-    &::before,
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       left: 0;
-    }
-
-    &::before {
       width: 100%;
       top: 0;
       bottom: -7px;
       z-index: -1;
       background-color: $yellow_100;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
     }
 
-    &::after {
-      width: 214px;
-      height: 5px;
-      background: $orange_500;
-      border-radius: 4px;
-      left: 25px;
-      bottom: -2px;
+    @media (min-width: $tablet-width) {
+      padding-top: 30px;
+      padding-bottom: 66px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 46px;
+      padding-bottom: 68px;
     }
   }
 
@@ -55,9 +69,42 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 45px;
-    line-height: 45px;
-    margin-bottom: 55px;
+  &--inner {
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
+  }
+
+  &--form{
+    @media (min-width: $desktop-width){
+      width: 1161px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.title__value {
+  position: relative;
+  display: inline-block;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: $orange_500;
+    border-radius: 4px;
+    bottom: -13px;
+
+    @media (min-width: $tablet-width) {
+      bottom: -68px;
+    }
   }
 }

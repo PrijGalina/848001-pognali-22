@@ -5,6 +5,60 @@
   border: none;
   padding: 24px 24px 23px 24px;
   margin: 0 0 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+    border-radius: 30px;
+  }
+
+  &--dates{
+    @media (min-width: $tablet-width) {
+      padding: 48px 40px 56px 40px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 101px 152px 106px 159px;
+    }
+  }
+
+  &--country {
+    @media (min-width: $tablet-width) {
+      padding: 48px 38px 56px 43px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 98px 152px 90px 159px;
+    }
+  }
+
+  &--entertainment {
+    @media (min-width: $tablet-width) {
+      padding: 47px 38px 53px 43px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 100px 152px 104px 159px;
+    }
+  }
+}
+
+.counter__inner {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0;
+    grid-template-areas:
+      "title title"
+      "description description"
+      "company child"
+      "date child"
+      "calendar calendar"
+      "btn btn";
+  }
 }
 
 .counter__title {
@@ -17,26 +71,141 @@
   font-size: 20px;
   line-height: 20px;
   color: $blue_200;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 35px;
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: title;
+    br {
+      display: none;
+      margin-bottom: 33px;
+    }
+  }
 }
 
 .counter__desc {
   margin: 0 0 20px;
   font-weight: 400;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 34px;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 581px;
+    grid-area: description;
+
+    br{
+      display: block;
+    }
+  }
+}
+
+.counter__company {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: company;
+  }
+}
+
+.counter__date {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: date;
+  }
+}
+
+.counter__calendar {
+  @media (min-width: $tablet-width) {
+    order: 6;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: calendar;
+  }
+}
+
+.counter__child {
+  @media (min-width: $tablet-width) {
+    order: 4;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: child;
+  }
 }
 
 .counter__select {
+  position: relative;
   margin-bottom: 22px;
   max-width: 221px;
+
+  @media (min-width: $tablet-width) {
+    max-width: inherit;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+
+    &:first-of-type {
+      padding-top: 42px;
+      border-top: 1px solid $grey_120;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 142px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: $grey_120;
+    }
+  }
+
+  &--more {
+    @media (min-width: $tablet-width) {
+      .counter__select-trigger {
+        margin-right: 169px;
+      }
+    }
+  }
 }
 
 .counter__select-trigger {
-  display: flex;
-  justify-content: space-between;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .counter__textarea {
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .counter__delete {
@@ -50,6 +219,16 @@
   position: absolute;
   top: -10px;
   right: -10px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 22px;
+    height: 24px;
+    border-radius: 0;
+    top: inherit;
+    right: inherit;
+    margin-left: 25px;
+  }
 }
 
 .counter__countries-value {
@@ -62,9 +241,25 @@
   border: 1px solid $grey_500;
   box-sizing: border-box;
   border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 70px;
+    height: 47px;
+    margin-left: 52px;
+  }
+}
+
+.counter__countries-flag {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 70px;
+    height: 47px;
+  }
 }
 
 .counter__select-value {
+  position: relative;
   flex-grow: 1;
   padding: 13px 10px;
   font-weight: 500;
@@ -80,6 +275,14 @@
   border-radius: 4px;
   box-sizing: border-box;
   margin-right: -1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    height: inherit;
+    padding-top: 26px;
+    padding-bottom: 22px;
+  }
 }
 
 .counter__add-btn {
@@ -96,6 +299,41 @@
   text-transform: uppercase;
   color: $blue_200;
   margin-bottom: 25px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 169px;
+    height: inherit;
+    padding-top: 26px;
+    padding-bottom: 22px;
+    font-size: 20px;
+    line-height: 20px;
+    width: auto;
+    min-width: 368px;
+    padding-left: 10px;
+    padding-right: 165px;
+    margin-bottom: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -27px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: $grey_120;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -27px;
+      bottom: -38px;
+      width: 1px;
+      height: 38px;
+      background: linear-gradient(180deg, rgba(225,227,233,1) 0%, rgba(225,227,233,0) 100%);
+    }
+  }
 }
 
 .counter__button {
@@ -109,10 +347,40 @@
 
   &--next {
     margin-bottom: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-area: btn;
+    }
   }
 
   &--submit {
     margin-bottom: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 7;
+    width: 284px;
+    height: 80px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    justify-content: flex-start;
+    padding-left: 34px;
+    border-radius: 20px;
+  }
+
+  &--prev {
+    @media (min-width: $tablet-width) {
+      width: 182px;
+    }
   }
 }
 
@@ -125,5 +393,23 @@
 
   &--open {
     display: block;
+  }
+}
+
+.counter__footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.counter__textarea-caption {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    float: left;
+    height: 47px;
+    line-height: 47px;
   }
 }

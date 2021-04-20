@@ -3,6 +3,10 @@
 
   &:last-of-type {
     margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 49px;
+    }
   }
 }
 
@@ -13,6 +17,13 @@
   font-size: 18px;
   line-height: 18px;
   color: $blue_200;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .textarea__field {
@@ -27,8 +38,34 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  color: $grey;
 
   &::placeholder {
     opacity: 0.3;
+    font: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 19px 18px;
+    height: 140px;
+  }
+}
+
+.textarea__field-flag {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    float: right;
   }
 }

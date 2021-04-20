@@ -13,6 +13,10 @@
   &:last-of-type {
     margin-right: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
+  }
 }
 
 .pagination__btn {
@@ -30,6 +34,11 @@
     background-color: $blue_200;
     opacity: 0.3;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 6px;
+      height: 6px;
+    }
   }
 
   &--current {

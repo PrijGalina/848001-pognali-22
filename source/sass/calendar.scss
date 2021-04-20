@@ -7,9 +7,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 42px;
   border-top: 1px solid $grey_370;
   border-bottom: 1px solid $grey_370;
+
+  @media (min-width: $tablet-width) {
+    height: inherit;
+  }
 }
 
 .calendar__nav-value {
@@ -18,11 +21,26 @@
   font-size: 20px;
   line-height: 20px;
   color: $blue_200;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 26px;
+    padding-bottom: 22px;
+  }
 }
 
 .calendar__content {
   margin-top: 17px;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 39px;
+    margin-bottom: 47px;
+  }
 }
 
 .calendar__title-list {
@@ -34,6 +52,11 @@
   gap: 0 0;
   align-items: center;
   justify-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-auto-rows: 18px;
+    margin-bottom: 9px;
+  }
 }
 
 .calendar__title-item {
@@ -42,7 +65,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: white;
+  background: $white;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -50,6 +73,19 @@
   &--weekend {
     color: $orange_900;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+  }
+
 }
 
 .calendar__days-list {
@@ -63,6 +99,10 @@
   justify-items: center;
   border-left: 1px solid $grey_370;
   border-top: 1px solid $grey_370;
+
+  @media (min-width: $tablet-width) {
+    grid-auto-rows: 69px;
+  }
 }
 
 .calendar__days-item {
@@ -88,5 +128,38 @@
     background: $blue_200;
     color: $white;
     font-weight: 500;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.calendar__nav-prev {
+  @include button-reset;
+  width: 15px;
+  height: 21px;
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='21' viewBox='0 0 15 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.3'%3E%3Cpath d='M11.8116 1.40061C11.713 1.28894 11.5958 1.20035 11.4668 1.1399C11.3378 1.07945 11.1994 1.04834 11.0598 1.04834C10.9201 1.04834 10.7818 1.07945 10.6528 1.1399C10.5238 1.20035 10.4066 1.28894 10.3079 1.40061L3.24844 9.37194C3.16968 9.46069 3.1072 9.5661 3.06457 9.68214C3.02194 9.79818 3 9.92258 3 10.0482C3 10.1738 3.02194 10.2982 3.06457 10.4143C3.1072 10.5303 3.16968 10.6357 3.24844 10.7245L10.3079 18.6958C10.7242 19.1658 11.3953 19.1658 11.8116 18.6958C12.2279 18.2258 11.883 17.7322 11.4668 17.2622L7.74854 13.0836L5.12914 10.0172L11.8207 2.30298C11.8207 2.30298 12.2279 1.86105 11.8116 1.40061Z' fill='black'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 19px;
+    height: 34px;
+    background-size: contain;
+  }
+}
+
+.calendar__nav-next {
+  @include button-reset;
+  width: 15px;
+  height: 21px;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='21' viewBox='0 0 14 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.3'%3E%3Cpath d='M3.06949 19.3693C3.16815 19.481 3.28536 19.5695 3.41439 19.63C3.54343 19.6904 3.68176 19.7216 3.82146 19.7216C3.96117 19.7216 4.0995 19.6904 4.22853 19.63C4.35757 19.5695 4.47477 19.481 4.57344 19.3693L11.6343 11.398C11.7131 11.3092 11.7756 11.2038 11.8182 11.0878C11.8609 10.9717 11.8828 10.8473 11.8828 10.7217C11.8828 10.5961 11.8609 10.4717 11.8182 10.3556C11.7756 10.2396 11.7131 10.1342 11.6343 10.0454L4.57344 2.07408C4.15709 1.60405 3.48584 1.60405 3.06949 2.07408C2.65314 2.54411 3.32374 3.3591 3.74009 3.82913L9.82453 10.7217L3.41439 17.972C3.00654 18.4324 2.65314 18.9089 3.06949 19.3693Z' fill='black'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 19px;
+    height: 34px;
+    background-size: contain;
   }
 }
