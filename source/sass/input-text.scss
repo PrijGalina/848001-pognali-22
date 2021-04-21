@@ -1,5 +1,11 @@
 .input-text {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: min-content min-content;
+  gap: 0;
+  grid-template-areas:
+    "paragraph-name paragraph-unit"
+    "paragraph paragraph";
   box-sizing: border-box;
 
   &--email {
@@ -16,6 +22,14 @@
     @media (min-width: $desktop-width) {
       height: 81px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: max-content 180px min-content;
+    grid-template-rows: min-content;
+    grid-template-areas:
+      "paragraph-name paragraph paragraph-unit";
+    margin-bottom: 14px;
   }
 }
 
@@ -63,6 +77,8 @@
       height: 70px;
       font-size: 20px;
       line-height: 20px;
+      padding-left: 66px;
+      padding-right: 66px;
     }
   }
 }
@@ -86,16 +102,39 @@
     margin-bottom: 0;
     border-top: 1px solid $grey_120;
   }
-}
 
-.input-text__caption-unit {
-  opacity: 0.3;
+  @media (min-width: $desktop-width) {
+    border-top: none;
+  }
+
+  &--title {
+    grid-area: paragraph-name;
+
+    @media (min-width: $desktop-width) {
+      min-width: 221px;
+    }
+  }
+
+  &--unit {
+    opacity: 0.3;
+    grid-area: paragraph-unit;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 35px;
+    }
+  }
+
 }
 
 .input-text__row {
   position: relative;
   margin: 0 0 20px;
   display: flex;
+  grid-area: paragraph;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .input-text__controls {

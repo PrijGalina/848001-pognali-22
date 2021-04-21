@@ -1,5 +1,9 @@
 .calendar {
   margin-top: 24px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+  }
 }
 
 .calendar__nav {
@@ -41,6 +45,11 @@
     margin-top: 39px;
     margin-bottom: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
+    margin-bottom: 57px;
+  }
 }
 
 .calendar__title-list {
@@ -56,6 +65,10 @@
   @media (min-width: $tablet-width) {
     grid-auto-rows: 18px;
     margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
   }
 }
 
@@ -128,11 +141,38 @@
     background: $blue_200;
     color: $white;
     font-weight: 500;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: column;
+    }
+  }
+
+  &--date {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--month {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 16px;
+    padding-top: 14px;
   }
 }
 

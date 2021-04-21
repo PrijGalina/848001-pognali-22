@@ -48,8 +48,8 @@
 .counter__inner {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr minmax(251px,max-content);
+    grid-template-rows: min-content min-content min-content min-content min-content min-content;
     gap: 0;
     grid-template-areas:
       "title title"
@@ -81,9 +81,10 @@
 
   @media (min-width: $desktop-width) {
     grid-area: title;
+    margin-bottom: 33px;
+
     br {
       display: none;
-      margin-bottom: 33px;
     }
   }
 }
@@ -104,10 +105,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 581px;
     grid-area: description;
+    margin-bottom: 30px;
+    padding-bottom: 55px;
+    border-bottom: 1px solid $grey_120;
 
-    br{
+    br {
       display: block;
     }
   }
