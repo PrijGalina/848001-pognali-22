@@ -9,10 +9,9 @@
   @media (min-width: $tablet-width) {
     font-size: 45px;
     line-height: 45px;
-    margin-bottom: 55px;
     width: 89.58%;
     min-width: 688px;
-    margin: 0 auto;
+    margin: 0 auto 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,8 +79,8 @@
     }
   }
 
-  &--form{
-    @media (min-width: $desktop-width){
+  &--form {
+    @media (min-width: $desktop-width) {
       width: 1161px;
       margin: 0 auto;
     }

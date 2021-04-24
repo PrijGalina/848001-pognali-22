@@ -11,7 +11,7 @@
     border-radius: 30px;
   }
 
-  &--dates{
+  &--dates {
     @media (min-width: $tablet-width) {
       padding: 48px 40px 56px 40px;
       display: flex;
@@ -57,7 +57,7 @@
 .counter__inner {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr minmax(251px,max-content);
+    grid-template-columns: 1fr minmax(251px, max-content);
     grid-template-rows: min-content min-content min-content min-content min-content min-content;
     gap: 0;
     grid-template-areas:
@@ -330,6 +330,7 @@
     padding-top: 26px;
     padding-bottom: 22px;
   }
+
   @media (min-width: $desktop-width) {
     width: 730px;
   }
@@ -381,7 +382,7 @@
       bottom: -38px;
       width: 1px;
       height: 38px;
-      background: linear-gradient(180deg, rgba(225,227,233,1) 0%, rgba(225,227,233,0) 100%);
+      background: linear-gradient(180deg, $grey_375 0%, transparent 100%);
     }
   }
 
@@ -473,8 +474,7 @@
       grid-template-columns: 280px 181px;
       grid-template-rows: min-content;
       gap: 0;
-      grid-template-areas:
-        "letter list";
+      grid-template-areas: "letter list";
       justify-content: space-between;
       border: none;
     }
