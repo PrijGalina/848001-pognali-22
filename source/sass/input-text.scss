@@ -73,6 +73,13 @@
     padding-left: 50px;
     padding-right: 50px;
 
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      display: none;
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
     @media (min-width: $tablet-width) {
       height: 70px;
       font-size: 20px;
