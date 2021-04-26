@@ -9,26 +9,6 @@
   justify-items: center;
   border-top: 1px solid $grey_370;
 
-  li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    font-weight: 500;
-    font-size: 14px;
-    color: $blue_200;
-    cursor: pointer;
-    border-right: 1px solid $grey_370;
-    border-bottom: 1px solid $grey_370;
-    box-sizing: border-box;
-    text-transform: uppercase;
-
-    &:nth-child(5n+5) {
-      border-right: none;
-    }
-  }
-
   &--select {
     border-top: none;
   }
@@ -36,6 +16,71 @@
   &--filters {
     border-right: 1px solid $grey_370;
     border-left: 1px solid $grey_370;
+  }
+
+  &--open {
+    @media (min-width: $tablet-width) {
+      grid-area: letter;
+      grid-template-columns: repeat(5, 53px);
+      grid-auto-rows: 70px;
+      border-left: 1px solid $grey_370;
+      border-right: 1px solid $grey_370;
+      border-top: none;
+      margin-left: 4.695%;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 26px;
+      border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(5, 60px);
+      gap: 14px 15px;
+    }
+  }
+}
+
+.country-choice__letter-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  color: $blue_200;
+  cursor: pointer;
+  border-right: 1px solid $grey_370;
+  border-bottom: 1px solid $grey_370;
+  box-sizing: border-box;
+  text-transform: uppercase;
+
+  &:nth-child(5n+5) {
+    border-right: none;
+
+    @media (min-width: $desktop-width) {
+      border-right: 1px solid $grey_500;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 4px;
+    border: 1px solid $grey_500;
+  }
+
+  &--selected {
+    background-color: $grey_100;
+
+    @media (min-width: $tablet-width) {
+      background-color: $blue_200;
+      color: $white;
+    }
   }
 }
 
@@ -47,14 +92,41 @@
   box-sizing: border-box;
   display: none;
 
-  &--active {
-    display: block;
-  }
-
   &--filters {
     border: none;
     padding-top: 14px;
     padding-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: list;
+    border: 1px solid $grey_370_05;
+    padding-top: 0;
+  }
+
+  &--open {
+    display: block;
+    padding-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      border-left: 1px solid $grey_370;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-left: none;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        left: 0;
+        top: -34px;
+        bottom: -36px;
+        background-color: $grey_370;
+      }
+    }
   }
 }
 

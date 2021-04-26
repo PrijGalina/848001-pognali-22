@@ -18,8 +18,12 @@ $grey_300: #dfe3f0;
 $grey_330: #d6daed;
 $grey_350: #d4d9eb;
 $grey_370: #d6d9e6;
+$grey_375: rgba(225, 227, 233, 1);
+$grey_370_05: rgba(214, 217, 230, 0.5);
 $grey_400: #cccccc;
 $grey_500: #cbced9;
+$grey_500_03: rgba(203, 206, 217, 0.3);
+$grey_505_018: rgba(54, 80, 148, 0.18);
 $grey_700: #959bb2;
 /*blue*/
 $blue_100: #132576;
@@ -42,7 +46,6 @@ $orange_900: #ff5c23;
 $red_100: #f97676;
 /*green*/
 $green_100: #bbf085;
-
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
