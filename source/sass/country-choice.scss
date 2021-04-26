@@ -14,8 +14,8 @@
   }
 
   &--filters {
-    border-right: 1px solid $grey_370;
     border-left: 1px solid $grey_370;
+    background-color: $white;
   }
 
   &--open {
@@ -81,6 +81,11 @@
       background-color: $blue_200;
       color: $white;
     }
+  }
+
+  &--filter-selected {
+    background-color: $blue_200;
+    color: $white;
   }
 }
 

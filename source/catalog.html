@@ -54,8 +54,12 @@
     </div>
   </header>
   <main class="page-container">
-    <h1 class="title title--page title--catalog">Попутчики</h1>
-    <section class="filters">
+    <div class="page-container__top">
+      <h1 class="title title--page title--catalog">
+        <span class="title__value">Попутчики</span>
+      </h1>
+    </div>
+    <section class="filters filters--open">
       <!-- filters--open -->
       <header class="filters__top">
         <h2 class="filters__title">Фильтрация по странам:</h2>
@@ -71,31 +75,31 @@
           </ul>
           <div class="country-choice filters__country-choice">
             <ul class="country-choice__letter-list country-choice__letter-list--filters">
-              <li>а</li>
-              <li>б</li>
-              <li>в</li>
-              <li>г</li>
-              <li>д</li>
-              <li>е</li>
-              <li>з</li>
-              <li>и</li>
-              <li>к</li>
-              <li>л</li>
-              <li>м</li>
-              <li>н</li>
-              <li>о</li>
-              <li>п</li>
-              <li>р</li>
-              <li>с</li>
-              <li>т</li>
-              <li>у</li>
-              <li>ф</li>
-              <li>х</li>
-              <li>ч</li>
-              <li>ш</li>
-              <li>э</li>
-              <li>ю</li>
-              <li>я</li>
+              <li class="country-choice__letter-item country-choice__letter-item--filter-selected">а</li>
+              <li class="country-choice__letter-item">б</li>
+              <li class="country-choice__letter-item">в</li>
+              <li class="country-choice__letter-item">г</li>
+              <li class="country-choice__letter-item">д</li>
+              <li class="country-choice__letter-item">е</li>
+              <li class="country-choice__letter-item">з</li>
+              <li class="country-choice__letter-item">и</li>
+              <li class="country-choice__letter-item">к</li>
+              <li class="country-choice__letter-item">л</li>
+              <li class="country-choice__letter-item">м</li>
+              <li class="country-choice__letter-item">н</li>
+              <li class="country-choice__letter-item">о</li>
+              <li class="country-choice__letter-item">п</li>
+              <li class="country-choice__letter-item">р</li>
+              <li class="country-choice__letter-item">с</li>
+              <li class="country-choice__letter-item">т</li>
+              <li class="country-choice__letter-item">у</li>
+              <li class="country-choice__letter-item">ф</li>
+              <li class="country-choice__letter-item">х</li>
+              <li class="country-choice__letter-item">ч</li>
+              <li class="country-choice__letter-item">ш</li>
+              <li class="country-choice__letter-item">э</li>
+              <li class="country-choice__letter-item">ю</li>
+              <li class="country-choice__letter-item">я</li>
             </ul>
             <ul class="country-choice__list country-choice__list--active country-choice__list--filters">
               <li class="country-choice__letter">А</li>
@@ -419,7 +423,8 @@
           <fieldset class="company-choice__group company-choice__group--open">
             <legend class="company-choice__group-title">транспорт</legend>
             <ul class="company-choice__group-list company-choice__transport-list">
-              <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--avia">
+              <li
+                class="company-choice__group-item company-choice__transport-item company-choice__transport-item--avia">
                 <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
                   <input class="input-choice__field" type="checkbox" name="airplane" aria-hidden="true" tabindex="-1"
                     checked>
@@ -428,19 +433,23 @@
               </li>
               <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--bus">
                 <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
-                  <input class="input-choice__field" type="checkbox" name="bus" aria-hidden="true" tabindex="-1" checked>
+                  <input class="input-choice__field" type="checkbox" name="bus" aria-hidden="true" tabindex="-1"
+                    checked>
                   <span class="input-choice__caption">автобус</span>
                 </label>
               </li>
-              <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--bike">
+              <li
+                class="company-choice__group-item company-choice__transport-item company-choice__transport-item--bike">
                 <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
                   <input class="input-choice__field" type="checkbox" name="bike" aria-hidden="true" tabindex="-1">
                   <span class="input-choice__caption">велосипед</span>
                 </label>
               </li>
-              <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--foot">
+              <li
+                class="company-choice__group-item company-choice__transport-item company-choice__transport-item--foot">
                 <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
-                  <input class="input-choice__field" type="checkbox" name="foot" aria-hidden="true" tabindex="-1" checked>
+                  <input class="input-choice__field" type="checkbox" name="foot" aria-hidden="true" tabindex="-1"
+                    checked>
                   <span class="input-choice__caption">пешком</span>
                 </label>
               </li>
@@ -643,7 +652,8 @@
           </li>
           <li class="user user-choice__item">
             <div class="user__top">
-              <img src="img/larisa-rogovaya-70.jpg" class="user__pic" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
+              <img src="img/larisa-rogovaya-70.jpg" class="user__pic" width="70" height="70"
+                alt="Фотография пользователя Ларисы Роговой">
               <p class="user__name">Лариса<br> Роговая</p>
               <div class="user__like">
                 <span class="user__like-count">23</span>
@@ -695,7 +705,8 @@
             <button type="button" class="btn btn--oval btn--yellow user__to-call">Позвать!</button>
           </li>
         </ul>
-        <button type="button" class="btn user-choice__add" aria-label="Показать больше пользователей">показать еще</button>
+        <button type="button" class="btn user-choice__add" aria-label="Показать больше пользователей">показать
+          еще</button>
         <ul class="pagination user-choice__pagination">
           <li class="pagination__item">
             <a href="#" class="pagination__link">1</a>

@@ -13,7 +13,7 @@
 
 .filters__container {
   display: none;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   background-color: $grey_150;
   padding-bottom: 95px;
@@ -22,12 +22,13 @@
 }
 
 .filters__wrapper {
-  width: 220px;
+  width: 68.75%;
+  min-width: inherit;
+  margin: 0 auto;
 }
 
 .filters__top {
   position: relative;
-  max-width: 320px;
   display: flex;
   align-items: center;
   justify-content: space-between;
