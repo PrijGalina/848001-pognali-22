@@ -104,6 +104,10 @@
 
   br {
     display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -118,10 +122,6 @@
     margin-bottom: 30px;
     padding-bottom: 55px;
     border-bottom: 1px solid $grey_120;
-
-    br {
-      display: block;
-    }
   }
 }
 

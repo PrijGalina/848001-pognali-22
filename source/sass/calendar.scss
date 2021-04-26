@@ -90,13 +90,13 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
   }
+}
 
-  &--tablet {
-    display: none;
+.calendar__title-extended {
+  display: none;
 
-    @media (min-width: $tablet-width) {
-      display: inline;
-    }
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
 
@@ -150,22 +150,6 @@
     }
   }
 
-  &--date {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
-  }
-
-  &--month {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
@@ -176,6 +160,22 @@
     justify-content: flex-start;
     padding-left: 16px;
     padding-top: 14px;
+  }
+}
+
+.calendar__days-extended {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.calendar__date {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
