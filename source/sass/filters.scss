@@ -120,14 +120,6 @@
   }
 }
 
-.filters__country-list {
-  @media (min-width: $tablet-width) {
-    grid-area: letters;
-    border: none;
-    margin-bottom: 0;
-  }
-}
-
 .filters__choice-list {
   border: none;
   padding-top: 14px;
@@ -193,6 +185,7 @@
   display: block;
   order: 2;
   grid-area: btn;
+
   @include button-reset;
   position: relative;
   width: 3px;
@@ -344,6 +337,9 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
+    grid-area: letters;
+    border: none;
+    margin-bottom: 0;
     background-color: transparent;
     border: none;
     display: flex;

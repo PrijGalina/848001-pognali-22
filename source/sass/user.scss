@@ -25,10 +25,10 @@
       grid-template-rows: 30px 111px 50px max-content;
       gap: 0 0;
       grid-template-areas:
-          "photo name name transport-level"
-          "photo tags tags transport-level"
-          "photo btn count-like transport-level"
-          "wants wants wants wants";
+        "photo name name transport-level"
+        "photo tags tags transport-level"
+        "photo btn count-like transport-level"
+        "wants wants wants wants";
       margin-bottom: 39px;
     }
 
@@ -771,7 +771,7 @@
 
 
       &::before {
-        left: 0px;
+        left: 0;
       }
 
       &::after {
@@ -950,7 +950,6 @@
         flex-grow: inherit;
       }
     }
-
   }
 }
 
