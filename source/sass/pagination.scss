@@ -17,6 +17,18 @@
   @media (min-width: $tablet-width) {
     margin-right: 29px;
   }
+
+  &--user-choice {
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+    }
+  }
+
+  &--active {
+    .pagination__link {
+      background-color: $yellow_100;
+    }
+  }
 }
 
 .pagination__btn {
@@ -44,4 +56,18 @@
   &--current {
     opacity: 1;
   }
+}
+
+.pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $blue_200;
+  text-decoration: none;
 }

@@ -1,6 +1,22 @@
+.range {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .range__controls {
   position: relative;
   height: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 281px;
+    order: 1;
+  }
 }
 
 .range__scale {
@@ -45,6 +61,12 @@
     width: 16px;
     height: 1px;
     background-color: $grey_500;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 148px;
+    order: 2;
   }
 }
 

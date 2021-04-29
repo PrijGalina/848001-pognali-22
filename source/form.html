@@ -28,8 +28,7 @@
           </li>
         </ul>
       </nav>
-      <a class="btn btn--oval btn--yellow page-header__login" href="login.html"
-        title="Войти в личный кабинет">Авторизация</a>
+      <a class="btn btn--oval btn--yellow page-header__login" href="login.html" title="Войти в личный кабинет">Авторизация</a>
       <div class="for-user for-user--header page-header__for-user">
         <a href="tel:88005558628" class="for-user__link for-user__link--phone">
           <span class="for-user__value">8 800 555-86-28</span>
@@ -172,8 +171,7 @@
               </label>
               <label class="input-choice input-choice--checkbox counter__row counter__child">
                 <input type="checkbox" class="input-choice__field" name="with-children">
-                <span class="input-choice__caption input-choice__caption--blue  input-choice__caption--border">Можно с
-                  детьми</span>
+                <span class="input-choice__caption input-choice__caption--blue input-choice__caption--child  input-choice__caption--border">Можно с детьми</span>
               </label>
               <div class="calendar counter__calendar">
                 <header class="calendar__nav">
@@ -268,11 +266,11 @@
             </div>
             <div class="counter__select counter__select--more">
               <div class="counter__select-trigger">
-                <span class="counter__select-value">Выберите страну</span>
+                <span class="counter__select-value counter__select-value--open">Выберите страну</span> <!-- +- "counter__select-value--open" -->
                 <div class="counter__select-arrow"></div>
               </div>
-              <!-- counter__select-dropdown--open -->
-              <div class="country-choice counter__select-dropdown">
+
+              <div class="country-choice counter__select-dropdown counter__select-dropdown--open"><!-- +- "counter__select-dropdown--open" -->
                 <ul class="country-choice__letter-list">
                   <li class="country-choice__letter-item country-choice__letter-item--selected">а</li>
                   <li class="country-choice__letter-item">б</li>
