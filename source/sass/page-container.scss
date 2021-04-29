@@ -42,6 +42,21 @@
       background-repeat: no-repeat;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: right;
+    right: 50%;
+    transform: translateX(50%);
+    top: 67px;
+    padding-right: 122px;
+    box-sizing: border-box;
+
+    &::after {
+      right: 63px;
+    }
+  }
 }
 
 .page-container__wrapper {
