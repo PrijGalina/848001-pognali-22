@@ -10,7 +10,6 @@
     font-size: 45px;
     line-height: 45px;
     width: 89.58%;
-    min-width: 688px;
     margin: 0 auto 55px;
   }
 
@@ -48,6 +47,8 @@
     @media (min-width: $tablet-width) {
       padding-top: 30px;
       padding-bottom: 66px;
+      font-size: 60px;
+      line-height: 60px;
     }
 
     @media (min-width: $desktop-width) {

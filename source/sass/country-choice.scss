@@ -2,42 +2,27 @@
   @include clear_list;
 
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 20%);
   grid-auto-rows: 40px;
   gap: 0 0;
   align-items: center;
   justify-items: center;
-  border-top: 1px solid $grey_370;
 
-  &--select {
-    border-top: none;
-  }
-
-  &--filters {
-    border-right: 1px solid $grey_370;
+  @media (min-width: $tablet-width) {
+    grid-area: letter;
+    grid-auto-rows: 70px;
     border-left: 1px solid $grey_370;
+    border-right: 1px solid $grey_370;
+    border-top: 1px solid $grey_370;
+    margin-top: 35px;
+    margin-bottom: 33px;
   }
 
-  &--open {
-    @media (min-width: $tablet-width) {
-      grid-area: letter;
-      grid-template-columns: repeat(5, 53px);
-      grid-auto-rows: 70px;
-      border-left: 1px solid $grey_370;
-      border-right: 1px solid $grey_370;
-      border-top: none;
-      margin-left: 4.695%;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-left: 26px;
-      border: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      grid-template-columns: repeat(5, 60px);
-      gap: 14px 15px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-left: 26px;
+    border: none;
+    grid-template-columns: repeat(5, 60px);
+    gap: 14px 15px;
   }
 }
 
@@ -92,16 +77,14 @@
   box-sizing: border-box;
   display: none;
 
-  &--filters {
-    border: none;
-    padding-top: 14px;
-    padding-left: 0;
+  &--active {
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
     grid-area: list;
     border: 1px solid $grey_370_05;
-    padding-top: 0;
+    padding-top: 35px;
   }
 
   &--open {
@@ -142,4 +125,13 @@
 
 .country-choice__letter {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    color: $blue_200;
+    margin-bottom: 30px;
+  }
 }

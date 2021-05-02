@@ -107,22 +107,33 @@
     background-color: $white;
 
     @media (min-width: $tablet-width) {
-      width: 36px;
-      height: 36px;
+      width: 24px;
+      height: 24px;
     }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 58px;
+    margin-left: 36px;
   }
 
-  @media (min-width: $desktop-width) {
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-left: 59px;
+  &--child {
+    margin-left: 58px;
+
+    &::before {
+      @media (min-width: $tablet-width) {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-left: 59px;
+    }
   }
 }
 
@@ -150,6 +161,11 @@
     border-radius: 50%;
     background: $white;
     margin-left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 44px;
+      height: 44px;
+    }
   }
 
   .input-choice__field {
@@ -160,11 +176,23 @@
       background-position: center center;
       background-repeat: no-repeat;
       opacity: 0.15;
+
+      @media (min-width: $tablet-width) {
+        width: 23px;
+        height: 22px;
+        background-size: contain;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
 
     /*checked*/
     &:not(:disabled):checked + .input-choice__caption::before {
       opacity: 1;
+    }
+
+    &:not(:disabled):checked + .input-choice__caption {
+      background-color: $white;
     }
 
     /* hover */

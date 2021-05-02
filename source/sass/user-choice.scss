@@ -1,5 +1,15 @@
 .user-choice {
   padding-bottom: 33px;
+
+  @media (min-width: $desktop-width) {
+    grid-area: user;
+  }
+}
+
+.user-choice__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .user-choice__block {
@@ -11,16 +21,14 @@
   @include clear_list;
 
   margin-bottom: 20px;
-}
 
-.user-choice__item {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 15px 0 23px 0;
-  background-color: $white;
-  border-radius: 20px;
-  margin-bottom: 10px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .user-choice__add {
@@ -43,10 +51,24 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+  }
 }
 
 .user-choice__pagination {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .user-choice__controls {
@@ -64,6 +86,34 @@
     transform: translateX(-50%);
     width: 1px;
     background-color: $grey_100;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 53px;
+    margin-bottom: 0;
+  }
+}
+
+.user-choice__navigation {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $white;
+    padding: 28px 35px 28px 25px;
+    border-radius: 20px;
+    height: 100px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 40px 25px 29px;
+    margin-bottom: 75px;
   }
 }
 
