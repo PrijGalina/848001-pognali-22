@@ -2,6 +2,7 @@
   grid-area: header;
   padding-bottom: 41px;
   background-color: $blue_500;
+  z-index: 1;
 
   &--inner {
     background-color: $blue_300;

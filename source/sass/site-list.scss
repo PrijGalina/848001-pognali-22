@@ -17,6 +17,10 @@
   }
 }
 
+.site-list__item {
+  text-align: center;
+}
+
 .site-list__link {
   @include link_reset;
 

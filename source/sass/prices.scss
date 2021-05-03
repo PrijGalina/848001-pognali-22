@@ -38,6 +38,18 @@
 .prices__wrapper {
   padding-left: 25px;
   box-sizing: border-box;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/rates.png");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -46,6 +58,7 @@
 
 .prices__title {
   margin-top: 16px;
+  margin-bottom: 56px;
   padding-right: 160px;
 
   @media (min-width: $tablet-width) {

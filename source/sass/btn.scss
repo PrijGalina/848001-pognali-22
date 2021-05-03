@@ -10,6 +10,7 @@
   font-size: 18px;
   line-height: 18px;
   color: $blue_200;
+  box-sizing: border-box;
 
   &--oval {
     border-radius: 25px;
@@ -30,6 +31,24 @@
 
   &--white {
     background-color: $white;
+  }
+
+  &--left {
+  justify-content: flex-start;
+  padding-left: 23px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 13px;
+    background-image: url("data:image/svg+xml,%3Csvg width='11' height='12' viewBox='0 0 11 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z' fill='%231D2E5B'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+  }
   }
 
   @media (min-width: $tablet-width) {
