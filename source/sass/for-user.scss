@@ -40,12 +40,20 @@
   &--email {
     &::before {
       background-image: url("../img/icon_mail.svg");
+
+      @media (min-width: $tablet-width) {
+        background-size: 28px 19px;
+      }
     }
   }
 
   &--phone {
     &::before {
       background-image: url("../img/icon_telephone.svg");
+
+      @media (min-width: $tablet-width) {
+        background-size: 27px 26px;
+      }
     }
   }
 

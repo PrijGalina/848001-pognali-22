@@ -35,7 +35,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 162px;
-    padding-bottom: 20px;
+    padding-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +47,19 @@
   @media (min-width: $tablet-width) {
     width: 80.468%;
     min-width: 618px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 288px;
+      height: 574px;
+      right: -35px;
+      top: 0;
+      background-image: url("../img/countries-bg-tablet.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -68,6 +81,11 @@
 }
 
 .countries__title {
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   @media (min-width: $desktop-width) {
     grid-area: title;
     margin-bottom: 0;
@@ -86,7 +104,8 @@
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
-    margin-bottom: 104px;
+    width: 61.165%;
+    margin: 0 0 104px;
 
     br {
       display: block;
@@ -106,6 +125,18 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -36px;
+      top: -38px;
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: $grey_150;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -40,11 +40,26 @@
       height: 612px;
       background-image: url("../img/planet-bg-tablet.png");
     }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/planet-bg-desktop.png");
+      width: 1440px;
+      height: 750px;
+      background-size: contain;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: inherit;
+      top: -177px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 96px;
     background-color: $blue_300;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $blue_500;
   }
 }
 
@@ -81,6 +96,10 @@
       right: 50%;
       transform: translateX(74%);
       top: 242px;
+    }
+
+    @media (min-width: $desktop-width) {
+
     }
   }
 }

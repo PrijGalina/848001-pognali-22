@@ -45,6 +45,15 @@
     background-position: top center;
     background-size: cover;
     z-index: 0;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/about-bg-tablet.png");
+      width: 376px;
+      height: 548px;
+      background-size: contain;
+      right: 50%;
+      transform: translateX(100%);
+    }
   }
 
   @media (min-width: $tablet-width) {
