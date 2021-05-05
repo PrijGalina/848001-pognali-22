@@ -33,16 +33,25 @@
     background-position: center;
     background-size: cover;
     z-index: 0;
+
+    @media (min-width: $tablet-width) {
+      top: inherit;
+      bottom: 0;
+      height: 612px;
+      background-image: url("../img/planet-bg-tablet.png");
+    }
   }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 96px;
+    background-color: $blue_300;
   }
 }
 
 .first-screen__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -54,16 +63,25 @@
       "title source"
       "step step";
   }
-  justify-content: space-between;
 
   &::before {
     content: "";
     position: absolute;
     width: 192px;
     height: 255px;
-    right: 23px;
+    right: 50%;
+    transform: translateX(56%);
     top: 149px;
     background-image: url("../img/traveller-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      width: 372px;
+      height: 451px;
+      background-image: url("../img/traveller-tablet.png");
+      right: 50%;
+      transform: translateX(74%);
+      top: 242px;
+    }
   }
 }
 
