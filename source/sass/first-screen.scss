@@ -18,7 +18,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      display: none;
+      bottom: 0;
+      height: 58px;
+      z-index: -1;
     }
   }
 
@@ -39,17 +41,19 @@
       bottom: 0;
       height: 612px;
       background-image: url("../img/planet-bg-tablet.png");
+      background-position: top;
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/planet-bg-desktop.png");
-      width: 1440px;
+      width: 100%;
       height: 750px;
-      background-size: contain;
       left: 50%;
       transform: translateX(-50%);
       bottom: inherit;
-      top: -177px;
+      top: -99px;
+      border-bottom-left-radius: 56px;
+      border-bottom-right-radius: 56px;
     }
   }
 
@@ -60,6 +64,10 @@
 
   @media (min-width: $desktop-width) {
     background-color: $blue_500;
+    padding-top: 46px;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 0;
   }
 }
 
@@ -70,7 +78,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 485px 835px;
     grid-template-rows: min-content min-content min-content;
     gap: 0 0;
     grid-template-areas:
@@ -99,7 +107,10 @@
     }
 
     @media (min-width: $desktop-width) {
-
+      top: 11px;
+      width: 431px;
+      height: 640px;
+      background-image: url("../img/traveller-desktop.png");
     }
   }
 }
@@ -127,6 +138,7 @@
     line-height: 70px;
     margin-bottom: 0;
     padding-left: 69px;
+    margin-top: 64px;
   }
 }
 
@@ -148,10 +160,11 @@
 
   @media (min-width: $desktop-width) {
     grid-area: review;
-    margin: 0 0 45px;
+    margin: 73px 0 27px;
     width: 264px;
     justify-self: end;
-    align-self: end;
+    align-self: start;
+    padding-right: 23px;
   }
 }
 
@@ -179,6 +192,7 @@
     margin: 0;
     width: 264px;
     justify-self: end;
+    padding-right: 23px;
   }
 }
 
@@ -209,7 +223,7 @@
   @media (min-width: $desktop-width) {
     grid-area: step;
     margin-top: 101px;
-    margin-bottom: 93px;
+    margin-bottom: 123px;
   }
 }
 
@@ -235,6 +249,23 @@
     font-size: 18px;
     line-height: 18px;
     margin-top: -5px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 30px;
+      right: inherit;
+      left: 33px;
+      top: 89px;
+      transform: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 26px;
+      right: 34px;
+      left: inherit;
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -244,19 +275,11 @@
     line-height: 24px;
     box-sizing: border-box;
     width: 50%;
-
-    &::before {
-      font-size: 30px;
-      line-height: 30px;
-      right: inherit;
-      left: 33px;
-      top: 89px;
-      transform: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 23.863%;
+    padding: 30px 0 30px 34px;
   }
 
   &--choose {

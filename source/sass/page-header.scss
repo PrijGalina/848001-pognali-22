@@ -41,6 +41,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: $blue_500;
+    padding-bottom: 0;
   }
 }
 
@@ -51,6 +52,11 @@
 
   &--tablet-simple {
     display: none;
+
+    @media (min-width: $desktop-width) {
+      height: 52px;
+      width: 200px;
+    }
   }
 
   &--tablet-menu {
@@ -93,10 +99,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 15.151% 1fr 7.575% 14.242%;
-    grid-template-rows: 145px;
+    grid-template-columns: 200px 832px 100px 188px;
+    grid-template-rows: min-content;
     grid-template-areas: "logo nav user-for login";
     justify-content: space-between;
+    align-items: center;
+    padding: 46px 0 0;
   }
 }
 
@@ -184,7 +192,19 @@
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 17.427%;
+    padding-left: 145px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 2px;
+      background-color: $white;
+    }
   }
 }
 

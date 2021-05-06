@@ -40,6 +40,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 82px;
+    padding-top: 221px;
   }
 }
 
@@ -115,6 +116,9 @@
   @media (min-width: $desktop-width) {
     grid-area: desc;
     margin-bottom: 0;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
   }
 }
 
@@ -136,6 +140,10 @@
       height: 141px;
       border-radius: 20px;
       background-color: $grey_150;
+      @media (min-width: $desktop-width) {
+        top: -71px;
+        left: 0;
+      }
     }
   }
 

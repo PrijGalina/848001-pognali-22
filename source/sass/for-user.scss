@@ -44,6 +44,10 @@
       @media (min-width: $tablet-width) {
         background-size: 28px 19px;
       }
+
+      @media (min-width: $desktop-width) {
+        background-size: 16px 14px;
+      }
     }
   }
 
@@ -53,6 +57,10 @@
 
       @media (min-width: $tablet-width) {
         background-size: 27px 26px;
+      }
+
+      @media (min-width: $desktop-width) {
+        background-size: 18px 18px;
       }
     }
   }

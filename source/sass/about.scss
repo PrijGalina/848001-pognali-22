@@ -26,8 +26,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      height: 56px;
-      bottom: -56px;
+      height: 60px;
+      bottom: -60px;
       border-bottom-left-radius: 56px;
       border-bottom-right-radius: 56px;
     }
@@ -54,6 +54,14 @@
       right: 50%;
       transform: translateX(100%);
     }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/about-bg-desktop.png");
+      width: 630px;
+      height: 665px;
+      top: inherit;
+      bottom: -60px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -62,7 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 62px;
+    padding-top: 132px;
     padding-bottom: 107px;
   }
 }
@@ -89,6 +97,14 @@
       margin-left: 0;
       border-radius: 20px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 212px;
+      height: 212px;
+      top: -62px;
+      left: -70px;
+      transform: inherit;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -109,6 +125,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 57px;
+    width: 100%;
   }
 }
 
