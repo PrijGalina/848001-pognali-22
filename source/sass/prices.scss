@@ -1,6 +1,6 @@
 .prices {
   position: relative;
-  padding-top: 68px;
+  padding-top: 67px;
   background-color: $grey_100;
   z-index: 5;
   padding-bottom: 8px;
@@ -26,12 +26,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 177px;
+    padding-top: 173px;
+    padding-bottom: 2px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 66px;
-    padding-top: 175px;
+    padding-bottom: 107px;
+    padding-top: 159px;
   }
 }
 
@@ -44,7 +45,7 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 0;
+    top: -15px;
     width: 100px;
     height: 100px;
     background-image: url("../img/rates.png");
@@ -52,15 +53,28 @@
 
     @media (min-width: $tablet-width) {
       top: inherit;
-      bottom: -23px;
+      bottom: -16px;
+      right: 44px;
       z-index: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 198px;
+      height: 198px;
+      background-image: url("../img/rates-desktop.png");
+      bottom: 100px;
+      right: 0;
     }
   }
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
-    width: 80.468%;
-    min-width: 618px;
+    width: 89.583%;
+    min-width: 688px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1177px;
   }
 }
 
@@ -72,13 +86,16 @@
   @media (min-width: $tablet-width) {
     padding-right: 0;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     margin-top: 0;
+    margin-left: 3px;
+    margin-right: 0;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
-    margin-bottom: 131px;
+    margin-bottom: 136px;
   }
 }
 
@@ -89,62 +106,66 @@
   line-height: 16px;
   margin: 0;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 33px;
+  &::before {
+    content: "";
+    position: absolute;
+    right: -35px;
+    top: -41px;
+    width: 198px;
+    height: 285px;
+    border-radius: 20px;
+    background-color: $grey_150;
+    z-index: -1;
+    display: none;
 
-    &::before {
-      content: "";
-      position: absolute;
-      right: -35px;
-      top: -41px;
-      width: 198px;
-      height: 285px;
-      border-radius: 20px;
-      background-color: $grey_150;
-      z-index: -1;
+    @media (min-width: $tablet-width) {
+      display: block;
+      right: 0px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 446px;
+      height: 300px;
+      top: -51px;
+      right: 0;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    margin-right: 184px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+    padding-right: 35px;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: $grey_150;
-      height: 100%;
-      width: 446px;
-      border-radius: 20px;
-      z-index: 0;
-      padding-top: 48px;
-      padding-bottom: 48px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-right: 111px;
+    margin-bottom: 30px;
+    padding-right: 0;
   }
 }
 
 .prices__tariffs {
-  margin-bottom: 32px;
+  margin-bottom: 29px;
   position: relative;
 
   &::before {
     content: attr(data-number);
     position: absolute;
     right: 0;
-    top: 50%;
+    top: -9px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    transform: translateY(-50%);
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: $white;
+
+    @media (min-width: $tablet-width) {
+      transform: translateY(-50%);
+    }
   }
 
   &--base-rate {
@@ -163,6 +184,13 @@
     &::before {
       background-color: $yellow_100;
     }
+    @media (min-width: $tablet-width) {
+      margin-top: 2px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -172,8 +200,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-bottom: 19px;
     margin-bottom: 0;
     border-top: 1px solid $grey_120;
 
@@ -200,7 +228,8 @@
 
   @media (min-width: $desktop-width) {
     width: 446px;
-    text-align: center;
+    text-align: right;
+    margin-right: 161px;
   }
 }
 
@@ -220,6 +249,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
+  margin-top: 43px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -229,6 +259,7 @@
     margin-bottom: 0;
     margin-left: 90px;
     position: relative;
+    margin-top: 32px;
 
     &::before {
       content: "";

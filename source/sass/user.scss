@@ -124,11 +124,17 @@
     font-size: 24px;
     line-height: 24px;
     border-bottom: 1px solid $white_03;
+    margin-top: 7px;
 
     @media (min-width: $tablet-width) {
       font-size: 38px;
       line-height: 38px;
     }
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 14px;
   }
 
   &--sticker {
@@ -157,6 +163,9 @@
       height: 60px;
       font-size: 14px;
       line-height: 14px;
+      margin-top: 0;
+      top: 20px;
+      left: 22px;
     }
   }
 
@@ -227,6 +236,11 @@
     height: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+
+    @media (min-width: $tablet-width) {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
   }
 
   &--choice {
@@ -330,7 +344,12 @@
   background-color: $white;
 
   &--above {
-    margin-top: -12px;
+    margin-top: -10px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: -12px;
+      padding-bottom: 15px;
+    }
   }
 
   &--column {
@@ -350,7 +369,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 20px;
+    padding-bottom: 16px;
   }
 }
 
@@ -366,6 +385,10 @@
   @include image;
 
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 24px;
+  }
 }
 
 .user__country {
@@ -437,8 +460,13 @@
   border-bottom-right-radius: 10px;
   padding: 0 25px 21px;
 
+  @media (min-width: $tablet-width) {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 0 25px 27px;
+    padding: 0 25px 15px;
   }
 }
 
@@ -462,10 +490,20 @@
   line-height: 21px;
   color: $blue_200;
 
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 26px;
+    align-self: start;
+    margin-left: 43px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 24px;
     line-height: 24px;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
+    align-self: center;
+    margin-left: 0;
   }
 
   &--choice {
@@ -497,6 +535,8 @@
   margin: 0 0 14px;
   text-align: center;
   line-height: 18px;
+  font-weight: 400;
+  max-width: 90.909%;
 
   &--faded {
     opacity: 0.6;
@@ -510,12 +550,14 @@
     grid-area: tag;
     font-size: 20px;
     line-height: 22px;
+    max-width: 100%;
+    margin: -2px 0 19px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 22px;
+    margin-bottom: 10px;
   }
 
   &--choice {
@@ -557,6 +599,11 @@
   border-radius: 50%;
   margin-right: 1px;
   background-color: $grey_100;
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+  }
 
   &::before {
     content: "";
@@ -602,19 +649,66 @@
 
   &--index {
     background-color: transparent;
-    width: 25px;
+    width: 32px;
     height: 25px;
 
+    @media (min-width: $tablet-width) {
+      width: 32px;
+      height: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 32px;
+      height: 51px;
+    }
+
     &::before {
-      width: 25px;
-      height: 25px;
+      background-size: contain;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 
-  @media (min-width: $tablet-width) {
-    width: 43px;
-    height: 43px;
+  &--index-avia::before {
+    width: 21px;
+    height: 21px;
+
+    @media (min-width: $tablet-width) {
+      width: 22px;
+      height: 24px;
+    }
   }
+
+  &--index-bus::before {
+    width: 18px;
+    height: 20px;
+    background-image: url("../img/index-bus.svg");
+
+    @media (min-width: $tablet-width) {
+
+    }
+  }
+
+  &--index-bike::before {
+    width: 26px;
+    height: 28px;
+
+    @media (min-width: $tablet-width) {
+
+    }
+  }
+
+  &--index-foot::before {
+    width: 21px;
+    height: 23px;
+
+    @media (min-width: $tablet-width) {
+
+    }
+  }
+
+
 }
 
 .user__pic-block {
@@ -706,6 +800,11 @@
       position: absolute;
       left: -26px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 8px;
+    height: 8px;
   }
 }
 

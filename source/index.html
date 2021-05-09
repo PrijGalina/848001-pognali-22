@@ -9,15 +9,14 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header"><!-- page-header--open-->
+  <header class="page-header "><!-- page-header--open-->
     <div class="wrapper page-header__wrapper">
       <a class="logotype page-header__logotype">
         <img class="logotype-img page-header__img--mobile-simple" src="img/pognali-logotype-mobile-white.png" width="96" height="15" alt="Погнали - сервис для поиска попутчиков">
         <img class="logotype-img page-header__img--mobile-menu" src="img/pognali-logotype-mobile-blue.png" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img--tablet-simple" src="img/pognali-logotype-tablet-white.png"
-          width="166" height="42" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img--tablet-menu" src="img/pognali-logotype-tablet-blue.png"
-          width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img--tablet-simple" src="img/pognali-logotype-tablet-white.png" width="166" height="42" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img--tablet-menu" src="img/pognali-logotype-tablet-blue.png" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img--desktop-simple" src="img/pognali-logotype-desktop-white.png" width="200" height="52" alt="Погнали - сервис для поиска попутчиков">
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
       <nav class="main-navigation page-header__main-navigation">
@@ -33,8 +32,7 @@
           </li>
         </ul>
       </nav>
-      <a class="btn btn--oval btn--yellow page-header__login" href="login.html"
-        title="Войти в личный кабинет">Авторизация</a>
+      <a class="btn btn--oval btn--yellow page-header__login" href="login.html" title="Войти в личный кабинет">Авторизация</a>
       <div class="for-user for-user--header page-header__for-user">
         <a href="tel:88005558628" class="for-user__link for-user__link--phone">
           <span class="for-user__value">8 800 555-86-28</span>
@@ -68,7 +66,7 @@
       <div class="wrapper first-screen__wrapper">
         <p class="first-screen__title">В путешествие<br> с крутыми<br> попутчиками!</p>
         <blockquote class="first-screen__review">«Лучшее приложение,<br>что я видел в жизни!»</blockquote>
-        <cite class="first-screen__review-source">Мурат Эльтазин<br>главный редактор газеты <br>«гаджетлайф»</cite>
+        <cite class="first-screen__review-source">Мурат Эльтазин<br class="break break--mobile break--tablet break--desktop"> главный редактор <br class="break break--mobile"> газеты <br class="break break--tablet">«гаджетлайф»</cite>
         <ol class="first-screen__steps-list">
           <li class="first-screen__steps-item first-screen__steps-item--choose" data-step="1">Выберите<br> направление</li>
           <li class="first-screen__steps-item first-screen__steps-item--study" data-step="2">Изучите идеи<br> путешественников</li>
@@ -88,7 +86,7 @@
     <section class="about">
       <div class="wrapper about__wrapper">
         <h2 class="title about__title">О сервисе</h2>
-        <p class="about__description">Любое путешествие<br> веселее с попутчиками,<br> которые на одной волне<br> с тобой! Делитесь своими<br> идеями путешествий <br>и черпайте вдохновение<br> в чужих.<b class="about__to-invite">А если найдете кого-то<br> близкого по духу — скорее<br> зовите в совместный трип!</b>
+        <p class="about__description">Любое путешествие<br class="break break--tablet"> веселее <br class="break break--mobile"> с попутчиками,<br class="break break--tablet"> которые на<br class="break break--mobile"> одной волне<br class="break break--tablet"> с тобой! Делитесь<br class="break break--mobile"> своими <br class="break break--tablet">идеями путешествий<br class="break break--tablet"> и <br class="break break--mobile">черпайте вдохновение<br class="break break--tablet"> в чужих.<b class="about__to-invite">А если найдете кого-то<br class="break break--mobile"> близкого по духу &mdash; скорее<br class="break break--mobile"> зовите в совместный трип!</b>
         </p>
         <a href="#" class="btn btn--rectangle btn--left btn--yellow about__link" title="Перейти на страницу о сервисе">Подробнее</a>
       </div>
@@ -117,12 +115,12 @@
               <span class="countries__visited">12518</span>
             </div>
           </li>
-          <li class="countries__item">
+          <li class="countries__item countries__item--czech">
             <img src="img/czech.jpg" class="countries__cover" width="270" height="110" alt="Карлов мост в Праге">
             <img src="img/czech-flag.png" class="countries__flag" width="35" height="24" alt="Флаг Чехии">
             <div class="countries__country">
               <p class="countries__name">Чехия</p>
-              <p class="countries__intro">Закоулки старой Европы</p>
+              <p class="countries__intro">Закоулки<br class="break break--tablet"> старой<br class="break break--mobile"> Европы</p>
               <span class="countries__visited">5326</span>
             </div>
           </li>
@@ -133,7 +131,7 @@
     <section class="companions">
       <div class="wrapper companions__wrapper">
         <h2 class="title companions__title">Попутчики</h2>
-        <p class="companions__description">Все мы индивидуальны и у каждого<br> свой взгляд на идеальный отдых.<br> Одному нужен пляж и коктейль,<br> а другому маршрут для хайкинга.<b class="companions__motivation">Теперь можно легко<br> найти единомышленников!</b></p>
+        <p class="companions__description">Все мы индивидуальны и у<br class="break break--mobile"> каждого<br class="break break--tablet break--desktop"> свой взгляд на<br class="break break--mobile"> идеальный отдых.<br class="break break--tablet break--desktop"> Одному<br class="break break--mobile"> нужен пляж и коктейль,<br class="break break--tablet break--desktop"> а<br class="break break--mobile"> другому маршрут для хайкинга.<b class="companions__motivation">Теперь можно легко<br class="break break--tablet break--desktop"> найти <br class="break break--mobile">единомышленников!</b></p>
         <ul class="companions__list">
           <li class="user companions__item">
             <p class="user__level user__level--sticker">
@@ -162,16 +160,16 @@
               </p>
               <p class="user__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
               <ul class="user__transport-list">
-                <li class="user__transport-item user__transport-item--avia user__transport-item--active user__transport-item--index">
+                <li class="user__transport-item user__transport-item--avia user__transport-item--active user__transport-item--index user__transport-item--index-avia">
                   <span class="visually-hidden">самолет</span>
                 </li>
-                <li class="user__transport-item user__transport-item--bus user__transport-item--index">
+                <li class="user__transport-item user__transport-item--bus user__transport-item--index user__transport-item--index-bus">
                   <span class="visually-hidden">машина</span>
                 </li>
-                <li class="user__transport-item user__transport-item--bike user__transport-item--index">
+                <li class="user__transport-item user__transport-item--bike user__transport-item--index user__transport-item--index-bike">
                   <span class="visually-hidden">велосипед</span>
                 </li>
-                <li class="user__transport-item user__transport-item--foot user__transport-item--index">
+                <li class="user__transport-item user__transport-item--foot user__transport-item--index user__transport-item--index-foot">
                   <span class="visually-hidden">пешком</span>
                 </li>
               </ul>
@@ -200,16 +198,16 @@
               </p>
               <p class="user__tags">#бургер #бар #футбол #концерт #крафт</p>
               <ul class="user__transport-list">
-                <li class="user__transport-item user__transport-item--avia user__transport-item--active user__transport-item--index">
+                <li class="user__transport-item user__transport-item--avia user__transport-item--active user__transport-item--index user__transport-item--index-avia">
                   <span class="visually-hidden">самолет</span>
                 </li>
-                <li class="user__transport-item user__transport-item--bus user__transport-item--active user__transport-item--index">
+                <li class="user__transport-item user__transport-item--bus user__transport-item--active user__transport-item--index user__transport-item--index-bus">
                   <span class="visually-hidden">машина</span>
                 </li>
-                <li class="user__transport-item user__transport-item--bike user__transport-item--index">
+                <li class="user__transport-item user__transport-item--bike user__transport-item--index user__transport-item--index-bike">
                   <span class="visually-hidden">велосипед</span>
                 </li>
-                <li class="user__transport-item user__transport-item--foot user__transport-item--active user__transport-item--index">
+                <li class="user__transport-item user__transport-item--foot user__transport-item--active user__transport-item--index user__transport-item--index-foot">
                   <span class="visually-hidden">пешком</span>
                 </li>
               </ul>
@@ -242,12 +240,11 @@
     <section class="registration">
       <div class="wrapper registration__wrapper">
         <h2 class="title registration__title">Заинтересовались?</h2>
-        <p class="registration__description">Зарегистрируйтесь,<br class="registration__break--mobile"> это быстро и бесплатно!<br class="registration__break--mobile registration__break--tablet"> Уже зарегистрированы? Тогда<br class="registration__break--mobile">
-          скорее <a href="login.html" class="registration__link">авторизуйтесь</a>.</p>
+        <p class="registration__description"><span>Зарегистрируйтесь,<br class="break break--mobile"> это быстро и бесплатно!</span><br class="break break--all"> Уже зарегистрированы? Тогда<br class="break break--mobile"> скорее <a href="login.html" class="registration__link">авторизуйтесь</a>.</p>
         <form action="https://echo.htmlacademy.ru/" method="POST" class="registration__form">
           <label class="input-text input-text--email registration__text-field">
             <span class="visually-hidden">Ваш email</span>
-            <input type="email" class="input-text__field" name="registration-email" placeholder="E-mail">
+            <input type="email" class="input-text__field input-text__field--email" name="registration-email" placeholder="E-mail">
           </label>
           <a href="#" class="btn registration__submit">
             <span class="registration__submit-value">Регистрация</span>

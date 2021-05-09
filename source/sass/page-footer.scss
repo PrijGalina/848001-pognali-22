@@ -41,7 +41,7 @@
 .page-footer__logotype {
   display: block;
   width: 35.555%;
-  margin: 0 auto 40px;
+  margin: 6px auto 40px;
 
   img {
     margin: 0 auto;
@@ -63,6 +63,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-left: -7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -45px;
   }
 }
 
@@ -84,6 +89,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-right: 23px;
+    margin-top: -6px;
   }
 }
 
@@ -105,6 +111,12 @@
 
     @media (min-width: $tablet-width) {
       display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 200px;
+      height: 55px;
+      content: url("../img/pognali-logotype-desktop-blue.png");
     }
   }
 }

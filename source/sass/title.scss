@@ -9,15 +9,13 @@
   @media (min-width: $tablet-width) {
     font-size: 45px;
     line-height: 45px;
-    width: 89.58%;
+    width: 89.825%;
     margin: 0 auto 55px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1320px;
     margin: 0 auto;
-    font-size: 36px;
-    line-height: 36px;
   }
 
   &--page {
