@@ -1,6 +1,6 @@
 .planned {
   position: relative;
-  margin-top: 64px;
+  margin-top: 60px;
   background-color: $grey_300;
   padding-bottom: 59px;
 
@@ -48,12 +48,13 @@
 
 .planned__list {
   @include clear_list;
+  margin-top: 30px;
 }
 
 .planned__item {
   display: flex;
   flex-direction: column;
-  padding: 24px 25px 23px;
+  padding: 25px;
   background-color: $white;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -94,7 +95,7 @@
   text-align: left;
   background-color: transparent;
   width: fit-content;
-  padding: 10px 15px 10px 0;
+  padding: 22px 15px 0 0;
 
   @media (min-width: $tablet-width) {
     grid-area: btn;

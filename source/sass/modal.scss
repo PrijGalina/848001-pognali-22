@@ -1,0 +1,43 @@
+.modal {
+  position: absolute;
+  bottom: -12px;
+  display: none;
+  width: 84.375%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $white;
+  border-radius: 20px;
+  padding-top: 34px;
+  box-sizing: border-box;
+  z-index: 10;
+  box-shadow: 0px 2px 8px $blue_200_014;
+}
+
+.modal__title {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 28px;
+}
+
+.modal__price-list {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 34px;
+}
+
+.modal__close {
+  @include button-reset;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: $blue_200;
+  text-transform: uppercase;
+  background-color: $grey_70;
+  height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}

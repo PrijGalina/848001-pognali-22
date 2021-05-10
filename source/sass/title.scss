@@ -21,9 +21,9 @@
   &--page {
     font-size: 36px;
     line-height: 36px;
-    padding-top: 40px;
-    padding-bottom: 11px;
-    padding-left: 27px;
+    padding-top: 0;
+    padding-bottom: 15px;
+    padding-left: 25px;
     box-sizing: border-box;
     color: $white;
 
@@ -99,7 +99,7 @@
     height: 5px;
     background: $orange_500;
     border-radius: 4px;
-    bottom: -13px;
+    bottom: -19px;
 
     @media (min-width: $tablet-width) {
       bottom: -68px;

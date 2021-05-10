@@ -119,7 +119,8 @@
   }
 
   &--child {
-    margin-left: 58px;
+    margin-left: 40px;
+    margin-top: 8px;
 
     &::before {
       @media (min-width: $tablet-width) {
