@@ -120,7 +120,7 @@
 
     @media (min-width: $tablet-width) {
       display: block;
-      right: 0px;
+      right: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -184,6 +184,7 @@
     &::before {
       background-color: $yellow_100;
     }
+
     @media (min-width: $tablet-width) {
       margin-top: 2px;
     }

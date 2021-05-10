@@ -684,31 +684,17 @@
     width: 18px;
     height: 20px;
     background-image: url("../img/index-bus.svg");
-
-    @media (min-width: $tablet-width) {
-
-    }
   }
 
   &--index-bike::before {
     width: 26px;
     height: 28px;
-
-    @media (min-width: $tablet-width) {
-
-    }
   }
 
   &--index-foot::before {
     width: 21px;
     height: 23px;
-
-    @media (min-width: $tablet-width) {
-
-    }
   }
-
-
 }
 
 .user__pic-block {

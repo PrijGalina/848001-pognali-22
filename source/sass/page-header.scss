@@ -9,6 +9,103 @@
   }
 
   &--open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding-bottom: 29px;
+
+    .page-header__wrapper {
+      grid-template-rows: 74px min-content min-content min-content min-content;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        z-index: -1;
+        transform: translateX(-50%);
+        background-color: $white;
+
+        @media (min-width: $desktop-width) {
+          content: none;
+        }
+      }
+
+      @media (min-width: $tablet-width) {
+        grid-template-rows: 130px min-content min-content min-content min-content;
+      }
+
+      @media (min-width: $desktop-width) {
+        grid-template-columns: 200px 1fr 100px 188px;
+        grid-template-rows: 145px;
+        grid-template-areas: "logo nav user-for login";
+        justify-content: space-between;
+      }
+    }
+
+    .page-header__main-navigation {
+      display: block;
+
+      @media (min-width: $desktop-width) {
+        display: flex;
+      }
+    }
+
+    .page-header__for-user {
+      display: block;
+    }
+
+    .page-header__login {
+      display: flex;
+      text-transform: uppercase;
+    }
+
+    .page-header__social {
+      display: flex;
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
+
+    .page-header__toggle {
+      width: 21px;
+      height: 20px;
+      margin-top: -10px;
+
+      &::before,
+      &::after {
+        background-color: $grey_400;
+        left: -3px;
+
+        @media (min-width: $tablet-width) {
+          height: 2px;
+          left: 0;
+        }
+      }
+
+      &::before {
+        transform: matrix(0.71, -0.73, 0.69, 0.71, 0, 0);
+        top: inherit;
+      }
+
+      &::after {
+        transform: matrix(0.71, 0.73, -0.69, 0.71, 0, 0);
+        bottom: inherit;
+      }
+
+      @media (min-width: $tablet-width) {
+        width: 22px;
+        height: 22px;
+        margin: 4px auto 0;
+      }
+    }
+
     .page-header__img {
       &--mobile-simple {
         display: none;
@@ -30,6 +127,23 @@
         &--tablet-menu {
           display: block;
         }
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 73px;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: inherit;
+      top: inherit;
+      left: inherit;
+      width: 100%;
+      z-index: 1;
+      background-color: $blue_500;
+
+      .page-header__for-user {
+        display: flex;
       }
     }
   }
@@ -259,118 +373,3 @@
   }
 }
 
-.page-header--open {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  padding-bottom: 29px;
-
-  .page-header__wrapper {
-    grid-template-rows: 74px min-content min-content min-content min-content;
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 50%;
-      z-index: -1;
-      transform: translateX(-50%);
-      background-color: $white;
-
-      @media (min-width: $desktop-width) {
-        content: none;
-      }
-    }
-
-    @media (min-width: $tablet-width) {
-      grid-template-rows: 130px min-content min-content min-content min-content;
-    }
-
-    @media (min-width: $desktop-width) {
-      grid-template-columns: 200px 1fr 100px 188px;
-      grid-template-rows: 145px;
-      grid-template-areas: "logo nav user-for login";
-      justify-content: space-between;
-    }
-  }
-
-  .page-header__main-navigation {
-    display: block;
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-    }
-  }
-
-  .page-header__for-user {
-    display: block;
-  }
-
-  .page-header__login {
-    display: flex;
-    text-transform: uppercase;
-  }
-
-  .page-header__social {
-    display: flex;
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  .page-header__toggle {
-    width: 21px;
-    height: 20px;
-    margin-top: -10px;
-
-    &::before,
-    &::after {
-      background-color: $grey_400;
-      left: -3px;
-
-      @media (min-width: $tablet-width) {
-        height: 2px;
-        left: 0;
-      }
-    }
-
-    &::before {
-      transform: matrix(0.71, -0.73, 0.69, 0.71, 0, 0);
-      top: inherit;
-    }
-
-    &::after {
-      transform: matrix(0.71, 0.73, -0.69, 0.71, 0, 0);
-      bottom: inherit;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 22px;
-      height: 22px;
-      margin: 4px auto 0;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 73px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: inherit;
-    top: inherit;
-    left: inherit;
-    width: 100%;
-    z-index: 1;
-    background-color: $blue_500;
-
-    .page-header__for-user {
-      display: flex;
-    }
-  }
-}
