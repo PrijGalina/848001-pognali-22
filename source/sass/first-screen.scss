@@ -2,7 +2,7 @@
   position: relative;
   margin: 0 auto 0;
   background-color: $blue_500;
-  padding-bottom: 39px;
+  padding-bottom: 40px;
 
   &::after {
     content: "";
@@ -18,40 +18,112 @@
     }
 
     @media (min-width: $desktop-width) {
-      display: none;
+      bottom: 0;
+      height: 58px;
+      z-index: -1;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 569px;
+    top: -94px;
+    background-image: url("../img/planet-bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+
+    @media (min-width: $tablet-width) {
+      top: inherit;
+      bottom: 237px;
+      height: 612px;
+      background-image: url("../img/planet-bg-tablet.png");
+      background-position: top;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/planet-bg-desktop.png");
+      width: 100%;
+      height: 750px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: inherit;
+      top: -99px;
+      border-bottom-left-radius: 56px;
+      border-bottom-right-radius: 56px;
     }
   }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 96px;
+    background-color: $blue_300;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $blue_500;
+    padding-top: 46px;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 0;
   }
 }
 
 .first-screen__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: 485px 835px;
+    grid-template-rows: 185px 75px min-content;
     gap: 0 0;
     grid-template-areas:
       "title review"
       "title source"
       "step step";
   }
-  justify-content: space-between;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 192px;
+    height: 255px;
+    right: 50%;
+    transform: translateX(58%);
+    top: 130px;
+    background-image: url("../img/traveller-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      width: 372px;
+      height: 451px;
+      background-image: url("../img/traveller-tablet.png");
+      right: 50%;
+      transform: translateX(73%);
+      top: 245px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 11px;
+      width: 431px;
+      height: 640px;
+      background-image: url("../img/traveller-desktop.png");
+    }
+  }
 }
 
 .first-screen__title {
-  margin: 0 0 245px;
+  margin: 0 0 246px;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
   color: $white;
   orphans: 1;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -65,50 +137,55 @@
     font-size: 60px;
     line-height: 70px;
     margin-bottom: 0;
-    padding-left: 69px;
+    padding-left: 68px;
+    margin-top: 61px;
   }
 }
 
 .first-screen__review {
-  margin: 0 auto 18px;
+  margin: 0 0 18px 9.259%;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: $white;
   order: 3;
-  width: 84.3%;
+  width: 200px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
     margin-bottom: 45px;
+    width: auto;
+    margin-left: 4.651%;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: review;
-    margin: 0 0 45px;
+    margin: 73px 0 45px;
     width: 264px;
     justify-self: end;
-    align-self: end;
+    align-self: start;
+    padding-right: 23px;
   }
 }
 
 .first-screen__review-source {
   width: 84.3%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 29px;
+  margin: 0 0 29px 9.259%;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   font-style: normal;
   color: $white;
   order: 4;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 25px;
-    margin-bottom: 211px;
+    margin-bottom: 214px;
+    margin-left: 4.651%;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,6 +193,7 @@
     margin: 0;
     width: 264px;
     justify-self: end;
+    padding-right: 22px;
   }
 }
 
@@ -128,6 +206,10 @@
   width: 190px;
   height: 40px;
   order: 2;
+  z-index: 1;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .first-screen__steps-list {
@@ -144,8 +226,8 @@
 
   @media (min-width: $desktop-width) {
     grid-area: step;
-    margin-top: 101px;
-    margin-bottom: 93px;
+    margin-top: 116px;
+    margin-bottom: 123px;
   }
 }
 
@@ -170,7 +252,24 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
-    margin-top: -5px;
+    margin-top: -16px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 30px;
+      right: inherit;
+      left: 33px;
+      top: 104px;
+      transform: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 42px;
+      right: 32px;
+      left: inherit;
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -180,19 +279,11 @@
     line-height: 24px;
     box-sizing: border-box;
     width: 50%;
-
-    &::before {
-      font-size: 30px;
-      line-height: 30px;
-      right: inherit;
-      left: 33px;
-      top: 89px;
-      transform: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 23.863%;
+    width: 315px;
+    padding: 27px 0 32px 31px;
   }
 
   &--choose {
@@ -218,6 +309,7 @@
 
     @media (min-width: $desktop-width) {
       border-bottom-left-radius: 20px;
+      padding-left: 34px;
     }
   }
 
@@ -233,6 +325,7 @@
     @media (min-width: $desktop-width) {
       border-top-right-radius: 0;
       border-bottom-left-radius: 20px;
+      width: 345px;
 
       &::after {
         content: "";
@@ -270,6 +363,7 @@
 
     @media (min-width: $desktop-width) {
       border-top-left-radius: 20px;
+      width: 345px;
     }
   }
 
@@ -281,7 +375,11 @@
     border-bottom-right-radius: 10px;
 
     &::before {
-      margin-top: 0;
+      margin-top: -10px;
+
+      @media (min-width: $tablet-width) {
+        margin-top: -16px;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -302,6 +400,20 @@
   display: flex;
   justify-content: center;
   margin-bottom: 28px;
+  position: relative;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 118%;
+    height: 100px;
+    transform: translateX(-50%);
+    z-index: 0;
+    background-color: $blue_500;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;

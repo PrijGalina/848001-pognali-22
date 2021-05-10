@@ -2,8 +2,7 @@
   position: relative;
   z-index: 8;
   background-color: $grey_100;
-  padding-top: 101px;
-  margin-top: -30px;
+  padding-top: 100px;
   padding-bottom: 5px;
 
   &::after {
@@ -26,20 +25,22 @@
     }
 
     @media (min-width: $desktop-width) {
-      height: 56px;
-      bottom: -56px;
+      height: 60px;
+      bottom: -60px;
       border-bottom-left-radius: 56px;
       border-bottom-right-radius: 56px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 162px;
-    padding-bottom: 20px;
+    padding-top: 130px;
+    padding-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 82px;
+    padding-top: 221px;
+    margin-top: 0;
   }
 }
 
@@ -47,27 +48,57 @@
   @media (min-width: $tablet-width) {
     width: 80.468%;
     min-width: 618px;
+    position: relative;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 288px;
+    height: 574px;
+    right: -35px;
+    top: 0;
+    background-image: url("../img/countries-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      top: 11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -71px;
+      right: 0;
+    }
+  }
+
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 47.878% 38.636%;
-    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: 630px 517px;
+    grid-template-rows: 104px 263px 80px;
     gap: 0;
     grid-template-areas:
       "list title"
       "list desc"
       "list btn";
     justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 91.66%;
-    min-width: 1320px;
+    width: 1320px;
   }
 }
 
 .countries__title {
+  margin-left: 9.259%;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -2px;
+    margin-bottom: 58px;
+    margin-right: 0;
+  }
+
   @media (min-width: $desktop-width) {
     grid-area: title;
     margin-bottom: 0;
@@ -77,25 +108,22 @@
 }
 
 .countries__description {
-  margin: 0 0 60px;
-
-  br {
-    display: none;
-  }
+  margin: 0 0 62px 9%;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
-    margin-bottom: 104px;
-
-    br {
-      display: block;
-    }
+    width: 61.165%;
+    margin: 0 0 117px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: desc;
     margin-bottom: 0;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    width: 350px;
   }
 }
 
@@ -103,6 +131,46 @@
   @include clear_list;
 
   margin: 0 0 25px;
+  position: relative;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: -38px;
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    background-color: $grey_150;
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -71px;
+      left: 0;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+    width: 560px;
+    height: 81px;
+    background-image: url("../img/countries-fade.png");
+    background-repeat: no-repeat;
+    z-index: 7;
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
@@ -111,6 +179,7 @@
   @media (min-width: $desktop-width) {
     grid-area: list;
     padding-left: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -120,7 +189,31 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+
+  &--czech {
+    .countries__country {
+      padding-bottom: 6px;
+
+      @media (min-width: $tablet-width) {
+        padding-bottom: 19px;
+      }
+    }
+
+    .countries__intro {
+      @media (min-width: $tablet-width) {
+        margin-bottom: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: 24px;
+      }
+    }
   }
 }
 
@@ -136,6 +229,12 @@
     height: 100%;
     right: 0;
     z-index: 5;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 185px;
   }
 }
 
@@ -145,7 +244,7 @@
   width: 35px;
   position: absolute;
   left: 25px;
-  bottom: 89px;
+  top: 79px;
   transform: translateY(50%);
   margin-top: -5px;
   z-index: 5;
@@ -156,12 +255,14 @@
     left: inherit;
     bottom: inherit;
     right: 30.032%;
-    top: 17px;
+    top: 22px;
     transform: translateX(35px);
   }
 
   @media (min-width: $desktop-width) {
-    top: 23px;
+    top: 28px;
+    right: 152px;
+    transform: translateX(0);
   }
 }
 
@@ -171,20 +272,22 @@
   background-color: $white;
   border-radius: 10px;
   margin-top: -11px;
-  padding-top: 26px;
+  padding-top: 25px;
   padding-left: 24px;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
-    padding-left: 29px;
+    padding-top: 29px;
+    padding-left: 30px;
     padding-bottom: 20px;
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 24px;
-    padding-left: 31px;
+    padding-top: 22px;
+    padding-left: 30px;
     padding-bottom: 23px;
+    margin-top: 0;
   }
 }
 
@@ -199,6 +302,10 @@
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
   }
 }
 
@@ -216,13 +323,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
   }
 }
 
 .countries__visited {
   position: absolute;
-  right: 24px;
+  right: 66px;
+  transform: translateX(100%);
   top: 28px;
   font-weight: 500;
   font-size: 16px;
@@ -240,6 +348,13 @@
     background-image: url("../img/user-icon.svg");
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 20px;
+      left: 0;
+      background-size: contain;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -249,18 +364,22 @@
     font-size: 20px;
     line-height: 20px;
     padding-left: 28px;
+  }
 
-    &::before {
-      width: 18px;
-      height: 20px;
-      left: 0;
-      background-size: contain;
-    }
+  @media (min-width: $desktop-width) {
+    padding-left: 30px;
   }
 }
 
 .countries__link {
   height: 62px;
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      right: 29px;
+      margin-top: 4px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
@@ -270,6 +389,7 @@
     padding-right: 32px;
     padding-bottom: 27px;
     box-sizing: border-box;
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {

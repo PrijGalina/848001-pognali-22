@@ -2,5 +2,13 @@
   position: relative;
   z-index: 2;
   background-color: $grey_100;
-  min-height: 342px;
+  min-height: 322px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 571px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 499px;
+  }
 }

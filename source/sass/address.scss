@@ -1,6 +1,6 @@
 .address {
   position: relative;
-  padding-top: 47px;
+  padding-top: 46px;
   padding-bottom: 5px;
   background-color: $yellow_100;
   z-index: 3;
@@ -36,6 +36,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
+    padding-top: 114px;
   }
 }
 
@@ -57,9 +58,10 @@
   position: relative;
   padding-left: 61px;
   max-width: 160px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: $blue_200;
+  margin-bottom: 34px;
 
   &::before {
     content: "";
@@ -74,6 +76,22 @@
     border-radius: 50%;
     transform: translateY(-50%);
     background-color: $blue_600;
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 0C6.15169 0 2.625 3.52669 2.625 7.875C2.625 12.9334 6.42846 15.1449 7.26923 16.1538C9.28846 18.5769 9.40257 21 10.5 21C11.5974 21 11.7115 18.5769 13.7308 16.1538C14.5715 15.1449 18.375 12.9334 18.375 7.875C18.375 3.52669 14.8483 0 10.5 0ZM10.5 13.125C7.60069 13.125 5.25 10.7743 5.25 7.875C5.25 4.97569 7.60069 2.625 10.5 2.625C13.3993 2.625 15.75 4.97569 15.75 7.875C15.75 10.7743 13.3993 13.125 10.5 13.125ZM10.5 5.25C9.051 5.25 7.875 6.426 7.875 7.875C7.875 9.324 9.051 10.5 10.5 10.5C11.949 10.5 13.125 9.324 13.125 7.875C13.125 6.426 11.949 5.25 10.5 5.25Z' fill='%23FFD74B'/%3E%3Cellipse cx='10.5' cy='7.875' rx='0.875001' ry='0.875' fill='%23161C35'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      background-size: 32px 32px;
+      left: -94px;
+      width: 68px;
+      height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -122px;
+      width: 90px;
+      height: 90px;
+    }
   }
 
 
@@ -86,39 +104,36 @@
     margin: 0 0 44px 94px;
     position: relative;
     padding-left: 0;
-
-    &::before {
-      left: -94px;
-      width: 68px;
-      height: 68px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 0 273px;
     padding-top: 31px;
     padding-bottom: 31px;
-
-    &::before {
-      left: -118px;
-      width: 90px;
-      height: 90px;
-    }
   }
 }
 
 .address__to-go {
   height: 62px;
+  padding-left: 20px;
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      margin-top: 2px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     height: 80px;
     justify-content: flex-start;
     padding-left: 37px;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 324px;
     margin-bottom: 0;
+    padding-left: 33px;
   }
 }
