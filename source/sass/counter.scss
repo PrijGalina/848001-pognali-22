@@ -476,7 +476,7 @@
   background-color: $blue_200;
 
   &--light {
-    border: 1px solid #CBCED9;
+    border: 1px solid $grey_500;
     box-sizing: border-box;
     background-color: transparent;
   }
@@ -678,7 +678,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    border: 1px solid #CBCED9;
+    border: 1px solid $grey_500;
     box-sizing: border-box;
 
     @media (min-width: $tablet-width) {
