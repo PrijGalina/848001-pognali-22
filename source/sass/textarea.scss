@@ -90,20 +90,20 @@
 }
 
 .textarea__field-flag {
-    width: 35px;
-    height: 24px;
-    position: relative;
-    z-index: 2;
+  width: 35px;
+  height: 24px;
+  position: relative;
+  z-index: 2;
 
-    @media (min-width: $tablet-width) {
-      display: inline-block;
-      float: right;
-      width: 70px;
-      height: 47px;
-    }
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    float: right;
+    width: 70px;
+    height: 47px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin-right: -156px;
-      margin-top: 5px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-right: -156px;
+    margin-top: 5px;
+  }
 }
