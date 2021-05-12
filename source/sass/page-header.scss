@@ -4,8 +4,22 @@
   background-color: $blue_500;
   z-index: 1;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 26px;
+    background-color: $blue_300;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $blue_500;
+    padding-bottom: 0;
+  }
+
   &--inner {
     background-color: $blue_300;
+
+    @media (min-width: $desktop-width) {
+      background-color: $blue_300;
+    }
   }
 
   &--open {
@@ -148,16 +162,6 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 26px;
-    background-color: $blue_300;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: $blue_500;
-    padding-bottom: 0;
-  }
-
   &--scroll {
     position: fixed;
     background-color: $white;
@@ -200,8 +204,6 @@
       }
 
       &--desktop-menu {
-        display: none;
-
         @media (min-width: $desktop-width) {
           display: block;
         }
@@ -271,6 +273,10 @@
   }
 
   &--tablet-menu {
+    display: none;
+  }
+
+  &--desktop-menu {
     display: none;
   }
 
@@ -354,7 +360,6 @@
   background-color: transparent;
   cursor: pointer;
   justify-self: end;
-  //transform: translateX(50%);
 
   &::before,
   &::after {
@@ -374,6 +379,10 @@
 
   &::after {
     bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(50%);
   }
 
   @media (min-width: $desktop-width) {
@@ -396,6 +405,15 @@
     text-transform: uppercase;
     width: 188px;
     justify-self: end;
+  }
+
+  &:hover {
+    background-color: $orange_300;
+  }
+
+  &:active {
+    background-color: $orange_300;
+    color: $blue_200_03;
   }
 }
 

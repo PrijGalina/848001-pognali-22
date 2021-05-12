@@ -127,13 +127,27 @@
         width: 36px;
         height: 36px;
       }
+
+      @media (min-width: $desktop-width) {
+        transform: none;
+        top: 13px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 58px;
+      margin-top: 0px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 500;
     }
 
     @media (min-width: $desktop-width) {
       font-weight: 500;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      margin-left: 59px;
+      margin-left: 57px;
+      margin-top: 25px;
     }
   }
 }

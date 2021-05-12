@@ -3,14 +3,14 @@
 
   display: grid;
   grid-template-columns: repeat(5, 20%);
-  grid-auto-rows: 40px;
+  grid-auto-rows: 41px;
   gap: 0 0;
   align-items: center;
   justify-items: center;
 
   @media (min-width: $tablet-width) {
     grid-area: letter;
-    grid-auto-rows: 70px;
+    grid-auto-rows: 69px;
     border-left: 1px solid $grey_370;
     border-right: 1px solid $grey_370;
     border-top: 1px solid $grey_370;
@@ -21,8 +21,10 @@
   @media (min-width: $desktop-width) {
     margin-left: 26px;
     border: none;
-    grid-template-columns: repeat(5, 60px);
-    gap: 14px 15px;
+    grid-template-columns: repeat(5, 61px);
+    gap: 14px 14px;
+    grid-auto-rows: 70px;
+    margin-bottom: 35px;
   }
 }
 
@@ -72,7 +74,7 @@
 .country-choice__list {
   @include clear_list;
 
-  padding-top: 20px;
+  padding-top: 18px;
   padding-left: 19px;
   box-sizing: border-box;
   display: none;
@@ -89,11 +91,15 @@
 
   &--open {
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
 
     @media (min-width: $tablet-width) {
       border: none;
       border-left: 1px solid $grey_370;
+      font-size: 20px;
+      line-height: 20px;
+      padding-right: 10%;
+      padding-left: 11.23%;
     }
 
     @media (min-width: $desktop-width) {
@@ -105,8 +111,8 @@
         position: absolute;
         width: 1px;
         left: 0;
-        top: -34px;
-        bottom: -36px;
+        top: 0;
+        bottom: 0;
         background-color: $grey_370;
       }
     }
@@ -116,10 +122,14 @@
 .country-choice__item {
   font-weight: 400;
   cursor: pointer;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
   }
 }
 

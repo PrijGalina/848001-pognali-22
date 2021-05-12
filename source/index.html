@@ -17,18 +17,25 @@
         <img class="logotype-img page-header__img page-header__img--tablet-simple" src="img/pognali-logotype-tablet-white.png" width="166" height="42" alt="Погнали - сервис для поиска попутчиков">
         <img class="logotype-img page-header__img page-header__img--tablet-menu" src="img/pognali-logotype-tablet-blue.png" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
         <img class="logotype-img page-header__img page-header__img--desktop-simple" src="img/pognali-logotype-desktop-white.png" width="200" height="52" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--desktop-menu" src="img/pognali-logotype-desktop-blue.png" width="200" height="60" alt="Погнали - сервис для поиска попутчиков">
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
       <nav class="main-navigation page-header__main-navigation">
         <ul class="site-list main-navigation__list">
           <li class="site-list__item">
-            <a href="#" class="site-list__link">О сервисе</a>
+            <a href="#" class="site-list__link">
+              <span data-hover="О сервисе">О сервисе</span>
+            </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html" class="site-list__link">Направления</a>
+            <a href="form.html" class="site-list__link">
+              <span data-hover="Направления">Направления</span>
+            </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link">Попутчики</a>
+            <a href="catalog.html" class="site-list__link">
+              <span data-hover="Попутчики">Попутчики</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -222,41 +229,19 @@
         <h2 class="title prices__title">Добавьте свой профиль</h2>
         <dl class="prices__list">
           <div class="prices__tariffs prices__tariffs--base-rate" data-number="1">
-            <dt class="prices__tariffs-name">Базовое размещение</dt>
-            <dd class="prices__tariffs-value">Бесплатно</dd>
+            <dt class="prices__tariffs-name modal__tariffs-name">Базовое размещение</dt>
+            <dd class="prices__tariffs-value modal__tariffs-value">Бесплатно</dd>
           </div>
           <div class="prices__tariffs prices__tariffs--first-positions" data-number="2">
-            <dt class="prices__tariffs-name">Вывод на первых позициях</dt>
-            <dd class="prices__tariffs-value">99 руб./мес</dd>
+            <dt class="prices__tariffs-name modal__tariffs-name">Вывод на первых позициях</dt>
+            <dd class="prices__tariffs-value modal__tariffs-value">99 руб./мес</dd>
           </div>
           <div class="prices__tariffs prices__tariffs--custom-design" data-number="3">
-            <dt class="prices__tariffs-name">Кастомный цвет карточки</dt>
-            <dd class="prices__tariffs-value">59 руб./мес</dd>
+            <dt class="prices__tariffs-name modal__tariffs-name">Кастомный цвет карточки</dt>
+            <dd class="prices__tariffs-value modal__tariffs-value">59 руб./мес</dd>
           </div>
         </dl>
         <a href="#" class="prices__business">Показать тарифы для бизнеса</a>
-      </div>
-      <div class="modal modal--business">
-        <h2 class="title modal__title">Бизнес-тарифы</h2>
-        <dl class="prices__list modal__price-list">
-          <div class="prices__tariffs" data-number="1">
-            <dt class="prices__tariffs-name">Реклама у блоггера</dt>
-            <dd class="prices__tariffs-value">300 000 руб./пост</dd>
-          </div>
-          <div class="prices__tariffs" data-number="2">
-            <dt class="prices__tariffs-name">Накрутка подписчиков</dt>
-            <dd class="prices__tariffs-value">от 1 руб./шт.</dd>
-          </div>
-          <div class="prices__tariffs" data-number="3">
-            <dt class="prices__tariffs-name">Лайки от ботов</dt>
-            <dd class="prices__tariffs-value">от 20 коп./лайк</dd>
-          </div>
-          <div class="prices__tariffs" data-number="4">
-            <dt class="prices__tariffs-name">Ваш продакт-плейсмент</dt>
-            <dd class="prices__tariffs-value">Индивидуально</dd>
-          </div>
-        </dl>
-        <button class="modal__close" type="button" aria-label="Закрыть окно">Закрыть окно</button>
       </div>
     </section>
     <section class="registration">
@@ -322,7 +307,29 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+    <div class="modal price modal--business">
+      <h2 class="title modal__title">Бизнес-тарифы</h2>
+      <dl class="prices__list modal__price-list">
+        <div class="prices__tariffs modal__prices-tariffs">
+          <dt class="prices__tariffs-name modal__tariffs-name">Реклама у блоггера</dt>
+          <dd class="prices__tariffs-value modal__tariffs-value">300 000 руб./пост</dd>
+        </div>
+        <div class="prices__tariffs modal__prices-tariffs">
+          <dt class="prices__tariffs-name modal__tariffs-name">Накрутка подписчиков</dt>
+          <dd class="prices__tariffs-value modal__tariffs-value">от 1 руб./шт.</dd>
+        </div>
+        <div class="prices__tariffs modal__prices-tariffs">
+          <dt class="prices__tariffs-name modal__tariffs-name">Лайки от ботов</dt>
+          <dd class="prices__tariffs-value modal__tariffs-value">от 20 коп./лайк</dd>
+        </div>
+        <div class="prices__tariffs modal__prices-tariffs">
+          <dt class="prices__tariffs-name modal__tariffs-name">Ваш продакт-плейсмент</dt>
+          <dd class="prices__tariffs-value modal__tariffs-value">Индивидуально</dd>
+        </div>
+      </dl>
+      <button class="modal__close" type="button" aria-label="Закрыть окно">Закрыть окно</button>
+    </div>
+  <!--<script src="js/script.js"></script>-->
 </body>
 
 </html>

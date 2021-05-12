@@ -12,28 +12,30 @@
   <header class="page-header page-header--inner">
     <div class="wrapper page-header__wrapper">
       <a href="index.html" class="logotype page-header__logotype">
-        <img class="logotype-img page-header__img page-header__img--mobile-simple" src="img/pognali-logotype-mobile-white.png"
-          width="96" height="15" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--mobile-menu" src="img/pognali-logotype-mobile-blue.png"
-          width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--tablet-simple" src="img/pognali-logotype-tablet-white.png"
-          width="166" height="42" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--tablet-menu" src="img/pognali-logotype-tablet-blue.png"
-          width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--desktop-simple" src="img/pognali-logotype-desktop-white.png"
-          width="200" height="52" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--mobile-simple" src="img/pognali-logotype-mobile-white.png" width="96" height="15" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--mobile-menu" src="img/pognali-logotype-mobile-blue.png" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--tablet-simple" src="img/pognali-logotype-tablet-white.png" width="166" height="42" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--tablet-menu" src="img/pognali-logotype-tablet-blue.png" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--desktop-simple" src="img/pognali-logotype-desktop-white.png" width="200" height="52" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--desktop-menu" src="img/pognali-logotype-desktop-blue.png" width="200" height="60" alt="Погнали - сервис для поиска попутчиков">
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
       <nav class="main-navigation page-header__main-navigation">
         <ul class="site-list main-navigation__list">
           <li class="site-list__item">
-            <a href="#" class="site-list__link">О сервисе</a>
+            <a href="#" class="site-list__link">
+              <span data-hover="О сервисе">О сервисе</span>
+            </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html" class="site-list__link">Направления</a>
+            <a href="form.html" class="site-list__link">
+              <span data-hover="Направления">Направления</span>
+            </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link">Попутчики</a>
+            <a href="catalog.html" class="site-list__link">
+              <span data-hover="Попутчики">Попутчики</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -79,7 +81,8 @@
           <span>level</span>
         </p>
         <div class="user__pic-block">
-          <img src="img/petr-demin-100.png" class="user__pic user__pic--thumbnail" width="190" height="190" alt="Портрет пользователя Петра Дёмина">
+          <img src="img/petr-demin-100.png" class="user__pic user__pic--thumbnail user__pic--mobile" width="100" height="100" alt="Портрет пользователя Петра Дёмина">
+          <img src="img/petr-demin-94.png" class="user__pic user__pic--thumbnail user__pic--table" width="94" height="94" alt="Портрет пользователя Петра Дёмина">
           <button type="button" class="btn btn--rectangle user__edit-pic" aria-label="Изменить фотографию профиля">фото</button>
         </div>
         <button type="button" class="btn btn--oval user__edit-pic" aria-label="Изменить фотографию профиля">сменить фото</button>
@@ -152,7 +155,7 @@
               <p class="counter__desc">Укажите предпочтительное количество попутчиков, которых<br> вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
               <label class="input-text input-text--number counter__row counter__company">
                   <span class="input-text__caption input-text__caption--title">ищу попутчиков:</span>
-                  <span class="input-text__caption input-text__caption--unit">чел.</span>
+                  <span class="input-text__caption input-text__caption--unit input-text__caption--people">чел.</span>
                 </span>
                 <p class="input-text__row">
                   <button type="button" class="input-text__controls input-text__controls--minus"></button>
@@ -162,11 +165,11 @@
               </label>
               <label class="input-text input-text--number counter__row counter__date">
                   <span class="input-text__caption input-text__caption--title">длительность:</span>
-                  <span class="input-text__caption input-text__caption--unit">дн.</span>
+                  <span class="input-text__caption input-text__caption--unit input-text__caption--date">дн.</span>
                 </span>
                 <p class="input-text__row">
                   <button type="button" class="input-text__controls input-text__controls--minus"></button>
-                  <input type="number" class="input-text__field input-text__field--number" value="3">
+                  <input type="number" class="input-text__field input-text__field--number" value="2">
                   <button type="button" class="input-text__controls input-text__controls--plus"></button>
                 </p>
               </label>
@@ -222,7 +225,7 @@
                     <li class="calendar__days-item calendar__days-item--disable">23</li>
                     <li class="calendar__days-item calendar__days-item--disable">24</li>
                     <li class="calendar__days-item calendar__days-item--disable">25</li>
-                    <li class="calendar__days-item calendar__days-item--selected">26<span class="calendar__date">Заезд</span></li>
+                    <li class="calendar__days-item calendar__days-item--selected calendar__days-item--focus">26<span class="calendar__date">Заезд</span></li>
                     <li class="calendar__days-item calendar__days-item--selected">27</li>
                     <li class="calendar__days-item calendar__days-item--selected">28<span class="calendar__date">Выезд</span></li>
                     <li class="calendar__days-item">29</li>
@@ -236,103 +239,167 @@
                   </ul>
                 </div>
               </div>
-              <button type="button" class="btn btn--oval btn--yellow counter__button counter__button--next" aria-label="Перейти к составлению маршрута">Следующий шаг</button>
+              <button type="button" class="btn btn--oval btn--yellow btn--left counter__button counter__button--next" aria-label="Перейти к составлению маршрута">Следующий шаг</button>
+              <ul class="pagination pagination--circle to-plan__pagination to-plan__pagination--desktop">
+                <li class="pagination__item to-plan__pagination-item">
+                  <button class="pagination__btn pagination__btn--circle pagination__btn--current to-plan__pagination-btn" type="button" aria-label="Перейти к первому шагу - даты пребывания">
+                    <span class="to-plan__pagination-name">Даты</span>
+                  </button>
+                </li>
+                <li class="pagination__item to-plan__pagination-item">
+                  <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти ко второму шагу - маршрут">
+                    <span class="to-plan__pagination-name">Маршрут</span>
+                  </button>
+                </li>
+                <li class="pagination__item to-plan__pagination-item">
+                  <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
+                    <span class="to-plan__pagination-name">Развлечения</span>
+                  </button>
+                </li>
+              </ul>
             </div>
           </fieldset>
           <fieldset class="counter counter--country to-plan__step">
-            <legend class="counter__title">Шаг 2. <br>Маршрут</legend>
-            <p class="counter__desc">Укажите страны, которые вы хотели бы посетить.<br> Это может быть одна или сразу несколько.</p>
-            <div class="counter__select">
-              <div class="counter__select-trigger">
-                <span class="counter__select-value">Босния и герцеговина</span>
-                <div class="counter__select-arrow"></div>
-                <output name="countries-flag" class="counter__countries-value">
-                  <img src="img/bosnia-and-herzegovina-flag.png" class="counter__countries-flag" width="35" height="24" alt="">
-                </output>
-                <button type="button" class="counter__delete" aria-label="Убрать страну из маршрута">удалить</button>
+            <div class="counter__inner">
+              <legend class="counter__title">Шаг 2. <br>Маршрут</legend>
+              <p class="counter__desc">Укажите страны, которые вы хотели бы посетить.<br> Это может быть одна или сразу несколько.</p>
+              <div class="counter__select">
+                <div class="counter__select-trigger">
+                  <span class="counter__select-value">Босния и герцеговина</span>
+                  <div class="counter__select-arrow"></div>
+                  <output name="countries-flag" class="counter__countries-value">
+                    <img src="img/bosnia-and-herzegovina-flag.png" class="counter__countries-flag" width="35" height="24" alt="">
+                  </output>
+                  <button type="button" class="counter__delete" aria-label="Убрать страну из маршрута">удалить</button>
+                </div>
               </div>
-            </div>
-            <div class="counter__select">
-              <div class="counter__select-trigger">
-                <span class="counter__select-value">Чехия</span>
-                <div class="counter__select-arrow"></div>
-                <output name="countries-flag" class="counter__countries-value">
-                  <img src="img/czech-flag.png" class="counter__countries-flag" width="35" height="24" alt="">
-                </output>
-                <button type="button" class="counter__delete" aria-label="Убрать страну из маршрута">удалить</button>
+              <div class="counter__select">
+                <div class="counter__select-trigger">
+                  <span class="counter__select-value">Чехия</span>
+                  <div class="counter__select-arrow"></div>
+                  <output name="countries-flag" class="counter__countries-value">
+                    <img src="img/czech-flag.png" class="counter__countries-flag" width="35" height="24" alt="">
+                  </output>
+                  <button type="button" class="counter__delete" aria-label="Убрать страну из маршрута">удалить</button>
+                </div>
               </div>
-            </div>
-            <div class="counter__select counter__select--more">
-              <div class="counter__select-trigger">
-                <span class="counter__select-value counter__select-value--choice">Выберите страну</span> <!-- +- "counter__select-value--open" -->
-                <div class="counter__select-arrow counter__select-arrow--light"></div>
+              <div class="counter__select counter__select--more">
+                <div class="counter__select-trigger">
+                  <span class="counter__select-value counter__select-value--choice">Выберите страну</span> <!-- +- "counter__select-value--open" -->
+                  <div class="counter__select-arrow counter__select-arrow--light"></div>
+                </div>
+                <div class="country-choice counter__select-dropdown"><!-- +- "counter__select-dropdown--open" -->
+                  <ul class="country-choice__letter-list">
+                    <li class="country-choice__letter-item country-choice__letter-item--selected">а</li>
+                    <li class="country-choice__letter-item">б</li>
+                    <li class="country-choice__letter-item">в</li>
+                    <li class="country-choice__letter-item">г</li>
+                    <li class="country-choice__letter-item">д</li>
+                    <li class="country-choice__letter-item">е</li>
+                    <li class="country-choice__letter-item">з</li>
+                    <li class="country-choice__letter-item">и</li>
+                    <li class="country-choice__letter-item">к</li>
+                    <li class="country-choice__letter-item">л</li>
+                    <li class="country-choice__letter-item">м</li>
+                    <li class="country-choice__letter-item">н</li>
+                    <li class="country-choice__letter-item">о</li>
+                    <li class="country-choice__letter-item">п</li>
+                    <li class="country-choice__letter-item">р</li>
+                    <li class="country-choice__letter-item">с</li>
+                    <li class="country-choice__letter-item">т</li>
+                    <li class="country-choice__letter-item">у</li>
+                    <li class="country-choice__letter-item">ф</li>
+                    <li class="country-choice__letter-item">х</li>
+                    <li class="country-choice__letter-item">ч</li>
+                    <li class="country-choice__letter-item">ш</li>
+                    <li class="country-choice__letter-item">э</li>
+                    <li class="country-choice__letter-item">ю</li>
+                    <li class="country-choice__letter-item">я</li>
+                  </ul>
+                  <ul class="country-choice__list country-choice__list--open">
+                    <li class="country-choice__item">Австралия</li>
+                    <li class="country-choice__item">Австрия</li>
+                    <li class="country-choice__item">Азербайджан</li>
+                    <li class="country-choice__item">Албания</li>
+                    <li class="country-choice__item">Алжир</li>
+                    <li class="country-choice__item">Ангола</li>
+                    <li class="country-choice__item">Андорра</li>
+                    <li class="country-choice__item">Антигуа и Барбуда</li>
+                    <li class="country-choice__item">Аргентина</li>
+                    <li class="country-choice__item">Армения</li>
+                    <li class="country-choice__item">Афганистан</li>
+                  </ul>
+                </div>
               </div>
-              <div class="country-choice counter__select-dropdown"><!-- +- "counter__select-dropdown--open" -->
-                <ul class="country-choice__letter-list">
-                  <li class="country-choice__letter-item country-choice__letter-item--selected">а</li>
-                  <li class="country-choice__letter-item">б</li>
-                  <li class="country-choice__letter-item">в</li>
-                  <li class="country-choice__letter-item">г</li>
-                  <li class="country-choice__letter-item">д</li>
-                  <li class="country-choice__letter-item">е</li>
-                  <li class="country-choice__letter-item">з</li>
-                  <li class="country-choice__letter-item">и</li>
-                  <li class="country-choice__letter-item">к</li>
-                  <li class="country-choice__letter-item">л</li>
-                  <li class="country-choice__letter-item">м</li>
-                  <li class="country-choice__letter-item">н</li>
-                  <li class="country-choice__letter-item">о</li>
-                  <li class="country-choice__letter-item">п</li>
-                  <li class="country-choice__letter-item">р</li>
-                  <li class="country-choice__letter-item">с</li>
-                  <li class="country-choice__letter-item">т</li>
-                  <li class="country-choice__letter-item">у</li>
-                  <li class="country-choice__letter-item">ф</li>
-                  <li class="country-choice__letter-item">х</li>
-                  <li class="country-choice__letter-item">ч</li>
-                  <li class="country-choice__letter-item">ш</li>
-                  <li class="country-choice__letter-item">э</li>
-                  <li class="country-choice__letter-item">ю</li>
-                  <li class="country-choice__letter-item">я</li>
-                </ul>
-                <ul class="country-choice__list country-choice__list--open">
-                  <li class="country-choice__item">Австралия</li>
-                  <li class="country-choice__item">Австрия</li>
-                  <li class="country-choice__item">Азербайджан</li>
-                  <li class="country-choice__item">Албания</li>
-                  <li class="country-choice__item">Алжир</li>
-                  <li class="country-choice__item">Ангола</li>
-                  <li class="country-choice__item">Андорра</li>
-                  <li class="country-choice__item">Антигуа и Барбуда</li>
-                  <li class="country-choice__item">Аргентина</li>
-                  <li class="country-choice__item">Армения</li>
-                  <li class="country-choice__item">Афганистан</li>
-                </ul>
+              <button type="button" class="counter__add-btn" aria-label="Добавить другую страну">
+                <span>Добавить страну</span>
+              </button>
+              <div class="counter__footer">
+                <button type="button" class="btn btn--oval btn--yellow btn--left counter__button counter__button--next" aria-label="Рассказать о своих планах в каждой стране">Следующий шаг</button>
+                <button type="button" class="btn counter__button counter__button--prev" aria-label="Изменить даты путешествия">на шаг назад</button>
               </div>
-            </div>
-            <button type="button" class="counter__add-btn" aria-label="Добавить другую страну">Добавить страну</button>
-            <div class="counter__footer">
-              <button type="button" class="btn btn--oval btn--yellow counter__button counter__button--next" aria-label="Рассказать о своих планах в каждой стране">Следующий шаг</button>
-              <button type="button" class="btn counter__button counter__button--prev" aria-label="Изменить даты путешествия">на шаг назад</button>
+              <ul class="pagination pagination--circle to-plan__pagination to-plan__pagination--desktop">
+                <li class="pagination__item to-plan__pagination-item">
+                  <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к первому шагу - даты пребывания">
+                    <span class="to-plan__pagination-name">Даты</span>
+                  </button>
+                </li>
+                <li class="pagination__item to-plan__pagination-item">
+                  <button class="pagination__btn pagination__btn--circle pagination__btn--current to-plan__pagination-btn" type="button" aria-label="Перейти ко второму шагу - маршрут">
+                    <span class="to-plan__pagination-name">Маршрут</span>
+                  </button>
+                </li>
+                <li class="pagination__item to-plan__pagination-item">
+                  <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
+                    <span class="to-plan__pagination-name">Развлечения</span>
+                  </button>
+                </li>
+              </ul>
             </div>
           </fieldset>
           <fieldset class="counter counter--entertainment to-plan__step">
-            <legend class="counter__title">Шаг 3. <br> Развлечения</legend>
-            <p class="counter__desc">Наконец, расскажите о своих планах времяпровождения.<br> Можно писать в свободной форме и ставить тэги.</p>
-            <label class="textarea counter__textarea" for="point-desc">
-              <span class="textarea__caption counter__textarea-caption">Босния и Герцеговина</span>
-              <img src="img/bosnia-and-herzegovina-flag-70.png" class="textarea__field-flag" width="70" height="47" alt="Флаг Боснии и Герцеговины">
-              <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий"></textarea>
-            </label>
-            <label class="textarea counter__textarea" for="point-desc">
-              <span class="textarea__caption counter__textarea-caption">Чехия</span>
-              <img src="img/czech-flag-70.png" class="textarea__field-flag" width="70" height="47" alt="Флаг Чехии">
-              <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-            </label>
+            <div class="counter__inner">
+              <legend class="counter__title">Шаг 3. <br> Развлечения</legend>
+              <p class="counter__desc">Наконец, расскажите о своих планах времяпровождения.<br> Можно писать в свободной форме и ставить тэги.</p>
+              <label class="textarea counter__textarea" for="point-desc">
+                <p class="textarea__caption counter__textarea-caption">
+                  <span>Босния и Герцеговина</span>
+                  <img src="img/bosnia-and-herzegovina-flag-70.png" class="textarea__field-flag" width="70" height="47" alt="Флаг Боснии и Герцеговины">
+                </p>
+                <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий"></textarea>
+              </label>
+              <label class="textarea counter__textarea" for="point-desc">
+                <p class="textarea__caption counter__textarea-caption">
+                  <span>Чехия</span>
+                  <img src="img/czech-flag-70.png" class="textarea__field-flag" width="70" height="47" alt="Флаг Чехии">
+                </p>
+                <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все.</textarea>
+              </label>
+            </div>
             <div class="counter__footer">
-              <button type="submit" class="btn btn--oval btn--yellow counter__button counter__button--submit" aria-label="Сохранить план путешествия">Отправить</button>
+              <button type="submit" class="btn btn--oval btn--yellow btn--left counter__button counter__button--submit" aria-label="Сохранить план путешествия">Отправить</button>
               <button type="button" class="btn counter__button counter__button--prev" aria-label="Вернуться к составлению маршрута">на шаг назад</button>
             </div>
+            <ul class="pagination pagination--circle to-plan__pagination to-plan__pagination--desktop">
+              <li class="pagination__item to-plan__pagination-item">
+                <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button"
+                  aria-label="Перейти к первому шагу - даты пребывания">
+                  <span class="to-plan__pagination-name">Даты</span>
+                </button>
+              </li>
+              <li class="pagination__item to-plan__pagination-item">
+                <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn"
+                  type="button" aria-label="Перейти ко второму шагу - маршрут">
+                  <span class="to-plan__pagination-name">Маршрут</span>
+                </button>
+              </li>
+              <li class="pagination__item to-plan__pagination-item">
+                <button class="pagination__btn pagination__btn--circle pagination__btn--current to-plan__pagination-btn" type="button"
+                  aria-label="Перейти к третьему шагу - развлечения">
+                  <span class="to-plan__pagination-name">Развлечения</span>
+                </button>
+              </li>
+            </ul>
           </fieldset>
         </form>
       </div>

@@ -2,10 +2,14 @@
   display: block;
 
   &:last-of-type {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 49px;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 55px;
     }
   }
 }
@@ -26,7 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 37px;
+    padding-bottom: 26px;
     line-height: 30px;
     width: 100%;
     position: relative;
@@ -75,24 +79,31 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 23px;
-    padding: 19px 18px;
+    padding: 15px 18px;
     height: 140px;
   }
 
   @media (min-width: $desktop-width) {
     height: 142px;
+    padding: 23px 15px 23px 25px;
   }
 }
 
 .textarea__field-flag {
-  display: none;
+    width: 35px;
+    height: 24px;
+    position: relative;
+    z-index: 2;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
     float: right;
+    width: 70px;
+    height: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: -159px;
+    margin-right: -156px;
+    margin-top: 5px;
   }
 }

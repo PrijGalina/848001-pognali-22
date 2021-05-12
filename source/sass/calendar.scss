@@ -1,6 +1,10 @@
 .calendar {
   margin-top: 25px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: 19px;
   }
@@ -32,8 +36,8 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding-top: 26px;
-    padding-bottom: 22px;
+    padding-top: 23px;
+    padding-bottom: 25px;
   }
 }
 
@@ -42,7 +46,7 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 39px;
+    margin-top: 38px;
     margin-bottom: 47px;
   }
 
@@ -91,6 +95,11 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+    padding-left: 35px;
+  }
 }
 
 .calendar__title-extended {
@@ -118,7 +127,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-auto-rows: 73px;
+    grid-auto-rows: 71px;
   }
 }
 
@@ -136,6 +145,18 @@
   border-bottom: 1px solid $grey_370;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 16px;
+    padding-top: 14px;
+  }
+
   &--disable {
     color: $grey_03;
     background-color: $white;
@@ -149,19 +170,21 @@
 
     @media (min-width: $desktop-width) {
       flex-direction: column;
+      font-weight: 400;
+      padding-top: 12px;
+      padding-left: 16px;
+      line-height: 24px;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 18px;
-  }
+  &--focus {
+    border: 2px solid #FF5C23;
+    box-sizing: border-box;
 
-  @media (min-width: $desktop-width) {
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-left: 16px;
-    padding-top: 14px;
+    @media (min-width: $desktop-width) {
+      padding-top: 9px;
+      padding-left: 12px;
+    }
   }
 }
 
@@ -192,6 +215,12 @@
     width: 19px;
     height: 34px;
     background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='35' viewBox='0 0 20 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.9389 0.909048C18.7326 0.698127 18.4875 0.530784 18.2176 0.416605C17.9477 0.302425 17.6584 0.243652 17.3662 0.243652C17.0741 0.243652 16.7848 0.302425 16.5149 0.416605C16.245 0.530784 15.9999 0.698127 15.7936 0.909048L1.02659 15.966C0.861855 16.1336 0.731159 16.3328 0.641986 16.5519C0.552813 16.7711 0.506912 17.0061 0.506912 17.2434C0.506912 17.4807 0.552813 17.7157 0.641986 17.9349C0.731159 18.1541 0.861855 18.3532 1.02659 18.5208L15.7936 33.5778C16.6643 34.4656 18.0682 34.4656 18.9389 33.5778C19.8096 32.6899 19.2654 31.7144 18.3946 30.8266L5.3349 17.2434L18.3946 3.59045C18.8969 3.07657 19.8096 1.77876 18.9389 0.909048Z' fill='black'/%3E%3C/svg%3E%0A");
+    margin-left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -206,5 +235,11 @@
     width: 19px;
     height: 34px;
     background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='35' viewBox='0 0 20 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.08281 34.0563C1.2891 34.2672 1.53416 34.4345 1.80396 34.5487C2.07376 34.6629 2.363 34.7217 2.65511 34.7217C2.94721 34.7217 3.23645 34.6629 3.50625 34.5487C3.77605 34.4345 4.02111 34.2672 4.2274 34.0563L18.991 18.9993C19.1557 18.8317 19.2864 18.6326 19.3755 18.4134C19.4647 18.1942 19.5106 17.9592 19.5106 17.7219C19.5106 17.4846 19.4647 17.2496 19.3755 17.0305C19.2864 16.8113 19.1557 16.6122 18.991 16.4445L4.2274 1.38755C3.35686 0.499718 1.95335 0.499718 1.08281 1.38755C0.212271 2.27539 0.741529 3.61216 1.61207 4.5L14.334 17.7219L1.61207 31C0.759295 31.8697 0.212271 33.1866 1.08281 34.0563Z' fill='black'/%3E%3C/svg%3E%0A");
+    margin-right: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }

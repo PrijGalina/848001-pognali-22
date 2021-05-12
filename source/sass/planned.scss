@@ -25,12 +25,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 117px;
+    margin-top: 112px;
     padding-bottom: 106px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 121px;
+    margin-top: 117px;
+    padding-bottom: 117px;
   }
 }
 
@@ -42,7 +43,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-left: 64px;
+    padding-left: 65px;
   }
 }
 
@@ -65,21 +66,22 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 35.113% 41.1% 23.787%;
+    grid-template-rows: 98px 55px;
     gap: 0;
     grid-template-areas:
       "name name name"
       "count date btn";
-    padding: 40px 0 14px 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 585px 177px 1fr 108px;
     grid-template-rows: 1fr;
     grid-template-areas: "name count date btn";
-    padding: 36px 42px 36px 43px;
-    margin-bottom: 15px;
+    padding: 35px 42px 37px 41px;
+    margin-bottom: 16px;
+    align-items: center;
   }
 }
 
@@ -100,11 +102,17 @@
   @media (min-width: $tablet-width) {
     grid-area: btn;
     justify-self: end;
-    padding: 0 40px 0 0;
+    padding: 0 38px 0 0;
     margin-bottom: 0;
     font-size: 20px;
     line-height: 20px;
     width: fit-content;
+    letter-spacing: 0.1em;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    letter-spacing: 0.08em;
   }
 }
 
@@ -127,7 +135,10 @@
 
     @media (min-width: $tablet-width) {
       left: inherit;
-      right: 40px;
+      right: 33px;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 500;
     }
 
     @media (min-width: $desktop-width) {
@@ -146,6 +157,7 @@
     border-bottom: 1px solid $grey_500_03;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -167,7 +179,7 @@
     font-size: 20px;
     line-height: 20px;
     width: fit-content;
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 0;
   }
 
@@ -181,6 +193,12 @@
     @media (min-width: $tablet-width) {
       grid-area: count;
       padding-left: 40px;
+      letter-spacing: 0.1em;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -193,12 +211,13 @@
 
 .planned__title {
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
-    padding-top: 27px;
+    margin-bottom: 50px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
-    margin-bottom: 49px;
+    margin-bottom: 53px;
+    padding-left: 5px;
   }
 }

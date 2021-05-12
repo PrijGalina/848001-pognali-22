@@ -43,15 +43,17 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding-top: 30px;
-      padding-bottom: 66px;
+      padding-top: 62px;
+      padding-left: 36px;
+      padding-bottom: 69px;
       font-size: 60px;
       line-height: 60px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 46px;
-      padding-bottom: 68px;
+      padding-top: 40px;
+      padding-bottom: 72px;
+      padding-left: 0;
     }
   }
 
@@ -80,7 +82,7 @@
 
   &--form {
     @media (min-width: $desktop-width) {
-      width: 1161px;
+      width: 1190px;
       margin: 0 auto;
     }
   }
@@ -102,7 +104,12 @@
     bottom: -19px;
 
     @media (min-width: $tablet-width) {
-      bottom: -68px;
+      bottom: -72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -75px;
+      height: 8px;
     }
   }
 }

@@ -15,15 +15,19 @@
     border-top-right-radius: 30px;
 
     @media (min-width: $desktop-width) {
-      top: -56px;
-      height: 56px;
+      top: -52px;
+      height: 60px;
       border-top-left-radius: 56px;
       border-top-right-radius: 56px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -47,22 +51,32 @@
 
   @media (min-width: $tablet-width) {
     left: inherit;
-    right: 0;
-    top: 24px;
+    right: -2px;
+    top: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 193px;
-    right: 207px;
-    flex-direction: column;
+    display: none;
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      display: block;
+      right: 207px;
+      top: 108px;
+    }
   }
 }
 
 .to-plan__form {
-  padding-bottom: 73px;
+  padding-bottom: 65px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 109px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 120px;
   }
 }
 
@@ -70,12 +84,13 @@
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 56px;
+    margin-bottom: 59px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 54px;
-    padding-left: 64px;
+    margin-bottom: 55px;
+    padding-left: 67px;
     box-sizing: border-box;
   }
 }
