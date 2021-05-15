@@ -215,7 +215,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
-    padding-bottom: 55px;
+    padding-bottom: 56px;
     border-bottom: 1px solid $grey_120;
   }
 }
@@ -256,116 +256,6 @@
     margin-bottom: 25px;
     grid-area: child;
   }
-}
-
-.counter__select {
-  position: relative;
-  margin-bottom: 22px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 8px;
-    height: auto;
-    bottom: -17px;
-    right: 49px;
-    background-image: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.64645 10.3536C3.84171 10.5488 4.15829 10.5488 4.35355 10.3536L7.53553 7.17157C7.7308 6.97631 7.7308 6.65973 7.53553 6.46447C7.34027 6.2692 7.02369 6.2692 6.82843 6.46447L4 9.29289L1.17157 6.46447C0.976311 6.2692 0.659728 6.2692 0.464466 6.46447C0.269204 6.65973 0.269204 6.97631 0.464466 7.17157L3.64645 10.3536ZM3.5 0L3.5 10H4.5L4.5 0L3.5 0Z' fill='%23CBCED9'/%3E%3C/svg%3E%0A");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    max-width: inherit;
-    margin-bottom: 0;
-    padding-bottom: 15px;
-
-    &:first-of-type {
-      padding-top: 42px;
-      border-top: 1px solid $grey_120;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 142px;
-      top: 0;
-      bottom: 0;
-      width: 1px;
-      background-color: $grey_120;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 14px;
-
-    &:first-of-type {
-      padding-top: 65px;
-      padding-bottom: 14px;
-    }
-
-    .counter__select-trigger {
-      margin-right: 0;
-    }
-
-    &::after {
-      right: inherit;
-      left: 775px;
-    }
-  }
-
-  &--more {
-    &::before {
-      @media (min-width: $tablet-width) {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 25px;
-        width: 22px;
-        height: 24px;
-        background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.875 1.125L1.125 7.875' stroke='%23AFB0B5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1.125 1.125L7.875 7.875' stroke='%23AFB0B5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-        background-repeat: no-repeat;
-        background-size: contain;
-        opacity: 0.1;
-      }
-
-      @media (min-width: $desktop-width) {
-        right: 10px;
-      }
-    }
-
-    .counter__select-trigger {
-      @media (min-width: $tablet-width) {
-        margin-right: 169px;
-      }
-
-      @media (min-width: $desktop-width) {
-        margin-right: 0;
-      }
-    }
-
-    .counter__select-arrow {
-      @media (min-width: $tablet-width) {
-        right: -34px;
-        background-color: $white;
-      }
-
-      @media (min-width: $desktop-width) {
-        right: 226px;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 100%;
-    }
-  }
-}
-
-.counter__select-trigger {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .counter__textarea {
@@ -409,248 +299,6 @@
 
   @media (min-width: $desktop-width) {
     max-width: 730px;
-  }
-}
-
-.counter__delete {
-  @include button-reset;
-
-  font-size: 0;
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  background-color: $grey_100;
-  background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.875 1.125L1.125 7.875' stroke='%23AFB0B5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1.125 1.125L7.875 7.875' stroke='%23AFB0B5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: -10px;
-  right: -10px;
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-    width: 22px;
-    height: 24px;
-    border-radius: 0;
-    top: inherit;
-    right: inherit;
-    margin-left: 25px;
-    background-color: transparent;
-    background-size: contain;
-    opacity: 0.1;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 78px;
-    margin-right: 10px;
-  }
-}
-
-.counter__countries-value {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 53px;
-  height: 42px;
-  padding: 9px;
-  border: 1px solid $grey_500;
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    width: 70px;
-    height: 47px;
-    margin-left: 52px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 75px;
-  }
-}
-
-.counter__select-arrow {
-  position: absolute;
-  right: 49px;
-  z-index: 5;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: $blue_200;
-
-  &--light {
-    border: 1px solid $grey_500;
-    box-sizing: border-box;
-    background-color: transparent;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 14px;
-    height: 14px;
-    right: 135px;
-    margin-top: -5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    right: 226px;
-  }
-}
-
-.counter__countries-flag {
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 70px;
-    height: 47px;
-  }
-}
-
-.counter__select-value {
-  position: relative;
-  padding: 12px 11px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: $blue_200;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 76.363%;
-  height: 42px;
-  border: 1px solid $grey_500;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-right: -1px;
-  flex-grow: 1;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 9px;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.638485 1.09805C0.569006 1.17667 0.513881 1.27007 0.476269 1.37289C0.438657 1.47571 0.419296 1.58595 0.419296 1.69727C0.419296 1.8086 0.438657 1.91883 0.476269 2.02165C0.513881 2.12448 0.569006 2.21787 0.638485 2.29649L5.59843 7.92308C5.65365 7.98585 5.71924 8.03565 5.79144 8.06963C5.86364 8.1036 5.94105 8.12109 6.01922 8.12109C6.09739 8.12109 6.17479 8.1036 6.247 8.06963C6.3192 8.03565 6.38479 7.98585 6.44001 7.92308L11.4 2.29649C11.6924 1.96472 11.6924 1.42982 11.4 1.09805C11.1075 0.766277 10.8004 1.04112 10.5079 1.37289L7.90792 4.3364L5.99995 6.42412L1.19996 1.09079C1.19996 1.09079 0.92498 0.766277 0.638485 1.09805Z' fill='black'/%3E%3C/svg%3E%0A");
-    background-repeat: no-repeat;
-    z-index: 9;
-    opacity: 0.3;
-
-    @media (min-width: $tablet-width) {
-      width: 16px;
-      height: 12px;
-      background-size: contain;
-      right: 28px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 25px;
-      height: 22px;
-      background-image: url("data:image/svg+xml,%3Csvg width='25' height='22' viewBox='0 0 25 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.3' clip-path='url(%23clip0)'%3E%3Cpath d='M2.41098 3.48124C2.2807 3.59655 2.17735 3.73355 2.10682 3.88437C2.0363 4.0352 2 4.19689 2 4.36018C2 4.52347 2.0363 4.68516 2.10682 4.83599C2.17735 4.98681 2.2807 5.12381 2.41098 5.23913L11.7109 13.4923C11.8144 13.5843 11.9374 13.6574 12.0728 13.7072C12.2082 13.7571 12.3533 13.7827 12.4999 13.7827C12.6464 13.7827 12.7916 13.7571 12.9269 13.7072C13.0623 13.6574 13.1853 13.5843 13.2888 13.4923L22.5887 5.23913C23.1371 4.75248 23.1371 3.96788 22.5887 3.48124C22.0404 2.99459 21.4645 3.39773 20.9162 3.88437L16.0412 8.23128L12.4637 11.2936L3.46374 3.47059C3.46374 3.47059 2.94816 2.99459 2.41098 3.48124Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='22' height='24' fill='white' transform='translate(0.5 22) rotate(-90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
-      right: 20px;
-      opacity: 1;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 52px;
-    height: 36px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-image: url("../img/counter-fade_mobile.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 2;
-  }
-
-  &--choice {
-    width: 100%;
-    overflow: inherit;
-
-    &::after {
-      width: 21px;
-      height: 21px;
-      border-radius: 50%;
-      background-color: $grey_100;
-      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.875 1.125L1.125 7.875' stroke='%23AFB0B5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1.125 1.125L7.875 7.875' stroke='%23AFB0B5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      top: 0;
-      right: -10px;
-
-      @media (min-width: $tablet-width) {
-        background-image: none;
-        width: 14px;
-        height: 14px;
-        background-color: #ffffff;
-        right: -34px;
-        border: 1px solid $grey_500;
-        box-sizing: border-box;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
-      @media (min-width: $desktop-width) {
-        display: none;
-      }
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-    height: inherit;
-    padding-top: 26px;
-    padding-bottom: 22px;
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 68.715%;
-    letter-spacing: 0.1em;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 730px;
-    flex-grow: inherit;
-    padding-bottom: 21px;
-    padding-top: 27px;
-  }
-
-  &--open {
-    background-color: $blue_200;
-    color: $white;
-    letter-spacing: 0.02em;
-    padding-left: 17px;
-
-    &::before {
-      background-image: url("data:image/svg+xml,%3Csvg width='9' height='10' viewBox='0 0 9 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M7.875 1.80615L1.125 7.99365' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1.125 1.80615L7.875 7.99365' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='8.25' height='9' fill='white' transform='translate(0 9.0249) rotate(-90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
-      opacity: 1;
-      width: 9px;
-      right: 17px;
-
-      @media (min-width: $tablet-width) {
-        width: 22px;
-        height: 21px;
-        background-size: contain;
-        background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.3'%3E%3Cpath d='M18.875 2.75L3.125 19.25' stroke='white' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3.125 2.75L18.875 19.25' stroke='white' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A");
-        right: 22px;
-      }
-    }
-
-    & + .counter__select-arrow {
-      display: none;
-    }
-
-    @media (min-width: $tablet-width) {
-      padding-top: 25px;
-      padding-bottom: 24px;
-      padding-left: 24px;
-      letter-spacing: 0.1em;
-    }
   }
 }
 
@@ -721,6 +369,10 @@
       background-position: 0 0;
       transform: none;
     }
+
+    @media (min-width: $desktop-width) {
+      right: -45px;
+    }
   }
 
   span {
@@ -761,10 +413,8 @@
   @media (min-width: $desktop-width) {
     width: 730px;
     margin-bottom: 61px;
-
-    &::after {
-      right: -45px;
-    }
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -773,10 +423,11 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: $blue_200;
   padding-right: 2px;
+  justify-content: center;
+  padding-left: 0;
 
   &--next {
     margin-bottom: 13px;
@@ -924,8 +575,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
-    float: left;
     height: 47px;
     line-height: 47px;
     padding-left: 0;

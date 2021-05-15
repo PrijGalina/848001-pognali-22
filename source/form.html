@@ -73,36 +73,36 @@
         <span class="title__value">Направления</span>
       </h1>
     </div>
-    <section class="user">
-      <div class="wrapper user__wrapper">
+    <section class="user user-personal">
+      <div class="wrapper user-personal__wrapper">
         <h2 class="visually-hidden">Информация о пользователе</h2>
-        <p class="user__level user__level--user-page">
+        <p class="user__level user-personal__level">
           <b>80</b>
           <span>level</span>
         </p>
-        <div class="user__pic-block">
-          <img src="img/petr-demin-100.png" class="user__pic user__pic--thumbnail user__pic--mobile" width="100" height="100" alt="Портрет пользователя Петра Дёмина">
-          <img src="img/petr-demin-94.png" class="user__pic user__pic--thumbnail user__pic--tablet" width="94" height="94" alt="Портрет пользователя Петра Дёмина">
-          <button type="button" class="btn btn--rectangle user__edit-pic" aria-label="Изменить фотографию профиля">фото</button>
+        <div class="user-personal__photo-block">
+          <img src="img/petr-demin-100.png" class="user-personal__photo user__photo user__photo--mobile" width="100" height="100" alt="Портрет пользователя Петра Дёмина">
+          <img src="img/petr-demin-94.png" class="user-personal__photo user__photo user__photo--tablet" width="94" height="94" alt="Портрет пользователя Петра Дёмина">
+          <button type="button" class="btn btn--rectangle user__edit-pic user-personal__photo-edit user-personal__photo-edit--inside" aria-label="Изменить фотографию профиля">фото</button>
         </div>
-        <button type="button" class="btn btn--oval user__edit-pic" aria-label="Изменить фотографию профиля">сменить фото</button>
-        <div class="user__container user__container--tags">
-          <p class="caption caption--border user__caption">ТЭГИ</p>
-          <p class="user__tags user__tags--faded user__tags--user-page">#бургер #бар #футбол #концерт #крафт</p>
+        <button type="button" class="btn btn--oval user__edit-pic user-personal__photo-edit" aria-label="Изменить фотографию профиля">сменить фото</button>
+        <div class="user-personal__container user-personal__container--tags">
+          <p class="caption caption--border user-personal__caption user-personal__caption--tags">ТЭГИ</p>
+          <p class="user__tags user-personal__tags">#бургер #бар #футбол #концерт #крафт</p>
         </div>
-        <div class="user__container user__container--transport">
-          <p class="caption caption--border user__caption">транспорт</p>
-          <ul class="user__transport-list">
-            <li class="user__transport-item user__transport-item--avia user__transport-item--active">
+        <div class="user-personal__container user-personal__container--transport">
+          <p class="caption caption--border user-personal__caption user-personal__caption--transport">транспорт</p>
+          <ul class="transport">
+            <li class="transport__item transport__item--avia transport__item--avia-personal transport__item--active transport__item--user-personal">
               <span class="visually-hidden">самолет</span>
             </li>
-            <li class="user__transport-item user__transport-item--bus user__transport-item--active">
+            <li class="transport__item transport__item--bus transport__item--bus-personal transport__item--active transport__item--user-personal">
               <span class="visually-hidden">машина</span>
             </li>
-            <li class="user__transport-item user__transport-item--bike">
+            <li class="transport__item transport__item--bike transport__item--bike-personal transport__item--user-personal">
               <span class="visually-hidden">велосипед</span>
             </li>
-            <li class="user__transport-item user__transport-item--foot user__transport-item--active">
+            <li class="transport__item transport__item--foot transport__item--foot-personal transport__item--active transport__item--user-personal">
               <span class="visually-hidden">пешком</span>
             </li>
           </ul>
@@ -263,30 +263,30 @@
             <div class="counter__inner">
               <legend class="counter__title">Шаг 2. <br>Маршрут</legend>
               <p class="counter__desc">Укажите страны, которые вы хотели бы посетить.<br> Это может быть одна или сразу несколько.</p>
-              <div class="counter__select">
-                <div class="counter__select-trigger">
-                  <span class="counter__select-value">Босния и герцеговина</span>
-                  <div class="counter__select-arrow"></div>
-                  <output name="countries-flag" class="counter__countries-value">
-                    <img src="img/bosnia-and-herzegovina-flag.png" class="counter__countries-flag" width="35" height="24" alt="">
+              <div class="country-select">
+                <div class="country-select__trigger">
+                  <span class="country-select__value">Босния и герцеговина</span>
+                  <div class="country-select__arrow"></div>
+                  <output name="countries-flag" class="country-select__output">
+                    <img src="img/bosnia-and-herzegovina-flag.png" class="country-select__flag" width="35" height="24" alt="">
                   </output>
-                  <button type="button" class="counter__delete" aria-label="Убрать страну из маршрута">удалить</button>
+                  <button type="button" class="country-select__delete" aria-label="Убрать страну из маршрута">удалить</button>
                 </div>
               </div>
-              <div class="counter__select">
-                <div class="counter__select-trigger">
-                  <span class="counter__select-value">Чехия</span>
-                  <div class="counter__select-arrow"></div>
-                  <output name="countries-flag" class="counter__countries-value">
-                    <img src="img/czech-flag.png" class="counter__countries-flag" width="35" height="24" alt="">
+              <div class="country-select">
+                <div class="country-select__trigger">
+                  <span class="country-select__value">Чехия</span>
+                  <div class="country-select__arrow"></div>
+                  <output name="countries-flag" class="country-select__output">
+                    <img src="img/czech-flag.png" class="country-select__flag" width="35" height="24" alt="">
                   </output>
-                  <button type="button" class="counter__delete" aria-label="Убрать страну из маршрута">удалить</button>
+                  <button type="button" class="country-select__delete" aria-label="Убрать страну из маршрута">удалить</button>
                 </div>
               </div>
-              <div class="counter__select counter__select--more">
-                <div class="counter__select-trigger">
-                  <span class="counter__select-value counter__select-value--choice">Выберите страну</span> <!-- +- "counter__select-value--open" -->
-                  <div class="counter__select-arrow counter__select-arrow--light"></div>
+              <div class="country-select country-select--more">
+                <div class="country-select__trigger country-select__trigger--more">
+                  <span class="country-select__value country-select__value--choice">Выберите страну</span> <!-- +- "country-select__value--open" -->
+                  <div class="country-select__arrow country-select__arrow--more country-select__arrow--light"></div>
                 </div>
                 <div class="country-choice counter__select-dropdown"><!-- +- "counter__select-dropdown--open" -->
                   <ul class="country-choice__letter-list">

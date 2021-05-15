@@ -31,7 +31,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 117px;
-    padding-bottom: 117px;
+    padding-bottom: 115px;
   }
 }
 
@@ -55,7 +55,7 @@
 .planned__item {
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  padding: 24px;
   background-color: $white;
   border-radius: 10px;
   margin-bottom: 10px;
