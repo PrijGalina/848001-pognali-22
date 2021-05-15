@@ -12,7 +12,18 @@
   <header class="page-header page-header--inner">
     <div class="wrapper page-header__wrapper">
       <a href="index.html" class="logotype page-header__logotype">
-        <img src="img/pognali-logotype-simple.png" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--mobile-simple" src="img/pognali-logotype-mobile-white.png"
+          width="96" height="15" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--mobile-menu" src="img/pognali-logotype-mobile-blue.png"
+          width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--tablet-simple" src="img/pognali-logotype-tablet-white.png"
+          width="166" height="42" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--tablet-menu" src="img/pognali-logotype-tablet-blue.png"
+          width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--desktop-simple"
+          src="img/pognali-logotype-desktop-white.png" width="200" height="52" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-header__img page-header__img--desktop-menu" src="img/pognali-logotype-desktop-blue.png"
+          width="200" height="60" alt="Погнали - сервис для поиска попутчиков">
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
       <nav class="main-navigation page-header__main-navigation">
@@ -484,217 +495,217 @@
         <div class="wrapper user-choice__wrapper">
           <h2 class="visually-hidden">Список пользователей</h2>
           <ul class="user-choice__list">
-            <li class="user user--choice">
-              <img src="img/tanya_firsova-70.jpg" class="user__pic user__pic--choice" width="70" height="70" alt="Фотография пользователя Татьяны Фирсовой">
-              <div class="user__name-block">
-                <p class="user__name user__name--choice">Таня<br> Фирсова</p>
-                <span class="user__status user__status--offline user__status--choice"></span>
+            <li class="user user-search user--choice">
+              <img src="img/tanya_firsova-70.jpg" class="user__photo user-search__photo" width="70" height="70" alt="Фотография пользователя Татьяны Фирсовой">
+              <div class="user-search__name-block">
+                <p class="user__name user-search__name user__name--choice">Таня<br> Фирсова</p>
+                <span class="user__status user-search__status"></span>
               </div>
-              <div class="user__like user__like--active user__like--choice">
-                <span class="user__like-count user__like-count--choice">1,5 М</span>
+              <div class="user-search__like user-search__like--active">
+                <span class="user-search__count">1,5 М</span>
               </div>
-              <p class="user__tags user__tags--left user-choice__block user__tags--choice">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-              <div class="user__wants-block user-choice__block user__country user__country--choice">
-                <span class="user__block-title">хочет посетить:</span>
-                <ul class="user__wants-list user__wants-list--column">
-                  <li class="user__wants-item">
-                    <span class="user__wants-title">шри-ланка</span>
-                    <img src="img/sri-lanka-flag.png" class="user__wants-country" width="26" height="18" alt="Флаг Шри-Ланки">
+              <p class="user__tags user-search__tags user-choice__block">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              <div class="user-search__wants-block user-choice__block">
+                <span class="user-search__caption user-search__caption--wants">хочет посетить:</span>
+                <ul class="user__wants-list user-search__wants">
+                  <li class="user__wants-item user-search__wants-item">
+                    <span class="user-search__wants-title">шри-ланка</span>
+                    <img src="img/sri-lanka-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Шри-Ланки">
                   </li>
-                  <li class="user__wants-item">
-                    <span class="user__wants-title">таиланд</span>
-                    <img src="img/thailand-flag.png" class="user__wants-country" width="26" height="18" alt="Флаг Таиланда">
+                  <li class="user__wants-item user-search__wants-item">
+                    <span class="user-search__wants-title">таиланд</span>
+                    <img src="img/thailand-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Таиланда">
                   </li>
-                  <li class="user__wants-item">
-                    <span class="user__wants-title">сейшелы</span>
-                    <img src="img/seychelles-flag.png" class="user__wants-country" width="26" height="18" alt="Флаг Сейшелы">
+                  <li class="user__wants-item user-search__wants-item">
+                    <span class="user-search__wants-title">сейшелы</span>
+                    <img src="img/seychelles-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Сейшелы">
                   </li>
                 </ul>
               </div>
-              <div class="user-choice__block user__bottom user__bottom--choice">
-                <div class="user__transport-block">
-                  <span class="user__block-title">транспорт:</span>
-                  <ul class="user__transport-list user__transport-list--left">
-                    <li class="user__transport-item user__transport-item--avia user__transport-item--active">
+              <div class="user-choice__block user-search__group">
+                <div class="user-search__transport-block">
+                  <span class="user-search__caption user-search__caption--inline">транспорт:</span>
+                  <ul class="transport user-search__transport-list">
+                    <li class="transport__item transport__item--avia transport__item--avia-search transport__item--active">
                       <span class="visually-hidden">самолет</span>
                     </li>
-                    <li class="user__transport-item user__transport-item--bus">
+                    <li class="transport__item transport__item--bus transport__item--bus-search">
                       <span class="visually-hidden">машина</span>
                     </li>
-                    <li class="user__transport-item user__transport-item--bike">
+                    <li class="transport__item transport__item--bike transport__item--bike-search">
                       <span class="visually-hidden">велосипед</span>
                     </li>
-                    <li class="user__transport-item user__transport-item--foot">
+                    <li class="transport__item transport__item--foot transport__item--foot-search">
                       <span class="visually-hidden">пешком</span>
                     </li>
                   </ul>
                 </div>
-                <div class="user__level-block">
-                  <span class="user__block-title">левел:</span>
-                  <p class="user__level user__level--small user__level--choice">
+                <div class="user-search__level-block">
+                  <span class="user-search__caption user-search__caption--inline">левел:</span>
+                  <p class="user__level user-search__level">
                     <b>99</b>
                     <span>level</span>
                   </p>
                 </div>
               </div>
-              <button type="button" class="btn btn--oval btn--yellow user__to-call user__to-call--choice">Позвать!</button>
+              <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
-            <li class="user user--choice">
-              <img src="img/petr-demin-70.jpg" class="user__pic user__pic--choice" width="70" height="70" alt="Фотография пользователя Петра Демина">
-              <div class="user__name-block">
-                <p class="user__name user__name--choice">Петя<br> Демин</p>
-                <span class="user__status user__status--offline user__status--choice"></span>
+            <li class="user user-search user--choice">
+              <img src="img/petr-demin-70.jpg" class="user__photo user-search__photo" width="70" height="70" alt="Фотография пользователя Петра Демина">
+              <div class="user-search__name-block">
+                <p class="user__name user-search__name user__name--choice">Петя<br> Демин</p>
+                <span class="user__status user-search__status"></span>
               </div>
-              <div class="user__like user__like--choice">
-                <span class="user__like-count user__like-count--choice">1500</span>
+              <div class="user-search__like">
+                <span class="user-search__count">1500</span>
               </div>
-              <p class="user__tags user__tags--left user-choice__block user__tags--choice">#бургер #бар #футбол #концерт #крафт</p>
-              <div class="user__wants-block user-choice__block user__country user__country--choice">
-                <span class="user__block-title">хочет посетить:</span>
-                <ul class="user__wants-list user__wants-list--column">
-                  <li class="user__wants-item">
-                    <span class="user__wants-title">бельгия</span>
-                    <img src="img/belgium-flag.png" class="user__wants-country" width="26" height="18" alt="Флаг Бельгии">
+              <p class="user__tags user-search__tags user-choice__block">#бургер #бар #футбол #концерт #крафт</p>
+              <div class="user-search__wants-block user-choice__block">
+                <span class="user-search__caption user-search__caption--wants">хочет посетить:</span>
+                <ul class="user__wants-list user-search__wants">
+                  <li class="user__wants-item user-search__wants-item">
+                    <span class="user-search__wants-title">бельгия</span>
+                    <img src="img/belgium-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Бельгии">
                   </li>
-                  <li class="user__wants-item">
-                    <span class="user__wants-title">чехия</span>
-                    <img src="img/czech-flag.png" class="user__wants-country" width="26" height="18" alt="Флаг Чехии">
+                  <li class="user__wants-item user-search__wants-item">
+                    <span class="user-search__wants-title">чехия</span>
+                    <img src="img/czech-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Чехии">
                   </li>
                 </ul>
               </div>
-              <div class="user-choice__block user__bottom user__bottom--choice">
-                <div class="user__transport-block">
-                  <span class="user__block-title">транспорт:</span>
-                  <ul class="user__transport-list user__transport-list--left">
-                    <li class="user__transport-item user__transport-item--avia user__transport-item--active">
+              <div class="user-choice__block user-search__group">
+                <div class="user-search__transport-block">
+                  <span class="user-search__caption user-search__caption--inline">транспорт:</span>
+                  <ul class="transport user-search__transport-list">
+                    <li class="transport__item transport__item--avia transport__item--avia-search transport__item--active transport__item--search">
                       <span class="visually-hidden">самолет</span>
                     </li>
-                    <li class="user__transport-item user__transport-item--bus user__transport-item--active">
+                    <li class="transport__item transport__item--bus transport__item--bus-search transport__item--active transport__item--search">
                       <span class="visually-hidden">машина</span>
                     </li>
-                    <li class="user__transport-item user__transport-item--bike">
+                    <li class="transport__item transport__item--bike transport__item--bike-search transport__item--search">
                       <span class="visually-hidden">велосипед</span>
                     </li>
-                    <li class="user__transport-item user__transport-item--foot user__transport-item--active">
+                    <li class="transport__item transport__item--foot transport__item--foot-search transport__item--active transport__item--search">
                       <span class="visually-hidden">пешком</span>
                     </li>
                   </ul>
                 </div>
-                <div class="user__level-block">
-                  <span class="user__block-title">левел:</span>
-                  <p class="user__level user__level--small user__level--choice">
+                <div class="user-search__level-block">
+                  <span class="user-search__caption user-search__caption--inline">левел:</span>
+                  <p class="user__level user-search__level">
                     <b>80</b>
                     <span>level</span>
                   </p>
                 </div>
               </div>
-              <button type="button" class="btn btn--oval btn--yellow user__to-call user__to-call--choice">Позвать!</button>
+              <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
-            <li class="user user--choice">
-              <img src="img/mark-smolov-70.jpg" class="user__pic user__pic--choice" width="70" height="70" alt="Фотография пользователя Марка Смолова">
-              <div class="user__name-block">
-                <p class="user__name user__name--choice">Марк<br> Смолов</p>
-                <span class="user__status user__status--offline user__status--choice"></span>
+            <li class="user user-search user--choice">
+              <img src="img/mark-smolov-70.jpg" class="user__photo user-search__photo" width="70" height="70" alt="Фотография пользователя Марка Смолова">
+              <div class="user-search__name-block">
+                <p class="user__name user-search__name user__name--choice">Марк<br> Смолов</p>
+                <span class="user__status user-search__status"></span>
               </div>
-              <div class="user__like user__like--choice">
-                <span class="user__like-count user__like-count--choice">170</span>
+              <div class="user-search__like">
+                <span class="user-search__count">170</span>
               </div>
-              <p class="user__tags user__tags--left user-choice__block user__tags--choice">#рэп #тату #хайпбист #кроссовки #суприм</p>
-              <div class="user__wants-block user-choice__block user__country user__country--choice">
-                <span class="user__block-title">хочет посетить:</span>
-                <ul class="user__wants-list user__wants-list--column">
-                  <li class="user__wants-item">
-                    <span class="user__wants-title">сша</span>
-                    <img src="img/usa-flag.png" class="user__wants-country" width="26" height="18" alt="Флаг США">
+              <p class="user__tags user-search__tags user-choice__block">#рэп #тату #хайпбист #кроссовки #суприм</p>
+              <div class="user-search__wants-block user-choice__block">
+                <span class="user-search__caption user-search__caption--wants">хочет посетить:</span>
+                <ul class="user__wants-list user-search__wants">
+                  <li class="user__wants-item user-search__wants-item">
+                    <span class="user-search__wants-title">сша</span>
+                    <img src="img/usa-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг США">
                   </li>
-                  <li class="user__wants-item">
-                    <span class="user__wants-title">австралия</span>
-                    <img src="img/australia-flag.png" class="user__wants-country" width="26" height="18" alt="Флаг Австралии">
+                  <li class="user__wants-item user-search__wants-item">
+                    <span class="user-search__wants-title">австралия</span>
+                    <img src="img/australia-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Австралии">
                   </li>
-                  <li class="user__wants-item">
-                    <span class="user__wants-title">доминика</span>
-                    <img src="img/dominica-flag.png" class="user__wants-country" width="26" height="18" alt="Флаг Доминики">
+                  <li class="user__wants-item user-search__wants-item">
+                    <span class="user-search__wants-title">доминика</span>
+                    <img src="img/dominica-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Доминики">
                   </li>
                 </ul>
               </div>
-              <div class="user-choice__block user__bottom user__bottom--choice">
-                <div class="user__transport-block">
-                  <span class="user__block-title">транспорт:</span>
-                  <ul class="user__transport-list user__transport-list--left">
-                    <li class="user__transport-item user__transport-item--avia user__transport-item--active">
+              <div class="user-choice__block user-search__group">
+                <div class="user-search__transport-block">
+                  <span class="user-search__caption user-search__caption--inline">транспорт:</span>
+                  <ul class="transport user-search__transport-list">
+                    <li class="transport__item transport__item--avia transport__item--avia-search transport__item--active transport__item--search">
                       <span class="visually-hidden">самолет</span>
                     </li>
-                    <li class="user__transport-item user__transport-item--bus">
+                    <li class="transport__item transport__item--bus transport__item--bus-search transport__item--search">
                       <span class="visually-hidden">машина</span>
                     </li>
-                    <li class="user__transport-item user__transport-item--bike user__transport-item--active">
+                    <li class="transport__item transport__item--bike transport__item--bike-search transport__item--active transport__item--search">
                       <span class="visually-hidden">велосипед</span>
                     </li>
-                    <li class="user__transport-item user__transport-item--foot">
+                    <li class="transport__item transport__item--foot transport__item--foot-search transport__item--search">
                       <span class="visually-hidden">пешком</span>
                     </li>
                   </ul>
                 </div>
-                <div class="user__level-block">
-                  <span class="user__block-title">левел:</span>
-                  <p class="user__level user__level--small user__level--choice">
+                <div class="user-search__level-block">
+                  <span class="user-search__caption user-search__caption--inline">левел:</span>
+                  <p class="user__level user-search__level">
                     <b>25</b>
                     <span>level</span>
                   </p>
                 </div>
               </div>
-              <button type="button" class="btn btn--oval btn--yellow user__to-call user__to-call--choice">Позвать!</button>
+              <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
-            <li class="user user--choice">
-              <img src="img/larisa-rogovaya-70.jpg" class="user__pic user__pic--choice" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
-              <div class="user__name-block">
-                <p class="user__name user__name--choice">Лариса<br> Роговая</p>
-                <span class="user__status user__status--online user__status--choice"></span>
+            <li class="user user-search user--choice">
+              <img src="img/larisa-rogovaya-70.jpg" class="user__photo user-search__photo" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
+              <div class="user-search__name-block">
+                <p class="user__name user-search__name user__name--choice">Лариса<br> Роговая</p>
+                <span class="user__status user__status--online user-search__status"></span>
               </div>
-              <div class="user__like user__like--choice">
-                <span class="user__like-count user__like-count--choice">23</span>
+              <div class="user-search__like">
+                <span class="user-search__count">23</span>
               </div>
-              <p class="user__tags user__tags--left user-choice__block user__tags--choice">#образование #карьера #учеба #линкедин</p>
-              <div class="user__wants-block user-choice__block user__country user__country--choice">
-                <span class="user__block-title">хочет посетить:</span>
-                <ul class="user__wants-list user__wants-list--column">
-                  <li class="user__wants-item">
-                    <span class="user__wants-title">великобритания</span>
-                    <img src="img/united-kingdom-flag.png" class="user__wants-country" width="26" height="18" alt="Флаг Великобритании">
+              <p class="user__tags user-search__tags user-choice__block">#образование #карьера #учеба #линкедин</p>
+              <div class="user-search__wants-block user-choice__block">
+                <span class="user-search__caption user-search__caption--wants">хочет посетить:</span>
+                <ul class="user__wants-list user-search__wants">
+                  <li class="user__wants-item user-search__wants-item">
+                    <span class="user-search__wants-title">великобритания</span>
+                    <img src="img/united-kingdom-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Великобритании">
                   </li>
-                  <li class="user__wants-item">
-                    <span class="user__wants-title">германия</span>
-                    <img src="img/germany-flag.png" class="user__wants-country" width="26" height="18" alt="Флаг Германии">
+                  <li class="user__wants-item user-search__wants-item">
+                    <span class="user-search__wants-title">германия</span>
+                    <img src="img/germany-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Германии">
                   </li>
                 </ul>
               </div>
-              <div class="user-choice__block user__bottom user__bottom--choice">
-                <div class="user__transport-block">
-                  <span class="user__block-title">транспорт:</span>
-                  <ul class="user__transport-list user__transport-list--left">
-                    <li class="user__transport-item user__transport-item--avia user__transport-item--active">
+              <div class="user-choice__block user-search__group">
+                <div class="user-search__transport-block">
+                  <span class="user-search__caption user-search__caption--inline">транспорт:</span>
+                  <ul class="transport user-search__transport-list">
+                    <li class="transport__item transport__item--avia transport__item--avia-search transport__item--active transport__item--search">
                       <span class="visually-hidden">самолет</span>
                     </li>
-                    <li class="user__transport-item user__transport-item--bus user__transport-item--active">
+                    <li class="transport__item transport__item--bus transport__item--bus-search transport__item--active transport__item--search">
                       <span class="visually-hidden">машина</span>
                     </li>
-                    <li class="user__transport-item user__transport-item--bike">
+                    <li class="transport__item transport__item--bike transport__item--bike-search transport__item--search">
                       <span class="visually-hidden">велосипед</span>
                     </li>
-                    <li class="user__transport-item user__transport-item--foot">
+                    <li class="transport__item transport__item--foot transport__item--foot-search transport__item--search">
                       <span class="visually-hidden">пешком</span>
                     </li>
                   </ul>
                 </div>
-                <div class="user__level-block">
-                  <span class="user__block-title">левел:</span>
-                  <p class="user__level user__level--small user__level--choice">
+                <div class="user-search__level-block">
+                  <span class="user-search__caption user-search__caption--inline">левел:</span>
+                  <p class="user__level user-search__level">
                     <b>50</b>
                     <span>level</span>
                   </p>
                 </div>
               </div>
-              <button type="button" class="btn btn--oval btn--yellow user__to-call user__to-call--choice">Позвать!</button>
+              <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
           </ul>
           <button type="button" class="btn user-choice__add" aria-label="Показать больше пользователей">показать еще</button>
@@ -725,7 +736,10 @@
   <footer class="page-footer">
     <div class="wrapper page-footer__wrapper">
       <a href="index.html" class="logotype page-footer__logotype">
-        <img src="img/pognali-logotype-simple.png" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-footer__img page-footer__img--mobile" src="img/pognali-logotype-mobile-blue.png"
+          width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
+        <img class="logotype-img page-footer__img page-footer__img--tablet" src="img/pognali-logotype-tablet-blue.png"
+          width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
       </a>
       <ul class="social page-footer__social">
         <li class="social__item">
@@ -750,6 +764,7 @@
       </div>
     </div>
   </footer>
+  <!--<script src="js/script.js"></script>-->
 </body>
 
 </html>

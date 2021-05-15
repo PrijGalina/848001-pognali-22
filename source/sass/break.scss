@@ -24,4 +24,12 @@
       display: block;
     }
   }
+
+  &--not-mobile {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }

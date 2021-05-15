@@ -12,6 +12,10 @@
     border-bottom-right-radius: 60px;
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
+  }
 }
 
 .page-container__link {

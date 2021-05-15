@@ -119,20 +119,35 @@
   }
 
   &--child {
-    margin-left: 58px;
+    margin-left: 40px;
+    margin-top: 8px;
 
     &::before {
       @media (min-width: $tablet-width) {
         width: 36px;
         height: 36px;
       }
+
+      @media (min-width: $desktop-width) {
+        transform: none;
+        top: 13px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 58px;
+      margin-top: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 500;
     }
 
     @media (min-width: $desktop-width) {
       font-weight: 500;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      margin-left: 59px;
+      margin-left: 57px;
+      margin-top: 25px;
     }
   }
 }

@@ -133,6 +133,18 @@
             background-color: transparent;
             background-size: 16px 14px;
           }
+
+          &:hover {
+            background-color: $orange_500;
+          }
+
+          &:active {
+            background-color: $orange_500;
+
+            &::before {
+              opacity: 0.3;
+            }
+          }
         }
 
         &--phone {
@@ -142,6 +154,18 @@
             background-image: url("../img/icon_call.svg");
             background-color: transparent;
             background-size: 18px 18px;
+          }
+
+          &:hover {
+            background-color: $orange_700;
+          }
+
+          &:active {
+            background-color: $orange_700;
+
+            &::before {
+              opacity: 0.3;
+            }
           }
         }
       }
