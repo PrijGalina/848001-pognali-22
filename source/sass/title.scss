@@ -67,6 +67,14 @@
     &::before {
       background-color: $grey_150;
     }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 66px;
+    }
   }
 
   &--inner {

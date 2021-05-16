@@ -1,8 +1,8 @@
 .user-search {
   display: grid;
-  grid-template-columns: 30.172% 1fr 6px;
+  grid-template-columns: 30.172% 1fr;
   grid-template-rows: max-content max-content max-content max-content max-content max-content;
-  gap: 13px 16px;
+  gap: 0;
   grid-template-areas:
     "photo name"
     "photo count-like"
@@ -11,13 +11,13 @@
     "transport-level transport-level"
     "btn btn";
   box-sizing: border-box;
-  padding: 15px 20px 23px 18px;
+  padding: 14px 21px 23px 18px;
   background-color: $white;
   border-radius: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
-    padding: 35px 25px 25px 35px;
+    padding: 31px 25px 5px 35px;
     grid-template-columns: 34.92% 31.904% 8.73% 24.603%;
     grid-template-rows: 30px 111px 50px max-content;
     gap: 0 0;
@@ -37,27 +37,31 @@
       "photo name name wants"
       "photo tags tags wants"
       "photo btn count-like transport-level";
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 }
 
 .user-search__tags {
   grid-area: tags;
-  margin: 0;
+  margin: 13px 0 10px;
   max-width: 90.909%;
   font-size: 15px;
+  padding-left: 8px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     line-height: 23px;
     max-width: 100%;
-    padding: 20px 0 0;
+    padding: 0 6px;
     color: $black;
+    margin-top: 19px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
     color: $black;
     padding-left: 8px;
+    margin-top: 4px;
   }
 }
 
@@ -65,11 +69,13 @@
   grid-area: photo;
   width: 100%;
   border-radius: 50%;
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     margin-right: 13.637%;
     width: 86.363%;
     border-radius: 20px;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +84,7 @@
     margin-right: 36px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    padding-top: 0;
   }
 }
 
@@ -89,17 +96,19 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
+    width: max-content;
   }
 }
 
 .user-search__name {
   font-size: 20px;
   line-height: 20px;
+  margin-left: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 30px;
-    margin-right: 31px;
+    margin-left: 3px;
 
     br {
       display: none;
@@ -109,7 +118,7 @@
   @media (min-width: $desktop-width) {
     margin-top: 45px;
     margin-bottom: 18px;
-    padding-left: 8px;
+    padding-left: 5px;
   }
 }
 
@@ -122,10 +131,14 @@
   text-align: center;
   text-transform: uppercase;
   grid-area: btn;
+  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     width: 150px;
+    height: 50px;
     margin: 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -137,25 +150,25 @@
   position: relative;
   cursor: pointer;
   grid-area: count-like;
-  margin-top: -13px;
   display: flex;
   align-items: center;
+  margin-left: 16px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: -4px;
     left: -35px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    transform: translateY(-50%);
     background-color: $grey_50;
 
     @media (min-width: $tablet-width) {
       width: 50px;
       height: 50px;
       left: -50px;
+      top: 0px;
     }
 
     @media (min-width: $desktop-width) {
@@ -166,29 +179,34 @@
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: -3px;
     left: -35px;
     width: 30px;
     height: 30px;
-    transform: translateY(-50%);
     background-image: url("../img/like.svg");
     background-position: center;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      width: 20px;
-      height: 17px;
+      width: 21px;
+      height: 19px;
       left: -35px;
+      top: 18px;
       background-size: contain;
     }
 
     @media (min-width: $desktop-width) {
-      left: 15px;
+      left: 14px;
+      top: 16px;
     }
   }
 
   &--active::after {
     background-image: url("../img/like-active.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -200,7 +218,7 @@
 .user-search__count {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 22px;
   text-transform: uppercase;
   color: $blue_500;
 
@@ -216,8 +234,7 @@
 }
 
 .user-search__caption {
-  display: block;
-  margin-bottom: 10px;
+  display: inline-block;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
@@ -235,7 +252,7 @@
 
   &--wants {
     @media (min-width: $tablet-width) {
-      margin-left: 50px;
+      margin-left: 39px;
       padding: 0 10px;
       width: fit-content;
       font-size: 15px;
@@ -245,19 +262,36 @@
       z-index: 2;
     }
   }
+
+  &--transport {
+    padding-left: 1px;
+    margin-bottom: 17px;
+    margin-left: 8px;
+  }
+
+  &--level {
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 11px;
+  }
 }
 
 .user-search__status {
   grid-area: status;
-  position: relative;
-  align-self: center;
+  position: absolute;
+  right: 1px;
+  top: 10px;
+
+  @media (min-width: $tablet-width) {
+    right: -36px;
+    top: 13px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-top: 57px;
     align-self: start;
-    margin-right: 10px;
-    position: absolute;
-    left: -26px;
+    margin-right: 0px;
+    top: 59px;
+    left: -19px;
   }
 }
 
@@ -277,13 +311,20 @@
 .user-search__wants {
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 19px;
+  justify-content: flex-start;
+  margin-top: 18px;
+  padding-bottom: 0;
+  min-height: 58px;
 
-  @media (min-width: $desktop-width) {
-    padding-bottom: 16px;
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 16px;
     position: relative;
 
     &::before {
@@ -312,12 +353,20 @@
 
 .user-search__wants-item {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .user-search__wants-title {
   order: 2;
-  margin-left: 14px;
+  margin-left: 13px;
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
@@ -328,12 +377,17 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 15px;
+  }
 }
 
 .user-search__group {
   display: flex;
   grid-area: transport-level;
-  margin-bottom: 0;
+  margin-bottom: 14px;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -342,12 +396,16 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    margin-left: 65px;
+    margin-left: 57px;
     justify-content: space-between;
   }
 }
 
 .user-search__level-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
   @media (min-width: $tablet-width) {
     margin-left: 60.389%;
   }
@@ -393,7 +451,8 @@
 
   @media (min-width: $desktop-width) {
     justify-self: end;
-    margin-top: 0;
+    margin-top: -3px;
+    margin-right: 3px;
   }
 }
 
@@ -411,13 +470,12 @@
 
 .user-search__transport-list {
   justify-content: flex-start;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  margin-left: 2px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    padding: 0;
     margin-left: 60.389%;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {

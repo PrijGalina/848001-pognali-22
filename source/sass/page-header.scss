@@ -15,6 +15,7 @@
   }
 
   &--inner {
+    z-index: 3;
     background-color: $blue_300;
 
     @media (min-width: $desktop-width) {

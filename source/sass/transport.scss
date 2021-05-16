@@ -67,8 +67,8 @@
     height: 16px;
 
     @media (min-width: $tablet-width) {
-      width: 23px;
-      height: 22px;
+      width: 24px;
+      height: 24px;
     }
   }
 
@@ -107,8 +107,8 @@
     height: 16px;
 
     @media (min-width: $tablet-width) {
-      width: 19px;
-      height: 20px;
+      width: 21px;
+      height: 22px;
     }
   }
 
@@ -146,8 +146,8 @@
     height: 17px;
 
     @media (min-width: $tablet-width) {
-      width: 26px;
-      height: 25px;
+      width: 28px;
+      height: 30px;
     }
   }
 
@@ -185,8 +185,8 @@
     height: 17px;
 
     @media (min-width: $tablet-width) {
-      width: 23px;
-      height: 24px;
+      width: 24px;
+      height: 25px;
     }
   }
 
@@ -215,16 +215,18 @@
   }
 
   &--search {
+    width: 32px;
+    height: 32px;
+    margin-right: 1px;
     background-color: $grey_100;
 
     @media (min-width: $tablet-width) {
-      margin-left: 18px;
+      margin-left: 14px;
       background-color: transparent;
     }
 
     @media (min-width: $desktop-width) {
       margin-left: 0;
-      margin-right: 8px;
       margin-bottom: 0;
     }
   }
