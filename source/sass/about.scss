@@ -46,6 +46,11 @@
     background-size: cover;
     z-index: 0;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about-bg-mobile@2x.png");
+      background-size: 91.25% auto;
+    }
+
     @media (min-width: $tablet-width) {
       background-image: url("../img/about-bg-tablet.png");
       width: 376px;
@@ -54,6 +59,11 @@
       right: 50%;
       transform: translateX(100%);
       top: 49px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/about-bg-tablet@2x.png");
+        background-size: 376px auto;
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -63,6 +73,11 @@
       top: inherit;
       bottom: -60px;
       transform: translateX(105%);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/about-bg-desktop@2x.png");
+        background-size: 630px auto;
+      }
     }
   }
 

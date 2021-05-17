@@ -21,18 +21,6 @@
     background-color: $yellow_100;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 45px;
-    height: 45px;
-
-    @media (min-width: $tablet-width) {
-      width: 62px;
-      height: 62px;
-    }
-  }
-
   &--facebook {
     background-image: url("../img/icon_facebook.svg");
     background-repeat: no-repeat;

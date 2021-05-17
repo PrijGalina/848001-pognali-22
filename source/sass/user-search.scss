@@ -68,13 +68,11 @@
 .user-search__photo {
   grid-area: photo;
   width: 100%;
-  border-radius: 50%;
   padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     margin-right: 13.637%;
     width: 86.363%;
-    border-radius: 20px;
     padding-top: 4px;
   }
 
@@ -82,9 +80,22 @@
     width: 285px;
     height: 285px;
     margin-right: 36px;
+    padding-top: 0;
+  }
+}
+
+.user-search__photo-value {
+  @include image;
+  width: 100%;
+  border: 50%;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    padding-top: 0;
   }
 }
 

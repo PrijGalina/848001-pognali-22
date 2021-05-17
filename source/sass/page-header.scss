@@ -122,27 +122,17 @@
     }
 
     .page-header__img {
-      &--mobile-simple {
+      &--default {
         display: none;
       }
 
-      &--mobile-menu {
+      &--menu {
         display: block;
       }
+    }
 
-      @media (min-width: $tablet-width) {
-        &--mobile-menu {
-          display: none;
-        }
-
-        &--tablet-simple {
-          display: none;
-        }
-
-        &--tablet-menu {
-          display: block;
-        }
-      }
+    .page-header__link {
+      height: auto;
     }
 
     @media (min-width: $tablet-width) {
@@ -172,42 +162,12 @@
     padding-bottom: 10px;
 
     .page-header__img {
-      &--mobile-simple {
+      &--default {
         display: none;
       }
 
-      &--mobile-menu {
+      &--menu {
         display: block;
-
-        @media (min-width: $tablet-width) {
-          display: none;
-        }
-      }
-
-      &--tablet-simple {
-        display: none;
-      }
-
-      &--tablet-menu {
-        display: none;
-
-        @media (min-width: $tablet-width) {
-          display: block;
-        }
-
-        @media (min-width: $desktop-width) {
-          display: none;
-        }
-      }
-
-      &--desktop-simple {
-        display: none;
-      }
-
-      &--desktop-menu {
-        @media (min-width: $desktop-width) {
-          display: block;
-        }
       }
     }
 
@@ -246,48 +206,6 @@
     @media (min-width: $tablet-width) {
       padding-top: 0;
       padding-bottom: 0;
-    }
-  }
-}
-
-.page-header__img {
-  &--mobile-simple {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &--mobile-menu {
-    display: none;
-  }
-
-  &--tablet-simple {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--tablet-menu {
-    display: none;
-  }
-
-  &--desktop-menu {
-    display: none;
-  }
-
-  &--desktop-simple {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      width: 200px;
-      height: 52px;
     }
   }
 }

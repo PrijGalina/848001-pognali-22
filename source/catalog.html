@@ -5,37 +5,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Погнали - Попутчики</title>
+  <link rel="icon" href="img/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="img/favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link href="css/style.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header page-header--inner">
     <div class="wrapper page-header__wrapper">
-      <a href="index.html" class="logotype page-header__logotype">
-        <img class="logotype-img page-header__img page-header__img--mobile-simple" src="img/pognali-logotype-mobile-white.png"
-          width="96" height="15" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--mobile-menu" src="img/pognali-logotype-mobile-blue.png"
-          width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--tablet-simple" src="img/pognali-logotype-tablet-white.png"
-          width="166" height="42" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--tablet-menu" src="img/pognali-logotype-tablet-blue.png"
-          width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--desktop-simple"
-          src="img/pognali-logotype-desktop-white.png" width="200" height="52" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--desktop-menu" src="img/pognali-logotype-desktop-blue.png"
-          width="200" height="60" alt="Погнали - сервис для поиска попутчиков">
+      <a class="logotype page-header__logotype">
+        <div class="logotype__header--open page-header__img--menu">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
+            <img class="logotype-img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
+          </picture>
+        </div>
+        <div class="logotype__header--default page-header__img--default">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-white.png 1x, img/pognali-logotype-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-white.png 1x, img/pognali-logotype-tablet-white@2x.png 2x">
+            <img class="logotype-img" src="img/pognali-logotype-mobile-white.png" srcset="img/pognali-logotype-mobile-white@2x.png 2x" width="96" height="15"  alt="Погнали - сервис для поиска попутчиков">
+          </picture>
+        </div>
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
       <nav class="main-navigation page-header__main-navigation">
         <ul class="site-list main-navigation__list">
           <li class="site-list__item">
-            <a href="#" class="site-list__link">О сервисе</a>
+            <a href="#" class="site-list__link page-header__link">
+              <span data-hover="О сервисе">О сервисе</span>
+            </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html" class="site-list__link">Направления</a>
+            <a href="form.html" class="site-list__link page-header__link">
+              <span data-hover="Направления">Направления</span>
+            </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link">Попутчики</a>
+            <a href="catalog.html" class="site-list__link page-header__link">
+              <span data-hover="Попутчики">Попутчики</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -372,8 +386,7 @@
               <ul class="company-choice__group-list">
                 <li class="company-choice__group-item">
                   <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
-                    <input class="input-choice__field" type="checkbox" name="sport" aria-hidden="true" tabindex="-1"
-                      checked>
+                    <input class="input-choice__field" type="checkbox" name="sport" aria-hidden="true" tabindex="-1" checked>
                     <span class="input-choice__caption">Спортзал</span>
                   </label>
                 </li>
@@ -500,9 +513,13 @@
           <h2 class="visually-hidden">Список пользователей</h2>
           <ul class="user-choice__list">
             <li class="user user-search user--choice">
-              <img src="img/tanya_firsova-70.jpg" class="user__photo user-search__photo user__photo--mobile" width="70" height="70" alt="Фотография пользователя Татьяны Фирсовой">
-              <img src="img/tanya_firsova-190.jpg" class="user__photo user-search__photo user__photo--tablet" width="190" height="190" alt="Фотография пользователя Татьяны Фирсовой">
-              <img src="img/tanya_firsova-285.jpg" class="user__photo user-search__photo user__photo--desktop" width="285" height="285" alt="Фотография пользователя Татьяны Фирсовой">
+              <div class="user__photo user-search__photo">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/tanya_firsova-285.jpg 1x, img/tanya_firsova-285@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/tanya_firsova-190.jpg 1x, img/tanya_firsova-190@2x.jpg 2x">
+                  <img src="img/tanya_firsova-70.jpg" srcset="img/tanya_firsova-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Татьяны Фирсовой">
+                </picture>
+              </div>
               <div class="user-search__name-block">
                 <p class="user__name user-search__name user__name--choice">Таня<br> Фирсова</p>
                 <span class="user__status user-search__status"></span>
@@ -516,15 +533,24 @@
                 <ul class="user__wants-list user-search__wants">
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">шри-ланка</span>
-                    <img src="img/sri-lanka-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Шри-Ланки">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/sri-lanka-flag-35.png 1x, img/sri-lanka-flag-35@2x.png 2x">
+                      <img src="img/sri-lanka-flag-26.png" srcset="img/sri-lanka-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Шри-Ланки">
+                    </picture>
                   </li>
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">таиланд</span>
-                    <img src="img/thailand-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Таиланда">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/thailand-flag.png 1x, img/thailand-flag@2x.png 2x">
+                      <img src="img/thailand-flag-26.png" srcset="img/thailand-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Таиланда">
+                    </picture>
                   </li>
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">сейшелы</span>
-                    <img src="img/seychelles-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Сейшелы">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/seychelles-flag.png 1x, img/seychelles-flag@2x.png 2x">
+                      <img src="img/seychelles-flag-26.png" srcset="img/seychelles-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Сейшелы">
+                    </picture>
                   </li>
                 </ul>
               </div>
@@ -557,9 +583,13 @@
               <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
             <li class="user user-search user--choice">
-              <img src="img/petr-demin-70.jpg" class="user__photo user-search__photo user__photo--mobile" width="70" height="70" alt="Фотография пользователя Петра Демина">
-              <img src="img/petr-demin-190.jpg" class="user__photo user-search__photo user__photo--tablet" width="190" height="190" alt="Фотография пользователя Петра Демина">
-              <img src="img/petr-demin-285.jpg" class="user__photo user-search__photo user__photo--desktop" width="285" height="285" alt="Фотография пользователя Петра Демина">
+              <div class="user__photo user-search__photo">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/petr-demin-285.jpg 1x, img/petr-demin-285@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/petr-demin-190.jpg 1x, img/petr-demin-190@2x.jpg 2x">
+                  <img src="img/petr-demin-70.jpg" srcset="img/petr-demin-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Петра Демина">
+                </picture>
+              </div>
               <div class="user-search__name-block">
                 <p class="user__name user-search__name user__name--choice">Петя<br> Демин</p>
                 <span class="user__status user-search__status"></span>
@@ -573,11 +603,17 @@
                 <ul class="user__wants-list user-search__wants">
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">бельгия</span>
-                    <img src="img/belgium-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Бельгии">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/belgium-flag.png 1x, img/belgium-flag@2x.png 2x">
+                      <img src="img/belgium-flag-26.png" srcset="img/belgium-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Бельгии">
+                    </picture>
                   </li>
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">чехия</span>
-                    <img src="img/czech-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Чехии">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/czech-flag.png 1x, img/czech-flag@2x.png 2x">
+                      <img src="img/czech-flag-26.png" srcset="img/czech-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Чехии">
+                    </picture>
                   </li>
                 </ul>
               </div>
@@ -610,9 +646,13 @@
               <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
             <li class="user user-search user--choice">
-              <img src="img/mark-smolov-70.jpg" class="user__photo user-search__photo user__photo--mobile" width="70" height="70" alt="Фотография пользователя Марка Смолова">
-              <img src="img/mark-smolov-190.jpg" class="user__photo user-search__photo user__photo--tablet" width="190" height="190" alt="Фотография пользователя Марка Смолова">
-              <img src="img/mark-smolov-285.jpg" class="user__photo user-search__photo user__photo--desktop" width="285" height="285" alt="Фотография пользователя Марка Смолова">
+              <div class="user__photo user-search__photo">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/mark-smolov-285.jpg 1x, img/mark-smolov-285@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/mark-smolov-190.jpg 1x, img/mark-smolov-190@2x.jpg 2x">
+                  <img src="img/mark-smolov-70.jpg" srcset="img/mark-smolov-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Марка Смолова">
+                </picture>
+              </div>
               <div class="user-search__name-block">
                 <p class="user__name user-search__name user__name--choice">Марк<br> Смолов</p>
                 <span class="user__status user-search__status"></span>
@@ -626,15 +666,24 @@
                 <ul class="user__wants-list user-search__wants">
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">сша</span>
-                    <img src="img/usa-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг США">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/usa-flag-35.png 1x, img/usa-flag-35@2x.png 2x">
+                      <img src="img/usa-flag-26.png" srcset="img/usa-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг США">
+                    </picture>
                   </li>
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">австралия</span>
-                    <img src="img/australia-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Австралии">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/australia-flag-35.png 1x, img/australia-flag-35@2x.png 2x">
+                      <img src="img/australia-flag-26.png" srcset="img/australia-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Австралии">
+                    </picture>
                   </li>
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">доминика</span>
-                    <img src="img/dominica-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Доминики">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/dominica-flag-35.png 1x, img/dominica-flag-35@2x.png 2x">
+                      <img src="img/dominica-flag-26.png" srcset="img/dominica-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Доминики">
+                    </picture>
                   </li>
                 </ul>
               </div>
@@ -667,9 +716,13 @@
               <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
             <li class="user user-search user--choice">
-              <img src="img/larisa-rogovaya-70.jpg" class="user__photo user-search__photo user__photo--mobile" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
-              <img src="img/larisa-rogovaya-190.jpg" class="user__photo user-search__photo user__photo--tablet" width="190" height="190" alt="Фотография пользователя Ларисы Роговой">
-              <img src="img/larisa-rogovaya-285.jpg" class="user__photo user-search__photo user__photo--desktop" width="285" height="285" alt="Фотография пользователя Ларисы Роговой">
+              <div class="user__photo user-search__photo">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/larisa-rogovaya-285.jpg 1x, img/larisa-rogovaya-285@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/larisa-rogovaya-190.jpg 1x, img/larisa-rogovaya-190@2x.jpg 2x">
+                  <img src="img/larisa-rogovaya-70.jpg" srcset="img/larisa-rogovaya-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
+                </picture>
+              </div>
               <div class="user-search__name-block">
                 <p class="user__name user-search__name user__name--choice">Лариса<br> Роговая</p>
                 <span class="user__status user__status--online user-search__status"></span>
@@ -683,11 +736,17 @@
                 <ul class="user__wants-list user-search__wants">
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">великобритания</span>
-                    <img src="img/united-kingdom-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Великобритании">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/united-kingdom-flag-35.png 1x, img/united-kingdom-flag-35@2x.png 2x">
+                      <img src="img/united-kingdom-flag-26.png" srcset="img/united-kingdom-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Великобритании">
+                    </picture>
                   </li>
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">германия</span>
-                    <img src="img/germany-flag.png" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Германии">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/germany-flag-35.png 1x, img/germany-flag-35@2x.png 2x">
+                      <img src="img/germany-flag-26.png" srcset="img/germany-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Германии">
+                    </picture>
                   </li>
                 </ul>
               </div>
@@ -747,11 +806,11 @@
   </main>
   <footer class="page-footer">
     <div class="wrapper page-footer__wrapper">
-      <a href="index.html" class="logotype page-footer__logotype">
-        <img class="logotype-img page-footer__img page-footer__img--mobile" src="img/pognali-logotype-mobile-blue.png"
-          width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-footer__img page-footer__img--tablet" src="img/pognali-logotype-tablet-blue.png"
-          width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
+      <a class="logotype page-footer__logotype">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
+          <img class="logotype-img page-footer__img" src="img/pognali-logotype-tablet-blue.png" srcset="img/pognali-logotype-tablet-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
+        </picture>
       </a>
       <ul class="social page-footer__social">
         <li class="social__item">

@@ -64,6 +64,10 @@
     z-index: -1;
     display: none;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/countries-bg-tablet@2x.png");
+    }
+
     @media (min-width: $tablet-width) {
       display: block;
       top: 11px;
@@ -222,6 +226,8 @@
   width: 100%;
   position: relative;
   z-index: 1;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -231,6 +237,7 @@
     z-index: 5;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -240,7 +247,6 @@
 
 .countries__flag {
   @include image;
-  //width: 10.927%;
   width: 35px;
   position: absolute;
   left: 25px;
@@ -248,6 +254,7 @@
   transform: translateY(50%);
   margin-top: -5px;
   z-index: 5;
+  border-radius: 5px;
 
   @media (min-width: $tablet-width) {
     width: 70px;

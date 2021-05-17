@@ -13,20 +13,6 @@
 
 .user__photo {
   @include image;
-
-  &--mobile {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-  }
 }
 
 .user__name {

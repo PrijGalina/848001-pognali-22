@@ -5,35 +5,49 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Погнали - Направления</title>
+  <link rel="icon" href="img/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="img/favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link href="css/style.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header page-header--inner">
     <div class="wrapper page-header__wrapper">
-      <a href="index.html" class="logotype page-header__logotype">
-        <img class="logotype-img page-header__img page-header__img--mobile-simple" src="img/pognali-logotype-mobile-white.png" width="96" height="15" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--mobile-menu" src="img/pognali-logotype-mobile-blue.png" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--tablet-simple" src="img/pognali-logotype-tablet-white.png" width="166" height="42" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--tablet-menu" src="img/pognali-logotype-tablet-blue.png" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--desktop-simple" src="img/pognali-logotype-desktop-white.png" width="200" height="52" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-header__img page-header__img--desktop-menu" src="img/pognali-logotype-desktop-blue.png" width="200" height="60" alt="Погнали - сервис для поиска попутчиков">
+      <a class="logotype page-header__logotype">
+        <div class="logotype__header--open page-header__img--menu">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
+            <img class="logotype-img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
+          </picture>
+        </div>
+        <div class="logotype__header--default page-header__img--default">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-white.png 1x, img/pognali-logotype-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-white.png 1x, img/pognali-logotype-tablet-white@2x.png 2x">
+            <img class="logotype-img" src="img/pognali-logotype-mobile-white.png" srcset="img/pognali-logotype-mobile-white@2x.png 2x" width="96" height="15" alt="Погнали - сервис для поиска попутчиков">
+          </picture>
+        </div>
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
       <nav class="main-navigation page-header__main-navigation">
         <ul class="site-list main-navigation__list">
           <li class="site-list__item">
-            <a href="#" class="site-list__link">
+            <a href="#" class="site-list__link page-header__link">
               <span data-hover="О сервисе">О сервисе</span>
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html" class="site-list__link">
+            <a href="form.html" class="site-list__link page-header__link">
               <span data-hover="Направления">Направления</span>
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link">
+            <a href="catalog.html" class="site-list__link page-header__link">
               <span data-hover="Попутчики">Попутчики</span>
             </a>
           </li>
@@ -81,8 +95,11 @@
           <span>level</span>
         </p>
         <div class="user-personal__photo-block">
-          <img src="img/petr-demin-100.png" class="user-personal__photo user__photo user__photo--mobile" width="100" height="100" alt="Портрет пользователя Петра Дёмина">
-          <img src="img/petr-demin-94.png" class="user-personal__photo user__photo user__photo--tablet" width="94" height="94" alt="Портрет пользователя Петра Дёмина">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/petr-demin-190.jpg 1x, img/petr-demin-190@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/petr-demin-94.jpg 1x, img/petr-demin-94@2x.jpg 2x">
+            <img src="img/petr-demin-100.jpg" srcset="img/petr-demin-100@2x.jpg 2x" class="user-personal__photo user__photo" width="100" height="100" alt="Портрет пользователя Петра Дёмина">
+          </picture>
           <button type="button" class="btn btn--rectangle user__edit-pic user-personal__photo-edit user-personal__photo-edit--inside" aria-label="Изменить фотографию профиля">фото</button>
         </div>
         <button type="button" class="btn btn--oval user__edit-pic user-personal__photo-edit" aria-label="Изменить фотографию профиля">сменить фото</button>
@@ -268,7 +285,10 @@
                   <span class="country-select__value">Босния и герцеговина</span>
                   <div class="country-select__arrow"></div>
                   <output name="countries-flag" class="country-select__output">
-                    <img src="img/bosnia-and-herzegovina-flag.png" class="country-select__flag" width="35" height="24" alt="">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/bosnia-and-herzegovina-flag-70.png 1x, img/bosnia-and-herzegovina-flag-70@2x.png 2x">
+                      <img src="img/bosnia-and-herzegovina-flag.png" srcset="img/bosnia-and-herzegovina-flag@2x.png 2x" class="country-select__flag" width="35" height="24" alt="Флаг Боснии и Герцеговины">
+                    </picture>
                   </output>
                   <button type="button" class="country-select__delete" aria-label="Убрать страну из маршрута">удалить</button>
                 </div>
@@ -278,7 +298,10 @@
                   <span class="country-select__value">Чехия</span>
                   <div class="country-select__arrow"></div>
                   <output name="countries-flag" class="country-select__output">
-                    <img src="img/czech-flag.png" class="country-select__flag" width="35" height="24" alt="">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/czech-flag-70.png 1x, img/czech-flag-70@2x.png 2x">
+                      <img src="img/czech-flag.png" srcset="img/czech-flag@2x.png" class="country-select__flag" width="35" height="24" alt="Флаг Чехии">
+                    </picture>
                   </output>
                   <button type="button" class="country-select__delete" aria-label="Убрать страну из маршрута">удалить</button>
                 </div>
@@ -364,14 +387,20 @@
               <label class="textarea counter__textarea" for="point-desc">
                 <p class="textarea__caption counter__textarea-caption">
                   <span>Босния и Герцеговина</span>
-                  <img src="img/bosnia-and-herzegovina-flag-70.png" class="textarea__field-flag" width="70" height="47" alt="Флаг Боснии и Герцеговины">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/bosnia-and-herzegovina-flag-70.png 1x, img/bosnia-and-herzegovina-flag-70@2x.png 2x">
+                    <img src="img/bosnia-and-herzegovina-flag.png" srcset="img/bosnia-and-herzegovina-flag@2x.png 2x" class="textarea__field-flag" width="35" height="24" alt="Флаг Боснии и Герцеговины">
+                  </picture>
                 </p>
                 <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий"></textarea>
               </label>
               <label class="textarea counter__textarea" for="point-desc">
                 <p class="textarea__caption counter__textarea-caption">
                   <span>Чехия</span>
-                  <img src="img/czech-flag-70.png" class="textarea__field-flag" width="70" height="47" alt="Флаг Чехии">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/czech-flag-70.png 1x, img/czech-flag-70@2x.png 2x">
+                    <img src="img/czech-flag.png" srcset="img/czech-flag@2x.png" class="textarea__field-flag" width="35" height="24" alt="Флаг Чехии">
+                  </picture>
                 </p>
                 <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все.</textarea>
               </label>
@@ -407,11 +436,11 @@
   </main>
   <footer class="page-footer">
     <div class="wrapper page-footer__wrapper">
-      <a href="index.html" class="logotype page-footer__logotype">
-        <img class="logotype-img page-footer__img page-footer__img--mobile" src="img/pognali-logotype-mobile-blue.png"
-          width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
-        <img class="logotype-img page-footer__img page-footer__img--tablet" src="img/pognali-logotype-tablet-blue.png"
-          width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
+      <a class="logotype page-footer__logotype">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
+          <img class="logotype-img page-footer__img" src="img/pognali-logotype-tablet-blue.png" srcset="img/pognali-logotype-tablet-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
+        </picture>
       </a>
       <ul class="social page-footer__social">
         <li class="social__item">
@@ -431,10 +460,8 @@
         </li>
       </ul>
       <div class="page-footer__developer">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developer-link"
-          title="Перейти на страницу разработчика сайта">Разработано</a>
-        <img src="img/htmlacademy.svg" class="page-footer__developer-logo" width="27" height="33"
-          alt="HTML Academy — интерактивные онлайн-курсы по HTML, CSS и JS.">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developer-link" title="Перейти на страницу разработчика сайта">Разработано</a>
+        <img src="img/htmlacademy.svg" class="page-footer__developer-logo" width="27" height="33" alt="HTML Academy — интерактивные онлайн-курсы по HTML, CSS и JS.">
       </div>
     </div>
   </footer>

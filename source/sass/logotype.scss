@@ -1,3 +1,10 @@
 .logotype-img {
   @include image;
+  width: 100%;
+}
+
+.logotype__header {
+  &--open {
+    display: none;
+  }
 }

@@ -51,6 +51,11 @@
     background-image: url("../img/rates.png");
     background-repeat: no-repeat;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/rates@2x.png");
+      background-size: 100px auto;
+    }
+
     @media (min-width: $tablet-width) {
       top: inherit;
       bottom: -16px;
@@ -64,6 +69,11 @@
       background-image: url("../img/rates-desktop.png");
       bottom: 100px;
       right: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/rates-desktop@2x.png");
+        background-size: 198px auto;
+      }
     }
   }
 

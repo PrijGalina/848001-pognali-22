@@ -36,12 +36,20 @@
     background-size: cover;
     z-index: 0;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/planet-bg-mobile@2x.png");
+    }
+
     @media (min-width: $tablet-width) {
       top: inherit;
       bottom: 237px;
       height: 612px;
       background-image: url("../img/planet-bg-tablet.png");
       background-position: top;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/planet-bg-tablet@2x.png");
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -54,6 +62,10 @@
       top: -99px;
       border-bottom-left-radius: 56px;
       border-bottom-right-radius: 56px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/planet-bg-desktop@2x.png");
+      }
     }
   }
 
@@ -97,6 +109,11 @@
     top: 130px;
     background-image: url("../img/traveller-mobile.png");
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/traveller-mobile@2x.png");
+      background-size: 192px auto;
+    }
+
     @media (min-width: $tablet-width) {
       width: 372px;
       height: 451px;
@@ -104,6 +121,11 @@
       right: 50%;
       transform: translateX(73%);
       top: 245px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/traveller-tablet@2x.png");
+        background-size: 372px auto;
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -111,6 +133,11 @@
       width: 431px;
       height: 640px;
       background-image: url("../img/traveller-desktop.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/traveller-desktop@2x.png");
+        background-size: 431px auto;
+      }
     }
   }
 }

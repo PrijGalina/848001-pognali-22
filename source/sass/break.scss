@@ -32,4 +32,20 @@
       display: block;
     }
   }
+
+  &--not-tablet {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--not-desktop {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
