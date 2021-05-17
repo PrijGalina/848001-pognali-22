@@ -78,8 +78,11 @@
       <div class="filters__container">
           <nav class="filters__navigation">
             <h2 class="filters__title">Фильтрация по странам:</h2>
-            <span class="filters__see-all">Показать все</span>
-            <button type="button" class="filters__toogle" aria-label="Развернуть фильтр"></button><!-- +- "filters__toogle--open" -->
+            <p class="filters__see">
+              <span class="filters__see-all filters__see-all--open">Показать все</span>
+              <span class="filters__see-all filters__see-all--close">Свернуть</span>
+            </p>
+            <button type="button" class="filters__toggle" aria-label="Развернуть фильтр"></button><!-- +- "filters__toggle--open" -->
             <ul class="filters__continents-list">
               <li class="filters__continents-item filters__continents-item--selected">европа</li>
               <li class="filters__continents-item">азия</li>
@@ -115,7 +118,7 @@
               <li class="country-choice__letter-item filters__letter-item">ю</li>
               <li class="country-choice__letter-item filters__letter-item">я</li>
             </ul>
-            <ul class="country-choice__list filters__choice-list"> <!-- +- "country-choice__list--active" -->
+            <ul class="country-choice__list filters__choice-list country-choice__list--active"> <!-- +- "country-choice__list--active" -->
               <li class="country-choice__letter">А</li>
               <li>Австралия</li>
               <li>Австрия</li>
@@ -131,7 +134,7 @@
             </ul>
             <ul class="country-choice__list filters__choice-list">
               <li class="country-choice__letter">Б</li>
-              <li>Багамские острова</li>
+              <li>Багамские Острова</li>
               <li>Бангладеш</li>
               <li>Барбадос</li>
               <li>Бахрейн</li>
@@ -163,7 +166,8 @@
               <li>Габон</li>
               <li>Гаити</li>
               <li>Гайана</li>
-              <li>Гайана</li>
+              <li>Гамбия</li>
+              <li>Гана</li>
               <li>Гватемала</li>
               <li>Гвинея</li>
               <li>Гвинея-Бисау</li>
@@ -196,7 +200,7 @@
               <li>Индонезия</li>
               <li>Иордания</li>
               <li>Ирак</li>
-              <li>Иордания</li>
+              <li>Иран</li>
               <li>Ирландия</li>
               <li>Исландия</li>
               <li>Испания</li>
@@ -439,7 +443,7 @@
               </div>
             </fieldset>
             <fieldset class="company-choice__group company-choice__group--open">
-              <div class="company-choice__group-container">
+              <div class="company-choice__group-container company-choice__group-container--transport">
                 <legend class="company-choice__group-title">транспорт</legend>
                 <ul class="company-choice__group-list company-choice__transport-list">
                   <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--avia">
@@ -470,8 +474,8 @@
               </div>
             </fieldset>
             <fieldset class="company-choice__group company-choice__group--open">
-              <div class="company-choice__group-container">
-                <legend class="company-choice__group-title">Левел</legend>
+              <div class="company-choice__group-container company-choice__group-container--level">
+                <legend class="company-choice__group-title company-choice__group-title--level">Левел</legend>
                 <div class="range company-choice__range">
                   <div class="range__output">
                     <div class="range__value range__value--min">30</div>
@@ -480,8 +484,8 @@
                   <div class="range__controls">
                     <div class="range__scale">
                       <div class="range__bar"></div>
-                      <div class="range__toggle range__toggle--min" tabindex="0" aria-label="Изменить нижнюю граниу стоимости" style="left: 72px;"></div>
-                      <div class="range__toggle range__toggle--max" tabindex="0" aria-label="Изменить верхнюю границу стоимости" style="right: 0px;"></div>
+                      <div class="range__toggle range__toggle--min" tabindex="0" aria-label="Изменить нижнюю граниу стоимости"></div>
+                      <div class="range__toggle range__toggle--max" tabindex="0" aria-label="Изменить верхнюю границу стоимости"></div>
                     </div>
                   </div>
                 </div>
@@ -496,7 +500,9 @@
           <h2 class="visually-hidden">Список пользователей</h2>
           <ul class="user-choice__list">
             <li class="user user-search user--choice">
-              <img src="img/tanya_firsova-70.jpg" class="user__photo user-search__photo" width="70" height="70" alt="Фотография пользователя Татьяны Фирсовой">
+              <img src="img/tanya_firsova-70.jpg" class="user__photo user-search__photo user__photo--mobile" width="70" height="70" alt="Фотография пользователя Татьяны Фирсовой">
+              <img src="img/tanya_firsova-190.jpg" class="user__photo user-search__photo user__photo--tablet" width="190" height="190" alt="Фотография пользователя Татьяны Фирсовой">
+              <img src="img/tanya_firsova-285.jpg" class="user__photo user-search__photo user__photo--desktop" width="285" height="285" alt="Фотография пользователя Татьяны Фирсовой">
               <div class="user-search__name-block">
                 <p class="user__name user-search__name user__name--choice">Таня<br> Фирсова</p>
                 <span class="user__status user-search__status"></span>
@@ -524,24 +530,24 @@
               </div>
               <div class="user-choice__block user-search__group">
                 <div class="user-search__transport-block">
-                  <span class="user-search__caption user-search__caption--inline">транспорт:</span>
+                  <span class="user-search__caption user-search__caption--inline user-search__caption--transport">транспорт:</span>
                   <ul class="transport user-search__transport-list">
-                    <li class="transport__item transport__item--avia transport__item--avia-search transport__item--active">
+                    <li class="transport__item  transport__item--search transport__item--avia transport__item--avia-search transport__item--active">
                       <span class="visually-hidden">самолет</span>
                     </li>
-                    <li class="transport__item transport__item--bus transport__item--bus-search">
+                    <li class="transport__item  transport__item--search transport__item--bus transport__item--bus-search">
                       <span class="visually-hidden">машина</span>
                     </li>
-                    <li class="transport__item transport__item--bike transport__item--bike-search">
+                    <li class="transport__item  transport__item--search transport__item--bike transport__item--bike-search">
                       <span class="visually-hidden">велосипед</span>
                     </li>
-                    <li class="transport__item transport__item--foot transport__item--foot-search">
+                    <li class="transport__item  transport__item--search transport__item--foot transport__item--foot-search">
                       <span class="visually-hidden">пешком</span>
                     </li>
                   </ul>
                 </div>
                 <div class="user-search__level-block">
-                  <span class="user-search__caption user-search__caption--inline">левел:</span>
+                  <span class="user-search__caption user-search__caption--inline user-search__caption--level">левел:</span>
                   <p class="user__level user-search__level">
                     <b>99</b>
                     <span>level</span>
@@ -551,7 +557,9 @@
               <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
             <li class="user user-search user--choice">
-              <img src="img/petr-demin-70.jpg" class="user__photo user-search__photo" width="70" height="70" alt="Фотография пользователя Петра Демина">
+              <img src="img/petr-demin-70.jpg" class="user__photo user-search__photo user__photo--mobile" width="70" height="70" alt="Фотография пользователя Петра Демина">
+              <img src="img/petr-demin-190.jpg" class="user__photo user-search__photo user__photo--tablet" width="190" height="190" alt="Фотография пользователя Петра Демина">
+              <img src="img/petr-demin-285.jpg" class="user__photo user-search__photo user__photo--desktop" width="285" height="285" alt="Фотография пользователя Петра Демина">
               <div class="user-search__name-block">
                 <p class="user__name user-search__name user__name--choice">Петя<br> Демин</p>
                 <span class="user__status user-search__status"></span>
@@ -559,7 +567,7 @@
               <div class="user-search__like">
                 <span class="user-search__count">1500</span>
               </div>
-              <p class="user__tags user-search__tags user-choice__block">#бургер #бар #футбол #концерт #крафт</p>
+              <p class="user__tags user-search__tags user-choice__block">#бургер #бар #футбол<br> #концерт #крафт</p>
               <div class="user-search__wants-block user-choice__block">
                 <span class="user-search__caption user-search__caption--wants">хочет посетить:</span>
                 <ul class="user__wants-list user-search__wants">
@@ -575,24 +583,24 @@
               </div>
               <div class="user-choice__block user-search__group">
                 <div class="user-search__transport-block">
-                  <span class="user-search__caption user-search__caption--inline">транспорт:</span>
+                  <span class="user-search__caption user-search__caption--inline user-search__caption--transport">транспорт:</span>
                   <ul class="transport user-search__transport-list">
-                    <li class="transport__item transport__item--avia transport__item--avia-search transport__item--active transport__item--search">
+                    <li class="transport__item  transport__item--search transport__item--avia transport__item--avia-search transport__item--active transport__item--search">
                       <span class="visually-hidden">самолет</span>
                     </li>
-                    <li class="transport__item transport__item--bus transport__item--bus-search transport__item--active transport__item--search">
+                    <li class="transport__item  transport__item--search transport__item--bus transport__item--bus-search transport__item--active transport__item--search">
                       <span class="visually-hidden">машина</span>
                     </li>
-                    <li class="transport__item transport__item--bike transport__item--bike-search transport__item--search">
+                    <li class="transport__item  transport__item--search transport__item--bike transport__item--bike-search transport__item--search">
                       <span class="visually-hidden">велосипед</span>
                     </li>
-                    <li class="transport__item transport__item--foot transport__item--foot-search transport__item--active transport__item--search">
+                    <li class="transport__item  transport__item--search transport__item--foot transport__item--foot-search transport__item--active transport__item--search">
                       <span class="visually-hidden">пешком</span>
                     </li>
                   </ul>
                 </div>
                 <div class="user-search__level-block">
-                  <span class="user-search__caption user-search__caption--inline">левел:</span>
+                  <span class="user-search__caption user-search__caption--inline user-search__caption--level">левел:</span>
                   <p class="user__level user-search__level">
                     <b>80</b>
                     <span>level</span>
@@ -602,7 +610,9 @@
               <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
             <li class="user user-search user--choice">
-              <img src="img/mark-smolov-70.jpg" class="user__photo user-search__photo" width="70" height="70" alt="Фотография пользователя Марка Смолова">
+              <img src="img/mark-smolov-70.jpg" class="user__photo user-search__photo user__photo--mobile" width="70" height="70" alt="Фотография пользователя Марка Смолова">
+              <img src="img/mark-smolov-190.jpg" class="user__photo user-search__photo user__photo--tablet" width="190" height="190" alt="Фотография пользователя Марка Смолова">
+              <img src="img/mark-smolov-285.jpg" class="user__photo user-search__photo user__photo--desktop" width="285" height="285" alt="Фотография пользователя Марка Смолова">
               <div class="user-search__name-block">
                 <p class="user__name user-search__name user__name--choice">Марк<br> Смолов</p>
                 <span class="user__status user-search__status"></span>
@@ -610,7 +620,7 @@
               <div class="user-search__like">
                 <span class="user-search__count">170</span>
               </div>
-              <p class="user__tags user-search__tags user-choice__block">#рэп #тату #хайпбист #кроссовки #суприм</p>
+              <p class="user__tags user-search__tags user-choice__block">#рэп #тату #хайпбист<br> #кроссовки #суприм</p>
               <div class="user-search__wants-block user-choice__block">
                 <span class="user-search__caption user-search__caption--wants">хочет посетить:</span>
                 <ul class="user__wants-list user-search__wants">
@@ -630,24 +640,24 @@
               </div>
               <div class="user-choice__block user-search__group">
                 <div class="user-search__transport-block">
-                  <span class="user-search__caption user-search__caption--inline">транспорт:</span>
+                  <span class="user-search__caption user-search__caption--inline user-search__caption--transport">транспорт:</span>
                   <ul class="transport user-search__transport-list">
-                    <li class="transport__item transport__item--avia transport__item--avia-search transport__item--active transport__item--search">
+                    <li class="transport__item  transport__item--search transport__item--avia transport__item--avia-search transport__item--active transport__item--search">
                       <span class="visually-hidden">самолет</span>
                     </li>
-                    <li class="transport__item transport__item--bus transport__item--bus-search transport__item--search">
+                    <li class="transport__item  transport__item--search transport__item--bus transport__item--bus-search transport__item--search">
                       <span class="visually-hidden">машина</span>
                     </li>
-                    <li class="transport__item transport__item--bike transport__item--bike-search transport__item--active transport__item--search">
+                    <li class="transport__item  transport__item--search transport__item--bike transport__item--bike-search transport__item--active transport__item--search">
                       <span class="visually-hidden">велосипед</span>
                     </li>
-                    <li class="transport__item transport__item--foot transport__item--foot-search transport__item--search">
+                    <li class="transport__item  transport__item--search transport__item--foot transport__item--foot-search transport__item--search">
                       <span class="visually-hidden">пешком</span>
                     </li>
                   </ul>
                 </div>
                 <div class="user-search__level-block">
-                  <span class="user-search__caption user-search__caption--inline">левел:</span>
+                  <span class="user-search__caption user-search__caption--inline user-search__caption--level">левел:</span>
                   <p class="user__level user-search__level">
                     <b>25</b>
                     <span>level</span>
@@ -657,7 +667,9 @@
               <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
             <li class="user user-search user--choice">
-              <img src="img/larisa-rogovaya-70.jpg" class="user__photo user-search__photo" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
+              <img src="img/larisa-rogovaya-70.jpg" class="user__photo user-search__photo user__photo--mobile" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
+              <img src="img/larisa-rogovaya-190.jpg" class="user__photo user-search__photo user__photo--tablet" width="190" height="190" alt="Фотография пользователя Ларисы Роговой">
+              <img src="img/larisa-rogovaya-285.jpg" class="user__photo user-search__photo user__photo--desktop" width="285" height="285" alt="Фотография пользователя Ларисы Роговой">
               <div class="user-search__name-block">
                 <p class="user__name user-search__name user__name--choice">Лариса<br> Роговая</p>
                 <span class="user__status user__status--online user-search__status"></span>
@@ -665,7 +677,7 @@
               <div class="user-search__like">
                 <span class="user-search__count">23</span>
               </div>
-              <p class="user__tags user-search__tags user-choice__block">#образование #карьера #учеба #линкедин</p>
+              <p class="user__tags user-search__tags user-choice__block">#образование #карьера<br> #учеба #линкедин</p>
               <div class="user-search__wants-block user-choice__block">
                 <span class="user-search__caption user-search__caption--wants">хочет посетить:</span>
                 <ul class="user__wants-list user-search__wants">
@@ -681,24 +693,24 @@
               </div>
               <div class="user-choice__block user-search__group">
                 <div class="user-search__transport-block">
-                  <span class="user-search__caption user-search__caption--inline">транспорт:</span>
+                  <span class="user-search__caption user-search__caption--inline user-search__caption--transport">транспорт:</span>
                   <ul class="transport user-search__transport-list">
-                    <li class="transport__item transport__item--avia transport__item--avia-search transport__item--active transport__item--search">
+                    <li class="transport__item  transport__item--search transport__item--avia transport__item--avia-search transport__item--active transport__item--search">
                       <span class="visually-hidden">самолет</span>
                     </li>
-                    <li class="transport__item transport__item--bus transport__item--bus-search transport__item--active transport__item--search">
+                    <li class="transport__item  transport__item--search transport__item--bus transport__item--bus-search transport__item--active transport__item--search">
                       <span class="visually-hidden">машина</span>
                     </li>
-                    <li class="transport__item transport__item--bike transport__item--bike-search transport__item--search">
+                    <li class="transport__item  transport__item--search transport__item--bike transport__item--bike-search transport__item--search">
                       <span class="visually-hidden">велосипед</span>
                     </li>
-                    <li class="transport__item transport__item--foot transport__item--foot-search transport__item--search">
+                    <li class="transport__item  transport__item--search transport__item--foot transport__item--foot-search transport__item--search">
                       <span class="visually-hidden">пешком</span>
                     </li>
                   </ul>
                 </div>
                 <div class="user-search__level-block">
-                  <span class="user-search__caption user-search__caption--inline">левел:</span>
+                  <span class="user-search__caption user-search__caption--inline user-search__caption--level">левел:</span>
                   <p class="user__level user-search__level">
                     <b>50</b>
                     <span>level</span>

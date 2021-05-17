@@ -38,6 +38,14 @@
   left: 72px;
   height: 2px;
   background-color: $blue_200;
+
+  @media (min-width: $tablet-width) {
+    left: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 60px;
+  }
 }
 
 .range__toggle {
@@ -49,12 +57,41 @@
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+  }
+
+  &--min {
+    right: 0;
+
+    @media (min-width: $tablet-width) {
+      right: -4px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 0;
+    }
+  }
+
+  &--max {
+    left: 68px;
+
+    @media (min-width: $tablet-width) {
+      left: 105px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 58px;
+    }
+  }
 }
 
 .range__output {
   position: relative;
   display: flex;
-  margin: 0 auto 21px;
+  margin: 0 auto 18px;
 
   &::after {
     content: "";
@@ -71,6 +108,7 @@
     margin-bottom: 0;
     width: 148px;
     order: 2;
+    margin-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,11 +124,11 @@
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 14px;
   color: $blue_200;
-  padding-top: 13px;
-  padding-bottom: 11px;
+  padding-top: 12px;
+  padding-bottom: 10px;
   width: 50%;
   background-color: $white;
   border-top: 1px solid $grey_500;
@@ -126,5 +164,13 @@
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     border-right: 1px solid $grey_500;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    padding-top: 14px;
+    padding-bottom: 13px;
   }
 }
