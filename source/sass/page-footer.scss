@@ -84,6 +84,16 @@
   @include link_reset;
 
   color: $grey;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -95,6 +105,7 @@
 
 .page-footer__developer-logo {
   @include image;
+  margin-left: 16px;
 }
 
 .page-footer__img {

@@ -251,10 +251,19 @@
 
 .companions__item {
   margin-bottom: 9px;
+  background-color: $white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
   @media (min-width: $tablet-width) {
     width: 46.116%;
     margin-right: 48px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
   }
 
   &:last-of-type {

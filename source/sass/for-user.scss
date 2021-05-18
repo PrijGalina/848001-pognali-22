@@ -37,36 +37,16 @@
     }
   }
 
-  &--email {
-    &::before {
-      background-image: url("../img/icon_mail.svg");
-
-      @media (min-width: $tablet-width) {
-        background-size: 28px 19px;
-      }
-
-      @media (min-width: $desktop-width) {
-        background-size: 36px 25px;
-      }
-    }
-  }
-
-  &--phone {
-    &::before {
-      background-image: url("../img/icon_telephone.svg");
-
-      @media (min-width: $tablet-width) {
-        background-size: 27px 26px;
-      }
-
-      @media (min-width: $desktop-width) {
-        background-size: 36px 34px;
-      }
-    }
-  }
-
   &--yellow {
     color: $yellow_100;
+
+    &:hover {
+      color: $yellow_300;
+    }
+
+    &:active {
+      color: $yellow_100_03;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -82,93 +62,40 @@
   }
 }
 
-.for-user {
-  &--light {
-    .for-user__link {
-      &--email {
-        background-color: $orange_300;
+.for-user__link-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
-        &::before {
-          background-image: url("../img/icon_mail_close.svg");
-        }
-      }
+  &--phone {
+    left: 14px;
 
-      &--phone {
-        background-color: $orange_500;
-
-        &::before {
-          background-image: url("../img/icon_call.svg");
-        }
-      }
-    }
-  }
-
-  &--header {
     @media (min-width: $tablet-width) {
-      .for-user__link {
-        padding-left: 91px;
-        width: inherit;
-        height: 68px;
-      }
+      width: 24px;
+      height: 23px;
+      left: 22px;
     }
 
     @media (min-width: $desktop-width) {
-      .for-user__link::before {
-        width: 50px;
-        height: 50px;
-      }
+      width: 32px;
+      height: 30px;
+      left: 29px;
+    }
+  }
 
-      .for-user__link {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        font-size: 0;
-        padding-left: 0;
+  &--email {
+    left: 14px;
 
-        &--email {
-          background-color: $orange_300;
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 19px;
+      left: 20px;
+    }
 
-          &::before {
-            background-image: url("../img/icon_mail_close.svg");
-            background-color: transparent;
-            background-size: 16px 14px;
-          }
-
-          &:hover {
-            background-color: $orange_500;
-          }
-
-          &:active {
-            background-color: $orange_500;
-
-            &::before {
-              opacity: 0.3;
-            }
-          }
-        }
-
-        &--phone {
-          background-color: $orange_500;
-
-          &::before {
-            background-image: url("../img/icon_call.svg");
-            background-color: transparent;
-            background-size: 18px 18px;
-          }
-
-          &:hover {
-            background-color: $orange_700;
-          }
-
-          &:active {
-            background-color: $orange_700;
-
-            &::before {
-              opacity: 0.3;
-            }
-          }
-        }
-      }
+    @media (min-width: $desktop-width) {
+      width: 37px;
+      height: 25px;
+      left: 27px;
     }
   }
 }

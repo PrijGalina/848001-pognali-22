@@ -1,3 +1,16 @@
+.user-card {
+  padding-bottom: 1px;
+
+  &:hover {
+    filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.16));
+    padding-bottom: 0;
+
+    .user-card__info {
+        padding-bottom: 16px;
+    }
+  }
+}
+
 .user-card__tags {
   margin: 0 0 14px;
   text-align: center;
@@ -10,14 +23,12 @@
 }
 
 .user-card__photo {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: auto;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
-    height: auto;
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
   }
@@ -98,4 +109,15 @@
   width: 35px;
   height: 24px;
   border-radius: 2px;
+}
+
+.user-card__wants-item {
+  position: relative;
+
+  &:hover {
+    .user-card__tooltip {
+      display: flex;
+      bottom: -69px;
+    }
+  }
 }

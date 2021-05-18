@@ -17,7 +17,7 @@
 <body class="page__body">
   <header class="page-header page-header--inner">
     <div class="wrapper page-header__wrapper">
-      <a class="logotype page-header__logotype">
+      <a class="logotype page-header__logotype" href="index.html">
         <div class="logotype__header--open page-header__img--menu">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
@@ -462,7 +462,7 @@
                   <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--avia">
                     <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
                       <input class="input-choice__field" type="checkbox" name="airplane" aria-hidden="true" tabindex="-1" checked>
-                      <span class="input-choice__caption">самолет</span>
+                      <span class="input-choice__caption">Авиаперелет</span>
                     </label>
                   </li>
                   <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--bus">
@@ -474,13 +474,13 @@
                   <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--bike">
                     <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
                       <input class="input-choice__field" type="checkbox" name="bike" aria-hidden="true" tabindex="-1">
-                      <span class="input-choice__caption">велосипед</span>
+                      <span class="input-choice__caption">Велосипед</span>
                     </label>
                   </li>
                   <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--foot">
                     <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
                       <input class="input-choice__field" type="checkbox" name="foot" aria-hidden="true" tabindex="-1" checked>
-                      <span class="input-choice__caption">пешком</span>
+                      <span class="input-choice__caption">Пешком</span>
                     </label>
                   </li>
                 </ul>
@@ -513,16 +513,18 @@
           <h2 class="visually-hidden">Список пользователей</h2>
           <ul class="user-choice__list">
             <li class="user user-search user--choice">
-              <div class="user__photo user-search__photo">
+              <a class="user__photo user-search__photo" href="#">
                 <picture>
                   <source media="(min-width: 1440px)" srcset="img/tanya_firsova-285.jpg 1x, img/tanya_firsova-285@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/tanya_firsova-190.jpg 1x, img/tanya_firsova-190@2x.jpg 2x">
                   <img src="img/tanya_firsova-70.jpg" srcset="img/tanya_firsova-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Татьяны Фирсовой">
                 </picture>
-              </div>
+              </a>
               <div class="user-search__name-block">
-                <p class="user__name user-search__name user__name--choice">Таня<br> Фирсова</p>
-                <span class="user__status user-search__status"></span>
+                <a class="user__name user-search__name user__name--choice" href="#">
+                  Таня<br> Фирсова
+                  <span class="user__status user-search__status"></span>
+                </a>
               </div>
               <div class="user-search__like user-search__like--active">
                 <span class="user-search__count">1,5 М</span>
@@ -559,16 +561,16 @@
                   <span class="user-search__caption user-search__caption--inline user-search__caption--transport">транспорт:</span>
                   <ul class="transport user-search__transport-list">
                     <li class="transport__item  transport__item--search transport__item--avia transport__item--avia-search transport__item--active">
-                      <span class="visually-hidden">самолет</span>
+                      <span class="tooltip transport__tooltip">Авиаперелет</span>
                     </li>
                     <li class="transport__item  transport__item--search transport__item--bus transport__item--bus-search">
-                      <span class="visually-hidden">машина</span>
+                      <span class="tooltip transport__tooltip">Автотранспорт</span>
                     </li>
                     <li class="transport__item  transport__item--search transport__item--bike transport__item--bike-search">
-                      <span class="visually-hidden">велосипед</span>
+                      <span class="tooltip transport__tooltip">Велосипед</span>
                     </li>
                     <li class="transport__item  transport__item--search transport__item--foot transport__item--foot-search">
-                      <span class="visually-hidden">пешком</span>
+                      <span class="tooltip transport__tooltip">Пешком</span>
                     </li>
                   </ul>
                 </div>
@@ -583,16 +585,18 @@
               <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
             <li class="user user-search user--choice">
-              <div class="user__photo user-search__photo">
+              <a class="user__photo user-search__photo" href="#">
                 <picture>
                   <source media="(min-width: 1440px)" srcset="img/petr-demin-285.jpg 1x, img/petr-demin-285@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/petr-demin-190.jpg 1x, img/petr-demin-190@2x.jpg 2x">
                   <img src="img/petr-demin-70.jpg" srcset="img/petr-demin-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Петра Демина">
                 </picture>
-              </div>
+              </a>
               <div class="user-search__name-block">
-                <p class="user__name user-search__name user__name--choice">Петя<br> Демин</p>
-                <span class="user__status user-search__status"></span>
+                <a class="user__name user-search__name user__name--choice" href="#">
+                  Петя<br> Демин
+                  <span class="user__status user-search__status"></span>
+                </a>
               </div>
               <div class="user-search__like">
                 <span class="user-search__count">1500</span>
@@ -622,16 +626,16 @@
                   <span class="user-search__caption user-search__caption--inline user-search__caption--transport">транспорт:</span>
                   <ul class="transport user-search__transport-list">
                     <li class="transport__item  transport__item--search transport__item--avia transport__item--avia-search transport__item--active transport__item--search">
-                      <span class="visually-hidden">самолет</span>
+                      <span class="tooltip transport__tooltip">Авиаперелет</span>
                     </li>
                     <li class="transport__item  transport__item--search transport__item--bus transport__item--bus-search transport__item--active transport__item--search">
-                      <span class="visually-hidden">машина</span>
+                      <span class="tooltip transport__tooltip">Автотранспорт</span>
                     </li>
                     <li class="transport__item  transport__item--search transport__item--bike transport__item--bike-search transport__item--search">
-                      <span class="visually-hidden">велосипед</span>
+                      <span class="tooltip transport__tooltip">Велосипед</span>
                     </li>
                     <li class="transport__item  transport__item--search transport__item--foot transport__item--foot-search transport__item--active transport__item--search">
-                      <span class="visually-hidden">пешком</span>
+                      <span class="tooltip transport__tooltip">Пешком</span>
                     </li>
                   </ul>
                 </div>
@@ -646,16 +650,18 @@
               <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
             <li class="user user-search user--choice">
-              <div class="user__photo user-search__photo">
+              <a class="user__photo user-search__photo" href="#">
                 <picture>
                   <source media="(min-width: 1440px)" srcset="img/mark-smolov-285.jpg 1x, img/mark-smolov-285@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/mark-smolov-190.jpg 1x, img/mark-smolov-190@2x.jpg 2x">
                   <img src="img/mark-smolov-70.jpg" srcset="img/mark-smolov-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Марка Смолова">
                 </picture>
-              </div>
+              </a>
               <div class="user-search__name-block">
-                <p class="user__name user-search__name user__name--choice">Марк<br> Смолов</p>
-                <span class="user__status user-search__status"></span>
+                <a class="user__name user-search__name user__name--choice" href="#">
+                  Марк<br> Смолов
+                  <span class="user__status user-search__status"></span>
+                </a>
               </div>
               <div class="user-search__like">
                 <span class="user-search__count">170</span>
@@ -692,16 +698,16 @@
                   <span class="user-search__caption user-search__caption--inline user-search__caption--transport">транспорт:</span>
                   <ul class="transport user-search__transport-list">
                     <li class="transport__item  transport__item--search transport__item--avia transport__item--avia-search transport__item--active transport__item--search">
-                      <span class="visually-hidden">самолет</span>
+                      <span class="tooltip transport__tooltip">Авиаперелет</span>
                     </li>
                     <li class="transport__item  transport__item--search transport__item--bus transport__item--bus-search transport__item--search">
-                      <span class="visually-hidden">машина</span>
+                      <span class="tooltip transport__tooltip">Автотранспорт</span>
                     </li>
                     <li class="transport__item  transport__item--search transport__item--bike transport__item--bike-search transport__item--active transport__item--search">
-                      <span class="visually-hidden">велосипед</span>
+                      <span class="tooltip transport__tooltip">Велосипед</span>
                     </li>
                     <li class="transport__item  transport__item--search transport__item--foot transport__item--foot-search transport__item--search">
-                      <span class="visually-hidden">пешком</span>
+                      <span class="tooltip transport__tooltip">Пешком</span>
                     </li>
                   </ul>
                 </div>
@@ -716,16 +722,18 @@
               <button type="button" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</button>
             </li>
             <li class="user user-search user--choice">
-              <div class="user__photo user-search__photo">
+              <a class="user__photo user-search__photo" href="#">
                 <picture>
                   <source media="(min-width: 1440px)" srcset="img/larisa-rogovaya-285.jpg 1x, img/larisa-rogovaya-285@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/larisa-rogovaya-190.jpg 1x, img/larisa-rogovaya-190@2x.jpg 2x">
                   <img src="img/larisa-rogovaya-70.jpg" srcset="img/larisa-rogovaya-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
                 </picture>
-              </div>
+              </a>
               <div class="user-search__name-block">
-                <p class="user__name user-search__name user__name--choice">Лариса<br> Роговая</p>
-                <span class="user__status user__status--online user-search__status"></span>
+                <a class="user__name user-search__name user__name--choice" href="#">
+                  Лариса<br> Роговая
+                  <span class="user__status user__status--online user-search__status"></span>
+                </a>
               </div>
               <div class="user-search__like">
                 <span class="user-search__count">23</span>
@@ -755,16 +763,16 @@
                   <span class="user-search__caption user-search__caption--inline user-search__caption--transport">транспорт:</span>
                   <ul class="transport user-search__transport-list">
                     <li class="transport__item  transport__item--search transport__item--avia transport__item--avia-search transport__item--active transport__item--search">
-                      <span class="visually-hidden">самолет</span>
+                      <span class="tooltip transport__tooltip">Авиаперелет</span>
                     </li>
                     <li class="transport__item  transport__item--search transport__item--bus transport__item--bus-search transport__item--active transport__item--search">
-                      <span class="visually-hidden">машина</span>
+                      <span class="tooltip transport__tooltip">Автотранспорт</span>
                     </li>
                     <li class="transport__item  transport__item--search transport__item--bike transport__item--bike-search transport__item--search">
-                      <span class="visually-hidden">велосипед</span>
+                      <span class="tooltip transport__tooltip">Велосипед</span>
                     </li>
                     <li class="transport__item  transport__item--search transport__item--foot transport__item--foot-search transport__item--search">
-                      <span class="visually-hidden">пешком</span>
+                      <span class="tooltip transport__tooltip">Пешком</span>
                     </li>
                   </ul>
                 </div>
@@ -806,7 +814,7 @@
   </main>
   <footer class="page-footer">
     <div class="wrapper page-footer__wrapper">
-      <a class="logotype page-footer__logotype">
+      <a class="logotype page-footer__logotype" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
           <img class="logotype-img page-footer__img" src="img/pognali-logotype-tablet-blue.png" srcset="img/pognali-logotype-tablet-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">

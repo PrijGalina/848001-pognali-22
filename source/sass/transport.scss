@@ -15,6 +15,13 @@
   height: 32px;
   border-radius: 50%;
 
+  &:hover {
+    .transport__tooltip {
+      display: flex;
+      bottom: -68px;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;

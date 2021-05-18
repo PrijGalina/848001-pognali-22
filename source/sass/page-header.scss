@@ -144,11 +144,24 @@
       top: inherit;
       left: inherit;
       width: 100%;
+      padding-bottom: 0;
       z-index: 1;
       background-color: $blue_500;
 
       .page-header__for-user {
         display: flex;
+      }
+
+      .page-header__wrapper {
+        grid-template-rows: 52px;
+      }
+
+      .page-header__img--menu {
+        display: none;
+      }
+
+      .page-header__img--default {
+        display: block;
       }
     }
   }
@@ -327,11 +340,11 @@
   }
 
   &:hover {
-    background-color: $orange_300;
+    background-color: $yellow_300;
   }
 
   &:active {
-    background-color: $orange_300;
+    background-color: $yellow_300;
     color: $blue_200_03;
   }
 }
@@ -395,5 +408,129 @@
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.page-header__contacts {
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: $blue_600;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &--phone {
+    &::before {
+      @media (min-width: $desktop-width) {
+        background-color: $orange_500;
+      }
+    }
+
+    &::after {
+      background-image: url("../img/icon_phone.svg");
+
+      @media (min-width: $tablet-width) {
+        background-size: 28px 26px;
+      }
+
+      @media (min-width: $desktop-width) {
+        background-image: url("../img/icon_call.svg");
+      }
+    }
+
+    &:hover {
+      &::before {
+        background-color: $orange_700;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-color: $orange_700;
+      }
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &--email {
+    &::before {
+      @media (min-width: $desktop-width) {
+        background-color: $yellow_300;
+      }
+    }
+
+    &::after {
+      background-image: url("../img/icon_mail.svg");
+
+      @media (min-width: $tablet-width) {
+        background-size: 28px 19px;
+      }
+
+      @media (min-width: $desktop-width) {
+        background-image: url("../img/icon_mail_close.svg");
+      }
+    }
+
+    &:hover {
+      &:before {
+        background-color: $orange_500;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-color: $orange_500;
+      }
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 0;
+    padding-left: 0;
+    width: 50px;
+    height: 50px;
   }
 }

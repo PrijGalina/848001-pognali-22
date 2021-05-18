@@ -451,17 +451,46 @@
   display: flex;
 }
 
-.first-screen__contact {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.first-screen__contacts {
   font-size: 0;
   padding: 0;
+  width: 40px;
+  height: 40px;
 
   &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 40px;
     height: 40px;
-    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  &--phone {
+    &::before {
+      background-color: $orange_500;
+      background-image: url("../img/icon_call.svg");
+    }
+  }
+
+  &--email {
+    &::before {
+      background-color: $orange_300;
+      background-image: url("../img/icon_mail_close.svg");
+    }
   }
 }
+
