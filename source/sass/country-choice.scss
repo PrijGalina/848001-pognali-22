@@ -61,6 +61,10 @@
     border: 1px solid $grey_500;
   }
 
+  &:hover {
+    border-color: $grey_700
+  }
+
   &--selected {
     background-color: $grey_100;
 
@@ -126,6 +130,14 @@
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    color: $blue_200;
+  }
+
+  &:active {
+    color: $blue_200_03;
   }
 
   @media (min-width: $tablet-width) {

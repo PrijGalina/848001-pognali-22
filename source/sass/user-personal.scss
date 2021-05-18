@@ -41,6 +41,13 @@
 }
 
 .user-personal__caption {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+  background-color: #e5e5e5;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     margin: 0;
@@ -139,6 +146,14 @@
       border-bottom-right-radius: 10px;
       height: 47px;
     }
+  }
+
+  &:hover {
+    background-color: $grey_390;
+  }
+
+  &:active {
+    color: $blue_500_03;
   }
 }
 
@@ -258,7 +273,22 @@
   }
 }
 
+.user-personal__textarea {
+  &:hover {
+    border-color: $grey_600;
+  }
+
+  &:focus-within,
+  &:active {
+    border-color: $blue_500;
+  }
+}
+
 .user-personal__transport-list {
-  margin: 0;
+  @include clear_list;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  margin: 0;
 }

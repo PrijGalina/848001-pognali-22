@@ -18,6 +18,21 @@
       margin-bottom: 0;
     }
   }
+
+  &:hover {
+    .textarea__field {
+      border-color: $grey_600;
+    }
+  }
+
+  &:focus-within,
+  &:active {
+    border-color: $blue_500;
+  }
+
+  &:active:focus {
+    border-color: $grey_600;
+  }
 }
 
 .textarea__caption {
@@ -75,6 +90,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    color: $grey;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -118,6 +134,24 @@
       font-size: 20px;
       line-height: 22px;
       opacity: 0.6;
+    }
+  }
+
+  &:hover {
+    border-color: $grey_700;
+  }
+
+  &:active {
+    border: 1px solid $blue_500;
+  }
+
+  &:focus,
+  &:focus-visible {
+    border: 1px solid $blue_500;
+    outline: none;
+
+    &::placeholder {
+      opacity: 1;
     }
   }
 }

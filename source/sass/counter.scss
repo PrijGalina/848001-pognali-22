@@ -371,7 +371,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      right: -45px;
+      right: -46px;
     }
   }
 
@@ -388,10 +388,11 @@
         width: 20px;
         height: 20px;
         transform: translateY(-50%);
-        background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='7' x2='7' y2='14' stroke='%23C2C4C9' stroke-width='2'/%3E%3Cline y1='7' x2='14' y2='7' stroke='%23C2C4C9' stroke-width='2'/%3E%3C/svg%3E%0A");
+        background-image: url("../img/icon_add.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+        opacity: 0.2;
       }
     }
   }
@@ -415,6 +416,20 @@
     margin-bottom: 61px;
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+
+  &:hover {
+    border-color: $grey_300;
+
+    & span::after {
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    & span::after {
+      opacity: 0.1;
+    }
   }
 }
 
@@ -494,6 +509,22 @@
 
       @media (min-width: $desktop-width) {
         left: -10px;
+      }
+    }
+
+    &:hover {
+      color: $blue_200_07;
+
+      &::before {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      color: $blue_200_03;
+
+      &::before {
+        opacity: 0.3;
       }
     }
   }

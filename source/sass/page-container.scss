@@ -6,6 +6,7 @@
   background-color: $blue_300;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     border-bottom-left-radius: 60px;
@@ -60,6 +61,14 @@
     &::after {
       right: 63px;
     }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

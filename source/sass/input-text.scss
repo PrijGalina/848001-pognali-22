@@ -7,31 +7,17 @@
     "paragraph-name paragraph-unit"
     "paragraph paragraph";
   box-sizing: border-box;
-
-  &--email {
-    padding: 22px 25px;
-    border-radius: 10px;
-    height: 62px;
-    background-color: $white;
-
-    @media (min-width: $tablet-width) {
-      height: 80px;
-      padding: 28px 36px;
-      border-radius: 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      height: 81px;
-      display: block;
-      width: 850px;
-    }
-  }
+  width: max-content;
 
   @media (min-width: $desktop-width) {
     grid-template-columns: max-content 180px min-content;
     grid-template-rows: min-content;
     grid-template-areas: "paragraph-name paragraph paragraph-unit";
     margin-bottom: 14px;
+  }
+
+  &--email {
+    width: 100%;
   }
 
   &--tags {
@@ -72,6 +58,36 @@
     line-height: 24px;
   }
 
+  &:hover {
+    border: 1px solid $grey_700;
+
+    & ~ .input-text__controls {
+      .input-text__controls-icon {
+        stroke: $grey_700;
+      }
+    }
+
+    & ~ .input-text__controls:active {
+      .input-text__controls-icon {
+        stroke: $grey_200;
+      }
+    }
+  }
+
+  &:active {
+    border: 1px solid $blue_500;
+  }
+
+  &:focus {
+    border: 1px solid $blue_500;
+
+    & ~ .input-text__controls {
+      .input-text__controls-icon {
+        stroke: $blue_500;
+      }
+    }
+  }
+
   &--number {
     border: 1px solid $grey_500;
     border-radius: 4px;
@@ -102,9 +118,49 @@
   }
 
   &--email {
+  padding: 22px 25px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 62px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+    padding: 28px 36px;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 81px;
+    display: block;
+    width: 850px;
+  }
+
     &::placeholder {
       @media (min-width: $tablet-width) {
         text-transform: none;
+      }
+    }
+
+    &:hover {
+      border: none;
+      background-color: $grey_100;
+
+      &::placeholder {
+        color: $grey_05;
+      }
+    }
+
+    &:focus {
+      border: 4px solid $white;
+      color: $white;
+      background-color: transparent;
+
+      &::placeholder {
+        color: $white;
       }
     }
   }
@@ -192,42 +248,21 @@
   &--plus {
     right: 0;
 
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 14px;
-      height: 2px;
-      background-color: $grey_400;
-
-      @media (min-width: $tablet-width) {
-        width: 20px;
+    &:active,
+    &:focus {
+      & > .input-text__controls-icon {
+        stroke: $grey_200;
       }
-    }
-
-    &::after {
-      transform: translate(-50%, -50%) rotate(90deg);
     }
   }
 
   &--minus {
     left: 0;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 14px;
-      height: 2px;
-      background-color: $grey_400;
-
-      @media (min-width: $tablet-width) {
-        width: 20px;
+    &:active,
+    &:focus {
+      & > .input-text__controls-icon {
+        stroke: $grey_200;
       }
     }
   }
@@ -238,5 +273,22 @@
 
   @media (min-width: $desktop-width) {
     width: 60px;
+  }
+
+  &:hover {
+    .input-text__controls-icon {
+      stroke: $grey_700;
+    }
+
+    & + .input-text__field {
+      border: 1px solid $grey_700;
+    }
+  }
+
+  &:active,
+  &:focus {
+    & + .input-text__field {
+      border: 1px solid $blue_500;
+    }
   }
 }

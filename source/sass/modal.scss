@@ -17,6 +17,14 @@
     padding-top: 54px;
     max-width: 750px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+
+  &::after {
+    display: none;
+  }
 }
 
 .modal__title {
@@ -86,6 +94,15 @@
     text-transform: none;
     font-size: 24px;
     line-height: 24px;
+  }
+
+  &:hover {
+    background-color: $grey_100;
+  }
+
+  &:active {
+    background-color: $grey_100;
+    color: $blue_200_03;
   }
 }
 

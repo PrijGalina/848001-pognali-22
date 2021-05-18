@@ -11,7 +11,6 @@
   <link rel="apple-touch-icon" href="img/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -64,17 +63,17 @@
       </div>
       <ul class="social page-header__social">
         <li class="social__item">
-          <a href="#" class="social__link social__link--facebook">
+          <a href="#" class="social__link social__link--white social__link--facebook">
             <span class="visually-hidden">Наша страница в facebook</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--vk">
+          <a href="#" class="social__link social__link--white social__link--vk">
             <span class="visually-hidden">Мы вконтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--instagram">
+          <a href="#" class="social__link social__link--white social__link--instagram">
             <span class="visually-hidden">Наш профиль в instagram</span>
           </a>
         </li>
@@ -103,59 +102,59 @@
           <button type="button" class="btn btn--rectangle user__edit-pic user-personal__photo-edit user-personal__photo-edit--inside" aria-label="Изменить фотографию профиля">фото</button>
         </div>
         <button type="button" class="btn btn--oval user__edit-pic user-personal__photo-edit" aria-label="Изменить фотографию профиля">сменить фото</button>
-
-        <label class="textarea textarea--tags user-personal__textarea user-personal__textarea--tags user-personal__container user-personal__container--tags">
-          <span class="caption caption--border user-personal__caption user-personal__caption--tags">ТЭГИ</span>
+        <label class="textarea textarea--tags user-personal__textarea user-personal__textarea--tags user-personal__container user-personal__container--tags" tabindex="0">
+          <span class="caption user-personal__caption user-personal__caption--tags">ТЭГИ</span>
           <textarea class="textarea__field textarea__field--tags" name="user-personal-tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
         </label>
-
-        <div class="company-choice company-choice--transport user-personal__container user-personal__container--transport">
-          <legend class="caption caption--border user-personal__caption user-personal__caption--transport">транспорт</legend>
-          <ul class="company-choice__group-list company-choice__transport-list user-personal__transport-list">
-            <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--avia">
-              <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
-                <input class="input-choice__field" type="checkbox" name="airplane" aria-hidden="true" tabindex="-1" checked>
-                <span class="input-choice__caption">Авиаперелет</span>
+        <div class="user-personal__container user-personal__container--transport">
+          <legend class="caption user-personal__caption user-personal__caption--transport">транспорт</legend>
+          <ul class="user-personal__transport-list">
+            <li class="user-personal__transport-item">
+              <label class="transport-choice" tabindex="0">
+                <input class="transport-choice__field" type="checkbox" name="airplane" aria-hidden="true" tabindex="-1" checked>
+                <div class="transport-choice__switch">
+                  <span class="tooltip transport-choice__tooltip">Авиаперелет</span>
+                  <svg class="transport-choice__icon" width="17" height="16" viewBox="0 0 17 16" fill="#d9d9d9">
+                    <use xlink:href="img/sprite.svg#avia"></use>
+                  </svg>
+                </div>
               </label>
             </li>
-            <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--bus">
-              <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
-                <input class="input-choice__field" type="checkbox" name="bus" aria-hidden="true" tabindex="-1" checked>
-                <span class="input-choice__caption">автобус</span>
+            <li class="user-personal__transport-item">
+              <label class="transport-choice" tabindex="0">
+                <input class="transport-choice__field" type="checkbox" name="bus" aria-hidden="true" tabindex="-1" checked>
+                <div class="transport-choice__switch">
+                  <span class="tooltip transport-choice__tooltip">Автотранспорт</span>
+                  <svg class="transport-choice__icon" width="17" height="16" viewBox="0 0 17 16" fill="#d9d9d9">
+                    <use xlink:href="img/sprite.svg#bus"></use>
+                  </svg>
+                </div>
               </label>
             </li>
-            <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--bike">
-              <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
-                <input class="input-choice__field" type="checkbox" name="bike" aria-hidden="true" tabindex="-1">
-                <span class="input-choice__caption">Велосипед</span>
+            <li class="user-personal__transport-item">
+              <label class="transport-choice" tabindex="0">
+                <input class="transport-choice__field" type="checkbox" name="bike" aria-hidden="true" tabindex="-1">
+                <div class="transport-choice__switch">
+                  <span class="tooltip transport-choice__tooltip">Велосипед</span>
+                  <svg class="transport-choice__icon transport-choice__icon--bike" width="17" height="16" viewBox="0 0 17 16" fill="#d9d9d9">
+                    <use xlink:href="img/sprite.svg#bike"></use>
+                  </svg>
+                </div>
               </label>
             </li>
-            <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--foot">
-              <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
-                <input class="input-choice__field" type="checkbox" name="foot" aria-hidden="true" tabindex="-1" checked>
-                <span class="input-choice__caption">Пешком</span>
+            <li class="user-personal__transport-item">
+              <label class="transport-choice" tabindex="0">
+                <input class="transport-choice__field" type="checkbox" name="foot" aria-hidden="true" tabindex="-1" checked>
+                <div class="transport-choice__switch">
+                  <span class="tooltip transport-choice__tooltip">Пешком</span>
+                  <svg class="transport-choice__icon transport-choice__icon--foot" width="17" height="16" viewBox="0 0 17 16" fill="#d9d9d9">
+                    <use xlink:href="img/sprite.svg#foot"></use>
+                  </svg>
+                </div>
               </label>
             </li>
           </ul>
         </div>
-        <!--<div class="user-personal__container user-personal__container--transport">
-          <p class="caption caption--border user-personal__caption user-personal__caption--transport">транспорт</p>
-          <ul class="transport">
-            <li class="transport__item transport__item--avia transport__item--avia-personal transport__item--active transport__item--user-personal">
-              <span class="tooltip transport__tooltip">Авиаперелет</span>
-            </li>
-            <li class="transport__item transport__item--bus transport__item--bus-personal transport__item--active transport__item--user-personal">
-              <span class="tooltip transport__tooltip">Автотранспорт</span>
-            </li>
-            <li class="transport__item transport__item--bike transport__item--bike-personal transport__item--user-personal">
-              <span class="tooltip transport__tooltip">Велосипед</span>
-            </li>
-            <li class="transport__item transport__item--foot transport__item--foot-personal transport__item--active transport__item--user-personal">
-              <span class="tooltip transport__tooltip">Пешком</span>
-            </li>
-          </ul>
-        </div>-->
-
       </div>
     </section>
     <section class="planned">
@@ -207,9 +206,17 @@
                   <span class="input-text__caption input-text__caption--unit input-text__caption--people">чел.</span>
                 </span>
                 <p class="input-text__row">
-                  <button type="button" class="input-text__controls input-text__controls--minus"></button>
                   <input type="number" class="input-text__field input-text__field--number" value="2">
-                  <button type="button" class="input-text__controls input-text__controls--plus"></button>
+                  <button type="button" class="input-text__controls input-text__controls--minus">
+                    <svg class="input-text__controls-icon" width="20" height="2" viewBox="0 0 20 2" stroke="#CCCCCC">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="input-text__controls input-text__controls--plus">
+                    <svg class="input-text__controls-icon" width="20" height="20" viewBox="0 0 20 20" stroke="#CCCCCC">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
                 </p>
               </label>
               <label class="input-text input-text--number counter__row counter__date">
@@ -217,14 +224,22 @@
                   <span class="input-text__caption input-text__caption--unit input-text__caption--date">дн.</span>
                 </span>
                 <p class="input-text__row">
-                  <button type="button" class="input-text__controls input-text__controls--minus"></button>
                   <input type="number" class="input-text__field input-text__field--number" value="2">
-                  <button type="button" class="input-text__controls input-text__controls--plus"></button>
+                  <button type="button" class="input-text__controls input-text__controls--minus">
+                    <svg class="input-text__controls-icon" width="20" height="2" viewBox="0 0 20 2" stroke="#CCCCCC">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="input-text__controls input-text__controls--plus">
+                    <svg class="input-text__controls-icon" width="20" height="20" viewBox="0 0 20 20" stroke="#CCCCCC">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
                 </p>
               </label>
-              <label class="input-choice input-choice--checkbox counter__row counter__child">
+              <label class="counter__row counter__child input-choice">
                 <input type="checkbox" class="input-choice__field" name="with-children">
-                <span class="input-choice__caption input-choice__caption--blue input-choice__caption--child  input-choice__caption--border">Можно с детьми</span>
+                <span class="input-choice__caption input-choice__caption--blue input-choice__caption--child">Можно с детьми</span>
               </label>
               <div class="calendar counter__calendar">
                 <header class="calendar__nav">
@@ -340,8 +355,12 @@
               </div>
               <div class="country-select country-select--more">
                 <div class="country-select__trigger country-select__trigger--more">
-                  <span class="country-select__value country-select__value--choice">Выберите страну</span> <!-- +- "country-select__value--open" -->
+                  <span class="country-select__value country-select__value--choice">
+                    Выберите страну
+                    <object class="country-select__close" data="img/icon_close_white.svg" type="image/svg+xml" width="22" height="21"></object>
+                  </span> <!-- +- "country-select__value--open" -->
                   <div class="country-select__arrow country-select__arrow--more country-select__arrow--light"></div>
+                  <button type="button" class="country-select__delete" aria-label="Убрать страну из маршрута">удалить</button>
                 </div>
                 <div class="country-choice counter__select-dropdown"><!-- +- "counter__select-dropdown--open" -->
                   <ul class="country-choice__letter-list">
@@ -424,7 +443,7 @@
                     <img src="img/bosnia-and-herzegovina-flag.png" srcset="img/bosnia-and-herzegovina-flag@2x.png 2x" class="textarea__field-flag" width="35" height="24" alt="Флаг Боснии и Герцеговины">
                   </picture>
                 </p>
-                <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий"></textarea>
+                <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий" required></textarea>
               </label>
               <label class="textarea counter__textarea" for="point-desc">
                 <p class="textarea__caption counter__textarea-caption">
@@ -434,7 +453,7 @@
                     <img src="img/czech-flag.png" srcset="img/czech-flag@2x.png" class="textarea__field-flag" width="35" height="24" alt="Флаг Чехии">
                   </picture>
                 </p>
-                <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все.</textarea>
+                <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий" required>Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все.</textarea>
               </label>
             </div>
             <div class="counter__footer">

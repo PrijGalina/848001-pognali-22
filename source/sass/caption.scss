@@ -8,13 +8,4 @@
   color: $blue_200;
   width: fit-content;
   padding: 0 18px;
-
-  &--border {
-    position: absolute;
-    margin: 0;
-    left: 50%;
-    top: -10px;
-    transform: translateX(-50%);
-    background-color: #e5e5e5;
-  }
 }

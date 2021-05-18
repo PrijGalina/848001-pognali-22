@@ -114,6 +114,14 @@
     padding-right: 0;
     letter-spacing: 0.08em;
   }
+
+  &:hover {
+    color: $black_06;
+  }
+
+  &:active {
+    color: $black_01;
+  }
 }
 
 .planned__country {

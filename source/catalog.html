@@ -64,17 +64,17 @@
       </div>
       <ul class="social page-header__social">
         <li class="social__item">
-          <a href="#" class="social__link social__link--facebook">
+          <a href="#" class="social__link social__link--white social__link--facebook">
             <span class="visually-hidden">Наша страница в facebook</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--vk">
+          <a href="#" class="social__link social__link--white social__link--vk">
             <span class="visually-hidden">Мы вконтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--instagram">
+          <a href="#" class="social__link social__link--white social__link--instagram">
             <span class="visually-hidden">Наш профиль в instagram</span>
           </a>
         </li>
@@ -88,15 +88,20 @@
       </h1>
       <a href="index.html" class="page-container__link">На главную</a>
     </div>
-    <section class="filters"><!-- +- "filters--open" -->
+    <section class="filters filters--open"><!-- +- "filters--open" -->
       <div class="filters__container">
           <nav class="filters__navigation">
             <h2 class="filters__title">Фильтрация по странам:</h2>
             <p class="filters__see">
-              <span class="filters__see-all filters__see-all--open">Показать все</span>
-              <span class="filters__see-all filters__see-all--close">Свернуть</span>
+              <span class="filters__see-block filters__see-block--open">
+                <span class="filters__see-title">Показать все</span>
+                <button type="button" class="filters__toggle filters__toggle--open" aria-label="Развернуть фильтр"></button>
+              </span>
+              <span class="filters__see-block filters__see-block--close">
+                <span class="filters__see-title">Свернуть</span>
+                <button type="button" class="filters__toggle filters__toggle--close" aria-label="Свернуть фильтр"></button>
+              </span>
             </p>
-            <button type="button" class="filters__toggle" aria-label="Развернуть фильтр"></button><!-- +- "filters__toggle--open" -->
             <ul class="filters__continents-list">
               <li class="filters__continents-item filters__continents-item--selected">европа</li>
               <li class="filters__continents-item">азия</li>
@@ -455,6 +460,7 @@
                 </ul>
               </div>
             </fieldset>
+            <!--
             <fieldset class="company-choice__group company-choice__group--open">
               <div class="company-choice__group-container company-choice__group-container--transport">
                 <legend class="company-choice__group-title">транспорт</legend>
@@ -486,6 +492,7 @@
                 </ul>
               </div>
             </fieldset>
+          -->
             <fieldset class="company-choice__group company-choice__group--open">
               <div class="company-choice__group-container company-choice__group-container--level">
                 <legend class="company-choice__group-title company-choice__group-title--level">Левел</legend>

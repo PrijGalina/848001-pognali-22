@@ -26,6 +26,11 @@
       background-image: url("../img/checkbox-inner.svg");
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 8px 8px;
+
+      @media (min-width: $tablet-width) {
+        background-size: 11px 11px;
+      }
     }
   }
 
@@ -73,6 +78,30 @@
       opacity: 0.3;
     }
   }
+
+  &:not(:disabled):checked + .input-choice__caption--child:active {
+    color: $blue_200;
+
+    &::before {
+      background-color: $grey_125;
+    }
+  }
+
+  &:not(:disabled) + .input-choice__caption--child:active {
+    color: $blue_200;
+
+    &::before {
+      background-color: $grey_125;
+    }
+  }
+
+  &:not(:disabled) + .input-choice__caption--child:hover {
+    color: $blue_200;
+
+    &::before {
+      border-color: $grey_700;
+    }
+  }
 }
 
 .input-choice__caption {
@@ -86,12 +115,9 @@
   cursor: pointer;
   box-sizing: border-box;
 
+
   &--blue {
     color: $blue_200;
-  }
-
-  &--border::before {
-    border: 1px solid $grey_500;
   }
 
   &::before {
@@ -105,6 +131,8 @@
     transform: translateY(-50%);
     cursor: pointer;
     background-color: $white;
+    border-radius: 4px;
+    border: 1px solid $grey_500;
 
     @media (min-width: $tablet-width) {
       width: 24px;
@@ -161,80 +189,10 @@
       margin-left: 57px;
       margin-top: 25px;
     }
-  }
-}
 
-.company-choice__transport-item {
-  .input-choice {
-    &:focus {
-      outline: none;
-    }
-
-    &:focus > .input-choice__caption {
-      border: 1px solid $grey_500;
-      border-radius: 50%;
-      background-color: $white_03;
-
+    &:active {
       &::before {
-        border: none;
-      }
-    }
-  }
-
-  .input-choice__caption {
-    font-size: 0;
-    width: 31px;
-    height: 31px;
-    border-radius: 50%;
-    background: $white;
-    margin-left: 0;
-
-    @media (min-width: $tablet-width) {
-      width: 44px;
-      height: 44px;
-    }
-  }
-
-  .input-choice__field {
-    & + .input-choice__caption::before {
-      width: 32px;
-      height: 32px;
-      background-color: transparent;
-      background-position: center center;
-      background-repeat: no-repeat;
-      opacity: 0.15;
-
-      @media (min-width: $tablet-width) {
-        width: 23px;
-        height: 22px;
-        background-size: contain;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-
-    /*checked*/
-    &:not(:disabled):checked + .input-choice__caption::before {
-      opacity: 1;
-    }
-
-    &:not(:disabled):checked + .input-choice__caption {
-      background-color: $white;
-    }
-
-    /* hover */
-    &:not(:disabled) + .input-choice__caption:hover {
-      background-color: $white_06;
-
-      &::before {
-        background-color: transparent;
-      }
-    }
-
-    /*active*/
-    &:not(:disabled) + .input-choice__caption:active {
-      &::before {
-        opacity: 0.15;
+        background-color: $grey_125;
       }
     }
   }

@@ -8,10 +8,6 @@
   @media (min-width: $desktop-width) {
     grid-area: filter;
   }
-
-  &--transport {
-    margin-bottom: 0;
-  }
 }
 
 .company-choice__wrapper {
@@ -122,12 +118,6 @@
     display: block;
     margin-bottom: 19px;
   }
-
-  &--transport {
-    @media (min-width: $tablet-width) {
-      margin-bottom: 12px;
-    }
-  }
 }
 
 .company-choice__group-title {
@@ -234,71 +224,6 @@
     &:last-of-type {
       margin-bottom: 0;
     }
-  }
-}
-
-.company-choice__transport-list {
-  display: flex;
-  flex-wrap: wrap;
-  height: 32px;
-  margin-top: 6px;
-
-  @media (min-width: $tablet-width) {
-    justify-content: flex-start;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 19px;
-    flex-direction: row;
-    height: 43px;
-    margin-bottom: 32px;
-  }
-}
-
-.company-choice__transport-item {
-  margin-right: 2px;
-  height: 32px;
-
-  &--avia {
-    .input-choice__field + .input-choice__caption::before {
-      background-image: url("../img/avia.svg");
-    }
-  }
-
-  &--bus {
-    .input-choice__field + .input-choice__caption::before {
-      background-image: url("../img/bus-wide.svg");
-      background-size: 17px 17px;
-
-      @media (min-width: $tablet-width) {
-        background-size: 23px 23px;
-      }
-    }
-  }
-
-  &--bike {
-    .input-choice__field + .input-choice__caption::before {
-      background-image: url("../img/bike.svg");
-    }
-  }
-
-  &--foot {
-    .input-choice__field + .input-choice__caption::before {
-      background-image: url("../img/foot.svg");
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: inherit;
-    height: inherit;
-    margin-right: 0;
-    margin-top: -6px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 44px;
-    height: 44px;
-    margin-top: 0;
   }
 }
 
