@@ -33,6 +33,11 @@
     grid-template-areas: "paragraph-name paragraph paragraph-unit";
     margin-bottom: 14px;
   }
+
+  &--tags {
+    display: block;
+    margin-bottom: 0;
+  }
 }
 
 .input-text__field {

@@ -12,6 +12,12 @@
       margin-bottom: 52px;
     }
   }
+
+  &--tags {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .textarea__caption {
@@ -86,6 +92,33 @@
   @media (min-width: $desktop-width) {
     height: 142px;
     padding: 23px 15px 23px 25px;
+  }
+
+  &--tags {
+    background-color: transparent;
+    resize: none;
+    height: auto;
+    border: none;
+    padding: 0;
+    outline: none;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      opacity: 0.6;
+      line-height: 22px;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 22px;
+      opacity: 0.6;
+    }
   }
 }
 

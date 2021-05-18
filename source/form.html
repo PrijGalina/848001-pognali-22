@@ -55,10 +55,10 @@
       </nav>
       <a class="btn btn--oval btn--yellow page-header__login" href="login.html" title="Войти в личный кабинет">Авторизация</a>
       <div class="for-user for-user--header page-header__for-user">
-        <a href="tel:88005558628" class="for-user__link for-user__link--phone">
-          <span class="for-user__value">8 800 555-86-28</span>
+        <a href="tel:88005558628" class="for-user__link page-header__contacts page-header__contacts--phone">
+          <span class="for-user__value">8 800 555-86-28</span>
         </a>
-        <a href="mailto:mail@htmlacademy.ru" class="for-user__link for-user__link--email">
+        <a href="mailto:mail@htmlacademy.ru" class="for-user__link page-header__contacts page-header__contacts--email">
           <span class="for-user__value">mail@htmlacademy.ru</span>
         </a>
       </div>
@@ -103,11 +103,42 @@
           <button type="button" class="btn btn--rectangle user__edit-pic user-personal__photo-edit user-personal__photo-edit--inside" aria-label="Изменить фотографию профиля">фото</button>
         </div>
         <button type="button" class="btn btn--oval user__edit-pic user-personal__photo-edit" aria-label="Изменить фотографию профиля">сменить фото</button>
-        <div class="user-personal__container user-personal__container--tags">
-          <p class="caption caption--border user-personal__caption user-personal__caption--tags">ТЭГИ</p>
-          <p class="user__tags user-personal__tags">#бургер #бар #футбол #концерт #крафт</p>
+
+        <label class="textarea textarea--tags user-personal__textarea user-personal__textarea--tags user-personal__container user-personal__container--tags">
+          <span class="caption caption--border user-personal__caption user-personal__caption--tags">ТЭГИ</span>
+          <textarea class="textarea__field textarea__field--tags" name="user-personal-tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
+        </label>
+
+        <div class="company-choice company-choice--transport user-personal__container user-personal__container--transport">
+          <legend class="caption caption--border user-personal__caption user-personal__caption--transport">транспорт</legend>
+          <ul class="company-choice__group-list company-choice__transport-list user-personal__transport-list">
+            <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--avia">
+              <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
+                <input class="input-choice__field" type="checkbox" name="airplane" aria-hidden="true" tabindex="-1" checked>
+                <span class="input-choice__caption">Авиаперелет</span>
+              </label>
+            </li>
+            <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--bus">
+              <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
+                <input class="input-choice__field" type="checkbox" name="bus" aria-hidden="true" tabindex="-1" checked>
+                <span class="input-choice__caption">автобус</span>
+              </label>
+            </li>
+            <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--bike">
+              <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
+                <input class="input-choice__field" type="checkbox" name="bike" aria-hidden="true" tabindex="-1">
+                <span class="input-choice__caption">Велосипед</span>
+              </label>
+            </li>
+            <li class="company-choice__group-item company-choice__transport-item company-choice__transport-item--foot">
+              <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
+                <input class="input-choice__field" type="checkbox" name="foot" aria-hidden="true" tabindex="-1" checked>
+                <span class="input-choice__caption">Пешком</span>
+              </label>
+            </li>
+          </ul>
         </div>
-        <div class="user-personal__container user-personal__container--transport">
+        <!--<div class="user-personal__container user-personal__container--transport">
           <p class="caption caption--border user-personal__caption user-personal__caption--transport">транспорт</p>
           <ul class="transport">
             <li class="transport__item transport__item--avia transport__item--avia-personal transport__item--active transport__item--user-personal">
@@ -123,7 +154,8 @@
               <span class="tooltip transport__tooltip">Пешком</span>
             </li>
           </ul>
-        </div>
+        </div>-->
+
       </div>
     </section>
     <section class="planned">
@@ -460,8 +492,10 @@
         </li>
       </ul>
       <div class="page-footer__developer">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developer-link" title="Перейти на страницу разработчика сайта">Разработано</a>
-        <img src="img/htmlacademy.svg" class="page-footer__developer-logo" width="27" height="33" alt="HTML Academy — интерактивные онлайн-курсы по HTML, CSS и JS.">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developer-link" title="Перейти на страницу разработчика сайта">
+          Разработано
+          <img src="img/htmlacademy.svg" class="page-footer__developer-logo" width="27" height="33" alt="HTML Academy — интерактивные онлайн-курсы по HTML, CSS и JS.">
+        </a>
       </div>
     </div>
   </footer>
