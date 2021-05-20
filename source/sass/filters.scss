@@ -410,6 +410,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0;
   }
 }

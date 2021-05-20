@@ -16,10 +16,12 @@
   @media (min-width: $tablet-width) {
     width: 281px;
     order: 1;
+    flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    order: 2;
   }
 }
 
@@ -136,6 +138,7 @@
     width: 148px;
     order: 2;
     margin-right: 10px;
+    margin-left: 61px;
   }
 
   @media (min-width: $desktop-width) {

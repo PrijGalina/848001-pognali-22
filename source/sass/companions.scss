@@ -266,7 +266,7 @@
     border-top-right-radius: 22px;
   }
 
-  &:last-of-type {
+  &:nth-child(even) {
     margin-right: 0;
   }
 
@@ -291,7 +291,7 @@
     padding-left: 32px;
     box-sizing: border-box;
     border-radius: 20px;
-    width: 615px;
+    width: 100%;
     padding-bottom: 3px;
   }
 

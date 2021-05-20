@@ -83,7 +83,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 630px 517px;
-    grid-template-rows: 104px 263px 80px;
+    grid-template-rows: minmax(104px, auto) minmax(263px, auto) minmax(80px,auto);
     gap: 0;
     grid-template-areas:
       "list title"
@@ -250,7 +250,7 @@
   width: 35px;
   position: absolute;
   left: 25px;
-  top: 79px;
+  bottom: 90px;
   transform: translateY(50%);
   margin-top: -5px;
   z-index: 5;

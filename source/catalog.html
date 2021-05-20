@@ -18,14 +18,14 @@
   <header class="page-header page-header--inner page-header--open">
     <div class="wrapper page-header__wrapper">
       <a class="logotype page-header__logotype" href="index.html">
-        <div class="logotype__header--open page-header__img--menu">
+        <div class="logotype__header logotype__header--open page-header__img page-header__img--menu">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
             <img class="logotype-img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
           </picture>
         </div>
-        <div class="logotype__header--default page-header__img--default">
+        <div class="logotype__header logotype__header--default page-header__img page-header__img--default">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-white.png 1x, img/pognali-logotype-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-white.png 1x, img/pognali-logotype-tablet-white@2x.png 2x">
@@ -88,7 +88,8 @@
       </h1>
       <a href="index.html" class="page-container__link">На главную</a>
     </div>
-    <section class="filters filters--open"><!-- +- "filters--open" -->
+    <section class="filters filters--open">
+      <h2 class="visually-hidden">Фильтр стран</h2>
       <div class="filters__container">
           <nav class="filters__navigation">
             <h2 class="filters__title">Фильтрация по странам:</h2>
@@ -137,7 +138,7 @@
               <li class="country-choice__letter-item filters__letter-item">ю</li>
               <li class="country-choice__letter-item filters__letter-item">я</li>
             </ul>
-            <ul class="country-choice__list filters__choice-list country-choice__list--active"> <!-- +- "country-choice__list--active" -->
+            <ul class="country-choice__list filters__choice-list country-choice__list--active">
               <li class="country-choice__letter">А</li>
               <li>
                 <a href="#">Австралия</a>
@@ -521,11 +522,14 @@
             <ul class="country-choice__list filters__choice-list">
               <li class="country-choice__letter">Р</li>
               <li>
-                <a href="#">Руанда</li>
+                <a href="#">Руанда</a>
+              </li>
               <li>
-                <a href="#">Румыния</li>
+                <a href="#">Румыния</a>
+              </li>
               <li>
-                <a href="#">Россия</li>
+                <a href="#">Россия</a>
+              </li>
             </ul>
             <ul class="country-choice__list filters__choice-list">
               <li class="country-choice__letter">С</li>
@@ -708,9 +712,9 @@
           <h2 class="visually-hidden">Поиск попутчика:</h2>
           <form action="https://echo.htmlacademy.ru/" method="GET" class="company-choice__form">
             <h3 class="company-choice__form-name">Подберите идеального попутчика</h3>
-            <fieldset class="company-choice__group"><!-- +-company-choice__group--close -->
+            <fieldset class="company-choice__group">
               <div class="company-choice__group-container">
-              <legend class="company-choice__group-title">хобби</legend>
+              <p class="company-choice__group-title">хобби</p>
               <ul class="company-choice__group-list">
                 <li class="company-choice__group-item">
                   <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
@@ -735,7 +739,7 @@
             </fieldset>
             <fieldset class="company-choice__group">
               <div class="company-choice__group-container">
-                <legend class="company-choice__group-title">музыка</legend>
+                <p class="company-choice__group-title">музыка</p>
                 <ul class="company-choice__group-list">
                   <li class="company-choice__group-item">
                     <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
@@ -760,7 +764,7 @@
             </fieldset>
             <fieldset class="company-choice__group">
               <div class="company-choice__group-container">
-                <legend class="company-choice__group-title">еда</legend>
+                <p class="company-choice__group-title">еда</p>
                 <ul class="company-choice__group-list">
                   <li class="company-choice__group-item">
                     <label class="input-choice input-choice--checkbox company-choice__row" tabindex="0">
@@ -785,59 +789,58 @@
             </fieldset>
             <fieldset class="company-choice__group">
               <div class="company-choice__group-container company-choice__group-container--transport">
-                <legend class="company-choice__group-title">транспорт</legend>
-                <ul class="company-choice__group-list user-personal__transport-list">
+                <p class="company-choice__group-title">транспорт</p>
+                <ul class="company-choice__group-list user-search__transport-list user-search__transport-list--filter">
                   <li class="company-choice__transport-item">
-                    <label class="transport-choice" tabindex="0">
-                      <input class="transport-choice__field" type="checkbox" name="airplane" aria-hidden="true" tabindex="-1" checked>
+                    <div class="transport-choice" tabindex="0">
+                      <label class="tooltip transport-choice__tooltip" for="airplane">Авиаперелет</label>
+                      <input class="transport-choice__field" type="checkbox" name="airplane" aria-hidden="true" tabindex="-1" checked id="airplane">
                       <div class="transport-choice__switch">
-                        <span class="tooltip transport-choice__tooltip">Авиаперелет</span>
                         <svg class="transport-choice__icon" width="17" height="16" viewBox="0 0 17 16" fill="#d9d9d9">
                           <use xlink:href="img/sprite.svg#avia"></use>
                         </svg>
                       </div>
-                    </label>
+                    </div>
                   </li>
                   <li class="company-choice__transport-item">
-                    <label class="transport-choice" tabindex="0">
-                      <input class="transport-choice__field" type="checkbox" name="bus" aria-hidden="true" tabindex="-1" checked>
+                    <div class="transport-choice" tabindex="0">
+                      <label class="tooltip transport-choice__tooltip" for="bus">Автотранспорт</label>
+                      <input class="transport-choice__field" type="checkbox" name="bus" aria-hidden="true" tabindex="-1" checked id="bus">
                       <div class="transport-choice__switch">
-                        <span class="tooltip transport-choice__tooltip">Автотранспорт</span>
                         <svg class="transport-choice__icon" width="17" height="16" viewBox="0 0 17 16" fill="#d9d9d9">
                           <use xlink:href="img/sprite.svg#bus"></use>
                         </svg>
                       </div>
-                    </label>
+                    </div>
                   </li>
                   <li class="company-choice__transport-item">
-                    <label class="transport-choice" tabindex="0">
-                      <input class="transport-choice__field" type="checkbox" name="bike" aria-hidden="true" tabindex="-1">
+                    <div class="transport-choice" tabindex="0">
+                      <label class="tooltip transport-choice__tooltip" for="bike">Велосипед</label>
+                      <input class="transport-choice__field" type="checkbox" name="bike" aria-hidden="true" tabindex="-1" id="bike">
                       <div class="transport-choice__switch">
-                        <span class="tooltip transport-choice__tooltip">Велосипед</span>
-                        <svg class="transport-choice__icon transport-choice__icon--bike" width="17" height="16" viewBox="0 0 17 16"
-                          fill="#d9d9d9">
+                        <svg class="transport-choice__icon transport-choice__icon--bike" width="17" height="16" viewBox="0 0 17 16" fill="#d9d9d9">
                           <use xlink:href="img/sprite.svg#bike"></use>
                         </svg>
                       </div>
-                    </label>
+                    </div>
                   </li>
                   <li class="company-choice__transport-item">
-                    <label class="transport-choice" tabindex="0">
-                      <input class="transport-choice__field" type="checkbox" name="foot" aria-hidden="true" tabindex="-1" checked>
+                    <div class="transport-choice" tabindex="0">
+                      <label class="tooltip transport-choice__tooltip" for="foot">Пешком</label>
+                      <input class="transport-choice__field" type="checkbox" name="foot" aria-hidden="true" tabindex="-1" checked id="foot">
                       <div class="transport-choice__switch">
-                        <span class="tooltip transport-choice__tooltip">Пешком</span>
                         <svg class="transport-choice__icon transport-choice__icon--foot" width="17" height="16" viewBox="0 0 17 16" fill="#d9d9d9">
                           <use xlink:href="img/sprite.svg#foot"></use>
                         </svg>
                       </div>
-                    </label>
+                    </div>
                   </li>
                 </ul>
               </div>
             </fieldset>
             <fieldset class="company-choice__group company-choice__group--level">
               <div class="company-choice__group-container company-choice__group-container--level">
-                <legend class="company-choice__group-title company-choice__group-title--level">Левел</legend>
+                <p class="company-choice__group-title company-choice__group-title--level">Левел</p>
                 <div class="range company-choice__range company-choice__group-list">
                   <div class="range__output">
                     <div class="range__value range__value--min">30</div>
@@ -905,7 +908,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="user-choice__block user-search__group">
+              <div class="user-choice__block user-search__group user-search__group--transport-level">
                 <div class="user-search__transport-block">
                   <span class="user-search__caption user-search__caption--inline user-search__caption--transport">транспорт:</span>
                   <ul class="transport user-search__transport-list">
@@ -970,7 +973,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="user-choice__block user-search__group">
+              <div class="user-choice__block user-search__group user-search__group--transport-level">
                 <div class="user-search__transport-block">
                   <span class="user-search__caption user-search__caption--inline user-search__caption--transport">транспорт:</span>
                   <ul class="transport user-search__transport-list">
@@ -1042,7 +1045,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="user-choice__block user-search__group">
+              <div class="user-choice__block user-search__group user-search__group--transport-level">
                 <div class="user-search__transport-block">
                   <span class="user-search__caption user-search__caption--inline user-search__caption--transport">транспорт:</span>
                   <ul class="transport user-search__transport-list">
@@ -1107,7 +1110,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="user-choice__block user-search__group">
+              <div class="user-choice__block user-search__group user-search__group--transport-level">
                 <div class="user-search__transport-block">
                   <span class="user-search__caption user-search__caption--inline user-search__caption--transport">транспорт:</span>
                   <ul class="transport user-search__transport-list">
@@ -1136,7 +1139,7 @@
               <a href="call.html" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</a>
             </li>
           </ul>
-          <a href="companions.html" type="button" class="btn user-choice__add" aria-label="Показать больше пользователей">показать еще</a>
+          <a href="companions.html" class="btn user-choice__add" aria-label="Показать больше пользователей">показать еще</a>
           <nav class="user-choice__navigation">
             <ul class="pagination user-choice__pagination">
               <li class="pagination__item pagination__item--user-choice pagination__item--active">

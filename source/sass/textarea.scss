@@ -33,6 +33,10 @@
   &:active:focus {
     border-color: $grey_600;
   }
+
+  &:disabled {
+    border: 1px solid $red_200;
+  }
 }
 
 .textarea__caption {
@@ -110,33 +114,6 @@
     padding: 23px 15px 23px 25px;
   }
 
-  &--tags {
-    background-color: transparent;
-    resize: none;
-    height: auto;
-    border: none;
-    padding: 0;
-    outline: none;
-    font-size: 16px;
-    line-height: 18px;
-    display: flex;
-
-    &:focus {
-      outline: none;
-    }
-
-    &::placeholder {
-      opacity: 0.6;
-      line-height: 22px;
-    }
-
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 22px;
-      opacity: 0.6;
-    }
-  }
-
   &:hover {
     border-color: $grey_700;
   }
@@ -152,6 +129,34 @@
 
     &::placeholder {
       opacity: 1;
+    }
+  }
+
+  &--tags {
+    background-color: transparent;
+    resize: none;
+    height: auto;
+    border: none;
+    padding: 0;
+    outline: none;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+
+    &::placeholder {
+      opacity: 0.6;
+      line-height: 22px;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 22px;
+      opacity: 0.6;
     }
   }
 }

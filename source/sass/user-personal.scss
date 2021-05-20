@@ -92,6 +92,7 @@
 
   @media (min-width: $desktop-width) {
     justify-self: start;
+    z-index: 2;
   }
 }
 
@@ -99,6 +100,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     width: 94px;

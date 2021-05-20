@@ -45,6 +45,15 @@
 
   img {
     margin: 0 auto;
+    width: 96px;
+
+    @media (min-width: $tablet-width) {
+      width: 164px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 200px;
+    }
   }
 
   @media (min-width: $tablet-width) {

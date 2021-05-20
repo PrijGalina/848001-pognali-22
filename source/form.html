@@ -17,14 +17,14 @@
   <header class="page-header page-header--inner page-header--open">
     <div class="wrapper page-header__wrapper">
       <a class="logotype page-header__logotype" href="index.html">
-        <div class="logotype__header--open page-header__img--menu">
+        <div class="logotype__header logotype__header--open page-header__img page-header__img--menu">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
             <img class="logotype-img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
           </picture>
         </div>
-        <div class="logotype__header--default page-header__img--default">
+        <div class="logotype__header logotype__header--default page-header__img page-header__img--default">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-white.png 1x, img/pognali-logotype-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-white.png 1x, img/pognali-logotype-tablet-white@2x.png 2x">
@@ -102,56 +102,56 @@
           <button type="button" class="btn btn--rectangle user__edit-pic user-personal__photo-edit user-personal__photo-edit--inside" aria-label="Изменить фотографию профиля">фото</button>
         </div>
         <button type="button" class="btn btn--oval user__edit-pic user-personal__photo-edit" aria-label="Изменить фотографию профиля">сменить фото</button>
-        <label class="textarea textarea--tags user-personal__textarea user-personal__textarea--tags user-personal__container user-personal__container--tags" tabindex="0">
-          <span class="caption user-personal__caption user-personal__caption--tags">ТЭГИ</span>
-          <textarea class="textarea__field textarea__field--tags" name="user-personal-tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
-        </label>
+        <div class="textarea textarea--tags user-personal__textarea user-personal__textarea--tags user-personal__container user-personal__container--tags" tabindex="0">
+          <label class="caption user-personal__caption user-personal__caption--tags" for="textarea-field-tags">ТЭГИ</label>
+          <textarea class="textarea__field textarea__field--tags" id="textarea-field-tags" name="user-personal-tags" placeholder="Коротко о себе в виде 5-8 хештэгов" tabindex="-1">#бургер #бар #футбол #концерт #крафт</textarea>
+        </div>
         <div class="user-personal__container user-personal__container--transport">
-          <legend class="caption user-personal__caption user-personal__caption--transport">транспорт</legend>
+          <span class="caption user-personal__caption user-personal__caption--transport">транспорт</span>
           <ul class="user-personal__transport-list">
             <li class="user-personal__transport-item">
-              <label class="transport-choice" tabindex="0">
-                <input class="transport-choice__field" type="checkbox" name="airplane" aria-hidden="true" tabindex="-1" checked>
+              <div class="transport-choice" tabindex="0">
+                <label class="tooltip transport-choice__tooltip" for="airplane">Авиаперелет</label>
+                <input class="transport-choice__field" type="checkbox" name="airplane" id="airplane" aria-hidden="true" tabindex="-1" checked>
                 <div class="transport-choice__switch">
-                  <span class="tooltip transport-choice__tooltip">Авиаперелет</span>
                   <svg class="transport-choice__icon" width="17" height="16" viewBox="0 0 17 16" fill="#d9d9d9">
                     <use xlink:href="img/sprite.svg#avia"></use>
                   </svg>
                 </div>
-              </label>
+              </div>
             </li>
             <li class="user-personal__transport-item">
-              <label class="transport-choice" tabindex="0">
-                <input class="transport-choice__field" type="checkbox" name="bus" aria-hidden="true" tabindex="-1" checked>
+              <div class="transport-choice" tabindex="0">
+                <label class="tooltip transport-choice__tooltip" for="bus">Автотранспорт</label>
+                <input class="transport-choice__field" type="checkbox" id="bus" name="bus" aria-hidden="true" tabindex="-1" checked>
                 <div class="transport-choice__switch">
-                  <span class="tooltip transport-choice__tooltip">Автотранспорт</span>
                   <svg class="transport-choice__icon" width="17" height="16" viewBox="0 0 17 16" fill="#d9d9d9">
                     <use xlink:href="img/sprite.svg#bus"></use>
                   </svg>
                 </div>
-              </label>
+              </div>
             </li>
             <li class="user-personal__transport-item">
-              <label class="transport-choice" tabindex="0">
-                <input class="transport-choice__field" type="checkbox" name="bike" aria-hidden="true" tabindex="-1">
+              <div class="transport-choice" tabindex="0">
+                <label class="tooltip transport-choice__tooltip" for="bike">Велосипед</label>
+                <input class="transport-choice__field" type="checkbox" name="bike" id="bike" aria-hidden="true" tabindex="-1">
                 <div class="transport-choice__switch">
-                  <span class="tooltip transport-choice__tooltip">Велосипед</span>
                   <svg class="transport-choice__icon transport-choice__icon--bike" width="17" height="16" viewBox="0 0 17 16" fill="#d9d9d9">
                     <use xlink:href="img/sprite.svg#bike"></use>
                   </svg>
                 </div>
-              </label>
+              </div>
             </li>
             <li class="user-personal__transport-item">
-              <label class="transport-choice" tabindex="0">
-                <input class="transport-choice__field" type="checkbox" name="foot" aria-hidden="true" tabindex="-1" checked>
+              <div class="transport-choice" tabindex="0">
+                <label class="tooltip transport-choice__tooltip" for="foot">Пешком</label>
+                <input class="transport-choice__field" type="checkbox" name="foot" id="foot" aria-hidden="true" tabindex="-1" checked>
                 <div class="transport-choice__switch">
-                  <span class="tooltip transport-choice__tooltip">Пешком</span>
                   <svg class="transport-choice__icon transport-choice__icon--foot" width="17" height="16" viewBox="0 0 17 16" fill="#d9d9d9">
                     <use xlink:href="img/sprite.svg#foot"></use>
                   </svg>
                 </div>
-              </label>
+              </div>
             </li>
           </ul>
         </div>
@@ -164,13 +164,13 @@
           <li class="planned__item">
             <span class="planned__country" data-num="1.">Франция, Италия</span>
             <span class="planned__info planned__info--company">3 попутчика</span>
-            <time class="planned__info planned__info--date">26 мар — 29 мар</time>
+            <span class="planned__info planned__info--date">26 мар — 29 мар</span>
             <a href="planned-edit.html" class="planned__edit" aria-label="Изменить информацию о поездке">изменить</a>
           </li>
           <li class="planned__item">
             <span class="planned__country" data-num="2.">Таиланд, Индонезия</span>
             <span class="planned__info planned__info--company">1 попутчик</span>
-            <time class="planned__info planned__info--date">1 июл &mdash; 15 июл</time>
+            <span class="planned__info planned__info--date">1 июл &mdash; 15 июл</span>
             <a href="planned-edit.html" class="planned__edit" aria-label="Изменить информацию о поездке">изменить</a>
           </li>
         </ol>
@@ -191,7 +191,7 @@
               </a>
             </li>
             <li class="pagination__item to-plan__pagination-item">
-              <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
+              <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" aria-label="Перейти к третьему шагу - развлечения">
                 <span class="to-plan__pagination-name">Развлечения</span>
               </a>
             </li>
@@ -199,14 +199,14 @@
         <form action="https://echo.htmlacademy.ru/" method="GET" class="to-plan__form">
           <fieldset class="counter counter--dates to-plan__step" data-step="1" id="counter--dates">
             <div class="counter__inner">
-              <legend class="counter__title">Шаг 1. <br>Даты пребывания</legend>
+              <h3 class="counter__title">Шаг 1. <br>Даты пребывания</h3>
               <p class="counter__desc">Укажите предпочтительное количество попутчиков, которых<br> вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
-              <label class="input-text input-text--number counter__row counter__company">
-                  <span class="input-text__caption input-text__caption--title">ищу попутчиков:</span>
-                  <span class="input-text__caption input-text__caption--unit input-text__caption--people">чел.</span>
-                </span>
+              <div class="input-text input-text--number counter__row counter__company">
+                <span class="input-text__caption input-text__caption--title">ищу попутчиков:</span>
+                <span class="input-text__caption input-text__caption--unit input-text__caption--people">чел.</span>
                 <p class="input-text__row">
-                  <input type="number" class="input-text__field input-text__field--number" value="2">
+                  <label class="visually-hidden" for="people-count">Количество человек</label>
+                  <input type="number" class="input-text__field input-text__field--number" value="2" id="people-count">
                   <button type="button" class="input-text__controls input-text__controls--minus">
                     <svg class="input-text__controls-icon" width="20" height="2" viewBox="0 0 20 2" stroke="#CCCCCC">
                       <use xlink:href="img/sprite.svg#minus"></use>
@@ -218,13 +218,13 @@
                     </svg>
                   </button>
                 </p>
-              </label>
-              <label class="input-text input-text--number counter__row counter__date">
-                  <span class="input-text__caption input-text__caption--title">длительность:</span>
-                  <span class="input-text__caption input-text__caption--unit input-text__caption--date">дн.</span>
-                </span>
+              </div>
+              <div class="input-text input-text--number counter__row counter__date">
+                <span class="input-text__caption input-text__caption--title">длительность:</span>
+                <span class="input-text__caption input-text__caption--unit input-text__caption--date">дн.</span>
                 <p class="input-text__row">
-                  <input type="number" class="input-text__field input-text__field--number" value="2">
+                  <label class="visually-hidden" for="day-count">Длительность поездки</label>
+                  <input type="number" class="input-text__field input-text__field--number" value="2" id="day-count">
                   <button type="button" class="input-text__controls input-text__controls--minus">
                     <svg class="input-text__controls-icon" width="20" height="2" viewBox="0 0 20 2" stroke="#CCCCCC">
                       <use xlink:href="img/sprite.svg#minus"></use>
@@ -236,7 +236,7 @@
                     </svg>
                   </button>
                 </p>
-              </label>
+              </div>
               <label class="counter__row counter__child input-choice">
                 <input type="checkbox" class="input-choice__field" name="with-children">
                 <span class="input-choice__caption input-choice__caption--blue input-choice__caption--child">Можно с детьми</span>
@@ -316,7 +316,7 @@
                   </a>
                 </li>
                 <li class="pagination__item to-plan__pagination-item">
-                  <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
+                  <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" aria-label="Перейти к третьему шагу - развлечения">
                     <span class="to-plan__pagination-name">Развлечения</span>
                   </a>
                 </li>
@@ -325,7 +325,7 @@
           </fieldset>
           <fieldset class="counter counter--country to-plan__step" data-step="2" id="counter--country">
             <div class="counter__inner">
-              <legend class="counter__title">Шаг 2. <br>Маршрут</legend>
+              <h3 class="counter__title">Шаг 2. <br>Маршрут</h3>
               <p class="counter__desc">Укажите страны, которые вы хотели бы посетить.<br> Это может быть одна или сразу несколько.</p>
               <div class="country-select">
                 <div class="country-select__trigger">
@@ -358,11 +358,11 @@
                   <span class="country-select__value country-select__value--choice">
                     Выберите страну
                     <object class="country-select__close" data="img/icon_close_white.svg" type="image/svg+xml" width="22" height="21"></object>
-                  </span> <!-- +- "country-select__value--open" -->
+                  </span>
                   <div class="country-select__arrow country-select__arrow--more country-select__arrow--light"></div>
                   <button type="button" class="country-select__delete country-select__delete--more" aria-label="Убрать страну из маршрута">удалить</button>
                 </div>
-                <div class="country-choice counter__select-dropdown"><!-- +- "counter__select-dropdown--open" -->
+                <div class="country-choice counter__select-dropdown">
                   <ul class="country-choice__letter-list">
                     <li class="country-choice__letter-item country-choice__letter-item--selected">а</li>
                     <li class="country-choice__letter-item">б</li>
@@ -424,7 +424,7 @@
                   </a>
                 </li>
                 <li class="pagination__item to-plan__pagination-item">
-                  <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
+                  <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" aria-label="Перейти к третьему шагу - развлечения">
                     <span class="to-plan__pagination-name">Развлечения</span>
                   </a>
                 </li>
@@ -433,28 +433,28 @@
           </fieldset>
           <fieldset class="counter counter--entertainment to-plan__step" data-step="3" id="counter--entertainment">
             <div class="counter__inner">
-              <legend class="counter__title">Шаг 3. <br> Развлечения</legend>
+              <h3 class="counter__title">Шаг 3. <br> Развлечения</h3>
               <p class="counter__desc counter__desc--entertainment">Наконец, расскажите о своих планах времяпровождения.<br> Можно писать в свободной форме и ставить тэги.</p>
-              <label class="textarea counter__textarea" for="point-desc">
+              <div class="textarea counter__textarea">
                 <p class="textarea__caption counter__textarea-caption">
-                  <span>Босния и Герцеговина</span>
+                  <label for="point-bosnia">Босния и Герцеговина</label>
                   <picture>
                     <source media="(min-width: 768px)" srcset="img/bosnia-and-herzegovina-flag-70.png 1x, img/bosnia-and-herzegovina-flag-70@2x.png 2x">
                     <img src="img/bosnia-and-herzegovina-flag.png" srcset="img/bosnia-and-herzegovina-flag@2x.png 2x" class="textarea__field-flag" width="35" height="24" alt="Флаг Боснии и Герцеговины">
                   </picture>
                 </p>
-                <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий" required></textarea>
-              </label>
-              <label class="textarea counter__textarea" for="point-desc">
+                <textarea name="point-desc" id="point-bosnia" class="textarea__field" placeholder="План действий" required></textarea>
+              </div>
+              <div class="textarea counter__textarea">
                 <p class="textarea__caption counter__textarea-caption">
-                  <span>Чехия</span>
+                  <label for="point-czech">Чехия</label>
                   <picture>
                     <source media="(min-width: 768px)" srcset="img/czech-flag-70.png 1x, img/czech-flag-70@2x.png 2x">
                     <img src="img/czech-flag.png" srcset="img/czech-flag@2x.png" class="textarea__field-flag" width="35" height="24" alt="Флаг Чехии">
                   </picture>
                 </p>
-                <textarea name="point-desc" id="point-desc" class="textarea__field" placeholder="План действий" required>Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все.</textarea>
-              </label>
+                <textarea name="point-desc" id="point-czech" class="textarea__field" placeholder="План действий" required>Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все.</textarea>
+              </div>
             </div>
             <div class="counter__footer">
               <button type="submit" class="btn btn--oval btn--yellow btn--left counter__button counter__button--submit" aria-label="Сохранить план путешествия">Отправить</button>
@@ -472,7 +472,7 @@
                 </a>
               </li>
               <li class="pagination__item to-plan__pagination-item">
-                <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle pagination__btn--current to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
+                <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle pagination__btn--current to-plan__pagination-btn" aria-label="Перейти к третьему шагу - развлечения">
                   <span class="to-plan__pagination-name">Развлечения</span>
                 </a>
               </li>

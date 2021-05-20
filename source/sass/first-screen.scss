@@ -91,7 +91,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 485px 835px;
-    grid-template-rows: 185px 75px min-content;
+    grid-template-rows: minmax(185px,auto) minmax(75px, auto) min-content;
     gap: 0 0;
     grid-template-areas:
       "title review"
@@ -244,6 +244,7 @@
 
   padding: 0;
   order: 5;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     display: flex;

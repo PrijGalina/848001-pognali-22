@@ -88,6 +88,16 @@
     }
   }
 
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &:disabled:hover {
+    background-color: $white;
+  }
+
   &--number {
     border: 1px solid $grey_500;
     border-radius: 4px;

@@ -20,7 +20,7 @@
   @media (min-width: $tablet-width) {
     padding: 31px 25px 5px 35px;
     grid-template-columns: 34.92% 31.904% 8.73% 24.603%;
-    grid-template-rows: 30px 111px 50px max-content;
+    grid-template-rows: minmax(30px, auto) minmax(111px, auto) minmax(50px, auto) max-content;
     gap: 0 0;
     grid-template-areas:
       "photo name name transport-level"
@@ -33,7 +33,7 @@
   @media (min-width: $desktop-width) {
     padding: 0 43px 0 0;
     grid-template-columns: 340px 150px 122px 297px;
-    grid-template-rows: 93px 94px 98px;
+    grid-template-rows: minmax(93px, auto) minmax(94px, auto) minmax(98px, auto);
     grid-template-areas:
       "photo name name wants"
       "photo tags tags wants"
@@ -123,6 +123,7 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     width: max-content;
+    max-width: 100%;
   }
 }
 
@@ -150,24 +151,23 @@
 
 .user-search__to-call {
   width: 230px;
-  height: 40px;
+  height: auto;
+  min-height: 40px;
   margin: 0 auto;
   font-size: 17px;
   line-height: 17px;
   text-align: center;
   text-transform: uppercase;
   grid-area: btn;
+  align-self: self-start;
+  padding: 10px;
 
   @media (min-width: $tablet-width) {
     width: 150px;
-    height: 50px;
+    min-height: 50px;
     margin: 0;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 50px;
   }
 }
 
@@ -193,7 +193,8 @@
       width: 50px;
       height: 50px;
       left: -50px;
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     @media (min-width: $desktop-width) {
@@ -209,6 +210,7 @@
     width: 30px;
     height: 30px;
     background-image: url("../img/like.svg");
+    background-size: 13px 11px;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.3;
@@ -217,8 +219,10 @@
       width: 21px;
       height: 19px;
       left: -35px;
-      top: 18px;
+      top: 50%;
+      transform: translateY(-50%);
       background-size: contain;
+      background-size: 20px 18px;
     }
 
     @media (min-width: $desktop-width) {
@@ -391,6 +395,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     margin-top: 4px;
@@ -472,12 +477,19 @@
     margin-left: 57px;
     justify-content: space-between;
   }
+
+  &--transport-level {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .user-search__level-block {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     margin-left: 60.389%;
@@ -556,5 +568,16 @@
     align-items: center;
     height: 50px;
     margin-left: 0;
+  }
+
+  &--filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media (min-width: $tablet-width) {
+      justify-content: start;
+      margin-left: 0;
+    }
   }
 }

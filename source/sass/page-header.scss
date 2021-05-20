@@ -399,6 +399,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-self: center;
+    flex-wrap: wrap;
     margin-bottom: 0;
     padding-left: 0;
   }

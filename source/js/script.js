@@ -1,7 +1,7 @@
 let header = document.querySelector(".page-header");
 header.classList.remove("page-header--open");
 /* all page */
-window.addEventListener('scroll', function () {
+window.addEventListener("scroll", function () {
   if (window.pageYOffset > 10){
     if (header.classList.contains("page-header--open")) {
 

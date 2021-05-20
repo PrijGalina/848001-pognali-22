@@ -99,6 +99,8 @@
 .title__value {
   position: relative;
   display: inline-block;
+  max-width: 100%;
+  word-break: break-all;
 
 
   &::after {
@@ -119,5 +121,9 @@
       bottom: -75px;
       height: 8px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 900px;
   }
 }
