@@ -121,6 +121,19 @@
       }
     }
   }
+
+  a {
+    text-decoration: none;
+    color: $grey;
+
+    &:hover {
+      color: $blue_200;
+    }
+
+    &:active {
+      color: $blue_200_03;
+    }
+  }
 }
 
 .country-choice__item {
@@ -130,14 +143,6 @@
 
   &:last-of-type {
     margin-bottom: 0;
-  }
-
-  &:hover {
-    color: $blue_200;
-  }
-
-  &:active {
-    color: $blue_200_03;
   }
 
   @media (min-width: $tablet-width) {

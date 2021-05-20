@@ -1,12 +1,18 @@
 .user-card {
-  padding-bottom: 1px;
+  overflow: hidden;
+  margin-bottom: 8px;
 
   &:hover {
     filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.16));
     padding-bottom: 0;
 
     .user-card__info {
-        padding-bottom: 16px;
+      padding-bottom: 16px;
+    }
+
+    .user__photo {
+      transform: scale(1.02);
+      transition: all 0.5s ease-out;
     }
   }
 }
@@ -68,7 +74,7 @@
   background-color: $white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 0 25px 21px;
+  padding: 0 25px 20px;
 
   @media (min-width: $tablet-width) {
     border-bottom-left-radius: 20px;

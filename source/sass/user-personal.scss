@@ -72,10 +72,7 @@
   }
 
   &--transport {
-    //margin-bottom: -3px;
-
     @media (min-width: $tablet-width) {
-      margin-bottom: -6px;
       bottom: -9px;
       top: inherit;
     }
@@ -179,7 +176,7 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 36px;
-      padding-bottom: 18px;
+      padding-bottom: 13px;
       padding-left: 40px;
       padding-right: 40px;
     }
@@ -290,5 +287,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   margin: 0;
 }

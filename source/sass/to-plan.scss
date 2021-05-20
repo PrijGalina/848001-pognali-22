@@ -60,6 +60,8 @@
   }
 
   &--desktop {
+    display: none;
+
     @media (min-width: $desktop-width) {
       display: block;
       right: 207px;
@@ -89,7 +91,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
     padding-left: 67px;
     box-sizing: border-box;
   }

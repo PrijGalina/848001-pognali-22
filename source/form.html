@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--inner">
+  <header class="page-header page-header--inner page-header--open">
     <div class="wrapper page-header__wrapper">
       <a class="logotype page-header__logotype" href="index.html">
         <div class="logotype__header--open page-header__img--menu">
@@ -32,7 +32,7 @@
           </picture>
         </div>
       </a>
-      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+      <button class="page-header__toggle page-header__toggle--hidden" type="button" aria-label="Открыть меню"></button>
       <nav class="main-navigation page-header__main-navigation">
         <ul class="site-list main-navigation__list">
           <li class="site-list__item">
@@ -165,13 +165,13 @@
             <span class="planned__country" data-num="1.">Франция, Италия</span>
             <span class="planned__info planned__info--company">3 попутчика</span>
             <time class="planned__info planned__info--date">26 мар — 29 мар</time>
-            <button type="button" class="planned__edit" aria-label="Изменить информацию о поездке">изменить</button>
+            <a href="planned-edit.html" class="planned__edit" aria-label="Изменить информацию о поездке">изменить</a>
           </li>
           <li class="planned__item">
             <span class="planned__country" data-num="2.">Таиланд, Индонезия</span>
             <span class="planned__info planned__info--company">1 попутчик</span>
             <time class="planned__info planned__info--date">1 июл &mdash; 15 июл</time>
-            <button type="button" class="planned__edit" aria-label="Изменить информацию о поездке">изменить</button>
+            <a href="planned-edit.html" class="planned__edit" aria-label="Изменить информацию о поездке">изменить</a>
           </li>
         </ol>
       </div>
@@ -180,24 +180,24 @@
       <div class="wrapper to-plan__wrapper">
         <h2 class="title title--blue title--inner to-plan__title">Добавить план:</h2>
         <ul class="pagination pagination--circle to-plan__pagination">
-          <li class="pagination__item to-plan__pagination-item">
-            <button class="pagination__btn pagination__btn--circle pagination__btn--current to-plan__pagination-btn" type="button" aria-label="Перейти к первому шагу - даты пребывания">
-              <span class="to-plan__pagination-name">Даты</span>
-            </button>
-          </li>
-          <li class="pagination__item to-plan__pagination-item">
-            <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти ко второму шагу - маршрут">
-              <span class="to-plan__pagination-name">Маршрут</span>
-            </button>
-          </li>
-          <li class="pagination__item to-plan__pagination-item">
-            <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
-              <span class="to-plan__pagination-name">Развлечения</span>
-            </button>
-          </li>
+            <li class="pagination__item to-plan__pagination-item">
+              <a href="#counter--dates" class="pagination__btn pagination__btn--circle to-plan__pagination-btn pagination__btn--current" aria-label="Перейти к первому шагу - даты пребывания">
+                <span class="to-plan__pagination-name">Даты</span>
+              </a>
+            </li>
+            <li class="pagination__item to-plan__pagination-item">
+              <a href="#counter--country" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" aria-label="Перейти ко второму шагу - маршрут">
+                <span class="to-plan__pagination-name">Маршрут</span>
+              </a>
+            </li>
+            <li class="pagination__item to-plan__pagination-item">
+              <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
+                <span class="to-plan__pagination-name">Развлечения</span>
+              </a>
+            </li>
         </ul>
         <form action="https://echo.htmlacademy.ru/" method="GET" class="to-plan__form">
-          <fieldset class="counter counter--dates to-plan__step">
+          <fieldset class="counter counter--dates to-plan__step" data-step="1" id="counter--dates">
             <div class="counter__inner">
               <legend class="counter__title">Шаг 1. <br>Даты пребывания</legend>
               <p class="counter__desc">Укажите предпочтительное количество попутчиков, которых<br> вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
@@ -303,27 +303,27 @@
                   </ul>
                 </div>
               </div>
-              <button type="button" class="btn btn--oval btn--yellow btn--left counter__button counter__button--next" aria-label="Перейти к составлению маршрута">Следующий шаг</button>
+              <a href="#counter--country" class="btn btn--oval btn--yellow btn--left counter__button counter__button--next" aria-label="Перейти к составлению маршрута">Следующий шаг</a>
               <ul class="pagination pagination--circle to-plan__pagination to-plan__pagination--desktop">
                 <li class="pagination__item to-plan__pagination-item">
-                  <button class="pagination__btn pagination__btn--circle pagination__btn--current to-plan__pagination-btn" type="button" aria-label="Перейти к первому шагу - даты пребывания">
+                  <a href="#counter--dates" class="pagination__btn pagination__btn--circle to-plan__pagination-btn pagination__btn--current" aria-label="Перейти к первому шагу - даты пребывания">
                     <span class="to-plan__pagination-name">Даты</span>
-                  </button>
+                  </a>
                 </li>
                 <li class="pagination__item to-plan__pagination-item">
-                  <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти ко второму шагу - маршрут">
+                  <a href="#counter--country" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" aria-label="Перейти ко второму шагу - маршрут">
                     <span class="to-plan__pagination-name">Маршрут</span>
-                  </button>
+                  </a>
                 </li>
                 <li class="pagination__item to-plan__pagination-item">
-                  <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
+                  <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
                     <span class="to-plan__pagination-name">Развлечения</span>
-                  </button>
+                  </a>
                 </li>
               </ul>
             </div>
           </fieldset>
-          <fieldset class="counter counter--country to-plan__step">
+          <fieldset class="counter counter--country to-plan__step" data-step="2" id="counter--country">
             <div class="counter__inner">
               <legend class="counter__title">Шаг 2. <br>Маршрут</legend>
               <p class="counter__desc">Укажите страны, которые вы хотели бы посетить.<br> Это может быть одна или сразу несколько.</p>
@@ -360,7 +360,7 @@
                     <object class="country-select__close" data="img/icon_close_white.svg" type="image/svg+xml" width="22" height="21"></object>
                   </span> <!-- +- "country-select__value--open" -->
                   <div class="country-select__arrow country-select__arrow--more country-select__arrow--light"></div>
-                  <button type="button" class="country-select__delete" aria-label="Убрать страну из маршрута">удалить</button>
+                  <button type="button" class="country-select__delete country-select__delete--more" aria-label="Убрать страну из маршрута">удалить</button>
                 </div>
                 <div class="country-choice counter__select-dropdown"><!-- +- "counter__select-dropdown--open" -->
                   <ul class="country-choice__letter-list">
@@ -409,32 +409,32 @@
                 <span>Добавить страну</span>
               </button>
               <div class="counter__footer">
-                <button type="button" class="btn btn--oval btn--yellow btn--left counter__button counter__button--next" aria-label="Рассказать о своих планах в каждой стране">Следующий шаг</button>
-                <button type="button" class="btn counter__button counter__button--prev" aria-label="Изменить даты путешествия">на шаг назад</button>
+                <a href="#counter--entertainment" class="btn btn--oval btn--yellow btn--left counter__button counter__button--next" aria-label="Рассказать о своих планах в каждой стране">Следующий шаг</a>
+                <a href="#counter--dates" class="btn counter__button counter__button--prev" aria-label="Изменить даты путешествия">На шаг назад</a>
               </div>
               <ul class="pagination pagination--circle to-plan__pagination to-plan__pagination--desktop">
                 <li class="pagination__item to-plan__pagination-item">
-                  <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к первому шагу - даты пребывания">
+                  <a href="#counter--dates" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" aria-label="Перейти к первому шагу - даты пребывания">
                     <span class="to-plan__pagination-name">Даты</span>
-                  </button>
+                  </a>
                 </li>
                 <li class="pagination__item to-plan__pagination-item">
-                  <button class="pagination__btn pagination__btn--circle pagination__btn--current to-plan__pagination-btn" type="button" aria-label="Перейти ко второму шагу - маршрут">
+                  <a href="#counter--country" class="pagination__btn pagination__btn--circle to-plan__pagination-btn pagination__btn--current" aria-label="Перейти ко второму шагу - маршрут">
                     <span class="to-plan__pagination-name">Маршрут</span>
-                  </button>
+                  </a>
                 </li>
                 <li class="pagination__item to-plan__pagination-item">
-                  <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
+                  <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
                     <span class="to-plan__pagination-name">Развлечения</span>
-                  </button>
+                  </a>
                 </li>
               </ul>
             </div>
           </fieldset>
-          <fieldset class="counter counter--entertainment to-plan__step">
+          <fieldset class="counter counter--entertainment to-plan__step" data-step="3" id="counter--entertainment">
             <div class="counter__inner">
               <legend class="counter__title">Шаг 3. <br> Развлечения</legend>
-              <p class="counter__desc">Наконец, расскажите о своих планах времяпровождения.<br> Можно писать в свободной форме и ставить тэги.</p>
+              <p class="counter__desc counter__desc--entertainment">Наконец, расскажите о своих планах времяпровождения.<br> Можно писать в свободной форме и ставить тэги.</p>
               <label class="textarea counter__textarea" for="point-desc">
                 <p class="textarea__caption counter__textarea-caption">
                   <span>Босния и Герцеговина</span>
@@ -458,26 +458,23 @@
             </div>
             <div class="counter__footer">
               <button type="submit" class="btn btn--oval btn--yellow btn--left counter__button counter__button--submit" aria-label="Сохранить план путешествия">Отправить</button>
-              <button type="button" class="btn counter__button counter__button--prev" aria-label="Вернуться к составлению маршрута">на шаг назад</button>
+              <a href="#counter--country" class="btn counter__button counter__button--prev" aria-label="Вернуться к составлению маршрута">На шаг назад</a>
             </div>
             <ul class="pagination pagination--circle to-plan__pagination to-plan__pagination--desktop">
               <li class="pagination__item to-plan__pagination-item">
-                <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn" type="button"
-                  aria-label="Перейти к первому шагу - даты пребывания">
+                <a href="#counter--dates" class="pagination__btn pagination__btn--circle to-plan__pagination-btn"  aria-label="Перейти к первому шагу - даты пребывания">
                   <span class="to-plan__pagination-name">Даты</span>
-                </button>
+                </a>
               </li>
               <li class="pagination__item to-plan__pagination-item">
-                <button class="pagination__btn pagination__btn--circle to-plan__pagination-btn"
-                  type="button" aria-label="Перейти ко второму шагу - маршрут">
+                <a href="#counter--country" class="pagination__btn pagination__btn--circle to-plan__pagination-btn" aria-label="Перейти ко второму шагу - маршрут">
                   <span class="to-plan__pagination-name">Маршрут</span>
-                </button>
+                </a>
               </li>
               <li class="pagination__item to-plan__pagination-item">
-                <button class="pagination__btn pagination__btn--circle pagination__btn--current to-plan__pagination-btn" type="button"
-                  aria-label="Перейти к третьему шагу - развлечения">
+                <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle pagination__btn--current to-plan__pagination-btn" type="button" aria-label="Перейти к третьему шагу - развлечения">
                   <span class="to-plan__pagination-name">Развлечения</span>
-                </button>
+                </a>
               </li>
             </ul>
           </fieldset>
@@ -490,7 +487,8 @@
       <a class="logotype page-footer__logotype" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
-          <img class="logotype-img page-footer__img" src="img/pognali-logotype-tablet-blue.png" srcset="img/pognali-logotype-tablet-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
+          <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
+          <img class="logotype-img page-footer__img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
         </picture>
       </a>
       <ul class="social page-footer__social">
@@ -518,7 +516,7 @@
       </div>
     </div>
   </footer>
-  <!--<script src="js/script.js"></script>-->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

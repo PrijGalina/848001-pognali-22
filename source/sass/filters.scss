@@ -38,7 +38,7 @@
     }
 
     .filters__close {
-      display: block;
+      display: none;
       padding-left: 25px;
       position: relative;
 
@@ -72,6 +72,7 @@
       }
 
       @media (min-width: $desktop-width) {
+        display: block;
         width: 1320px;
         height: 100px;
         margin-top: 65px;

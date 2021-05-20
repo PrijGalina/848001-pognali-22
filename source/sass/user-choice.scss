@@ -77,6 +77,20 @@
     justify-content: flex-start;
     padding-left: 14px;
   }
+
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    color: $blue_200;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .user-choice__pagination {
@@ -173,6 +187,18 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     position: relative;
+
+    &:hover {
+      &::before {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
+    }
   }
 
   &--next {
@@ -181,6 +207,18 @@
 
     &::before {
       transform: rotate(180deg);
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
     }
   }
 }

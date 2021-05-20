@@ -8,7 +8,9 @@ $black_06: rgba(0, 0, 0, 0.6);
 $black_05: rgba(0, 0, 0, 0.5);
 $black_03: rgba(0, 0, 0, 0.3);
 $black_02: rgba(0, 0, 0, 0.2);
+$black_024: rgba(0, 0, 0, 0.24);
 $black_01: rgba(0, 0, 0, 0.1);
+$black_014: rgba(0, 0, 0, 0.14);
 /*grey*/
 $grey: #444444;
 $grey_03: rgba(68, 68, 68, 0.3);
@@ -29,6 +31,7 @@ $grey_375: rgba(225, 227, 233, 1);
 $grey_370_05: rgba(214, 217, 230, 0.5);
 $grey_390: #d1d7e9;
 $grey_400: #cccccc;
+$grey_430: #c4c4c4;
 $grey_450: #c8cee8;
 $grey_500: #cbced9;
 $grey_500_03: rgba(203, 206, 217, 0.3);
@@ -47,6 +50,7 @@ $blue_200_015: rgba(29, 46, 91, 0.15);
 $blue_200_01: rgba(29, 46, 91, 0.1);
 $blue_200_02: rgba(29, 46, 91, 0.2);
 $blue_200_03: rgba(29, 46, 91, 0.3);
+$blue_200_06: rgba(29, 46, 91, 0.6);
 $blue_200_07: rgba(29, 46, 91, 0.7);
 $blue_250: #141b3b;
 $blue_300: #182044;
@@ -69,6 +73,8 @@ $orange_900: #ff5c23;
 /*red*/
 $red_100: #f97676;
 $red_200: #f47e7e;
+/*pink*/
+$pink_100: #f9d8d8;
 /*green*/
 $green_100: #bbf085;
 $tablet-width: 768px;

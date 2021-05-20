@@ -5,7 +5,7 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 26px;
+    //padding-bottom: 26px;
     background-color: $blue_300;
   }
 
@@ -14,31 +14,25 @@
     padding-bottom: 0;
   }
 
-  &--inner {
-    z-index: 3;
-    background-color: $blue_300;
-
-    @media (min-width: $desktop-width) {
-      background-color: $blue_300;
-    }
-  }
-
   &--open {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     z-index: 10;
-    padding-bottom: 29px;
+    box-sizing: border-box;
+    min-height: 91px;
+    background-color: $white;
 
     .page-header__wrapper {
       grid-template-rows: 74px min-content min-content min-content min-content;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      padding-bottom: 29px;
 
       &::after {
         content: "";
         position: absolute;
         display: block;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         top: 0;
         left: 50%;
@@ -52,19 +46,17 @@
       }
 
       @media (min-width: $tablet-width) {
-        grid-template-rows: 130px min-content min-content min-content min-content;
-      }
-
-      @media (min-width: $desktop-width) {
-        grid-template-columns: 200px 1fr 100px 188px;
-        grid-template-rows: 145px;
-        grid-template-areas: "logo nav user-for login";
-        justify-content: space-between;
+        padding-bottom: 73px;
+        grid-template-rows: 132px min-content min-content min-content min-content;
       }
     }
 
     .page-header__main-navigation {
       display: block;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 132px;
+      }
 
       @media (min-width: $desktop-width) {
         display: flex;
@@ -137,6 +129,7 @@
 
     @media (min-width: $tablet-width) {
       padding-bottom: 73px;
+      min-height: 159px;
     }
 
     @media (min-width: $desktop-width) {
@@ -163,6 +156,15 @@
       .page-header__img--default {
         display: block;
       }
+    }
+  }
+
+  &--inner {
+    z-index: 3;
+    background-color: $blue_300;
+
+    @media (min-width: $desktop-width) {
+      background-color: $blue_300;
     }
   }
 
@@ -320,6 +322,10 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .page-header__login {
@@ -351,8 +357,8 @@
 
 .page-header__main-navigation {
   grid-area: nav;
-  margin-top: 44px;
-  margin-bottom: 51px;
+  margin-top: 40px;
+  margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
     margin-top: 50px;

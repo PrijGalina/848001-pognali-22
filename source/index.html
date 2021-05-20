@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--open"><!-- page-header--open-->
+  <header class="page-header page-header--open">
     <div class="wrapper page-header__wrapper">
       <a class="logotype page-header__logotype">
         <div class="logotype__header--open page-header__img--menu">
@@ -32,7 +32,7 @@
           </picture>
         </div>
       </a>
-      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+      <button class="page-header__toggle page-header__toggle--hidden" type="button" aria-label="Открыть меню"></button>
       <nav class="main-navigation page-header__main-navigation">
         <ul class="site-list main-navigation__list">
           <li class="site-list__item">
@@ -83,6 +83,7 @@
   <main class="page-container">
     <h1 class="visually-hidden">Главная страница сервиса для поиска попутчиков "Погнали"</h1>
     <section class="first-screen">
+      <h2 class="visually-hidden">Представление сервиса</h2>
       <div class="wrapper first-screen__wrapper">
         <p class="first-screen__title">В путешествие<br> с крутыми<br> попутчиками!</p>
         <blockquote class="first-screen__review">«Лучшее приложение,<br>что я видел в жизни!»</blockquote>
@@ -288,7 +289,7 @@
             <dd class="prices__tariffs-value">59 руб./мес</dd>
           </div>
         </dl>
-        <a href="#" class="prices__business">Показать тарифы для бизнеса</a>
+        <a href="tariffs.html" class="prices__business">Показать тарифы для бизнеса</a>
       </div>
     </section>
     <section class="registration">
@@ -329,7 +330,8 @@
       </div>
     </section>
     <section class="map">
-      <!-- map -->
+      <h2 class="visually-hidden">Наш офис на карте</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A25567571b5c2675472f4436adb371982214cb14ea24ebe5e307fe50671e0772e&amp;source=constructor" width="1440" height="600" class="map__block"></iframe>
     </section>
   </main>
   <footer class="page-footer">
@@ -337,7 +339,8 @@
       <a class="logotype page-footer__logotype">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
-          <img class="logotype-img page-footer__img" src="img/pognali-logotype-tablet-blue.png" srcset="img/pognali-logotype-tablet-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
+          <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
+          <img class="logotype-img page-footer__img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
         </picture>
       </a>
       <ul class="social page-footer__social">
@@ -387,7 +390,7 @@
     </dl>
     <button class="modal__close" type="button" aria-label="Закрыть окно">Закрыть окно</button>
   </div>
-  <!--<script src="js/script.js"></script>-->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

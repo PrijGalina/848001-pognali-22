@@ -147,6 +147,10 @@
       margin-top: 43px;
     }
   }
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .counter__inner {
@@ -218,6 +222,10 @@
     padding-bottom: 56px;
     border-bottom: 1px solid $grey_120;
   }
+
+  &--entertainment {
+    margin-bottom: 15px;
+  }
 }
 
 .counter__company {
@@ -266,7 +274,7 @@
     content: "";
     position: absolute;
     left: -13px;
-    top: 9px;
+    top: 12px;
     width: 17px;
     height: 287px;
     background-image: url("../img/counter__textarea-line.svg");
@@ -482,7 +490,6 @@
 
     @media (min-width: $tablet-width) {
       width: 182px;
-      display: inline-block;
       padding-left: 31px;
 
       &::first-letter {
@@ -491,7 +498,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-left: 15px;
+      padding-left: 25px;
     }
 
     &::before {

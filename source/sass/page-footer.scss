@@ -86,6 +86,8 @@
   color: $grey;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 
   &:hover {
     opacity: 0.6;
@@ -98,7 +100,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-right: 23px;
+    margin-right: 0;
     margin-top: -6px;
   }
 }
@@ -106,6 +108,10 @@
 .page-footer__developer-logo {
   @include image;
   margin-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
+  }
 }
 
 .page-footer__img {

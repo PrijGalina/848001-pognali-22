@@ -186,6 +186,14 @@
   &:active {
     opacity: 0.05;
   }
+
+  &--more {
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+      position: absolute;
+      right: -169px;
+    }
+  }
 }
 
 .country-select__value {

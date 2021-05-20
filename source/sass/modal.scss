@@ -25,6 +25,10 @@
   &::after {
     display: none;
   }
+
+  &--open {
+    display: block;
+  }
 }
 
 .modal__title {

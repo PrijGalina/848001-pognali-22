@@ -70,4 +70,12 @@
   font-weight: 700;
   color: $blue_200;
   text-decoration: none;
+
+  &:hover {
+    color: $blue_200_06;
+  }
+
+  &:active {
+    background-color: $yellow_100;
+  }
 }
