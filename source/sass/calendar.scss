@@ -180,13 +180,13 @@
 
   &--focus,
   &:hover {
-    box-shadow: 0px 0px 0px 2px $orange_900;
+    box-shadow: 0 0 0 2px $orange_900;
     box-sizing: border-box;
     z-index: 222;
     border: none;
 
     @media (min-width: $tablet-width) {
-      box-shadow: 0px 0px 0px 4px $orange_900;
+      box-shadow: 0 0 0 4px $orange_900;
     }
 
     @media (min-width: $desktop-width) {

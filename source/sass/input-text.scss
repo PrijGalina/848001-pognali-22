@@ -128,26 +128,26 @@
   }
 
   &--email {
-  padding: 22px 25px;
-  border-radius: 10px;
-  border-top-right-radius: 10;
-  border-bottom-right-radius: 10;
-  height: 62px;
-  background-color: $white;
+    padding: 22px 25px;
+    border-radius: 10px;
+    border-top-right-radius: 10;
+    border-bottom-right-radius: 10;
+    height: 62px;
+    background-color: $white;
 
-  @media (min-width: $tablet-width) {
-    height: 80px;
-    padding: 28px 36px;
-    border-radius: 20px;
-  }
+    @media (min-width: $tablet-width) {
+      height: 80px;
+      padding: 28px 36px;
+      border-radius: 20px;
+    }
 
-  @media (min-width: $desktop-width) {
-    height: 81px;
-    display: block;
-    width: 850px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
+    @media (min-width: $desktop-width) {
+      height: 81px;
+      display: block;
+      width: 850px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
 
     &::placeholder {
       @media (min-width: $tablet-width) {

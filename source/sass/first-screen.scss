@@ -92,7 +92,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 485px 835px;
-    grid-template-rows: minmax(170px,auto) minmax(75px, auto) min-content;
+    grid-template-rows: minmax(170px, auto) minmax(75px, auto) min-content;
     gap: 0 0;
     grid-template-areas:
       "title review"

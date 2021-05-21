@@ -1,7 +1,7 @@
 .break {
   display: inline-block;
 
-  &:after {
+  &::after {
     content: "\00a0";
   }
 

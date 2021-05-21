@@ -315,10 +315,10 @@
 }
 
 .filters__toggle {
+  @include button-reset;
   display: block;
   order: 2;
   grid-area: btn;
-  @include button-reset;
   position: relative;
 
   &--open {

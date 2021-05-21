@@ -85,7 +85,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 630px 517px;
-    grid-template-rows: minmax(104px, auto) minmax(263px, auto) minmax(80px,auto);
+    grid-template-rows: minmax(104px, auto) minmax(263px, auto) minmax(80px, auto);
     gap: 0;
     grid-template-areas:
       "list title"

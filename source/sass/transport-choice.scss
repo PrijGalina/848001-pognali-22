@@ -35,7 +35,7 @@
   }
 
   &:not(:disabled) + .transport-choice__switch:hover {
-    filter: drop-shadow(0px 2px 6px $grey_605_017);
+    filter: drop-shadow(0 2px 6px $grey_605_017);
 
     .transport-choice__icon {
       fill: $grey_550;

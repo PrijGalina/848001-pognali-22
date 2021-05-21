@@ -14,7 +14,7 @@
 
 .user__photo {
   @include image;
-  overflow:hidden;
+  overflow: hidden;
   transition: all 0.5s ease-out;
 }
 
