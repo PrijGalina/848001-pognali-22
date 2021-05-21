@@ -572,15 +572,4 @@
     height: 50px;
     margin-left: 0;
   }
-
-  &--filter {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    @media (min-width: $tablet-width) {
-      justify-content: flex-start;
-      margin-left: 0;
-    }
-  }
 }
