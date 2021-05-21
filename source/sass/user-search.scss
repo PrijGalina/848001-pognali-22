@@ -1,7 +1,7 @@
 .user-search {
   display: grid;
   grid-template-columns: 30.172% 1fr;
-  grid-template-rows: max-content max-content max-content max-content max-content max-content;
+  grid-template-rows: max-content minmax(25px, auto) max-content max-content max-content max-content;
   gap: 0;
   grid-template-areas:
     "photo name"
@@ -15,7 +15,7 @@
   background-color: $white;
   border-radius: 20px;
   margin-bottom: 9px;
-  overflow: hidden;
+
 
   @media (min-width: $tablet-width) {
     padding: 31px 25px 5px 35px;
@@ -80,8 +80,13 @@
   }
 }
 
-.user-search__photo {
+.user-search__photo-block {
+  overflow: hidden;
   grid-area: photo;
+}
+
+.user-search__photo {
+
   width: 100%;
   padding-top: 2px;
 
@@ -205,7 +210,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: -3px;
+    top: 50%;
+    transform: translateY(-50%);
     left: -35px;
     width: 30px;
     height: 30px;
@@ -219,15 +225,12 @@
       width: 21px;
       height: 19px;
       left: -35px;
-      top: 50%;
-      transform: translateY(-50%);
       background-size: contain;
       background-size: 20px 18px;
     }
 
     @media (min-width: $desktop-width) {
       left: 14px;
-      top: 16px;
     }
   }
 
@@ -576,7 +579,7 @@
     flex-wrap: wrap;
 
     @media (min-width: $tablet-width) {
-      justify-content: start;
+      justify-content: flex-start;
       margin-left: 0;
     }
   }

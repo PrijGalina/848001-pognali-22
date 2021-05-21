@@ -40,6 +40,7 @@
     left: 160px;
     top: 338px;
     transform: translateX(-160px);
+    background-color: $blue_250;
     background-image: url("../img/rogovaya-back-mobile.jpg");
     background-repeat: no-repeat;
     border-top-right-radius: 6px;
@@ -97,6 +98,7 @@
     height: 143px;
     right: 0;
     top: -31px;
+    background-color: $blue_250;
     background-image: url("../img/smolov-back-mobile.jpg");
     background-repeat: no-repeat;
     z-index: -1;

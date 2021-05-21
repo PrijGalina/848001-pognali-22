@@ -10,8 +10,7 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -20,6 +19,9 @@
       <a class="logotype page-header__logotype" href="index.html">
         <div class="logotype__header logotype__header--open page-header__img page-header__img--menu">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.webp 1x, img/pognali-logotype-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.webp 1x, img/pognali-logotype-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/pognali-logotype-mobile-blue.webp 1x, img/pognali-logotype-mobile-blue@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
             <img class="logotype-img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
@@ -27,6 +29,9 @@
         </div>
         <div class="logotype__header logotype__header--default page-header__img page-header__img--default">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-white.webp 1x, img/pognali-logotype-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-white.webp 1x, img/pognali-logotype-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/pognali-logotype-mobile-white.webp 1x, img/pognali-logotype-mobile-white@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-white.png 1x, img/pognali-logotype-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-white.png 1x, img/pognali-logotype-tablet-white@2x.png 2x">
             <img class="logotype-img" src="img/pognali-logotype-mobile-white.png" srcset="img/pognali-logotype-mobile-white@2x.png 2x" width="96" height="15"  alt="Погнали - сервис для поиска попутчиков">
@@ -865,13 +870,18 @@
           <h2 class="visually-hidden">Список пользователей</h2>
           <ul class="user-choice__list">
             <li class="user user-search user--choice">
-              <a class="user__photo user-search__photo" href="#">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/tanya_firsova-285.jpg 1x, img/tanya_firsova-285@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/tanya_firsova-190.jpg 1x, img/tanya_firsova-190@2x.jpg 2x">
-                  <img src="img/tanya_firsova-70.jpg" srcset="img/tanya_firsova-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Татьяны Фирсовой">
-                </picture>
-              </a>
+              <div class="user-search__photo-block">
+                <a class="user__photo user-search__photo" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/tanya_firsova-285.webp 1x, img/tanya_firsova-285@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/tanya_firsova-190.webp 1x, img/tanya_firsova-190@2x.webp 2x">
+                    <source type="image/webp" srcset="img/tanya_firsova-70.webp 1x, img/tanya_firsova-70@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/tanya_firsova-285.jpg 1x, img/tanya_firsova-285@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/tanya_firsova-190.jpg 1x, img/tanya_firsova-190@2x.jpg 2x">
+                    <img src="img/tanya_firsova-70.jpg" srcset="img/tanya_firsova-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Татьяны Фирсовой">
+                  </picture>
+                </a>
+              </div>
               <div class="user-search__name-block">
                 <a class="user__name user-search__name user__name--choice" href="#">
                   Таня<br> Фирсова
@@ -888,6 +898,8 @@
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">шри-ланка</span>
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/sri-lanka-flag-35.webp 1x, img/sri-lanka-flag-35@2x.webp 2x">
+                      <source type="image/webp" srcset="img/sri-lanka-flag-26.webp 1x, img/sri-lanka-flag-26@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/sri-lanka-flag-35.png 1x, img/sri-lanka-flag-35@2x.png 2x">
                       <img src="img/sri-lanka-flag-26.png" srcset="img/sri-lanka-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Шри-Ланки">
                     </picture>
@@ -895,6 +907,8 @@
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">таиланд</span>
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-flag.webp 1x, img/thailand-flag@2x.webp 2x">
+                      <source type="image/webp" srcset="img/thailand-flag-26.webp 1x, img/thailand-flag-26@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/thailand-flag.png 1x, img/thailand-flag@2x.png 2x">
                       <img src="img/thailand-flag-26.png" srcset="img/thailand-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Таиланда">
                     </picture>
@@ -902,6 +916,8 @@
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">сейшелы</span>
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/seychelles-flag.webp 1x, img/seychelles-flag@2x.webp 2x">
+                      <source type="image/webp" srcset="img/seychelles-flag-26.webp 1x, img/seychelles-flag-26@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/seychelles-flag.png 1x, img/seychelles-flag@2x.png 2x">
                       <img src="img/seychelles-flag-26.png" srcset="img/seychelles-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Сейшелы">
                     </picture>
@@ -937,13 +953,18 @@
               <a href="call.html" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</a>
             </li>
             <li class="user user-search user--choice">
-              <a class="user__photo user-search__photo" href="#">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/petr-demin-285.jpg 1x, img/petr-demin-285@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/petr-demin-190.jpg 1x, img/petr-demin-190@2x.jpg 2x">
-                  <img src="img/petr-demin-70.jpg" srcset="img/petr-demin-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Петра Демина">
-                </picture>
-              </a>
+              <div class="user-search__photo-block">
+                <a class="user__photo user-search__photo" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/petr-demin-285.webp 1x, img/petr-demin-285@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/petr-demin-190.webp 1x, img/petr-demin-190@2x.webp 2x">
+                    <source type="image/webp" srcset="img/petr-demin-70.webp 1x, img/petr-demin-70@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/petr-demin-285.jpg 1x, img/petr-demin-285@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/petr-demin-190.jpg 1x, img/petr-demin-190@2x.jpg 2x">
+                    <img src="img/petr-demin-70.jpg" srcset="img/petr-demin-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Петра Демина">
+                  </picture>
+                </a>
+              </div>
               <div class="user-search__name-block">
                 <a class="user__name user-search__name user__name--choice" href="#">
                   Петя<br> Демин
@@ -960,6 +981,8 @@
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">бельгия</span>
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/belgium-flag.webp 1x, img/belgium-flag@2x.webp 2x">
+                      <source type="image/webp" srcset="img/belgium-flag-26.webp 1x, img/belgium-flag-26@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/belgium-flag.png 1x, img/belgium-flag@2x.png 2x">
                       <img src="img/belgium-flag-26.png" srcset="img/belgium-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Бельгии">
                     </picture>
@@ -967,6 +990,8 @@
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">чехия</span>
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-flag.webp 1x, img/czech-flag@2x.webp 2x">
+                      <source type="image/webp" srcset="img/czech-flag-26.webp 1x, img/czech-flag-26@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/czech-flag.png 1x, img/czech-flag@2x.png 2x">
                       <img src="img/czech-flag-26.png" srcset="img/czech-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Чехии">
                     </picture>
@@ -1002,13 +1027,18 @@
               <a href="call.html" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</a>
             </li>
             <li class="user user-search user--choice">
-              <a class="user__photo user-search__photo" href="#">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/mark-smolov-285.jpg 1x, img/mark-smolov-285@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/mark-smolov-190.jpg 1x, img/mark-smolov-190@2x.jpg 2x">
-                  <img src="img/mark-smolov-70.jpg" srcset="img/mark-smolov-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Марка Смолова">
-                </picture>
-              </a>
+              <div class="user-search__photo-block">
+                <a class="user__photo user-search__photo" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/mark-smolov-285.webp 1x, img/mark-smolov-285@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/mark-smolov-190.webp 1x, img/mark-smolov-190@2x.webp 2x">
+                    <source type="image/webp" srcset="img/mark-smolov-70.webp 1x, img/mark-smolov-70@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/mark-smolov-285.jpg 1x, img/mark-smolov-285@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/mark-smolov-190.jpg 1x, img/mark-smolov-190@2x.jpg 2x">
+                    <img src="img/mark-smolov-70.jpg" srcset="img/mark-smolov-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Марка Смолова">
+                  </picture>
+                </a>
+              </div>
               <div class="user-search__name-block">
                 <a class="user__name user-search__name user__name--choice" href="#">
                   Марк<br> Смолов
@@ -1025,6 +1055,8 @@
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">сша</span>
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/usa-flag-35.webp 1x, img/usa-flag-35@2x.webp 2x">
+                      <source type="image/webp" srcset="img/usa-flag-26.webp 1x, img/usa-flag-26@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/usa-flag-35.png 1x, img/usa-flag-35@2x.png 2x">
                       <img src="img/usa-flag-26.png" srcset="img/usa-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг США">
                     </picture>
@@ -1032,6 +1064,8 @@
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">австралия</span>
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/australia-flag-35.webp 1x, img/australia-flag-35@2x.webp 2x">
+                      <source type="image/webp" srcset="img/australia-flag-26.webp 1x, img/australia-flag-26@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/australia-flag-35.png 1x, img/australia-flag-35@2x.png 2x">
                       <img src="img/australia-flag-26.png" srcset="img/australia-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Австралии">
                     </picture>
@@ -1039,6 +1073,8 @@
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">доминика</span>
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/dominica-flag-35.webp 1x, img/dominica-flag-35@2x.webp 2x">
+                      <source type="image/webp" srcset="img/dominica-flag-26.webp 1x, img/dominica-flag-26@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/dominica-flag-35.png 1x, img/dominica-flag-35@2x.png 2x">
                       <img src="img/dominica-flag-26.png" srcset="img/dominica-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Доминики">
                     </picture>
@@ -1074,13 +1110,18 @@
               <a href="call.html" class="btn btn--oval btn--yellow user-search__to-call">Позвать!</a>
             </li>
             <li class="user user-search user--choice">
-              <a class="user__photo user-search__photo" href="#">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/larisa-rogovaya-285.jpg 1x, img/larisa-rogovaya-285@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/larisa-rogovaya-190.jpg 1x, img/larisa-rogovaya-190@2x.jpg 2x">
-                  <img src="img/larisa-rogovaya-70.jpg" srcset="img/larisa-rogovaya-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
-                </picture>
-              </a>
+              <div class="user-search__photo-block">
+                <a class="user__photo user-search__photo" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/larisa-rogovaya-285.webp 1x, img/larisa-rogovaya-285@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/larisa-rogovaya-190.webp 1x, img/larisa-rogovaya-190@2x.webp 2x">
+                    <source type="image/webp" srcset="img/larisa-rogovaya-70.webp 1x, img/larisa-rogovaya-70@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/larisa-rogovaya-285.jpg 1x, img/larisa-rogovaya-285@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/larisa-rogovaya-190.jpg 1x, img/larisa-rogovaya-190@2x.jpg 2x">
+                    <img src="img/larisa-rogovaya-70.jpg" srcset="img/larisa-rogovaya-70@2x.jpg 2x" class="user-search__photo-value" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
+                  </picture>
+                </a>
+              </div>
               <div class="user-search__name-block">
                 <a class="user__name user-search__name user__name--choice" href="#">
                   Лариса<br> Роговая
@@ -1097,6 +1138,8 @@
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">великобритания</span>
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/united-kingdom-flag-35.webp 1x, img/united-kingdom-flag-35@2x.webp 2x">
+                      <source type="image/webp" srcset="img/united-kingdom-flag-26.webp 1x, img/united-kingdom-flag-26@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/united-kingdom-flag-35.png 1x, img/united-kingdom-flag-35@2x.png 2x">
                       <img src="img/united-kingdom-flag-26.png" srcset="img/united-kingdom-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Великобритании">
                     </picture>
@@ -1104,6 +1147,8 @@
                   <li class="user__wants-item user-search__wants-item">
                     <span class="user-search__wants-title">германия</span>
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/germany-flag-35.webp 1x, img/germany-flag-35@2x.webp 2x">
+                      <source type="image/webp" srcset="img/germany-flag-26.webp 1x, img/germany-flag-26@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/germany-flag-35.png 1x, img/germany-flag-35@2x.png 2x">
                       <img src="img/germany-flag-26.png" srcset="img/germany-flag-26@2x.png 2x" class="user__wants-flag user-search__wants-flag" width="26" height="18" alt="Флаг Германии">
                     </picture>
@@ -1168,6 +1213,9 @@
     <div class="wrapper page-footer__wrapper">
       <a class="logotype page-footer__logotype" href="index.html">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.webp 1x, img/pognali-logotype-desktop-blue@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.webp 1x, img/pognali-logotype-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="img/pognali-logotype-mobile-blue.webp 1x, img/pognali-logotype-mobile-blue@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
           <img class="logotype-img page-footer__img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
@@ -1198,7 +1246,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

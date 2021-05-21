@@ -5,7 +5,7 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    //padding-bottom: 26px;
+    padding-bottom: 25px;
     background-color: $blue_300;
   }
 
@@ -409,7 +409,7 @@
   grid-area: social;
 
   @media (min-width: $tablet-width) {
-    justify-content: start;
+    justify-content: flex-start;
     padding-left: 8.284%;
   }
 

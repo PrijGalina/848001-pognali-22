@@ -10,7 +10,7 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -19,6 +19,9 @@
       <a class="logotype page-header__logotype">
         <div class="logotype__header logotype__header--open page-header__img page-header__img--menu">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.webp 1x, img/pognali-logotype-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.webp 1x, img/pognali-logotype-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/pognali-logotype-mobile-blue.webp 1x, img/pognali-logotype-mobile-blue@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
             <img class="logotype-img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
@@ -26,6 +29,9 @@
         </div>
         <div class="logotype__header logotype__header--default page-header__img page-header__img--default">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-white.webp 1x, img/pognali-logotype-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-white.webp 1x, img/pognali-logotype-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/pognali-logotype-mobile-white.webp 1x, img/pognali-logotype-mobile-white@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-white.png 1x, img/pognali-logotype-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-white.png 1x, img/pognali-logotype-tablet-white@2x.png 2x">
             <img class="logotype-img" src="img/pognali-logotype-mobile-white.png" srcset="img/pognali-logotype-mobile-white@2x.png 2x" width="96" height="15" alt="Погнали - сервис для поиска попутчиков">
@@ -107,7 +113,7 @@
     <section class="about">
       <div class="wrapper about__wrapper">
         <h2 class="title about__title">О сервисе</h2>
-        <p class="about__description">Любое путешествие<br class="break break--tablet"> веселее <br class="break break--mobile"> с попутчиками,<br class="break break--tablet"> которые на<br class="break break--mobile"> одной волне<br class="break break--tablet"> с тобой! Делитесь<br class="break break--mobile"> своими <br class="break break--tablet">идеями путешествий<br class="break break--tablet"> и <br class="break break--mobile">черпайте вдохновение<br class="break break--tablet"> в чужих.<b class="about__to-invite">А если найдете кого-то<br class="break break--not-desktop"> близкого по духу &mdash;<br class="break break--desktop">скорее<br class="break break--not-desktop"> зовите в совместный трип!</b>
+        <p class="about__description">Любое путешествие<br class="break break--tablet"> веселее <br class="break break--mobile"> с попутчиками,<br class="break break--tablet"> которые на<br class="break break--mobile"> одной волне<br class="break break--tablet"> с тобой! Делитесь <br class="break break--mobile"> своими <br class="break break--tablet">идеями путешествий<br class="break break--tablet"> и <br class="break break--mobile">черпайте вдохновение<br class="break break--tablet"> в чужих.<b class="about__to-invite">А если найдете кого-то<br class="break break--not-desktop"> близкого по духу &mdash;<br class="break break--desktop">скорее<br class="break break--not-desktop"> зовите в совместный трип!</b>
         </p>
         <a href="#" class="btn btn--rectangle btn--left btn--yellow about__link" title="Перейти на страницу о сервисе">Подробнее</a>
       </div>
@@ -120,10 +126,14 @@
         <ul class="countries__list">
           <li class="countries__item">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-tablet.webp 1x, img/thailand-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/thailand.webp 1x, img/thailand@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/thailand-tablet.jpg 1x, img/thailand-tablet@2x.jpg 2x">
               <img src="img/thailand.jpg" srcset="img/thailand@2x.jpg 2x" class="countries__cover" width="270" height="110" alt="Остров посреди лазурного моря">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-flag-70.webp 1x, img/thailand-flag-70@2x.webp 2x">
+              <source type="image/webp" srcset="img/thailand-flag.webp 1x, img/thailand-flag@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/thailand-flag-70.png 1x, img/thailand-flag-70@2x.png 2x">
               <img src="img/thailand-flag.png" srcset="img/thailand-flag@2x.png 2x" class="countries__flag" width="35" height="24" alt="Флаг Таиланда">
             </picture>
@@ -135,10 +145,14 @@
           </li>
           <li class="countries__item">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/france-tablet.webp 1x, img/france-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/france.webp 1x, img/france@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/france-tablet.jpg 1x, img/france-tablet@2x.jpg 2x">
               <img src="img/france.jpg" srcset="img/france@2x.jpg" class="countries__cover" width="270" height="110" alt="Бульвар в Париже">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/france-flag-70.webp 1x, img/france-flag-70@2x.webp 2x">
+              <source type="image/webp" srcset="img/france-flag.webp 1x, img/france-flag@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/france-flag-70.png 1x, img/france-flag-70@2x.png 2x">
               <img src="img/france-flag.png" srcset="img/france-flag@2x.png" class="countries__flag" width="35" height="24" alt="Флаг Франции">
             </picture>
@@ -150,10 +164,14 @@
           </li>
           <li class="countries__item countries__item--czech">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-tablet.webp 1x, img/czech-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/czech.webp 1x, img/czech@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/czech-tablet.jpg 1x, img/czech-tablet@2x.jpg 2x">
               <img src="img/czech.jpg" srcset="img/czech@2x.jpg" class="countries__cover" width="270" height="110" alt="Карлов мост в Праге">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-flag-70.webp 1x, img/czech-flag-70@2x.webp 2x">
+              <source type="image/webp" srcset="img/czech-flag.webp 1x, img/czech-flag@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/czech-flag-70.png 1x, img/czech-flag-70@2x.png 2x">
               <img src="img/czech-flag.png" srcset="img/czech-flag@2x.png" class="countries__flag" width="35" height="24" alt="Флаг Чехии">
             </picture>
@@ -179,6 +197,8 @@
             </p>
             <a class="user__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/tanya_firsova-285-286.webp 1x, img/tanya_firsova-285-286@2x.webp 2x">
+                <source type="image/webp" srcset="img/tanya_firsova-270.webp 1x, img/tanya_firsova-270@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/tanya_firsova-285-286.jpg 1x, img/tanya_firsova-285-286@2x.jpg 2x">
                 <img src="img/tanya_firsova-270.jpg" srcset="img/tanya_firsova-270@2x.jpg 2x" class="user__photo user-card__photo" width="270" height="270" alt="Таня Фирсова - фото профиля">
               </picture>
@@ -187,18 +207,21 @@
               <li class="user__wants-item user-card__wants-item">
                 <span class="tooltip user-card__tooltip">Шри-ланка</span>
                 <picture>
+                  <source type="image/webp" srcset="img/sri-lanka-flag.webp 1x, img/sri-lanka-flag@2x.webp 2x">
                   <img src="img/sri-lanka-flag.png" srcset="img/sri-lanka-flag@2x.png 2x" class="user__wants-flag user-card__wants-flag" width="35" height="25" alt="Флаг Шри-Ланки">
                 </picture>
               </li>
               <li class="user__wants-item user-card__wants-item">
                 <span class="tooltip user-card__tooltip">Таиланд</span>
                 <picture>
+                  <source type="image/webp" srcset="img/thailand-flag.webp 1x, img/thailand-flag@2x.webp 2x">
                   <img src="img/thailand-flag.png" srcset="img/thailand-flag@2x.png 2x" class="user__wants-flag user-card__wants-flag" width="35" height="25" alt="Флаг Таиланда">
                 </picture>
               </li>
               <li class="user__wants-item user-card__wants-item">
                 <span class="tooltip user-card__tooltip">Сейшелы</span>
                 <picture>
+                  <source type="image/webp" srcset="img/seychelles-flag.webp 1x, img/seychelles-flag@2x.webp 2x">
                   <img src="img/seychelles-flag.png" srcset="img/seychelles-flag@2x.png 2x" class="user__wants-flag user-card__wants-flag" width="35" height="25" alt="Флаг Сейшейлы">
                 </picture>
               </li>
@@ -232,6 +255,8 @@
             </p>
             <a class="user__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/petr-demin-285-286.webp 1x, img/petr-demin-285-286@2x.webp 2x">
+                <source type="image/webp" srcset="img/petr-demin-270.webp 1x, img/petr-demin-270@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/petr-demin-285-286.jpg 1x, img/petr-demin-285-286@2x.jpg 2x">
                 <img src="img/petr-demin-270.jpg" srcset="img/petr-demin-270@2x.jpg 2x" class="user__photo user-card__photo" width="270" height="270" alt="Фото профиля Петра Демина">
               </picture>
@@ -239,11 +264,17 @@
             <ul class="user__wants-list user-card__wants">
               <li class="user__wants-item user-card__wants-item">
                 <span class="tooltip user-card__tooltip">Бельгия</span>
-                <img src="img/belgium-flag.png" srcset="img/belgium-flag@2x.png" class="user__wants-flag user-card__wants-flag" width="35" height="25" alt="Флаг Бельгии">
+                <picture>
+                  <source type="image/webp" srcset="img/belgium-flag.webp 1x, img/belgium-flag@2x.webp 2x">
+                  <img src="img/belgium-flag.png" srcset="img/belgium-flag@2x.png" class="user__wants-flag user-card__wants-flag" width="35" height="25" alt="Флаг Бельгии">
+                </picture>
               </li>
               <li class="user__wants-item user-card__wants-item">
                 <span class="tooltip user-card__tooltip">Чехия</span>
-                <img src="img/czech-flag.png" srcset="img/czech-flag@2x.png" class="user__wants-flag user-card__wants-flag" width="35" height="25" alt="Флаг Чехии">
+                <picture>
+                  <source type="image/webp" srcset="img/czech-flag.webp 1x, img/czech-flag@2x.webp 2x">
+                  <img src="img/czech-flag.png" srcset="img/czech-flag@2x.png" class="user__wants-flag user-card__wants-flag" width="35" height="25" alt="Флаг Чехии">
+                </picture>
               </li>
             </ul>
             <div class="user-card__info">
@@ -269,12 +300,12 @@
             </div>
           </li>
         </ul>
-        <a href="#" class="btn btn--rectangle btn--yellow btn--left companions__link" title="Перейти на страницу о поиска попутчика">Показать всеx</a>
+        <a href="catalog.html" class="btn btn--rectangle btn--yellow btn--left companions__link" title="Перейти на страницу о поиска попутчика">Показать всеx</a>
       </div>
     </section>
     <section class="prices">
       <div class="wrapper prices__wrapper">
-        <h2 class="title prices__title">Добавьте<br class="break break--mobile"> свой<br class="break break--mobile"> профиль</h2>
+        <h2 class="title prices__title">Добавьте <br class="break break--mobile"> свой <br class="break break--mobile"> профиль</h2>
         <dl class="prices__list">
           <div class="prices__tariffs prices__tariffs--base-rate" data-number="1">
             <dt class="prices__tariffs-name">Базовое размещение</dt>
@@ -338,6 +369,9 @@
     <div class="wrapper page-footer__wrapper">
       <a class="logotype page-footer__logotype">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.webp 1x, img/pognali-logotype-desktop-blue@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.webp 1x, img/pognali-logotype-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="img/pognali-logotype-mobile-blue.webp 1x, img/pognali-logotype-mobile-blue@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
           <img class="logotype-img page-footer__img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
@@ -390,7 +424,7 @@
     </dl>
     <button class="modal__close" type="button" aria-label="Закрыть окно">Закрыть окно</button>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

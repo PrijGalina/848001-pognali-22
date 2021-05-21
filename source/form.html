@@ -10,7 +10,7 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -19,6 +19,9 @@
       <a class="logotype page-header__logotype" href="index.html">
         <div class="logotype__header logotype__header--open page-header__img page-header__img--menu">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.webp 1x, img/pognali-logotype-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.webp 1x, img/pognali-logotype-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/pognali-logotype-mobile-blue.webp 1x, img/pognali-logotype-mobile-blue@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
             <img class="logotype-img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
@@ -26,6 +29,9 @@
         </div>
         <div class="logotype__header logotype__header--default page-header__img page-header__img--default">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-white.webp 1x, img/pognali-logotype-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-white.webp 1x, img/pognali-logotype-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/pognali-logotype-mobile-white.webp 1x, img/pognali-logotype-mobile-white@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-white.png 1x, img/pognali-logotype-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-white.png 1x, img/pognali-logotype-tablet-white@2x.png 2x">
             <img class="logotype-img" src="img/pognali-logotype-mobile-white.png" srcset="img/pognali-logotype-mobile-white@2x.png 2x" width="96" height="15" alt="Погнали - сервис для поиска попутчиков">
@@ -95,6 +101,9 @@
         </p>
         <div class="user-personal__photo-block">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/petr-demin-190.webp 1x, img/petr-demin-190@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/petr-demin-94.webp 1x, img/petr-demin-94@2x.webp 2x">
+            <source type="image/webp" srcset="img/petr-demin-100.webp 1x, img/petr-demin-100@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/petr-demin-190.jpg 1x, img/petr-demin-190@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/petr-demin-94.jpg 1x, img/petr-demin-94@2x.jpg 2x">
             <img src="img/petr-demin-100.jpg" srcset="img/petr-demin-100@2x.jpg 2x" class="user-personal__photo user__photo" width="100" height="100" alt="Портрет пользователя Петра Дёмина">
@@ -333,6 +342,8 @@
                   <div class="country-select__arrow"></div>
                   <output name="countries-flag" class="country-select__output">
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/bosnia-and-herzegovina-flag-70.webp 1x, img/bosnia-and-herzegovina-flag-70@2x.webp 2x">
+                      <source type="image/webp" srcset="img/bosnia-and-herzegovina-flag.webp 1x, img/bosnia-and-herzegovina-flag@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/bosnia-and-herzegovina-flag-70.png 1x, img/bosnia-and-herzegovina-flag-70@2x.png 2x">
                       <img src="img/bosnia-and-herzegovina-flag.png" srcset="img/bosnia-and-herzegovina-flag@2x.png 2x" class="country-select__flag" width="35" height="24" alt="Флаг Боснии и Герцеговины">
                     </picture>
@@ -346,6 +357,8 @@
                   <div class="country-select__arrow"></div>
                   <output name="countries-flag" class="country-select__output">
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-flag-70.webp 1x, img/czech-flag-70@2x.webp 2x">
+                      <source type="image/webp" srcset="img/czech-flag.webp 1x, img/czech-flag@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/czech-flag-70.png 1x, img/czech-flag-70@2x.png 2x">
                       <img src="img/czech-flag.png" srcset="img/czech-flag@2x.png" class="country-select__flag" width="35" height="24" alt="Флаг Чехии">
                     </picture>
@@ -439,6 +452,8 @@
                 <p class="textarea__caption counter__textarea-caption">
                   <label for="point-bosnia">Босния и Герцеговина</label>
                   <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/bosnia-and-herzegovina-flag-70.webp 1x, img/bosnia-and-herzegovina-flag-70@2x.webp 2x">
+                    <source type="image/webp" srcset="img/bosnia-and-herzegovina-flag.webp 1x, img/bosnia-and-herzegovina-flag@2x.webp 2x">
                     <source media="(min-width: 768px)" srcset="img/bosnia-and-herzegovina-flag-70.png 1x, img/bosnia-and-herzegovina-flag-70@2x.png 2x">
                     <img src="img/bosnia-and-herzegovina-flag.png" srcset="img/bosnia-and-herzegovina-flag@2x.png 2x" class="textarea__field-flag" width="35" height="24" alt="Флаг Боснии и Герцеговины">
                   </picture>
@@ -449,6 +464,8 @@
                 <p class="textarea__caption counter__textarea-caption">
                   <label for="point-czech">Чехия</label>
                   <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset=".webp 1x, @2x.webp 2x">
+                    <source type="image/webp" srcset=".webp 1x, @2x.webp 2x">
                     <source media="(min-width: 768px)" srcset="img/czech-flag-70.png 1x, img/czech-flag-70@2x.png 2x">
                     <img src="img/czech-flag.png" srcset="img/czech-flag@2x.png" class="textarea__field-flag" width="35" height="24" alt="Флаг Чехии">
                   </picture>
@@ -486,6 +503,9 @@
     <div class="wrapper page-footer__wrapper">
       <a class="logotype page-footer__logotype" href="index.html">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.webp 1x, img/pognali-logotype-desktop-blue@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.webp 1x, img/pognali-logotype-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="img/pognali-logotype-mobile-blue.webp 1x, img/pognali-logotype-mobile-blue@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
           <img class="logotype-img page-footer__img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
@@ -516,7 +536,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

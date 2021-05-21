@@ -97,7 +97,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: start;
+    justify-content: flex-start;
     padding-left: 35px;
   }
 }

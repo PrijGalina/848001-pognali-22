@@ -1,51 +1,60 @@
 .break {
+  display: inline-block;
+
+  &:after {
+    content: "\00a0";
+  }
+
   &--mobile {
     @media (min-width: $tablet-width) {
-      display: none;
+      content: "\00a0";
     }
   }
 
   &--tablet {
-    display: none;
+    content: "\00a0";
 
     @media (min-width: $tablet-width) {
-      display: block;
+      content: inherit;
     }
 
     @media (min-width: $desktop-width) {
-      display: none;
+
+      content: "\00a0";
     }
   }
 
   &--desktop {
-    display: none;
+    content: "\00a0";
 
     @media (min-width: $desktop-width) {
-      display: block;
+      content: inherit;
     }
   }
 
   &--not-mobile {
-    display: none;
+    content: "\00a0";
 
     @media (min-width: $tablet-width) {
-      display: block;
+      content: inherit;
     }
   }
 
   &--not-tablet {
     @media (min-width: $tablet-width) {
-      display: none;
+
+      content: "\00a0";
     }
 
     @media (min-width: $desktop-width) {
-      display: block;
+      content: inherit;
     }
   }
 
   &--not-desktop {
     @media (min-width: $desktop-width) {
-      display: none;
+
+      content: "\00a0";
     }
   }
 }

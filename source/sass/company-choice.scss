@@ -140,6 +140,7 @@
   padding-bottom: 10px;
   border-top: 1px solid $yellow_500;
   cursor: pointer;
+  margin: 0;
 
   &::before {
     content: "";
@@ -211,7 +212,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
     margin-bottom: 0;
   }
 

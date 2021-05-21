@@ -3,6 +3,7 @@
   z-index: 2;
   background-color: $grey_100;
   min-height: 322px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     min-height: 568px;

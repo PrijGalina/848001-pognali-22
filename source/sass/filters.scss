@@ -29,7 +29,7 @@
         grid-template-columns: minmax(223px, max-content) minmax(223px, max-content) minmax(222px, max-content) minmax(215px, max-content) minmax(215px, max-content);
         grid-auto-rows: max-content;
         gap: 47px 30px;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: start;
         width: 1320px;
         padding: 11px 35px 0 0;
@@ -136,8 +136,8 @@
 .filters__container {
   position: relative;
   width: 100%;
-  margin: -75px auto 0;
-  padding-top: 78px;
+  margin: 5px auto 0;
+  padding-top: 3px;
   z-index: 0;
   background-color: $grey_150;
   border-bottom-right-radius: 30px;
@@ -545,7 +545,7 @@
       background-color: transparent;
       border: none;
       color: $blue_200;
-      justify-content: start;
+      justify-content: flex-start;
     }
   }
 }
