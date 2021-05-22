@@ -135,7 +135,7 @@
 
 
   &:active:hover {
-    border-color: $blue_500;;
+    border-color: $blue_500;
   }
 
   &--tags {
@@ -187,10 +187,6 @@
   color: $red;
   font-size: 16px;
   line-height: 16px;
-
-  @media (min-width: $tablet-width) {
-
-  }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
