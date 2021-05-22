@@ -30,6 +30,10 @@
     &:active {
       background-color: $yellow_300;
     }
+
+    &:focus {
+      outline: 2px solid $blue_400;
+    }
   }
 
   &--rectangle {
@@ -43,6 +47,10 @@
 
   &--white {
     background-color: $white;
+
+    &:focus {
+      outline: 2px solid $blue_400;
+    }
   }
 
   &--blue {
@@ -62,6 +70,10 @@
       &::after {
         opacity: 0.3;
       }
+    }
+
+    &:focus {
+      outline: 2px solid $yellow_100;
     }
   }
 

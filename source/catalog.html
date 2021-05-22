@@ -24,7 +24,7 @@
             <source type="image/webp" srcset="img/pognali-logotype-mobile-blue.webp 1x, img/pognali-logotype-mobile-blue@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
-            <img class="logotype-img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
+            <img class="logotype__img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
           </picture>
         </div>
         <div class="logotype__header logotype__header--default page-header__img page-header__img--default">
@@ -34,13 +34,13 @@
             <source type="image/webp" srcset="img/pognali-logotype-mobile-white.webp 1x, img/pognali-logotype-mobile-white@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-white.png 1x, img/pognali-logotype-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-white.png 1x, img/pognali-logotype-tablet-white@2x.png 2x">
-            <img class="logotype-img" src="img/pognali-logotype-mobile-white.png" srcset="img/pognali-logotype-mobile-white@2x.png 2x" width="96" height="15"  alt="Погнали - сервис для поиска попутчиков">
+            <img class="logotype__img" src="img/pognali-logotype-mobile-white.png" srcset="img/pognali-logotype-mobile-white@2x.png 2x" width="96" height="15"  alt="Погнали - сервис для поиска попутчиков">
           </picture>
         </div>
       </a>
       <button class="page-header__toggle page-header__toggle--hidden" type="button" aria-label="Открыть меню"></button>
-      <nav class="main-navigation page-header__main-navigation">
-        <ul class="site-list main-navigation__list">
+      <nav class="page-header__main-navigation">
+        <ul class="site-list">
           <li class="site-list__item">
             <a href="#" class="site-list__link page-header__link">
               <span data-hover="О сервисе">О сервисе</span>
@@ -848,20 +848,21 @@
                 <p class="company-choice__group-title company-choice__group-title--level">Левел</p>
                 <div class="range company-choice__range company-choice__group-list">
                   <div class="range__output">
-                    <div class="range__value range__value--min">30</div>
-                    <div class="range__value range__value--max">100</div>
+                    <input class="range__value range__value--min input-text__field input-text__field--number" type="number" value="30">
+                    <input class="range__value range__value--max input-text__field input-text__field--number" type="number" value="100">
+                    <span class="range__delimiter"></span>
                   </div>
                   <div class="range__controls">
                     <div class="range__scale">
                       <div class="range__bar"></div>
-                      <div class="range__toggle range__toggle--min" tabindex="0" aria-label="Изменить нижнюю граниу стоимости"></div>
-                      <div class="range__toggle range__toggle--max" tabindex="0" aria-label="Изменить верхнюю границу стоимости"></div>
+                      <span class="range__toggle range__toggle--min" tabindex="0" aria-label="Изменить нижнюю граниу стоимости"></span>
+                      <span class="range__toggle range__toggle--max" tabindex="0" aria-label="Изменить верхнюю границу стоимости"></span>
                     </div>
                   </div>
                 </div>
               </div>
             </fieldset>
-            <button type="submit" class="btn btn--oval btn--white company-choice__btn">показать</button>
+            <button type="submit" class="btn btn--oval btn--white company-choice__btn" aria-label="Применить фильтр">показать</button>
           </form>
         </div>
       </section>
@@ -884,7 +885,7 @@
               </div>
               <div class="user-search__name-block">
                 <a class="user__name user-search__name user__name--choice" href="#">
-                  Таня<br> Фирсова
+                  Таня <br class="break break--mobile"> Фирсова
                   <span class="user__status user-search__status"></span>
                 </a>
               </div>
@@ -967,7 +968,7 @@
               </div>
               <div class="user-search__name-block">
                 <a class="user__name user-search__name user__name--choice" href="#">
-                  Петя<br> Демин
+                  Петя<br class="break break--mobile"> Демин
                   <span class="user__status user-search__status"></span>
                 </a>
               </div>
@@ -1041,7 +1042,7 @@
               </div>
               <div class="user-search__name-block">
                 <a class="user__name user-search__name user__name--choice" href="#">
-                  Марк<br> Смолов
+                  Марк<br class="break break--mobile"> Смолов
                   <span class="user__status user-search__status"></span>
                 </a>
               </div>
@@ -1124,7 +1125,7 @@
               </div>
               <div class="user-search__name-block">
                 <a class="user__name user-search__name user__name--choice" href="#">
-                  Лариса<br> Роговая
+                  Лариса<br class="break break--mobile"> Роговая
                   <span class="user__status user__status--online user-search__status"></span>
                 </a>
               </div>
@@ -1218,7 +1219,7 @@
           <source type="image/webp" srcset="img/pognali-logotype-mobile-blue.webp 1x, img/pognali-logotype-mobile-blue@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
-          <img class="logotype-img page-footer__img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
+          <img class="logotype__img page-footer__img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
         </picture>
       </a>
       <ul class="social page-footer__social">

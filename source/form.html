@@ -24,7 +24,7 @@
             <source type="image/webp" srcset="img/pognali-logotype-mobile-blue.webp 1x, img/pognali-logotype-mobile-blue@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
-            <img class="logotype-img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
+            <img class="logotype__img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="100" height="15" alt="Погнали - сервис для поиска попутчиков">
           </picture>
         </div>
         <div class="logotype__header logotype__header--default page-header__img page-header__img--default">
@@ -34,13 +34,13 @@
             <source type="image/webp" srcset="img/pognali-logotype-mobile-white.webp 1x, img/pognali-logotype-mobile-white@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-white.png 1x, img/pognali-logotype-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-white.png 1x, img/pognali-logotype-tablet-white@2x.png 2x">
-            <img class="logotype-img" src="img/pognali-logotype-mobile-white.png" srcset="img/pognali-logotype-mobile-white@2x.png 2x" width="96" height="15" alt="Погнали - сервис для поиска попутчиков">
+            <img class="logotype__img" src="img/pognali-logotype-mobile-white.png" srcset="img/pognali-logotype-mobile-white@2x.png 2x" width="96" height="15" alt="Погнали - сервис для поиска попутчиков">
           </picture>
         </div>
       </a>
       <button class="page-header__toggle page-header__toggle--hidden" type="button" aria-label="Открыть меню"></button>
-      <nav class="main-navigation page-header__main-navigation">
-        <ul class="site-list main-navigation__list">
+      <nav class="page-header__main-navigation">
+        <ul class="site-list">
           <li class="site-list__item">
             <a href="#" class="site-list__link page-header__link">
               <span data-hover="О сервисе">О сервисе</span>
@@ -370,7 +370,7 @@
                 <div class="country-select__trigger country-select__trigger--more">
                   <span class="country-select__value country-select__value--choice">
                     Выберите страну
-                    <object class="country-select__close" data="img/icon_close_white.svg" type="image/svg+xml" width="22" height="21"></object>
+                    <img class="country-select__close" src="img/icon_close_white.svg" width="22" height="21" alt="Закрыть список выбора страны">
                   </span>
                   <div class="country-select__arrow country-select__arrow--more country-select__arrow--light"></div>
                   <button type="button" class="country-select__delete country-select__delete--more" aria-label="Убрать страну из маршрута">удалить</button>
@@ -458,14 +458,15 @@
                     <img src="img/bosnia-and-herzegovina-flag.png" srcset="img/bosnia-and-herzegovina-flag@2x.png 2x" class="textarea__field-flag" width="35" height="24" alt="Флаг Боснии и Герцеговины">
                   </picture>
                 </p>
-                <textarea name="point-desc" id="point-bosnia" class="textarea__field" placeholder="План действий" required></textarea>
+                <textarea name="point-desc" id="point-bosnia" class="textarea__field textarea__field--error" placeholder="План действий" required></textarea>
+                <span class="textarea__error-message">Это поле должно быть заполнено</span>
               </div>
               <div class="textarea counter__textarea">
                 <p class="textarea__caption counter__textarea-caption">
                   <label for="point-czech">Чехия</label>
                   <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset=".webp 1x, @2x.webp 2x">
-                    <source type="image/webp" srcset=".webp 1x, @2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-flag-70.webp 1x, img/czech-flag-70@2x.webp 2x">
+                    <source type="image/webp" srcset="img/czech-flag.webp 1x, img/czech-flag@2x.webp 2x">
                     <source media="(min-width: 768px)" srcset="img/czech-flag-70.png 1x, img/czech-flag-70@2x.png 2x">
                     <img src="img/czech-flag.png" srcset="img/czech-flag@2x.png" class="textarea__field-flag" width="35" height="24" alt="Флаг Чехии">
                   </picture>
@@ -508,7 +509,7 @@
           <source type="image/webp" srcset="img/pognali-logotype-mobile-blue.webp 1x, img/pognali-logotype-mobile-blue@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/pognali-logotype-desktop-blue.png 1x, img/pognali-logotype-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/pognali-logotype-tablet-blue.png 1x, img/pognali-logotype-tablet-blue@2x.png 2x">
-          <img class="logotype-img page-footer__img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
+          <img class="logotype__img page-footer__img" src="img/pognali-logotype-mobile-blue.png" srcset="img/pognali-logotype-mobile-blue@2x.png 2x" width="164" height="42" alt="Погнали - сервис для поиска попутчиков">
         </picture>
       </a>
       <ul class="social page-footer__social">

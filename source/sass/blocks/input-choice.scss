@@ -6,10 +6,10 @@
   }
 
   &:focus {
-    outline: none;
+    outline: 2px solid $blue_400;
   }
 
-  &:focus > .input-choice__caption::before {
+  &:active > .input-choice__caption::before {
     border: 1px solid $grey_500;
     background-color: $white_03;
   }
@@ -48,14 +48,23 @@
     color: $black_03;
 
     &::before {
-      opacity: 0.3;
+    background-color: $white_03;
     }
   }
 
   /* active + checked */
   &:not(:disabled):checked + .input-choice__caption:active {
     &::before {
-      opacity: 0.3;
+      background-color: $white_03;
+    }
+  }
+
+  /* active + hover */
+  &:not(:disabled) + .input-choice__caption:active:hover {
+    color: $black;
+
+    &::before {
+      background-color: $white_03;
     }
   }
 
@@ -139,7 +148,7 @@
     @media (min-width: $tablet-width) {
       width: 24px;
       height: 24px;
-      left: 0;
+      left: 4px;
     }
   }
 

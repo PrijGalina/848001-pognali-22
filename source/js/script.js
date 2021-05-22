@@ -104,11 +104,25 @@ if (counters) {
 }
 let country_more_btn = document.querySelector(".country-select__value--choice"); // +- country-select__value--open
 let country_select_dropdown = document.querySelector(".counter__select-dropdown"); // +- counter__select-dropdown--open
+let country_more_btn_close = document.querySelector(".country-select__close");
+
 if (country_more_btn){
   country_more_btn.addEventListener("click", function (e) {
-    e.preventDefault();
-    country_more_btn.classList.toggle("country-select__value--open");
-    country_select_dropdown.classList.toggle("counter__select-dropdown--open");
+    console.log(e.target);
+    if (e.target === country_more_btn) {
+      if (country_more_btn.classList.contains("country-select__value--open")){
+
+      }
+      else {
+        country_more_btn.classList.add("country-select__value--open");
+        country_select_dropdown.classList.add("counter__select-dropdown--open");
+      }
+    }
+    else if (e.target === country_more_btn_close) {
+      country_more_btn.classList.remove("country-select__value--open");
+      country_select_dropdown.classList.remove("counter__select-dropdown--open");
+      console.log("12");
+    }
   });
 }
 
@@ -139,7 +153,7 @@ let field_toggles = document.querySelectorAll(".company-choice__group-title");
 let choice_group = document.querySelectorAll(".company-choice__group");
 
 if(field_toggles){
-  if (viewport > 1440) {
+  if (viewport < 768 || viewport > 1440) {
     choice_group.forEach(function (list, num) {
       if (list.classList.contains("company-choice__group--level")){
 

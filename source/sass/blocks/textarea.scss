@@ -25,13 +25,14 @@
     }
   }
 
+  &:focus,
   &:focus-within,
   &:active {
     border-color: $blue_500;
   }
 
   &:active:focus {
-    border-color: $grey_600;
+    border-color: $blue_500;
   }
 
   &:disabled {
@@ -132,6 +133,11 @@
     }
   }
 
+
+  &:active:hover {
+    border-color: $blue_500;;
+  }
+
   &--tags {
     background-color: transparent;
     resize: none;
@@ -158,6 +164,37 @@
       line-height: 22px;
       opacity: 0.6;
     }
+  }
+
+  &--error {
+    border-color: $red_200;
+    position: relative;
+  }
+}
+
+.textarea__error-message {
+  position: absolute;
+  bottom: 9px;
+  left: 1px;
+  right: 1px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  padding-left: 21px;
+  padding-right: 10px;
+  background-color: $red_10;
+  box-sizing: border-box;
+  height: 56px;
+  color: $red;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
