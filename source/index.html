@@ -10,6 +10,14 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-medium.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-bold.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-light.woff" as="font" type="font/woff">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -93,7 +101,7 @@
       <div class="wrapper first-screen__wrapper">
         <p class="first-screen__title">В путешествие<br> с крутыми<br> попутчиками!</p>
         <blockquote class="first-screen__review">«Лучшее приложение,<br>что я видел в жизни!»</blockquote>
-        <cite class="first-screen__review-source">Мурат Эльтазин<br> главный редактор <br class="break break--mobile"> газеты <br class="break break--tablet">«гаджетлайф»</cite>
+        <cite class="first-screen__review-source">Мурат Эльтазин<br> главный редактор   газеты  «гаджетлайф»</cite>
         <ol class="first-screen__steps-list">
           <li class="first-screen__steps-item first-screen__steps-item--choose" data-step="1">Выберите<br> направление</li>
           <li class="first-screen__steps-item first-screen__steps-item--study" data-step="2">Изучите идеи<br> путешественников</li>
@@ -113,7 +121,7 @@
     <section class="about">
       <div class="wrapper about__wrapper">
         <h2 class="title about__title">О сервисе</h2>
-        <p class="about__description">Любое путешествие<br class="break break--tablet"> веселее <br class="break break--mobile"> с попутчиками,<br class="break break--tablet"> которые на<br class="break break--mobile"> одной волне<br class="break break--tablet"> с тобой! Делитесь <br class="break break--mobile"> своими <br class="break break--tablet">идеями путешествий<br class="break break--tablet"> и <br class="break break--mobile">черпайте вдохновение<br class="break break--tablet"> в чужих.<b class="about__to-invite">А если найдете кого-то<br class="break break--not-desktop"> близкого по духу &mdash;<br class="break break--desktop">скорее<br class="break break--not-desktop"> зовите в совместный трип!</b>
+        <p class="about__description">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с&nbsp;тобой! Делитесь своими идеями путешествий и&nbsp;черпайте вдохновение в&nbsp;чужих.<b class="about__to-invite">А если найдете кого-то близкого по духу &mdash; скорее зовите в совместный трип!</b>
         </p>
         <a href="#" class="btn btn--rectangle btn--left btn--yellow about__link" title="Перейти на страницу о сервисе">Подробнее</a>
       </div>
@@ -177,7 +185,7 @@
             </picture>
             <div class="countries__country">
               <p class="countries__name">Чехия</p>
-              <p class="countries__intro">Закоулки<br class="break break--tablet"> старой<br class="break break--mobile"> Европы</p>
+              <p class="countries__intro countries__intro--czech">Закоулки  старой Европы</p>
               <span class="countries__visited">5326</span>
             </div>
           </li>
@@ -188,7 +196,7 @@
     <section class="companions">
       <div class="wrapper companions__wrapper">
         <h2 class="title companions__title">Попутчики</h2>
-        <p class="companions__description">Все мы индивидуальны и у<br class="break break--mobile"> каждого<br class="break break--not-mobile"> свой взгляд на<br class="break break--mobile"> идеальный отдых.<br class="break break--not-mobile"> Одному<br class="break break--mobile"> нужен пляж и коктейль,<br class="break break--not-mobile"> а<br class="break break--mobile"> другому маршрут для хайкинга.<b class="companions__motivation">Теперь можно легко<br class="break break--not-mobile"> найти <br class="break break--mobile">единомышленников!</b></p>
+        <p class="companions__description">Все мы индивидуальны и у  каждого свой взгляд на  идеальный отдых. Одному  нужен пляж и коктейль, а&nbsp;другому маршрут для хайкинга.<b class="companions__motivation">Теперь можно легко найти&nbsp;единомышленников!</b></p>
         <ul class="companions__list">
           <li class="user user-card companions__item">
             <p class="user__level user-card__level">
@@ -305,7 +313,7 @@
     </section>
     <section class="prices">
       <div class="wrapper prices__wrapper">
-        <h2 class="title prices__title">Добавьте <br class="break break--mobile"> свой <br class="break break--mobile"> профиль</h2>
+        <h2 class="title prices__title">Добавьте   свой   профиль</h2>
         <dl class="prices__list">
           <div class="prices__tariffs prices__tariffs--base-rate" data-number="1">
             <dt class="prices__tariffs-name">Базовое размещение</dt>
@@ -326,7 +334,7 @@
     <section class="registration">
       <div class="wrapper registration__wrapper">
         <h2 class="title registration__title">Заинтересовались?</h2>
-        <p class="registration__description"><span>Зарегистрируйтесь,<br class="break break--mobile"> это быстро и бесплатно!</span><br class="break break--all"> Уже зарегистрированы? Тогда<br class="break break--mobile"> скорее <a href="login.html" class="registration__link">авторизуйтесь</a>.</p>
+        <p class="registration__description"><span>Зарегистрируйтесь,  это&nbsp;быстро&nbsp;и&nbsp;бесплатно!</span><br class="break break--all"> Уже зарегистрированы? Тогда  скорее <a href="login.html" class="registration__link">авторизуйтесь</a>.</p>
         <form action="https://echo.htmlacademy.ru/" method="POST" class="registration__form">
           <label class="input-text input-text--email registration__text-field">
             <span class="visually-hidden">Ваш email</span>
@@ -336,7 +344,7 @@
             <span class="registration__submit-value">Регистрация</span>
           </button>
         </form>
-        <p class="registration__ask">Остались вопросы? <br class="break break--mobile"> Мы с радостью на них ответим!</p>
+        <p class="registration__ask">Остались вопросы? Мы&nbsp;с&nbsp;радостью на&nbsp;них ответим!</p>
         <div class="for-user registration__for-user">
           <a href="tel:88005558628" class="for-user__link for-user__link--yellow registration__phone">
             <svg class="for-user__link-icon for-user__link-icon--phone" width="16" height="15" viewBox="0 0 16 15" fill="currentColor">

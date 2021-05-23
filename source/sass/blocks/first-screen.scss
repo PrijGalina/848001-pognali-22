@@ -200,6 +200,7 @@
 
 .first-screen__review-source {
   width: 84.3%;
+  max-width: 180px;
   margin: 0 0 29px 9.259%;
   font-weight: 700;
   font-size: 16px;
@@ -214,6 +215,7 @@
     line-height: 25px;
     margin-bottom: 214px;
     margin-left: 4.651%;
+    max-width: 250px
   }
 
   @media (min-width: $desktop-width) {
@@ -221,7 +223,7 @@
     margin: 0;
     width: 264px;
     justify-self: end;
-    padding-right: 22px;
+    padding-right: 36px;
   }
 }
 

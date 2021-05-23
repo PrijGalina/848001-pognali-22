@@ -114,9 +114,26 @@
 }
 
 .to-plan__pagination-btn {
+  color: $blue_200_03;
+  background-color: $blue_200_03;
+  opacity: 1;
+
   @media (min-width: $desktop-width) {
     position: relative;
   }
+
+  &--current {
+    color: $blue_200;
+    background-color: $blue_200;
+
+    .to-plan__pagination-name {
+      color: $black;
+    }
+  }
+}
+
+.to-plan__pagination-name {
+  color: $black_06;
 }
 
 .to-plan__pagination-item {

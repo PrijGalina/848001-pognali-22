@@ -150,6 +150,10 @@
       height: 24px;
       left: 4px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {

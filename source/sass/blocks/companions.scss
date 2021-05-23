@@ -203,12 +203,14 @@
   margin: 0 0 54px;
   color: $white;
   padding-left: 9.259%;
+  max-width: 217px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 34px;
     margin: 0 0 62px;
     padding-left: 0;
+    max-width: 427px;
   }
 
   @media (min-width: $desktop-width) {
@@ -227,6 +229,7 @@
     margin-top: 39px;
     font-size: 21px;
     line-height: 24px;
+    max-width: 300px;
   }
 
   @media (min-width: $desktop-width) {

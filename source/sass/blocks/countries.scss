@@ -334,6 +334,18 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 25px;
   }
+
+  &--czech {
+    max-width: 130px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 140px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 100%;
+    }
+  }
 }
 
 .countries__visited {

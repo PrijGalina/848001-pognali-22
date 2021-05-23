@@ -130,15 +130,14 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 48px;
-    margin-top: 75px;
   }
 }
 
 .filters__container {
   position: relative;
   width: 100%;
-  margin: 0 auto 0;
-  padding-top: 3px;
+  margin: -60px auto 0;
+  padding-top: 60px;
   z-index: 0;
   background-color: $grey_150;
   border-bottom-right-radius: 30px;
@@ -151,7 +150,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -79px;
+
   }
 }
 

@@ -10,6 +10,14 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-medium.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-bold.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-light.woff" as="font" type="font/woff">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -190,7 +198,7 @@
         <h2 class="title title--blue title--inner to-plan__title">Добавить план:</h2>
         <ul class="pagination pagination--circle to-plan__pagination">
             <li class="pagination__item to-plan__pagination-item">
-              <a href="#counter--dates" class="pagination__btn pagination__btn--circle to-plan__pagination-btn pagination__btn--current" aria-label="Перейти к первому шагу - даты пребывания">
+              <a href="#counter--dates" class="pagination__btn pagination__btn--circle to-plan__pagination-btn to-plan__pagination-btn--current" aria-label="Перейти к первому шагу - даты пребывания">
                 <span class="to-plan__pagination-name">Даты</span>
               </a>
             </li>
@@ -315,7 +323,7 @@
               <a href="#counter--country" class="btn btn--oval btn--yellow btn--left counter__button counter__button--next" aria-label="Перейти к составлению маршрута">Следующий шаг</a>
               <ul class="pagination pagination--circle to-plan__pagination to-plan__pagination--desktop">
                 <li class="pagination__item to-plan__pagination-item">
-                  <a href="#counter--dates" class="pagination__btn pagination__btn--circle to-plan__pagination-btn pagination__btn--current" aria-label="Перейти к первому шагу - даты пребывания">
+                  <a href="#counter--dates" class="pagination__btn pagination__btn--circle to-plan__pagination-btn to-plan__pagination-btn--current" aria-label="Перейти к первому шагу - даты пребывания">
                     <span class="to-plan__pagination-name">Даты</span>
                   </a>
                 </li>
@@ -432,7 +440,7 @@
                   </a>
                 </li>
                 <li class="pagination__item to-plan__pagination-item">
-                  <a href="#counter--country" class="pagination__btn pagination__btn--circle to-plan__pagination-btn pagination__btn--current" aria-label="Перейти ко второму шагу - маршрут">
+                  <a href="#counter--country" class="pagination__btn pagination__btn--circle to-plan__pagination-btn to-plan__pagination-btn--current" aria-label="Перейти ко второму шагу - маршрут">
                     <span class="to-plan__pagination-name">Маршрут</span>
                   </a>
                 </li>
@@ -490,7 +498,7 @@
                 </a>
               </li>
               <li class="pagination__item to-plan__pagination-item">
-                <a href="#counter--entertainment" class="pagination__btn pagination__btn--circle pagination__btn--current to-plan__pagination-btn" aria-label="Перейти к третьему шагу - развлечения">
+                <a href="#counter--entertainment" class="pagination__btn pagination__btn--circleto-plan__pagination-btn--current to-plan__pagination-btn" aria-label="Перейти к третьему шагу - развлечения">
                   <span class="to-plan__pagination-name">Развлечения</span>
                 </a>
               </li>

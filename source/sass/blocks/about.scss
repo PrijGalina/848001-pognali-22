@@ -153,11 +153,13 @@
   position: relative;
   margin: 0;
   color: $white;
+  max-width: 224px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
     margin-left: 4.941%;
+    max-width: 309px;
   }
 
   @media (min-width: $desktop-width) {

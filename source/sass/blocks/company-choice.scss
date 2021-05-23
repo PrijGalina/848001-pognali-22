@@ -96,7 +96,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 22px;
+      margin-bottom: 12px;
     }
   }
 
@@ -118,7 +118,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    margin-bottom: 19px;
+    margin-bottom: 0;
   }
 
   &--transport {
@@ -196,6 +196,10 @@
     @media (min-width: $tablet-width) {
       padding-bottom: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 9px;
+    }
   }
 
   &:hover {
@@ -222,7 +226,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    margin-top: 27px;
+    margin-top: 10px;
     margin-bottom: 30px;
   }
 }
@@ -301,5 +305,7 @@
     align-items: center;
     height: 50px;
     margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 29px;
   }
 }
