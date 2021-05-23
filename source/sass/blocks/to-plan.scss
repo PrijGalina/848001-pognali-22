@@ -99,6 +99,7 @@
 
 .to-plan__pagination-name {
   display: none;
+  color: $black_06;
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -130,10 +131,6 @@
       color: $black;
     }
   }
-}
-
-.to-plan__pagination-name {
-  color: $black_06;
 }
 
 .to-plan__pagination-item {
